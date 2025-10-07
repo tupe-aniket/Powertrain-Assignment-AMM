@@ -1,0 +1,4182 @@
+VERSION-22.10
+SECTION CONTROL
+_C_ "GTEManager" "gtemanager" V1
+	_C_ "General" "general" V1
+		Grid int 1
+		GridOn int 0
+		GridValue double 4
+		GridOffset double 5
+		PageFormat string "A4"
+		PageStandard int 1
+		PageUserDefined int 0
+		PageWidth double 595
+		PageHeight double 842
+		PagePortrait int 1
+		PageLandscape int 0
+		PageUnit string "mm"
+	..
+	_C_ "Model" "model" V1
+	..
+	_C_ "Pages" "pages" V1
+		_C_ "Page" "page" V1
+			title string "Seite 1"
+			page int 0
+			page_format int 0
+			page_orient int 0
+		..
+	..
+	_C_ "Pack" "pack" V1
+		PackHorizontal int 0
+		PackVertical int 1
+		PackNumRows int 3
+		PackNumColumns int 1
+		PackLeftMargin_unit double 100
+		PackRightMargin_unit double 80
+		PackTopMargin_unit double 80
+		PackBottomMargin_unit double 80
+		PackHSpacing_unit double 70
+		PackVSpacing_unit double 90
+		PackToPage int 1
+		PackToArea int 0
+	..
+	_C_ "Global" "global" V1
+		_C_ "Domain" "Global" V1
+			_C_ "Variable" "FULL_FILE_NAME" V1
+				var_type string "local"
+				var_enabled int 0
+				var_value string "C:\Assignment\Powertrain-Assignment-AMM\Boost\Task1/noname.pp2"
+			..
+			_C_ "Variable" "FILE_NAME" V1
+				var_type string "local"
+				var_enabled int 0
+				var_value string "noname.pp2"
+			..
+			_C_ "Variable" "DATE" V1
+				var_type string "local"
+				var_enabled int 0
+				var_value string "7. Oct 2025"
+			..
+			_C_ "Variable" "TIME" V1
+				var_type string "local"
+				var_enabled int 0
+				var_value string "08:08:27"
+			..
+		..
+	..
+..
+ENDSECTION
+SECTION GLOBAL_ADDON
+ENDSECTION
+SECTION CONTEXT_ADDON
+ADDON ASE  "Macro" "macro" Cpp res/cpp/macro.h  !! "context"
+_C_ "noname" "noname" V1
+	set int 0
+	0_version int 0
+	_C_ "Macro" "macro" V1
+		TITLE string ""
+		CUSTOMER_LOGO string ""
+		PAGE_FORMAT string "Page %I of %N"
+		PAGE_START int 1
+		PAGE_END int INF
+		PAGE_PRINT int 1
+		0_version int 0
+	..
+..
+__
+ENDSECTION
+SECTION PAGES
+class.tmp
+page_334223280_graphic.tmp
+page_334223280_background.tmp
+page_334223280_object.tmp
+page_334223280_page.tmp
+layer_223288640_layout.tmp
+curve_223291120_layout.tmp
+curve_223291120_data.tmp
+curve_223305680_layout.tmp
+curve_223305680_data.tmp
+curve_223313600_layout.tmp
+curve_223313600_data.tmp
+layer_223323120_layout.tmp
+curve_223322880_layout.tmp
+curve_223322880_data.tmp
+layer_223335440_layout.tmp
+curve_223335600_layout.tmp
+curve_223335600_data.tmp
+@$&!? ---------- class.tmp ----------
+_C_ "Page" "report" V1
+	page int 0
+	ase_title string "Report"
+	all_data int 1
+	_C_ "Page" "page" V1
+		print int 1
+		ase_page_orient int 0
+		ase_page_format int 0
+		ase_page_standard_format string "A4"
+		ase_page_width double 595
+		ase_page_height double 842
+		ase_unit string "mm"
+		ase_page_grid int 1
+		ase_page_grid_visible int 0
+		ase_page_grid_value double 4
+		ase_page_grid_offset double 5
+		ase_layout_file string "page_334223280_graphic.tmp"
+		ase_background_file string "page_334223280_background.tmp"
+		ase_object_file string "page_334223280_object.tmp"
+		ase_page_file string "page_334223280_page.tmp"
+		_C_ "Layer" "Layer_1" V1
+			ase_title string "Layer_1"
+			ase_desc string ""
+			ase_layer_type string "cartesian"
+			ase_layout_file string "layer_223288640_layout.tmp"
+			_C_ "Curve" "Curve" V1
+				ase_title string ""
+				ase_desc string ""
+				ase_key long 3051939
+				ase_layout_file string "curve_223291120_layout.tmp"
+				ase_legend string "IMEP Engine 1 (Pa)"
+				ase_data_file string "curve_223291120_data.tmp"
+				_C_ "Make" "make" V1
+					make string "formula"
+					_C_ "FormulaConvertUnit" "fo_convertunit" V1
+						UX int -1
+						UY int -1
+						delete_all int 0
+						show_all int 0
+						apply_to_x string "Y"
+						UY_unit void 
+						C0_curve void 
+						U0_units void 
+						C0 int 1
+						C0_y_unit_from void 
+						C0_y_unit_key_from string "pressure~bar"
+						C0_y_unit_title_from string "bar"
+						C0_y_unit_key_to string "pressure~Pa"
+						C0_y_unit_title_to string "Pa"
+					..
+					_C_ "MakeOp" "makeop" V1
+						_C_ "Make" "make" V1
+							make string "formula"
+							_C_ "FormulaConvertUnit" "fo_convertunit" V1
+								UX int -1
+								UY int -1
+								delete_all int 0
+								show_all int 0
+								apply_to_x string "Y"
+								UY_unit void 
+								C0_curve void 
+								U0_units void 
+								C0 int 1
+								C0_y_unit_from void 
+								C0_y_unit_key_from string "pressure~Pa"
+								C0_y_unit_title_from string "Pa"
+								C0_y_unit_key_to string "pressure~bar"
+								C0_y_unit_title_to string "bar"
+							..
+							_C_ "MakeOp" "makeop" V1
+								_C_ "Make" "make" V1
+									make string "location"
+									_C_ "loc" "x" V1
+										valid int 1
+										keys array-1 none 5 0
+											string "key_id"
+											string "key_file"
+											string "key_label"
+											string "key_start"
+											string "key_end"
+											DEF
+										specs array-1 none 5 0
+											string "GIDAS"
+											string "C:\Assignment\Powertrain-Assignment-AMM\Boost\Task1\/single500_GDi.Case_Set_1/simulation.dir/sEG1____1.gid"
+											string "Engine_Speed"
+											int -1
+											int -1
+											DEF
+									..
+									_C_ "loc" "y" V1
+										valid int 1
+										keys array-1 none 5 0
+											string "key_id"
+											string "key_file"
+											string "key_label"
+											string "key_start"
+											string "key_end"
+											DEF
+										specs array-1 none 5 0
+											string "GIDAS"
+											string "C:\Assignment\Powertrain-Assignment-AMM\Boost\Task1\/single500_GDi.Case_Set_1/simulation.dir/sEG1____1.gid"
+											string "IMEP_PF"
+											int -1
+											int -1
+											DEF
+									..
+									_C_ "loc" "l" V1
+										valid int 1
+										keys array-1 none 0 0
+											DEF
+										specs array-1 none 0 0
+											DEF
+									..
+								..
+							..
+						..
+					..
+				..
+			..
+			_C_ "Curve" "Curve_1" V1
+				ase_title string ""
+				ase_desc string ""
+				ase_key long 3051943
+				ase_layout_file string "curve_223305680_layout.tmp"
+				ase_legend string "BMEP Engine 1 (Pa)"
+				ase_data_file string "curve_223305680_data.tmp"
+				_C_ "Make" "make" V1
+					make string "formula"
+					_C_ "FormulaConvertUnit" "fo_convertunit" V1
+						UX int -1
+						UY int -1
+						delete_all int 0
+						show_all int 0
+						apply_to_x string "Y"
+						UY_unit void 
+						C0_curve void 
+						U0_units void 
+						C0 int 1
+						C0_y_unit_from void 
+						C0_y_unit_key_from string "pressure~bar"
+						C0_y_unit_title_from string "bar"
+						C0_y_unit_key_to string "pressure~Pa"
+						C0_y_unit_title_to string "Pa"
+					..
+					_C_ "MakeOp" "makeop" V1
+						_C_ "Make" "make" V1
+							make string "formula"
+							_C_ "FormulaConvertUnit" "fo_convertunit" V1
+								UX int -1
+								UY int -1
+								delete_all int 0
+								show_all int 0
+								apply_to_x string "Y"
+								UY_unit void 
+								C0_curve void 
+								U0_units void 
+								C0 int 1
+								C0_y_unit_from void 
+								C0_y_unit_key_from string "pressure~Pa"
+								C0_y_unit_title_from string "Pa"
+								C0_y_unit_key_to string "pressure~bar"
+								C0_y_unit_title_to string "bar"
+							..
+							_C_ "MakeOp" "makeop" V1
+								_C_ "Make" "make" V1
+									make string "formula"
+									_C_ "FormulaConvertUnit" "fo_convertunit" V1
+										UX int -1
+										UY int -1
+										delete_all int 0
+										show_all int 0
+										apply_to_x string "Y"
+										UY_unit void 
+										C0_curve void 
+										U0_units void 
+										C0 int 1
+										C0_y_unit_from void 
+										C0_y_unit_key_from string "pressure~bar"
+										C0_y_unit_title_from string "bar"
+										C0_y_unit_key_to string "pressure~Pa"
+										C0_y_unit_title_to string "Pa"
+									..
+									_C_ "MakeOp" "makeop" V1
+										_C_ "Make" "make" V1
+											make string "formula"
+											_C_ "FormulaConvertUnit" "fo_convertunit" V1
+												UX int -1
+												UY int -1
+												delete_all int 0
+												show_all int 0
+												apply_to_x string "Y"
+												UX_unit void 
+												C0_curve void 
+												U0_units void 
+												C0 int 1
+												C0_x_unit_from void 
+												C0_x_unit_key_from string "ang_vel~rpm"
+												C0_x_unit_title_from string "rpm"
+												C0_x_unit_key_to string "ang_vel~rpm"
+												C0_x_unit_title_to string "rpm"
+											..
+											_C_ "MakeOp" "makeop" V1
+												_C_ "Make" "make" V1
+													make string "location"
+													_C_ "loc" "x" V1
+														valid int 1
+														keys array-1 none 5 0
+															string "key_id"
+															string "key_file"
+															string "key_label"
+															string "key_start"
+															string "key_end"
+															DEF
+														specs array-1 none 5 0
+															string "GIDAS"
+															string "C:\Assignment\Powertrain-Assignment-AMM\Boost\Task1\/single500_GDi.Case_Set_1/simulation.dir/sEG1____1.gid"
+															string "Engine_Speed"
+															int -1
+															int -1
+															DEF
+													..
+													_C_ "loc" "y" V1
+														valid int 1
+														keys array-1 none 5 0
+															string "key_id"
+															string "key_file"
+															string "key_label"
+															string "key_start"
+															string "key_end"
+															DEF
+														specs array-1 none 5 0
+															string "GIDAS"
+															string "C:\Assignment\Powertrain-Assignment-AMM\Boost\Task1\/single500_GDi.Case_Set_1/simulation.dir/sEG1____1.gid"
+															string "BMEP_PF"
+															int -1
+															int -1
+															DEF
+													..
+													_C_ "loc" "l" V1
+														valid int 1
+														keys array-1 none 0 0
+															DEF
+														specs array-1 none 0 0
+															DEF
+													..
+												..
+											..
+										..
+									..
+								..
+							..
+						..
+					..
+				..
+			..
+			_C_ "Curve" "Curve_2" V1
+				ase_title string ""
+				ase_desc string ""
+				ase_key long 3051946
+				ase_layout_file string "curve_223313600_layout.tmp"
+				ase_legend string "BSFC Engine 1 (g/(kW.h))"
+				ase_data_file string "curve_223313600_data.tmp"
+				_C_ "Make" "make" V1
+					make string "formula"
+					_C_ "FormulaConvertUnit" "fo_convertunit" V1
+						UX int -1
+						UY int -1
+						delete_all int 0
+						show_all int 0
+						apply_to_x string "Y"
+						UY_unit void 
+						C0_curve void 
+						U0_units void 
+						C0 int 1
+						C0_y_unit_from void 
+						C0_y_unit_key_from string "spec_mass_flow~g_kWh"
+						C0_y_unit_title_from string "g/(kW.h)"
+						C0_y_unit_key_to string "spec_mass_flow~g_kWh"
+						C0_y_unit_title_to string "g/(kW.h)"
+					..
+					_C_ "MakeOp" "makeop" V1
+						_C_ "Make" "make" V1
+							make string "formula"
+							_C_ "FormulaConvertUnit" "fo_convertunit" V1
+								UX int -1
+								UY int -1
+								delete_all int 0
+								show_all int 0
+								apply_to_x string "Y"
+								UY_unit void 
+								C0_curve void 
+								U0_units void 
+								C0 int 1
+								C0_y_unit_from void 
+								C0_y_unit_key_from string "spec_mass_flow~g_kWh"
+								C0_y_unit_title_from string "g/(kW.h)"
+								C0_y_unit_key_to string "spec_mass_flow~g_kWh"
+								C0_y_unit_title_to string "g/(kW.h)"
+							..
+							_C_ "MakeOp" "makeop" V1
+								_C_ "Make" "make" V1
+									make string "formula"
+									_C_ "FormulaConvertUnit" "fo_convertunit" V1
+										UX int -1
+										UY int -1
+										delete_all int 0
+										show_all int 0
+										apply_to_x string "Y"
+										UY_unit void 
+										C0_curve void 
+										U0_units void 
+										C0 int 1
+										C0_y_unit_from void 
+										C0_y_unit_key_from string "spec_mass_flow~g_kWh"
+										C0_y_unit_title_from string "g/(kW.h)"
+										C0_y_unit_key_to string "spec_mass_flow~g_kWh"
+										C0_y_unit_title_to string "g/(kW.h)"
+									..
+									_C_ "MakeOp" "makeop" V1
+										_C_ "Make" "make" V1
+											make string "formula"
+											_C_ "FormulaConvertUnit" "fo_convertunit" V1
+												UX int -1
+												UY int -1
+												delete_all int 0
+												show_all int 0
+												apply_to_x string "Y"
+												UY_unit void 
+												C0_curve void 
+												U0_units void 
+												C0 int 1
+												C0_y_unit_from void 
+												C0_y_unit_key_from string "pressure~Pa"
+												C0_y_unit_title_from string "Pa"
+												C0_y_unit_key_to string "spec_mass_flow~g_kWh"
+												C0_y_unit_title_to string "g/(kW.h)"
+											..
+											_C_ "MakeOp" "makeop" V1
+												_C_ "Make" "make" V1
+													make string "formula"
+													_C_ "FormulaConvertUnit" "fo_convertunit" V1
+														UX int -1
+														UY int -1
+														delete_all int 0
+														show_all int 0
+														apply_to_x string "Y"
+														UX_unit void 
+														C0_curve void 
+														U0_units void 
+														C0 int 1
+														C0_x_unit_from void 
+														C0_x_unit_key_from string "ang_vel~rpm"
+														C0_x_unit_title_from string "rpm"
+														C0_x_unit_key_to string "ang_vel~rpm"
+														C0_x_unit_title_to string "rpm"
+													..
+													_C_ "MakeOp" "makeop" V1
+														_C_ "Make" "make" V1
+															make string "location"
+															_C_ "loc" "x" V1
+																valid int 1
+																keys array-1 none 5 0
+																	string "key_id"
+																	string "key_file"
+																	string "key_label"
+																	string "key_start"
+																	string "key_end"
+																	DEF
+																specs array-1 none 5 0
+																	string "GIDAS"
+																	string "C:\Assignment\Powertrain-Assignment-AMM\Boost\Task1\/single500_GDi.Case_Set_1/simulation.dir/sEG1____1.gid"
+																	string "Engine_Speed"
+																	int -1
+																	int -1
+																	DEF
+															..
+															_C_ "loc" "y" V1
+																valid int 1
+																keys array-1 none 5 0
+																	string "key_id"
+																	string "key_file"
+																	string "key_label"
+																	string "key_start"
+																	string "key_end"
+																	DEF
+																specs array-1 none 5 0
+																	string "GIDAS"
+																	string "C:\Assignment\Powertrain-Assignment-AMM\Boost\Task1\/single500_GDi.Case_Set_1/simulation.dir/sEG1____1.gid"
+																	string "BSFC_PF"
+																	int -1
+																	int -1
+																	DEF
+															..
+															_C_ "loc" "l" V1
+																valid int 1
+																keys array-1 none 0 0
+																	DEF
+																specs array-1 none 0 0
+																	DEF
+															..
+														..
+													..
+												..
+											..
+										..
+									..
+								..
+							..
+						..
+					..
+				..
+			..
+		..
+		_C_ "Layer" "Layer_2" V1
+			ase_title string "Layer_2"
+			ase_desc string ""
+			ase_layer_type string "cartesian"
+			ase_layout_file string "layer_223323120_layout.tmp"
+			_C_ "Curve" "Curve" V1
+				ase_title string ""
+				ase_desc string ""
+				ase_key long 3051955
+				ase_layout_file string "curve_223322880_layout.tmp"
+				ase_legend string "Torque Engine 1 (N.m)"
+				ase_data_file string "curve_223322880_data.tmp"
+				_C_ "Make" "make" V1
+					make string "location"
+					_C_ "loc" "x" V1
+						valid int 1
+						keys array-1 none 5 0
+							string "key_id"
+							string "key_file"
+							string "key_label"
+							string "key_start"
+							string "key_end"
+							DEF
+						specs array-1 none 5 0
+							string "GIDAS"
+							string "C:\Assignment\Powertrain-Assignment-AMM\Boost\Task1\/single500_GDi.Case_Set_1/simulation.dir/sEG1____1.gid"
+							string "Engine_Speed"
+							int -1
+							int -1
+							DEF
+					..
+					_C_ "loc" "y" V1
+						valid int 1
+						keys array-1 none 5 0
+							string "key_id"
+							string "key_file"
+							string "key_label"
+							string "key_start"
+							string "key_end"
+							DEF
+						specs array-1 none 5 0
+							string "GIDAS"
+							string "C:\Assignment\Powertrain-Assignment-AMM\Boost\Task1\/single500_GDi.Case_Set_1/simulation.dir/sEG1____1.gid"
+							string "TORQUE_PF"
+							int -1
+							int -1
+							DEF
+					..
+					_C_ "loc" "l" V1
+						valid int 1
+						keys array-1 none 0 0
+							DEF
+						specs array-1 none 0 0
+							DEF
+					..
+				..
+			..
+		..
+		_C_ "Layer" "Layer_3" V1
+			ase_title string "Layer_3"
+			ase_desc string ""
+			ase_layer_type string "cartesian"
+			ase_layout_file string "layer_223335440_layout.tmp"
+			_C_ "Curve" "Curve" V1
+				ase_title string ""
+				ase_desc string ""
+				ase_key long 3051963
+				ase_layout_file string "curve_223335600_layout.tmp"
+				ase_legend string "Power Engine 1 (hp)"
+				ase_data_file string "curve_223335600_data.tmp"
+				_C_ "Make" "make" V1
+					make string "formula"
+					_C_ "FormulaConvertUnit" "fo_convertunit" V1
+						UX int -1
+						UY int -1
+						delete_all int 0
+						show_all int 0
+						apply_to_x string "Y"
+						UY_unit void 
+						C0_curve void 
+						U0_units void 
+						C0 int 1
+						C0_y_unit_from void 
+						C0_y_unit_key_from string "power~W"
+						C0_y_unit_title_from string "W"
+						C0_y_unit_key_to string "power~hp"
+						C0_y_unit_title_to string "hp"
+					..
+					_C_ "MakeOp" "makeop" V1
+						_C_ "Make" "make" V1
+							make string "location"
+							_C_ "loc" "x" V1
+								valid int 1
+								keys array-1 none 5 0
+									string "key_id"
+									string "key_file"
+									string "key_label"
+									string "key_start"
+									string "key_end"
+									DEF
+								specs array-1 none 5 0
+									string "GIDAS"
+									string "C:\Assignment\Powertrain-Assignment-AMM\Boost\Task1\/single500_GDi.Case_Set_1/simulation.dir/sEG1____1.gid"
+									string "Engine_Speed"
+									int -1
+									int -1
+									DEF
+							..
+							_C_ "loc" "y" V1
+								valid int 1
+								keys array-1 none 5 0
+									string "key_id"
+									string "key_file"
+									string "key_label"
+									string "key_start"
+									string "key_end"
+									DEF
+								specs array-1 none 5 0
+									string "GIDAS"
+									string "C:\Assignment\Powertrain-Assignment-AMM\Boost\Task1\/single500_GDi.Case_Set_1/simulation.dir/sEG1____1.gid"
+									string "POWER_PF"
+									int -1
+									int -1
+									DEF
+							..
+							_C_ "loc" "l" V1
+								valid int 1
+								keys array-1 none 0 0
+									DEF
+								specs array-1 none 0 0
+									DEF
+							..
+						..
+					..
+				..
+			..
+		..
+	..
+..
+@$&!!
+@$&!? ---------- page_334223280_graphic.tmp ----------
+VERSION-22.10
+SECTION GRAPHIC
+ENDSECTION
+@$&!!
+@$&!? ---------- page_334223280_background.tmp ----------
+VERSION-22.10
+@$&!!
+@$&!? ---------- page_334223280_object.tmp ----------
+VERSION-22.10
+SECTION OBJECTS
+ENDSECTION
+@$&!!
+@$&!? ---------- page_334223280_page.tmp ----------
+VERSION-22.10
+SECTION PAGE
+ENDSECTION
+@$&!!
+@$&!? ---------- layer_223288640_layout.tmp ----------
+VERSION-22.10
+LAYER-1 CARTESIAN "Layer_1" -1 -1 NoRef
+ZOrder 6
+Frame TRECTANGLE-21 "" 0 0 -1 0 0 0 0.5 1 0 0 0 0 0 896 - 
+Title TTEXT-21 "" 0 0 -1 0 0 0 1 1 0 0 0 0 0 0 -REALIZE- "Arial" 18 4 7 "Layer_1" "" 316.000003465 24.0000012283 
+SubTitle TTEXT-21 "" 0 0 -1 0 0 0 1 1 0 0 0 0 0 1 -REALIZE- "Arial" 14 1 0 "Subtitle" "" 0 0 
+Background TRECTANGLE-21 "" 0 0 -1 255 255 255 0.1 1 255 255 255 1 0 3971 - 
+Properties 
+OSOBJECT Layer
+7 
+7 
+7 
+LayerBits 1 0
+7 
+LayerName 8 "Layer_1"
+LayerDescription 8 ""
+LayerPage 1 0
+LayerRealized 1 1
+LayerVisible 1 1
+LayerLeft_unit 6 109.00000063
+LayerTop_unit 6 29.0000012598
+LayerRight_unit 6 523.000006299
+LayerBottom_unit 6 249.99999874
+LayerSortX 9 0
+LayerAutoLayers 1 0
+LayerMeasRef 1 1
+LayerMeasRefExtent 1 0
+LayerMeasXExtFrom 1 0
+LayerMeasXExtTo 1 100
+LayerMeasYExtFrom 1 0
+LayerMeasYExtTo 1 100
+LayerMeasRefClip 1 0
+LayerBackground 1 0
+LayerBorder 1 1
+LayerTitle 1 1
+LayerSubTitle 1 0
+LayerLegend 1 1
+LayerInfo 1 0
+LayerColorbar 1 0
+LayerReader 1 0
+LayerMarker 1 1
+LayerCursor 1 0
+LayerLeftAxis 1 1
+LayerTopAxis 1 0
+LayerRightAxis 1 1
+LayerBottomAxis 1 1
+LayerIndicator 9 1
+LayerRegular 1 1
+LayerStacked 9 0
+LayerStackedLinear 1 1
+LayerStackedLog 1 0
+LayerWaterfall 1 0
+LayerWaterfallAngle 6 30
+LayerWaterfallOffset 6 20
+LayerFringe 1 0
+LayerFringeParam 8 ""
+LayerFringeParamUnit 8 ""
+LayerFringeInterpolateX 1 1
+LayerFringeInterpolateY 1 1
+LayerFringeInterpolateYSimple 1 0
+LayerFringeInverse 1 0
+LayerFringeInverse_0 9 0
+LayerFringeShiftX 1 0
+LayerFringeShiftXOffset 6 90
+LayerRegularParam 8 ""
+LayerRegularParamUnit 0 
+LayerOrderLinesMajor 1 0
+LayerOrderLinesMinor 1 0
+LayerOrderLinesSlope 6 60
+LayerOrderLinesFrom 6 0
+LayerOrderLinesTo 6 40
+LayerOrderLinesIncr 6 5
+LayerOrderLinesNumMinor 1 5
+LayerPolarCounter 9 0
+LayerPolarStart 6 0
+LayerTitleStr 8 "Layer_1"
+LayerSubTitleStr 8 "Subtitle"
+LayerTitleOffset_unit 6 5.0000000315
+LayerSubTitleOffset_unit 6 5.0000000315
+LayerOrderLine_XFreq 1 1
+LayerOrderLine_XSpeed 1 0
+LayerUseCBColors 1 0
+LayerStackedNew 1 0
+LayerStackedNewYMax 6 100
+LayerStackedNewYMin 6 0
+LayerColorbarPrevVisible 1 0
+LayerPrevTypeFringe 1 0
+LayerKeepAspectRatio 9 0
+XAxis 8 "Engine_Speed"
+YAxis 8 "BMEP"
+ZAxis 8 "BMEP"
+ZAxisUnit 8 "Z Axis Unit"
+BottomAxis 8 "Engine_Speed"
+TopAxis 8 "Engine_Speed"
+LeftAxis 8 "BMEP"
+RightAxis 8 "BMEP"
+LayerReaderUpdate 1 1
+..
+Class 
+_C_ "layer" "layer" V1
+	_C_ "Domain" "L1" V1
+	..
+..
+AXIS LEFT
+Background TRECTANGLE-21 "" 0 0 -1 255 255 255 1 1 255 255 255 1 0 20355 - 
+Title TTEXT-21 "" 0 0 -1 0 0 0 1 1 0 0 0 0 0 128 -NODOSCALEDIM- "Arial" 14 1 7 "BMEP (Pa)" "" 61.0000006299 139.5 
+Line TPOLYLINE-21 "" 0 0 -1 0 0 0 0.4 1 0 0 0 0 0 896 - 
+Labels TMULTI-21 "" 0 0 -1 0 0 0 1 1 0 0 0 0 0 896 - 
+Label TTEXT-21 "" 0 0 -1 0 0 0 1 1 0 0 0 0 0 16384 - "Arial" 10 1 0 "" "" 0 0 
+MajorTicks TMULTI-21 "" 0 0 -1 0 0 0 0.4 1 0 0 0 0 0 896 - 
+MinorTicks TMULTI-21 "" 0 0 -1 0 0 0 0.4 1 0 0 0 0 0 896 - 
+Properties 
+OSOBJECT Axis
+7 
+1 0
+7 
+1 6
+AxisAutomatic 1 1
+AxisAutomaticLayer 1 0
+AxisManual 1 0
+AxisRefScale 1 0
+AxisAxisLink 1 0
+AxisFrom 6 0
+AxisTo 6 1600000
+AxisRatio 6 0
+AxisLog 1 0
+AxisSynchronized 9 0
+AxisLine 1 1
+AxisTitle 1 1
+AxisLabels 1 1
+AxisBackground 1 0
+AxisMajor 1 1
+AxisMajorIsIncrement 9 1
+AxisMajorIsNum 9 0
+AxisMajorIncrement 6 200000
+AxisMajorNum 1 4
+AxisMajorIsStart 1 0
+AxisMajorStart 6 0
+AxisMajorStartIncrement 6 20
+AxisMinor 1 1
+AxisMinorNum 1 4
+AxisMajorGrid 1 1
+AxisMinorGrid 1 0
+AxisOffset_unit 6 0
+AxisTitleStr 8 "BMEP"
+AxisTitleOffset_unit 6 0
+AxisTitleAlignment 1 5
+AxisTitleAngle 6 90
+AxisTitleAligned 1 1
+AxisTitleAutomatic 1 0
+AxisMajorOffset_unit 6 0
+AxisMajorLength_unit 6 6.00000009449
+AxisMinorOffset_unit 6 0
+AxisMinorLength_unit 6 2.99999990551
+AxisLabelsOffset_unit 6 9
+AxisLabelsAutomatic 1 1
+AxisLabelsScientific 1 0
+AxisLabelsFixed 1 0
+AxisLabelsPrecision 1 4
+AxisLabelsHorizontal 1 1
+AxisLabelsVertical 1 0
+AxisLabelsTextValues 1 1
+AxisLabelsTextUserDefined 1 0
+AxisLabelsTextA 10 array-1 none 0 0
+AxisUnit 8 "pressure~Pa"
+AxisUnitUnknown 8 "pressure~Pa"
+AxisUnitShow 1 1
+AxisUnitAutomatic 1 0
+AxisUnitAux 8 ""
+..
+--
+AXIS TOP
+Background TRECTANGLE-21 "" 0 0 -1 255 255 255 1 1 255 255 255 1 0 20354 - 
+Title TTEXT-21 "" 0 0 -1 0 0 0 1 1 0 0 0 0 0 128 -NODOSCALEDIM- "Arial" 14 1 0 "" "" 0 0 
+Line TPOLYLINE-21 "" 0 0 -1 0 0 0 0.4 1 0 0 0 0 0 897 - 
+Labels TMULTI-21 "" 0 0 -1 0 0 0 1 1 0 0 0 0 0 896 - 
+Label TTEXT-21 "" 0 0 -1 0 0 0 1 1 0 0 0 0 0 16384 - "Arial" 10 1 0 "" "" 0 0 
+MajorTicks TMULTI-21 "" 0 0 -1 0 0 0 0.4 1 0 0 0 0 0 896 - 
+MinorTicks TMULTI-21 "" 0 0 -1 0 0 0 0.4 1 0 0 0 0 0 896 - 
+Properties 
+OSOBJECT Axis
+7 
+1 1
+7 
+1 6
+AxisAutomatic 9 1
+AxisAutomaticLayer 9 1
+AxisManual 9 0
+AxisRefScale 9 0
+AxisAxisLink 9 0
+AxisFrom 6 2000
+AxisTo 6 7000
+AxisRatio 6 0
+AxisLog 9 0
+AxisSynchronized 9 0
+AxisLine 9 1
+AxisTitle 9 1
+AxisLabels 9 1
+AxisBackground 9 0
+AxisMajor 9 1
+AxisMajorIsIncrement 9 1
+AxisMajorIsNum 9 0
+AxisMajorIncrement 6 500
+AxisMajorNum 1 4
+AxisMajorIsStart 9 0
+AxisMajorStart 6 0
+AxisMajorStartIncrement 6 20
+AxisMinor 9 1
+AxisMinorNum 1 4
+AxisMajorGrid 9 1
+AxisMinorGrid 9 0
+AxisOffset_unit 6 0
+AxisTitleStr 8 "Engine_Speed"
+AxisTitleOffset_unit 6 0
+AxisTitleAlignment 1 7
+AxisTitleAngle 6 0
+AxisTitleAligned 9 1
+AxisTitleAutomatic 9 1
+AxisMajorOffset_unit 6 0
+AxisMajorLength_unit 6 6
+AxisMinorOffset_unit 6 0
+AxisMinorLength_unit 6 3
+AxisLabelsOffset_unit 6 9
+AxisLabelsAutomatic 9 1
+AxisLabelsScientific 9 0
+AxisLabelsFixed 9 0
+AxisLabelsPrecision 1 4
+AxisLabelsHorizontal 9 1
+AxisLabelsVertical 9 0
+AxisLabelsTextValues 9 1
+AxisLabelsTextUserDefined 9 0
+AxisLabelsTextA 10 array-1 none 0 0
+AxisUnit 8 "ang_vel~rpm"
+AxisUnitUnknown 8 "ang_vel~rpm"
+AxisUnitShow 9 1
+AxisUnitAutomatic 9 1
+AxisUnitAux 8 ""
+..
+--
+AXIS RIGHT
+Background TRECTANGLE-21 "" 0 0 -1 255 255 255 1 1 255 255 255 1 0 20355 - 
+Title TTEXT-21 "" 0 0 -1 0 0 0 1 1 0 0 0 0 0 128 -NODOSCALEDIM- "Arial" 14 1 1 "BMEP (Pa)" "" 544.000006299 139.5 
+Line TPOLYLINE-21 "" 0 0 -1 0 0 0 0.4 1 0 0 0 0 0 896 - 
+Labels TMULTI-21 "" 0 0 -1 0 0 0 1 1 0 0 0 0 0 896 - 
+Label TTEXT-21 "" 0 0 -1 0 0 0 1 1 0 0 0 0 0 16384 - "Arial" 10 1 0 "" "" 0 0 
+MajorTicks TMULTI-21 "" 0 0 -1 0 0 0 0.4 1 0 0 0 0 0 896 - 
+MinorTicks TMULTI-21 "" 0 0 -1 0 0 0 0.4 1 0 0 0 0 0 896 - 
+Properties 
+OSOBJECT Axis
+7 
+1 2
+7 
+1 6
+AxisAutomatic 1 1
+AxisAutomaticLayer 1 0
+AxisManual 1 0
+AxisRefScale 1 0
+AxisAxisLink 1 0
+AxisFrom 6 0
+AxisTo 6 1600000
+AxisRatio 6 0
+AxisLog 1 0
+AxisSynchronized 9 0
+AxisLine 1 1
+AxisTitle 1 1
+AxisLabels 1 1
+AxisBackground 1 0
+AxisMajor 1 1
+AxisMajorIsIncrement 9 1
+AxisMajorIsNum 9 0
+AxisMajorIncrement 6 200000
+AxisMajorNum 1 4
+AxisMajorIsStart 1 0
+AxisMajorStart 6 0
+AxisMajorStartIncrement 6 20
+AxisMinor 1 1
+AxisMinorNum 1 4
+AxisMajorGrid 1 1
+AxisMinorGrid 1 0
+AxisOffset_unit 6 0
+AxisTitleStr 8 "BMEP"
+AxisTitleOffset_unit 6 0
+AxisTitleAlignment 1 3
+AxisTitleAngle 6 90
+AxisTitleAligned 1 0
+AxisTitleAutomatic 1 0
+AxisMajorOffset_unit 6 0
+AxisMajorLength_unit 6 6.00000009449
+AxisMinorOffset_unit 6 0
+AxisMinorLength_unit 6 2.99999990551
+AxisLabelsOffset_unit 6 9
+AxisLabelsAutomatic 1 1
+AxisLabelsScientific 1 0
+AxisLabelsFixed 1 0
+AxisLabelsPrecision 1 4
+AxisLabelsHorizontal 1 1
+AxisLabelsVertical 1 0
+AxisLabelsTextValues 1 1
+AxisLabelsTextUserDefined 1 0
+AxisLabelsTextA 10 array-1 none 0 0
+AxisUnit 8 "pressure~Pa"
+AxisUnitUnknown 8 "pressure~Pa"
+AxisUnitShow 1 1
+AxisUnitAutomatic 1 0
+AxisUnitAux 8 ""
+..
+--
+AXIS BOTTOM
+Background TRECTANGLE-21 "" 0 0 -1 255 255 255 1 1 255 255 255 1 0 20355 - 
+Title TTEXT-21 "" 0 0 -1 0 0 0 1 1 0 0 0 0 0 128 -NODOSCALEDIM- "Arial" 14 1 1 "Engine_Speed (rpm)" "" 316.000003465 287.99999874 
+Line TPOLYLINE-21 "" 0 0 -1 0 0 0 0.4 1 0 0 0 0 0 896 - 
+Labels TMULTI-21 "" 0 0 -1 0 0 0 1 1 0 0 0 0 0 896 - 
+Label TTEXT-21 "" 0 0 -1 0 0 0 1 1 0 0 0 0 0 16384 - "Arial" 10 1 0 "" "" 0 0 
+MajorTicks TMULTI-21 "" 0 0 -1 0 0 0 0.4 1 0 0 0 0 0 896 - 
+MinorTicks TMULTI-21 "" 0 0 -1 0 0 0 0.4 1 0 0 0 0 0 896 - 
+Properties 
+OSOBJECT Axis
+7 
+1 3
+7 
+1 6
+AxisAutomatic 9 1
+AxisAutomaticLayer 9 1
+AxisManual 9 0
+AxisRefScale 9 0
+AxisAxisLink 9 0
+AxisFrom 6 2000
+AxisTo 6 7000
+AxisRatio 6 0
+AxisLog 9 0
+AxisSynchronized 9 0
+AxisLine 9 1
+AxisTitle 9 1
+AxisLabels 9 1
+AxisBackground 9 0
+AxisMajor 9 1
+AxisMajorIsIncrement 9 1
+AxisMajorIsNum 9 0
+AxisMajorIncrement 6 500
+AxisMajorNum 1 4
+AxisMajorIsStart 9 0
+AxisMajorStart 6 0
+AxisMajorStartIncrement 6 20
+AxisMinor 9 1
+AxisMinorNum 1 4
+AxisMajorGrid 9 1
+AxisMinorGrid 9 0
+AxisOffset_unit 6 16
+AxisTitleStr 8 "Engine_Speed"
+AxisTitleOffset_unit 6 0
+AxisTitleAlignment 1 1
+AxisTitleAngle 6 0
+AxisTitleAligned 9 1
+AxisTitleAutomatic 9 1
+AxisMajorOffset_unit 6 0
+AxisMajorLength_unit 6 6
+AxisMinorOffset_unit 6 0
+AxisMinorLength_unit 6 3
+AxisLabelsOffset_unit 6 9
+AxisLabelsAutomatic 9 1
+AxisLabelsScientific 9 0
+AxisLabelsFixed 9 0
+AxisLabelsPrecision 1 4
+AxisLabelsHorizontal 9 1
+AxisLabelsVertical 9 0
+AxisLabelsTextValues 9 1
+AxisLabelsTextUserDefined 9 0
+AxisLabelsTextA 10 array-1 none 0 0
+AxisUnit 8 "ang_vel~rpm"
+AxisUnitUnknown 8 "ang_vel~rpm"
+AxisUnitShow 9 1
+AxisUnitAutomatic 9 1
+AxisUnitAux 8 ""
+..
+--
+GRID MAJORX
+Lines TMULTI-21 "" 7 0 -1 192 192 192 0.4 3 0 0 0 0 0 898 - 
+--
+GRID MINORX
+Lines TMULTI-21 "" 9 0 -1 192 192 192 0.4 3 0 0 0 0 0 899 - 
+--
+GRID MAJORY
+Lines TMULTI-21 "" 8 0 -1 192 192 192 0.4 3 0 0 0 0 0 898 - 
+--
+GRID MINORY
+Lines TMULTI-21 "" 10 0 -1 192 192 192 0.4 3 0 0 0 0 0 899 - 
+--
+LEGEND
+Frame1 TRECTANGLE-21 "" 0 0 -1 0 0 0 0.5 1 0 0 0 5 0 8064 - 4 
+345.000006299 29.0000012598 
+523.000006299 29.0000012598 
+523.000006299 84.0000012598 
+345.000006299 84.0000012598 
+Background TRECTANGLE-21 "" 0 0 -1 255 255 255 0.5 1 255 255 255 1 0 8064 - 
+Label TTEXT-21 "" 0 0 -1 0 0 0 1 1 0 0 0 0 0 16386 - "Arial" 11 1 0 " " "" 0 0 
+Properties 
+OSOBJECT Legend
+7 
+7 
+1 0
+LegendFrame 9 1
+LegendBackground 9 1
+LegendLabels 9 1
+LegendLines 9 1
+LegendColumn 9 1
+LegendRow 9 0
+LegendNumRows 1 INF
+LegendNumCols 1 INF
+LegendHMargin_unit 6 5
+LegendVMargin_unit 6 5
+LegendHSpacing_unit 6 5
+LegendVSpacing_unit 6 0
+LegendAlignment 9 1
+LegendNoAlignment 9 0
+LegendHOffset_unit 6 0
+LegendVOffset_unit 6 0
+LegendPosition 1 2
+LegendLayerPosition 1 2
+LegendLabelsAuto 9 1
+LegendLabelsUser 9 0
+LegendLabelsA 10 array-1 none 3 0
+string "---"
+string "---"
+string "---"
+LegendDefault 9 0
+LegendDefaultStr 8 ""
+LegendShowUnits 9 1
+LegendShowPostFix 9 1
+..
+--
+INFO
+Frame TRECTANGLE-21 "" 0 0 -1 0 0 0 0.5 1 0 0 0 5 0 8064 - 4 
+0 0 
+100 0 
+100 20 
+0 20 
+Background TRECTANGLE-21 "" 0 0 -1 255 255 255 0.5 1 222 222 222 1 0 8064 - 
+Label TTEXT-21 "" 0 0 -1 0 0 0 1 1 0 0 0 0 0 16386 - "Arial" 11 1 0 " " "" 0 0 
+Properties 
+OSOBJECT Info
+7 
+7 
+1 0
+InfoFrame 9 1
+InfoBackground 9 1
+InfoHMargin_unit 6 5
+InfoVMargin_unit 6 5
+InfoHSpacing_unit 6 5
+InfoVSpacing_unit 6 0
+InfoAlignment 9 1
+InfoNoAlignment 9 0
+InfoHOffset_unit 6 0
+InfoVOffset_unit 6 0
+InfoPosition 1 2
+InfoLayerPosition 1 8
+InfoYMin 9 1
+InfoYMax 9 1
+InfoYMinAtX 9 1
+InfoYMaxAtX 9 1
+InfoYMean 9 1
+InfoYMeanGeom 9 1
+InfoYMeanInt 9 1
+..
+--
+COLORBAR
+Title TTEXT-21 "" 0 0 -1 0 0 0 1 1 0 0 0 0 0 2 - "Arial" 12 1 0 "" "" 0 0 
+Labels TMULTI-21 "" 0 0 -1 0 0 0 1 1 0 0 0 0 0 2 - 
+Label TTEXT-21 "" 0 0 -1 0 0 0 1 1 0 0 0 0 0 16386 - "Arial" 11 1 0 " " "" 0 0 
+Bar TRECTANGLE-21 "" 0 0 -1 0 0 0 1 1 0 0 0 0 0 2 -USERDRAWN- 4 
+0 0 
+10 0 
+10 10 
+0 10 
+Properties 
+OSOBJECT ColorBar
+7 
+7 
+1 0
+ColorBarType 8 "AVL_Standard"
+ColorBarFrame 9 0
+ColorBarBackground 9 0
+ColorBarTitle 9 1
+ColorBarTitleStr 8 "CurveIndex"
+ColorBarAlignment 9 1
+ColorBarNoAlignment 9 0
+ColorBarHOffset_unit 6 10
+ColorBarVOffset_unit 6 0
+ColorBarPosition 1 0
+ColorBarLayerPosition 1 2
+ColorBarHorizontal 9 0
+ColorBarVertical 9 1
+ColorBarHMargin_unit 6 3
+ColorBarVMargin_unit 6 2
+ColorBarAutomatic 9 1
+ColorBarManual 9 0
+ColorBarFrom 6 1
+ColorBarTo 6 3
+ColorBarLog 9 0
+..
+--
+READER
+Title TTEXT-21 "" 0 0 -1 0 0 0 1 1 0 0 0 0 0 16385 - "Arial" 10 1 7 "" "" 0 0 
+TitleBackground TPOLYGON-21 "" 0 0 -1 128 128 128 0.25 1 255 255 255 1 0 8064 - 
+Line TLINE-21 "" 0 0 -1 0 0 0 0.25 3 0 0 0 0 0 896 - 
+Background TMULTI-21 "" 0 0 -1 0 0 0 0.25 1 255 255 222 1 0 8064 - 
+Backgrounds TMULTI-21 "" 0 0 -1 0 0 0 0.25 1 255 255 222 1 0 8064 - 
+BackgroundRectangle TRECTANGLE-21 "" 0 0 -1 222 222 222 0.25 1 222 222 222 1 0 8065 - 
+Value TMULTI-21 "" 0 0 -1 0 0 0 1 1 0 0 0 0 0 0 - 
+Values TMULTI-21 "" 0 0 -1 0 0 0 1 1 0 0 0 0 0 0 - 
+Properties 
+OSOBJECT Boundary
+7 
+7 
+7 
+BoundaryBits 1 0
+BoundaryName 8 "boundary"
+BoundaryType 1 0
+BoundaryPosition 6 1e+100
+BoundaryPositionPolar 6 0
+BoundaryWidth 6 0
+BoundarySynchronized 9 0
+BoundaryDatawise 9 0
+BoundaryFrame 9 1
+BoundaryTitle 9 0
+BoundaryLine 9 1
+BoundaryTopLine 9 0
+BoundaryBottomLine 9 0
+BoundaryCurve 9 1
+BoundaryBlock 9 0
+BoundaryLeft 9 0
+BoundaryRight 9 0
+BoundaryInclude 9 0
+BoundaryIndex 9 0
+BoundaryOffset_unit 6 5
+BoundaryAlways 9 0
+BoundaryTitleStr 8 "Title"
+BoundaryTitleOffset_unit 6 5
+BoundaryHorizontal 9 1
+BoundaryVertical 9 0
+BoundaryPosIndex 1 -1
+..
+--
+--
+@$&!!
+@$&!? ---------- curve_223291120_layout.tmp ----------
+VERSION-22.10
+Polyline TMULTIPOLYLINE-21 "" 12 0 -1 255 0 0 1 1 0 0 0 0 0 896 -USERDRAWN- 
+Symbols TMULTIPOINT-21 "" 13 0 -1 255 0 0 0.25 1 255 255 255 1 1 8064 -NODRAW-USERDRAWN- 
+Bars TMULTI-21 "" 11 0 -1 255 0 0 1 1 255 0 0 1 0 8064 -NODRAW-USERDRAWN- 
+Labels TMULTITEXT-21 "" 14 0 -1 0 0 0 1 1 0 0 0 0 0 8064 -NODRAW-USERDRAWN- 
+Arrows TMULTILINE-21 "" 0 0 -1 255 0 0 1 1 255 0 0 0 0 8064 -NODRAW-USERDRAWN- 
+Phasors TMULTILINE-21 "" 0 0 -1 255 0 0 1 1 255 0 0 0 0 8064 -NODRAW-USERDRAWN- 
+Coords 0 0 0
+CoordsXUnit "ang_vel~rpm"
+CoordsYUnit "pressure~Pa"
+CoordsLUnit ""
+CoordsXUnitUnknown "ang_vel~rpm"
+CoordsYUnitUnknown "pressure~Pa"
+CoordsLUnitUnknown ""
+Properties 
+OSOBJECT Curve
+7 
+7 
+7 
+CurveBits 1 0
+7 
+CurveName 8 "Curve"
+CurveVarName 8 "C1"
+CurveDescription 8 ""
+CurveLine 1 1
+CurveArrows 1 0
+CurveArrowsNum 1 3
+CurveSymbols 1 0
+CurveSymbolsType 1 1
+CurveSymbolsWidth_unit 6 7.99999993701
+CurveBars 1 0
+CurveBarsWidth 1 50
+CurveLabels 1 0
+CurveLabelsAlignment 1 8
+CurvePhasors 1 0
+CurveReader 1 0
+CurveBoundary 9 1
+CurveSkipDont 1 0
+CurveSkipFreq 9 0
+CurveSkipFreqValue 1 1
+CurveSkipDist 1 1
+CurveSkipDistValue_unit 6 10.000000063
+CurveSkipFreqD 1 0
+CurveSkipFreqValueD 1 1
+CurveSkipDistD 9 0
+CurveSkipDistValueD 6 0
+CurveLegendStr 8 "IMEP Engine 1"
+CurveLegendStr 8 "IMEP Engine 1 (Pa)"
+CurveLegendDefaultStr 8 "IMEP Engine 1"
+CurveLegendPostfix 8 ""
+CurveVisible 9 1
+CurveLegendVisible 9 1
+CurveInfoVisible 9 1
+CurveSelectable 9 1
+CurveEmptyX 1 0
+CurveEmptyY 1 0
+CurveAutomaticColor 9 1
+CurveAutomaticSymbols 9 0
+CurveIndex 1 0
+CurveXUnitAux 8 ""
+CurveYUnitAux 8 "pressure~bar"
+CurveLUnitAux 8 ""
+..
+Class 
+_C_ "Curve" "curve" V1
+	ase_key long 3051939
+	_C_ "Make" "make" V1
+		make string "formula"
+		_C_ "FormulaConvertUnit" "fo_convertunit" V1
+			UX int -1
+			UY int -1
+			delete_all int 0
+			show_all int 0
+			apply_to_x string "Y"
+			UY_unit void 
+			C0_curve void 
+			U0_units void 
+			C0 int 1
+			C0_y_unit_from void 
+			C0_y_unit_key_from string "pressure~bar"
+			C0_y_unit_title_from string "bar"
+			C0_y_unit_key_to string "pressure~Pa"
+			C0_y_unit_title_to string "Pa"
+		..
+		_C_ "MakeOp" "makeop" V1
+			_C_ "Make" "make" V1
+				make string "formula"
+				_C_ "FormulaConvertUnit" "fo_convertunit" V1
+					UX int -1
+					UY int -1
+					delete_all int 0
+					show_all int 0
+					apply_to_x string "Y"
+					UY_unit void 
+					C0_curve void 
+					U0_units void 
+					C0 int 1
+					C0_y_unit_from void 
+					C0_y_unit_key_from string "pressure~Pa"
+					C0_y_unit_title_from string "Pa"
+					C0_y_unit_key_to string "pressure~bar"
+					C0_y_unit_title_to string "bar"
+				..
+				_C_ "MakeOp" "makeop" V1
+					_C_ "Make" "make" V1
+						make string "location"
+						_C_ "loc" "x" V1
+							valid int 1
+							keys array-1 none 5 0
+								string "key_id"
+								string "key_file"
+								string "key_label"
+								string "key_start"
+								string "key_end"
+								DEF
+							specs array-1 none 5 0
+								string "GIDAS"
+								string "C:\Assignment\Powertrain-Assignment-AMM\Boost\Task1\/single500_GDi.Case_Set_1/simulation.dir/sEG1____1.gid"
+								string "Engine_Speed"
+								int -1
+								int -1
+								DEF
+						..
+						_C_ "loc" "y" V1
+							valid int 1
+							keys array-1 none 5 0
+								string "key_id"
+								string "key_file"
+								string "key_label"
+								string "key_start"
+								string "key_end"
+								DEF
+							specs array-1 none 5 0
+								string "GIDAS"
+								string "C:\Assignment\Powertrain-Assignment-AMM\Boost\Task1\/single500_GDi.Case_Set_1/simulation.dir/sEG1____1.gid"
+								string "IMEP_PF"
+								int -1
+								int -1
+								DEF
+						..
+						_C_ "loc" "l" V1
+							valid int 1
+							keys array-1 none 0 0
+								DEF
+							specs array-1 none 0 0
+								DEF
+						..
+					..
+				..
+			..
+		..
+	..
+..
+Variables 
+_C_ "Domain" "C1" V1
+	_C_ "Variable" "X_MIN" V1
+		var_type string "local"
+		var_enabled int 0
+		system int 1
+		var_value string "2000"
+	..
+	_C_ "Variable" "X_MAX" V1
+		var_type string "local"
+		var_enabled int 0
+		system int 1
+		var_value string "7000"
+	..
+	_C_ "Variable" "Y_MIN" V1
+		var_type string "local"
+		var_enabled int 0
+		system int 1
+		var_value string "1.14589e+06"
+	..
+	_C_ "Variable" "Y_MAX" V1
+		var_type string "local"
+		var_enabled int 0
+		system int 1
+		var_value string "1.47476e+06"
+	..
+	_C_ "Variable" "X_OF_YMIN" V1
+		var_type string "local"
+		var_enabled int 0
+		system int 1
+		var_value string "2000"
+	..
+	_C_ "Variable" "X_OF_YMAX" V1
+		var_type string "local"
+		var_enabled int 0
+		system int 1
+		var_value string "6000"
+	..
+	_C_ "Variable" "Y_OF_XMIN" V1
+		var_type string "local"
+		var_enabled int 0
+		system int 1
+		var_value string "1.14589e+06"
+	..
+	_C_ "Variable" "Y_OF_XMAX" V1
+		var_type string "local"
+		var_enabled int 0
+		system int 1
+		var_value string "1.4142e+06"
+	..
+	_C_ "Variable" "Y_MEAN" V1
+		var_type string "local"
+		var_enabled int 0
+		system int 1
+		var_value string "1.331e+06"
+	..
+	_C_ "Variable" "Y_MEAN_GEOM" V1
+		var_type string "local"
+		var_enabled int 0
+		system int 1
+		var_value string "1.32607e+06"
+	..
+	_C_ "Variable" "Y_MEAN_INT_DX" V1
+		var_type string "local"
+		var_enabled int 0
+		system int 1
+		var_value string "1.3361e+06"
+	..
+	_C_ "Variable" "FILE" V1
+		var_type string "local"
+		var_enabled int 0
+		system int 1
+		var_value string "C:\Assignment\Powertrain-Assignment-AMM\Boost\Task1\/single500_GDi.Case_Set_1/simulation.dir/sEG1____1.gid"
+	..
+	_C_ "Variable" "AUTOLABEL" V1
+		var_type string "local"
+		var_enabled int 0
+		system int 1
+		var_value string "IMEP Engine 1"
+	..
+	_C_ "Variable" "UNIT_X" V1
+		var_type string "local"
+		var_enabled int 0
+		system int 1
+		var_value string "rpm"
+	..
+	_C_ "Variable" "UNIT_Y" V1
+		var_type string "local"
+		var_enabled int 0
+		system int 1
+		var_value string "Pa"
+	..
+	_C_ "Variable" "Engine_Speed" V1
+		var_type string "local"
+		var_enabled int 1
+		var_value string "7000"
+	..
+	_C_ "Variable" "AF_Ratio" V1
+		var_type string "local"
+		var_enabled int 1
+		var_value string "14.5"
+	..
+	_C_ "Variable" "Cylinder_Head_T" V1
+		var_type string "local"
+		var_enabled int 1
+		var_value string "650"
+	..
+	_C_ "Variable" "Duration_of_Combustion" V1
+		var_type string "local"
+		var_enabled int 1
+		var_value string "50"
+	..
+	_C_ "Variable" "Exhaust_Port_Wall_T" V1
+		var_type string "local"
+		var_enabled int 1
+		var_value string "600"
+	..
+	_C_ "Variable" "Liner_BDC_T" V1
+		var_type string "local"
+		var_enabled int 1
+		var_value string "455"
+	..
+	_C_ "Variable" "Liner_TDC_T" V1
+		var_type string "local"
+		var_enabled int 1
+		var_value string "460"
+	..
+	_C_ "Variable" "Piston_T" V1
+		var_type string "local"
+		var_enabled int 1
+		var_value string "570"
+	..
+	_C_ "Variable" "Start_of_Combustion" V1
+		var_type string "local"
+		var_enabled int 1
+		var_value string "-8"
+	..
+	_C_ "Variable" "Vibe_Shape" V1
+		var_type string "local"
+		var_enabled int 1
+		var_value string "1.25"
+	..
+	_C_ "Variable" "exh_shift" V1
+		var_type string "local"
+		var_enabled int 1
+		var_value string "0"
+	..
+	_C_ "Variable" "int_shift" V1
+		var_type string "local"
+		var_enabled int 1
+		var_value string "0"
+	..
+..
+READER
+Title TTEXT-21 "" 0 0 -1 0 0 0 1 1 0 0 0 0 0 16385 - "Arial" 10 1 7 "" "" 0 0 
+TitleBackground TPOLYGON-21 "" 0 0 -1 128 128 128 0.25 1 255 255 255 1 0 8064 - 
+Line TLINE-21 "" 0 0 -1 0 0 0 0.25 3 0 0 0 0 0 896 - 
+Background TMULTI-21 "" 0 0 -1 0 0 0 0.25 1 255 255 222 1 0 8064 - 
+Backgrounds TMULTI-21 "" 0 0 -1 0 0 0 0.25 1 255 255 222 1 0 8064 - 
+BackgroundRectangle TRECTANGLE-21 "" 0 0 -1 222 222 222 0.25 1 222 222 222 1 0 8065 - 
+Value TMULTI-21 "" 0 0 -1 0 0 0 1 1 0 0 0 0 0 0 - 
+Values TMULTI-21 "" 0 0 -1 0 0 0 1 1 0 0 0 0 0 0 - 
+Properties 
+OSOBJECT Boundary
+7 
+7 
+7 
+BoundaryBits 1 0
+BoundaryName 8 "boundary"
+BoundaryType 1 2
+BoundaryPosition 6 1e+100
+BoundaryPositionPolar 6 0
+BoundaryWidth 6 0
+BoundarySynchronized 9 0
+BoundaryDatawise 9 0
+BoundaryFrame 9 1
+BoundaryTitle 9 0
+BoundaryLine 9 1
+BoundaryTopLine 9 0
+BoundaryBottomLine 9 0
+BoundaryCurve 9 1
+BoundaryBlock 9 0
+BoundaryLeft 9 0
+BoundaryRight 9 0
+BoundaryInclude 9 0
+BoundaryIndex 9 0
+BoundaryOffset_unit 6 5
+BoundaryAlways 9 0
+BoundaryTitleStr 8 "Title"
+BoundaryTitleOffset_unit 6 5
+BoundaryHorizontal 9 1
+BoundaryVertical 9 0
+BoundaryPosIndex 1 -1
+..
+--
+@$&!!
+@$&!? ---------- curve_223291120_data.tmp ----------
+Coords 11
+2000 1145892.2 0
+2500 1165437.3 1
+3000 1187483.7 2
+3500 1301188.8 3
+4000 1338536.9 4
+4500 1354863.5 5
+5000 1359252.4 6
+5500 1443234.1 7
+6000 1474760 8
+6500 1456204.9 9
+7000 1414197.2 10
+CoordsXUnit "ang_vel~rpm"
+CoordsYUnit "pressure~Pa"
+@$&!!
+@$&!? ---------- curve_223305680_layout.tmp ----------
+VERSION-22.10
+Polyline TMULTIPOLYLINE-21 "" 16 0 -1 0 255 0 1 1 0 0 0 0 0 896 -USERDRAWN- 
+Symbols TMULTIPOINT-21 "" 17 0 -1 0 255 0 0.25 1 255 255 255 1 1 8064 -NODRAW-USERDRAWN- 
+Bars TMULTI-21 "" 15 0 -1 0 255 0 1 1 0 255 0 1 0 8064 -NODRAW-USERDRAWN- 
+Labels TMULTITEXT-21 "" 18 0 -1 0 0 0 1 1 0 0 0 0 0 8064 -NODRAW-USERDRAWN- 
+Arrows TMULTILINE-21 "" 3 0 -1 0 255 0 1 1 0 255 0 0 0 8064 -NODRAW-USERDRAWN- 
+Phasors TMULTILINE-21 "" 3 0 -1 0 255 0 1 1 0 255 0 0 0 8064 -NODRAW-USERDRAWN- 
+Coords 0 0 0
+CoordsXUnit "ang_vel~rpm"
+CoordsYUnit "pressure~Pa"
+CoordsLUnit ""
+CoordsXUnitUnknown "ang_vel~rpm"
+CoordsYUnitUnknown "pressure~Pa"
+CoordsLUnitUnknown ""
+Properties 
+OSOBJECT Curve
+7 
+7 
+7 
+CurveBits 1 0
+7 
+CurveName 8 "Curve_1"
+CurveVarName 8 "C2"
+CurveDescription 8 ""
+CurveLine 9 1
+CurveArrows 9 0
+CurveArrowsNum 1 3
+CurveSymbols 9 0
+CurveSymbolsType 1 1
+CurveSymbolsWidth_unit 6 8
+CurveBars 9 0
+CurveBarsWidth 1 50
+CurveLabels 9 0
+CurveLabelsAlignment 1 8
+CurvePhasors 9 0
+CurveReader 9 0
+CurveBoundary 9 1
+CurveSkipDont 9 0
+CurveSkipFreq 9 0
+CurveSkipFreqValue 1 1
+CurveSkipDist 9 1
+CurveSkipDistValue_unit 6 10
+CurveSkipFreqD 9 0
+CurveSkipFreqValueD 1 1
+CurveSkipDistD 9 0
+CurveSkipDistValueD 6 0
+CurveLegendStr 8 "BMEP Engine 1"
+CurveLegendStr 8 "BMEP Engine 1 (Pa)"
+CurveLegendDefaultStr 8 "BMEP Engine 1"
+CurveLegendPostfix 8 ""
+CurveVisible 9 1
+CurveLegendVisible 9 1
+CurveInfoVisible 9 1
+CurveSelectable 9 1
+CurveEmptyX 1 0
+CurveEmptyY 1 0
+CurveAutomaticColor 9 1
+CurveAutomaticSymbols 9 0
+CurveIndex 1 1
+CurveXUnitAux 8 ""
+CurveYUnitAux 8 ""
+CurveLUnitAux 8 ""
+..
+Class 
+_C_ "Curve" "curve" V1
+	ase_key long 3051943
+	_C_ "Make" "make" V1
+		make string "formula"
+		_C_ "FormulaConvertUnit" "fo_convertunit" V1
+			UX int -1
+			UY int -1
+			delete_all int 0
+			show_all int 0
+			apply_to_x string "Y"
+			UY_unit void 
+			C0_curve void 
+			U0_units void 
+			C0 int 1
+			C0_y_unit_from void 
+			C0_y_unit_key_from string "pressure~bar"
+			C0_y_unit_title_from string "bar"
+			C0_y_unit_key_to string "pressure~Pa"
+			C0_y_unit_title_to string "Pa"
+		..
+		_C_ "MakeOp" "makeop" V1
+			_C_ "Make" "make" V1
+				make string "formula"
+				_C_ "FormulaConvertUnit" "fo_convertunit" V1
+					UX int -1
+					UY int -1
+					delete_all int 0
+					show_all int 0
+					apply_to_x string "Y"
+					UY_unit void 
+					C0_curve void 
+					U0_units void 
+					C0 int 1
+					C0_y_unit_from void 
+					C0_y_unit_key_from string "pressure~Pa"
+					C0_y_unit_title_from string "Pa"
+					C0_y_unit_key_to string "pressure~bar"
+					C0_y_unit_title_to string "bar"
+				..
+				_C_ "MakeOp" "makeop" V1
+					_C_ "Make" "make" V1
+						make string "formula"
+						_C_ "FormulaConvertUnit" "fo_convertunit" V1
+							UX int -1
+							UY int -1
+							delete_all int 0
+							show_all int 0
+							apply_to_x string "Y"
+							UY_unit void 
+							C0_curve void 
+							U0_units void 
+							C0 int 1
+							C0_y_unit_from void 
+							C0_y_unit_key_from string "pressure~bar"
+							C0_y_unit_title_from string "bar"
+							C0_y_unit_key_to string "pressure~Pa"
+							C0_y_unit_title_to string "Pa"
+						..
+						_C_ "MakeOp" "makeop" V1
+							_C_ "Make" "make" V1
+								make string "formula"
+								_C_ "FormulaConvertUnit" "fo_convertunit" V1
+									UX int -1
+									UY int -1
+									delete_all int 0
+									show_all int 0
+									apply_to_x string "Y"
+									UX_unit void 
+									C0_curve void 
+									U0_units void 
+									C0 int 1
+									C0_x_unit_from void 
+									C0_x_unit_key_from string "ang_vel~rpm"
+									C0_x_unit_title_from string "rpm"
+									C0_x_unit_key_to string "ang_vel~rpm"
+									C0_x_unit_title_to string "rpm"
+								..
+								_C_ "MakeOp" "makeop" V1
+									_C_ "Make" "make" V1
+										make string "location"
+										_C_ "loc" "x" V1
+											valid int 1
+											keys array-1 none 5 0
+												string "key_id"
+												string "key_file"
+												string "key_label"
+												string "key_start"
+												string "key_end"
+												DEF
+											specs array-1 none 5 0
+												string "GIDAS"
+												string "C:\Assignment\Powertrain-Assignment-AMM\Boost\Task1\/single500_GDi.Case_Set_1/simulation.dir/sEG1____1.gid"
+												string "Engine_Speed"
+												int -1
+												int -1
+												DEF
+										..
+										_C_ "loc" "y" V1
+											valid int 1
+											keys array-1 none 5 0
+												string "key_id"
+												string "key_file"
+												string "key_label"
+												string "key_start"
+												string "key_end"
+												DEF
+											specs array-1 none 5 0
+												string "GIDAS"
+												string "C:\Assignment\Powertrain-Assignment-AMM\Boost\Task1\/single500_GDi.Case_Set_1/simulation.dir/sEG1____1.gid"
+												string "BMEP_PF"
+												int -1
+												int -1
+												DEF
+										..
+										_C_ "loc" "l" V1
+											valid int 1
+											keys array-1 none 0 0
+												DEF
+											specs array-1 none 0 0
+												DEF
+										..
+									..
+								..
+							..
+						..
+					..
+				..
+			..
+		..
+	..
+..
+Variables 
+_C_ "Domain" "C2" V1
+	_C_ "Variable" "X_MIN" V1
+		var_type string "local"
+		var_enabled int 0
+		system int 1
+		var_value string "2000"
+	..
+	_C_ "Variable" "X_MAX" V1
+		var_type string "local"
+		var_enabled int 0
+		system int 1
+		var_value string "7000"
+	..
+	_C_ "Variable" "Y_MIN" V1
+		var_type string "local"
+		var_enabled int 0
+		system int 1
+		var_value string "1.05446e+06"
+	..
+	_C_ "Variable" "Y_MAX" V1
+		var_type string "local"
+		var_enabled int 0
+		system int 1
+		var_value string "1.25762e+06"
+	..
+	_C_ "Variable" "X_OF_YMIN" V1
+		var_type string "local"
+		var_enabled int 0
+		system int 1
+		var_value string "2000"
+	..
+	_C_ "Variable" "X_OF_YMAX" V1
+		var_type string "local"
+		var_enabled int 0
+		system int 1
+		var_value string "6000"
+	..
+	_C_ "Variable" "Y_OF_XMIN" V1
+		var_type string "local"
+		var_enabled int 0
+		system int 1
+		var_value string "1.05446e+06"
+	..
+	_C_ "Variable" "Y_OF_XMAX" V1
+		var_type string "local"
+		var_enabled int 0
+		system int 1
+		var_value string "1.16563e+06"
+	..
+	_C_ "Variable" "Y_MEAN" V1
+		var_type string "local"
+		var_enabled int 0
+		system int 1
+		var_value string "1.161e+06"
+	..
+	_C_ "Variable" "Y_MEAN_GEOM" V1
+		var_type string "local"
+		var_enabled int 0
+		system int 1
+		var_value string "1.15892e+06"
+	..
+	_C_ "Variable" "Y_MEAN_INT_DX" V1
+		var_type string "local"
+		var_enabled int 0
+		system int 1
+		var_value string "1.1661e+06"
+	..
+	_C_ "Variable" "FILE" V1
+		var_type string "local"
+		var_enabled int 0
+		system int 1
+		var_value string "C:\Assignment\Powertrain-Assignment-AMM\Boost\Task1\/single500_GDi.Case_Set_1/simulation.dir/sEG1____1.gid"
+	..
+	_C_ "Variable" "AUTOLABEL" V1
+		var_type string "local"
+		var_enabled int 0
+		system int 1
+		var_value string "BMEP Engine 1"
+	..
+	_C_ "Variable" "UNIT_X" V1
+		var_type string "local"
+		var_enabled int 0
+		system int 1
+		var_value string "rpm"
+	..
+	_C_ "Variable" "UNIT_Y" V1
+		var_type string "local"
+		var_enabled int 0
+		system int 1
+		var_value string "Pa"
+	..
+	_C_ "Variable" "Engine_Speed" V1
+		var_type string "local"
+		var_enabled int 1
+		var_value string "7000"
+	..
+	_C_ "Variable" "AF_Ratio" V1
+		var_type string "local"
+		var_enabled int 1
+		var_value string "14.5"
+	..
+	_C_ "Variable" "Cylinder_Head_T" V1
+		var_type string "local"
+		var_enabled int 1
+		var_value string "650"
+	..
+	_C_ "Variable" "Duration_of_Combustion" V1
+		var_type string "local"
+		var_enabled int 1
+		var_value string "50"
+	..
+	_C_ "Variable" "Exhaust_Port_Wall_T" V1
+		var_type string "local"
+		var_enabled int 1
+		var_value string "600"
+	..
+	_C_ "Variable" "Liner_BDC_T" V1
+		var_type string "local"
+		var_enabled int 1
+		var_value string "455"
+	..
+	_C_ "Variable" "Liner_TDC_T" V1
+		var_type string "local"
+		var_enabled int 1
+		var_value string "460"
+	..
+	_C_ "Variable" "Piston_T" V1
+		var_type string "local"
+		var_enabled int 1
+		var_value string "570"
+	..
+	_C_ "Variable" "Start_of_Combustion" V1
+		var_type string "local"
+		var_enabled int 1
+		var_value string "-8"
+	..
+	_C_ "Variable" "Vibe_Shape" V1
+		var_type string "local"
+		var_enabled int 1
+		var_value string "1.25"
+	..
+	_C_ "Variable" "exh_shift" V1
+		var_type string "local"
+		var_enabled int 1
+		var_value string "0"
+	..
+	_C_ "Variable" "int_shift" V1
+		var_type string "local"
+		var_enabled int 1
+		var_value string "0"
+	..
+..
+READER
+Title TTEXT-21 "" 0 0 -1 0 0 0 1 1 0 0 0 0 0 16385 - "Arial" 10 1 7 "" "" 0 0 
+TitleBackground TPOLYGON-21 "" 0 0 -1 128 128 128 0.25 1 255 255 255 1 0 8064 - 
+Line TLINE-21 "" 0 0 -1 0 0 0 0.25 3 0 0 0 0 0 896 - 
+Background TMULTI-21 "" 0 0 -1 0 0 0 0.25 1 255 255 222 1 0 8064 - 
+Backgrounds TMULTI-21 "" 0 0 -1 0 0 0 0.25 1 255 255 222 1 0 8064 - 
+BackgroundRectangle TRECTANGLE-21 "" 0 0 -1 222 222 222 0.25 1 222 222 222 1 0 8065 - 
+Value TMULTI-21 "" 0 0 -1 0 0 0 1 1 0 0 0 0 0 0 - 
+Values TMULTI-21 "" 0 0 -1 0 0 0 1 1 0 0 0 0 0 0 - 
+Properties 
+OSOBJECT Boundary
+7 
+7 
+7 
+BoundaryBits 1 0
+BoundaryName 8 "boundary"
+BoundaryType 1 2
+BoundaryPosition 6 1e+100
+BoundaryPositionPolar 6 0
+BoundaryWidth 6 0
+BoundarySynchronized 9 0
+BoundaryDatawise 9 0
+BoundaryFrame 9 1
+BoundaryTitle 9 0
+BoundaryLine 9 1
+BoundaryTopLine 9 0
+BoundaryBottomLine 9 0
+BoundaryCurve 9 1
+BoundaryBlock 9 0
+BoundaryLeft 9 0
+BoundaryRight 9 0
+BoundaryInclude 9 0
+BoundaryIndex 9 0
+BoundaryOffset_unit 6 5
+BoundaryAlways 9 0
+BoundaryTitleStr 8 "Title"
+BoundaryTitleOffset_unit 6 5
+BoundaryHorizontal 9 1
+BoundaryVertical 9 0
+BoundaryPosIndex 1 -1
+..
+--
+@$&!!
+@$&!? ---------- curve_223305680_data.tmp ----------
+Coords 11
+2000 1054463.7 0
+2500 1058294.4 1
+3000 1064626.5 2
+3500 1162617.4 3
+4000 1184251.2 4
+4500 1184863.5 5
+5000 1173538.1 6
+5500 1241805.5 7
+6000 1257617.2 8
+6500 1223347.7 9
+7000 1165625.8 10
+CoordsXUnit "ang_vel~rpm"
+CoordsYUnit "pressure~Pa"
+@$&!!
+@$&!? ---------- curve_223313600_layout.tmp ----------
+VERSION-22.10
+Polyline TMULTIPOLYLINE-21 "" 20 0 -1 0 0 255 1 1 0 0 0 0 0 896 -USERDRAWN- 
+Symbols TMULTIPOINT-21 "" 21 0 -1 0 0 255 0.25 1 255 255 255 1 1 8064 -NODRAW-USERDRAWN- 
+Bars TMULTI-21 "" 19 0 -1 0 0 255 1 1 0 0 255 1 0 8064 -NODRAW-USERDRAWN- 
+Labels TMULTITEXT-21 "" 22 0 -1 0 0 0 1 1 0 0 0 0 0 8064 -NODRAW-USERDRAWN- 
+Arrows TMULTILINE-21 "" 64 0 -1 0 0 255 1 1 0 0 255 0 0 8064 -USERDRAWN- 
+Phasors TMULTILINE-21 "" 64 0 -1 0 0 255 1 1 0 0 255 0 0 8064 -USERDRAWN- 
+Coords 0 0 0
+CoordsXUnit "ang_vel~rpm"
+CoordsYUnit "spec_mass_flow~g_kWh"
+CoordsLUnit ""
+CoordsXUnitUnknown "ang_vel~rpm"
+CoordsYUnitUnknown "pressure~Pa"
+CoordsLUnitUnknown ""
+Properties 
+OSOBJECT Curve
+7 
+7 
+7 
+CurveBits 1 0
+7 
+CurveName 8 "Curve_2"
+CurveVarName 8 "C3"
+CurveDescription 8 ""
+CurveLine 1 1
+CurveArrows 1 1
+CurveArrowsNum 1 3
+CurveSymbols 1 0
+CurveSymbolsType 1 1
+CurveSymbolsWidth_unit 6 7.99999993701
+CurveBars 1 0
+CurveBarsWidth 1 50
+CurveLabels 1 0
+CurveLabelsAlignment 1 8
+CurvePhasors 1 0
+CurveReader 1 0
+CurveBoundary 9 1
+CurveSkipDont 1 1
+CurveSkipFreq 9 0
+CurveSkipFreqValue 1 1
+CurveSkipDist 1 0
+CurveSkipDistValue_unit 6 10.000000063
+CurveSkipFreqD 1 0
+CurveSkipFreqValueD 1 1
+CurveSkipDistD 9 0
+CurveSkipDistValueD 6 0
+CurveLegendStr 8 "BSFC Engine 1 "
+CurveLegendStr 8 "BSFC Engine 1 (g/(kW.h))"
+CurveLegendDefaultStr 8 "BSFC Engine 1"
+CurveLegendPostfix 8 ""
+CurveVisible 9 1
+CurveLegendVisible 9 1
+CurveInfoVisible 9 1
+CurveSelectable 9 1
+CurveEmptyX 1 0
+CurveEmptyY 1 0
+CurveAutomaticColor 9 1
+CurveAutomaticSymbols 9 0
+CurveIndex 1 2
+CurveXUnitAux 8 ""
+CurveYUnitAux 8 "spec_mass_flow~g_kWh"
+CurveLUnitAux 8 ""
+..
+Class 
+_C_ "Curve" "curve" V1
+	ase_key long 3051946
+	_C_ "Make" "make" V1
+		make string "formula"
+		_C_ "FormulaConvertUnit" "fo_convertunit" V1
+			UX int -1
+			UY int -1
+			delete_all int 0
+			show_all int 0
+			apply_to_x string "Y"
+			UY_unit void 
+			C0_curve void 
+			U0_units void 
+			C0 int 1
+			C0_y_unit_from void 
+			C0_y_unit_key_from string "spec_mass_flow~g_kWh"
+			C0_y_unit_title_from string "g/(kW.h)"
+			C0_y_unit_key_to string "spec_mass_flow~g_kWh"
+			C0_y_unit_title_to string "g/(kW.h)"
+		..
+		_C_ "MakeOp" "makeop" V1
+			_C_ "Make" "make" V1
+				make string "formula"
+				_C_ "FormulaConvertUnit" "fo_convertunit" V1
+					UX int -1
+					UY int -1
+					delete_all int 0
+					show_all int 0
+					apply_to_x string "Y"
+					UY_unit void 
+					C0_curve void 
+					U0_units void 
+					C0 int 1
+					C0_y_unit_from void 
+					C0_y_unit_key_from string "spec_mass_flow~g_kWh"
+					C0_y_unit_title_from string "g/(kW.h)"
+					C0_y_unit_key_to string "spec_mass_flow~g_kWh"
+					C0_y_unit_title_to string "g/(kW.h)"
+				..
+				_C_ "MakeOp" "makeop" V1
+					_C_ "Make" "make" V1
+						make string "formula"
+						_C_ "FormulaConvertUnit" "fo_convertunit" V1
+							UX int -1
+							UY int -1
+							delete_all int 0
+							show_all int 0
+							apply_to_x string "Y"
+							UY_unit void 
+							C0_curve void 
+							U0_units void 
+							C0 int 1
+							C0_y_unit_from void 
+							C0_y_unit_key_from string "spec_mass_flow~g_kWh"
+							C0_y_unit_title_from string "g/(kW.h)"
+							C0_y_unit_key_to string "spec_mass_flow~g_kWh"
+							C0_y_unit_title_to string "g/(kW.h)"
+						..
+						_C_ "MakeOp" "makeop" V1
+							_C_ "Make" "make" V1
+								make string "formula"
+								_C_ "FormulaConvertUnit" "fo_convertunit" V1
+									UX int -1
+									UY int -1
+									delete_all int 0
+									show_all int 0
+									apply_to_x string "Y"
+									UY_unit void 
+									C0_curve void 
+									U0_units void 
+									C0 int 1
+									C0_y_unit_from void 
+									C0_y_unit_key_from string "pressure~Pa"
+									C0_y_unit_title_from string "Pa"
+									C0_y_unit_key_to string "spec_mass_flow~g_kWh"
+									C0_y_unit_title_to string "g/(kW.h)"
+								..
+								_C_ "MakeOp" "makeop" V1
+									_C_ "Make" "make" V1
+										make string "formula"
+										_C_ "FormulaConvertUnit" "fo_convertunit" V1
+											UX int -1
+											UY int -1
+											delete_all int 0
+											show_all int 0
+											apply_to_x string "Y"
+											UX_unit void 
+											C0_curve void 
+											U0_units void 
+											C0 int 1
+											C0_x_unit_from void 
+											C0_x_unit_key_from string "ang_vel~rpm"
+											C0_x_unit_title_from string "rpm"
+											C0_x_unit_key_to string "ang_vel~rpm"
+											C0_x_unit_title_to string "rpm"
+										..
+										_C_ "MakeOp" "makeop" V1
+											_C_ "Make" "make" V1
+												make string "location"
+												_C_ "loc" "x" V1
+													valid int 1
+													keys array-1 none 5 0
+														string "key_id"
+														string "key_file"
+														string "key_label"
+														string "key_start"
+														string "key_end"
+														DEF
+													specs array-1 none 5 0
+														string "GIDAS"
+														string "C:\Assignment\Powertrain-Assignment-AMM\Boost\Task1\/single500_GDi.Case_Set_1/simulation.dir/sEG1____1.gid"
+														string "Engine_Speed"
+														int -1
+														int -1
+														DEF
+												..
+												_C_ "loc" "y" V1
+													valid int 1
+													keys array-1 none 5 0
+														string "key_id"
+														string "key_file"
+														string "key_label"
+														string "key_start"
+														string "key_end"
+														DEF
+													specs array-1 none 5 0
+														string "GIDAS"
+														string "C:\Assignment\Powertrain-Assignment-AMM\Boost\Task1\/single500_GDi.Case_Set_1/simulation.dir/sEG1____1.gid"
+														string "BSFC_PF"
+														int -1
+														int -1
+														DEF
+												..
+												_C_ "loc" "l" V1
+													valid int 1
+													keys array-1 none 0 0
+														DEF
+													specs array-1 none 0 0
+														DEF
+												..
+											..
+										..
+									..
+								..
+							..
+						..
+					..
+				..
+			..
+		..
+	..
+..
+Variables 
+_C_ "Domain" "C3" V1
+	_C_ "Variable" "X_MIN" V1
+		var_type string "local"
+		var_enabled int 0
+		system int 1
+		var_value string "2000"
+	..
+	_C_ "Variable" "X_MAX" V1
+		var_type string "local"
+		var_enabled int 0
+		system int 1
+		var_value string "7000"
+	..
+	_C_ "Variable" "Y_MIN" V1
+		var_type string "local"
+		var_enabled int 0
+		system int 1
+		var_value string "6.48496e-08"
+	..
+	_C_ "Variable" "Y_MAX" V1
+		var_type string "local"
+		var_enabled int 0
+		system int 1
+		var_value string "7.4419e-08"
+	..
+	_C_ "Variable" "X_OF_YMIN" V1
+		var_type string "local"
+		var_enabled int 0
+		system int 1
+		var_value string "3500"
+	..
+	_C_ "Variable" "X_OF_YMAX" V1
+		var_type string "local"
+		var_enabled int 0
+		system int 1
+		var_value string "7000"
+	..
+	_C_ "Variable" "Y_OF_XMIN" V1
+		var_type string "local"
+		var_enabled int 0
+		system int 1
+		var_value string "6.54229e-08"
+	..
+	_C_ "Variable" "Y_OF_XMAX" V1
+		var_type string "local"
+		var_enabled int 0
+		system int 1
+		var_value string "7.4419e-08"
+	..
+	_C_ "Variable" "Y_MEAN" V1
+		var_type string "local"
+		var_enabled int 0
+		system int 1
+		var_value string "6.74294e-08"
+	..
+	_C_ "Variable" "Y_MEAN_GEOM" V1
+		var_type string "local"
+		var_enabled int 0
+		system int 1
+		var_value string "6.73632e-08"
+	..
+	_C_ "Variable" "Y_MEAN_INT_DX" V1
+		var_type string "local"
+		var_enabled int 0
+		system int 1
+		var_value string "6.71802e-08"
+	..
+	_C_ "Variable" "FILE" V1
+		var_type string "local"
+		var_enabled int 0
+		system int 1
+		var_value string "C:\Assignment\Powertrain-Assignment-AMM\Boost\Task1\/single500_GDi.Case_Set_1/simulation.dir/sEG1____1.gid"
+	..
+	_C_ "Variable" "AUTOLABEL" V1
+		var_type string "local"
+		var_enabled int 0
+		system int 1
+		var_value string "BSFC Engine 1"
+	..
+	_C_ "Variable" "UNIT_X" V1
+		var_type string "local"
+		var_enabled int 0
+		system int 1
+		var_value string "rpm"
+	..
+	_C_ "Variable" "UNIT_Y" V1
+		var_type string "local"
+		var_enabled int 0
+		system int 1
+		var_value string "g_kWh"
+	..
+	_C_ "Variable" "Engine_Speed" V1
+		var_type string "local"
+		var_enabled int 1
+		var_value string "7000"
+	..
+	_C_ "Variable" "AF_Ratio" V1
+		var_type string "local"
+		var_enabled int 1
+		var_value string "14.5"
+	..
+	_C_ "Variable" "Cylinder_Head_T" V1
+		var_type string "local"
+		var_enabled int 1
+		var_value string "650"
+	..
+	_C_ "Variable" "Duration_of_Combustion" V1
+		var_type string "local"
+		var_enabled int 1
+		var_value string "50"
+	..
+	_C_ "Variable" "Exhaust_Port_Wall_T" V1
+		var_type string "local"
+		var_enabled int 1
+		var_value string "600"
+	..
+	_C_ "Variable" "Liner_BDC_T" V1
+		var_type string "local"
+		var_enabled int 1
+		var_value string "455"
+	..
+	_C_ "Variable" "Liner_TDC_T" V1
+		var_type string "local"
+		var_enabled int 1
+		var_value string "460"
+	..
+	_C_ "Variable" "Piston_T" V1
+		var_type string "local"
+		var_enabled int 1
+		var_value string "570"
+	..
+	_C_ "Variable" "Start_of_Combustion" V1
+		var_type string "local"
+		var_enabled int 1
+		var_value string "-8"
+	..
+	_C_ "Variable" "Vibe_Shape" V1
+		var_type string "local"
+		var_enabled int 1
+		var_value string "1.25"
+	..
+	_C_ "Variable" "exh_shift" V1
+		var_type string "local"
+		var_enabled int 1
+		var_value string "0"
+	..
+	_C_ "Variable" "int_shift" V1
+		var_type string "local"
+		var_enabled int 1
+		var_value string "0"
+	..
+..
+READER
+Title TTEXT-21 "" 0 0 -1 0 0 0 1 1 0 0 0 0 0 16385 - "Arial" 10 1 7 "" "" 0 0 
+TitleBackground TPOLYGON-21 "" 0 0 -1 128 128 128 0.25 1 255 255 255 1 0 8064 - 
+Line TLINE-21 "" 0 0 -1 0 0 0 0.25 3 0 0 0 0 0 896 - 
+Background TMULTI-21 "" 0 0 -1 0 0 0 0.25 1 255 255 222 1 0 8064 - 
+Backgrounds TMULTI-21 "" 0 0 -1 0 0 0 0.25 1 255 255 222 1 0 8064 - 
+BackgroundRectangle TRECTANGLE-21 "" 0 0 -1 222 222 222 0.25 1 222 222 222 1 0 8065 - 
+Value TMULTI-21 "" 0 0 -1 0 0 0 1 1 0 0 0 0 0 0 - 
+Values TMULTI-21 "" 0 0 -1 0 0 0 1 1 0 0 0 0 0 0 - 
+Properties 
+OSOBJECT Boundary
+7 
+7 
+7 
+BoundaryBits 1 0
+BoundaryName 8 "boundary"
+BoundaryType 1 2
+BoundaryPosition 6 1e+100
+BoundaryPositionPolar 6 0
+BoundaryWidth 6 0
+BoundarySynchronized 9 0
+BoundaryDatawise 9 0
+BoundaryFrame 9 1
+BoundaryTitle 9 0
+BoundaryLine 9 1
+BoundaryTopLine 9 0
+BoundaryBottomLine 9 0
+BoundaryCurve 9 1
+BoundaryBlock 9 0
+BoundaryLeft 9 0
+BoundaryRight 9 0
+BoundaryInclude 9 0
+BoundaryIndex 9 0
+BoundaryOffset_unit 6 5
+BoundaryAlways 9 0
+BoundaryTitleStr 8 "Title"
+BoundaryTitleOffset_unit 6 5
+BoundaryHorizontal 9 1
+BoundaryVertical 9 0
+BoundaryPosIndex 1 -1
+..
+--
+@$&!!
+@$&!? ---------- curve_223313600_data.tmp ----------
+Coords 11
+2000 6.54229222222e-08 0
+2500 6.50555833333e-08 1
+3000 6.50032055556e-08 2
+3500 6.48496055556e-08 3
+4000 6.51504055556e-08 4
+4500 6.57896888889e-08 5
+5000 6.69789e-08 6
+5500 6.8095675e-08 7
+6000 6.92087388889e-08 8
+6500 7.17495055556e-08 9
+7000 7.44190111111e-08 10
+CoordsXUnit "ang_vel~rpm"
+CoordsYUnit "spec_mass_flow~g_kWh"
+@$&!!
+@$&!? ---------- layer_223323120_layout.tmp ----------
+VERSION-22.10
+LAYER-1 CARTESIAN "Layer_2" -1 -1 NoRef
+ZOrder 30
+Frame TRECTANGLE-21 "" 0 0 -1 0 0 0 0.5 1 0 0 0 0 0 896 - 
+Title TTEXT-21 "" 0 0 -1 0 0 0 1 1 0 0 0 0 0 0 -REALIZE- "Arial" 18 4 7 "Layer_2" "" 319 594 
+SubTitle TTEXT-21 "" 0 0 -1 0 0 0 1 1 0 0 0 0 0 1 -REALIZE- "Arial" 14 1 0 "Subtitle" "" 0 0 
+Background TRECTANGLE-21 "" 0 0 -1 255 255 255 0.1 1 255 255 255 1 0 3971 - 
+Properties 
+OSOBJECT Layer
+7 
+7 
+7 
+LayerBits 1 0
+7 
+LayerName 8 "Layer_2"
+LayerDescription 8 ""
+LayerPage 1 0
+LayerRealized 1 1
+LayerVisible 1 1
+LayerLeft_unit 6 112
+LayerTop_unit 6 599
+LayerRight_unit 6 526
+LayerBottom_unit 6 820
+LayerSortX 9 0
+LayerAutoLayers 9 0
+LayerMeasRef 9 1
+LayerMeasRefExtent 9 0
+LayerMeasXExtFrom 1 0
+LayerMeasXExtTo 1 100
+LayerMeasYExtFrom 1 0
+LayerMeasYExtTo 1 100
+LayerMeasRefClip 9 0
+LayerBackground 9 0
+LayerBorder 9 1
+LayerTitle 9 1
+LayerSubTitle 9 0
+LayerLegend 9 1
+LayerInfo 9 0
+LayerColorbar 1 0
+LayerReader 9 0
+LayerMarker 9 0
+LayerCursor 9 0
+LayerLeftAxis 9 1
+LayerTopAxis 9 0
+LayerRightAxis 9 0
+LayerBottomAxis 9 1
+LayerIndicator 9 1
+LayerRegular 9 1
+LayerStacked 9 0
+LayerStackedLinear 9 1
+LayerStackedLog 9 0
+LayerWaterfall 9 0
+LayerWaterfallAngle 6 30
+LayerWaterfallOffset 6 20
+LayerFringe 9 0
+LayerFringeParam 8 ""
+LayerFringeParamUnit 8 ""
+LayerFringeInterpolateX 9 1
+LayerFringeInterpolateY 9 1
+LayerFringeInterpolateYSimple 9 0
+LayerFringeInverse 9 0
+LayerFringeInverse_0 9 0
+LayerFringeShiftX 1 0
+LayerFringeShiftXOffset 6 90
+LayerRegularParam 8 ""
+LayerRegularParamUnit 0 
+LayerOrderLinesMajor 9 0
+LayerOrderLinesMinor 9 0
+LayerOrderLinesSlope 6 60
+LayerOrderLinesFrom 6 0
+LayerOrderLinesTo 6 40
+LayerOrderLinesIncr 6 5
+LayerOrderLinesNumMinor 1 5
+LayerPolarCounter 9 0
+LayerPolarStart 6 0
+LayerTitleStr 8 "Layer_2"
+LayerSubTitleStr 8 "Subtitle"
+LayerTitleOffset_unit 6 5
+LayerSubTitleOffset_unit 6 5
+LayerOrderLine_XFreq 9 1
+LayerOrderLine_XSpeed 9 0
+LayerUseCBColors 9 0
+LayerStackedNew 9 0
+LayerStackedNewYMax 6 100
+LayerStackedNewYMin 6 0
+LayerColorbarPrevVisible 1 0
+LayerPrevTypeFringe 9 0
+LayerKeepAspectRatio 9 0
+XAxis 8 "Engine_Speed"
+YAxis 8 "Torque"
+ZAxis 8 "Torque"
+ZAxisUnit 8 "Z Axis Unit"
+BottomAxis 8 "Engine_Speed"
+TopAxis 8 "Engine_Speed"
+LeftAxis 8 "Torque"
+RightAxis 8 "Torque"
+LayerReaderUpdate 1 1
+..
+Class 
+_C_ "layer" "layer" V1
+	_C_ "Domain" "L2" V1
+	..
+..
+AXIS LEFT
+Background TRECTANGLE-21 "" 0 0 -1 255 255 255 1 1 255 255 255 1 0 20355 - 
+Title TTEXT-21 "" 0 0 -1 0 0 0 1 1 0 0 0 0 0 128 -NODOSCALEDIM- "Arial" 14 1 7 "Torque (N.m)" "" 91 709.5 
+Line TPOLYLINE-21 "" 0 0 -1 0 0 0 0.4 1 0 0 0 0 0 896 - 
+Labels TMULTI-21 "" 0 0 -1 0 0 0 1 1 0 0 0 0 0 896 - 
+Label TTEXT-21 "" 0 0 -1 0 0 0 1 1 0 0 0 0 0 16384 - "Arial" 10 1 0 "" "" 0 0 
+MajorTicks TMULTI-21 "" 0 0 -1 0 0 0 0.4 1 0 0 0 0 0 896 - 
+MinorTicks TMULTI-21 "" 0 0 -1 0 0 0 0.4 1 0 0 0 0 0 896 - 
+Properties 
+OSOBJECT Axis
+7 
+1 0
+7 
+1 6
+AxisAutomatic 1 1
+AxisAutomaticLayer 9 1
+AxisManual 1 0
+AxisRefScale 1 0
+AxisAxisLink 9 0
+AxisFrom 6 41
+AxisTo 6 50
+AxisRatio 6 0
+AxisLog 9 0
+AxisSynchronized 9 0
+AxisLine 9 1
+AxisTitle 9 1
+AxisLabels 9 1
+AxisBackground 9 0
+AxisMajor 9 1
+AxisMajorIsIncrement 9 1
+AxisMajorIsNum 9 0
+AxisMajorIncrement 6 1
+AxisMajorNum 1 4
+AxisMajorIsStart 9 0
+AxisMajorStart 6 0
+AxisMajorStartIncrement 6 20
+AxisMinor 9 1
+AxisMinorNum 1 4
+AxisMajorGrid 1 1
+AxisMinorGrid 1 0
+AxisOffset_unit 6 0
+AxisTitleStr 8 "Torque"
+AxisTitleOffset_unit 6 0
+AxisTitleAlignment 1 5
+AxisTitleAngle 6 90
+AxisTitleAligned 9 1
+AxisTitleAutomatic 9 1
+AxisMajorOffset_unit 6 0
+AxisMajorLength_unit 6 6
+AxisMinorOffset_unit 6 0
+AxisMinorLength_unit 6 3
+AxisLabelsOffset_unit 6 9
+AxisLabelsAutomatic 9 1
+AxisLabelsScientific 9 0
+AxisLabelsFixed 9 0
+AxisLabelsPrecision 1 4
+AxisLabelsHorizontal 9 1
+AxisLabelsVertical 9 0
+AxisLabelsTextValues 9 1
+AxisLabelsTextUserDefined 9 0
+AxisLabelsTextA 10 array-1 none 0 0
+AxisUnit 8 "moment~Nm"
+AxisUnitUnknown 8 "moment~Nm"
+AxisUnitShow 9 1
+AxisUnitAutomatic 9 1
+AxisUnitAux 8 ""
+..
+--
+AXIS TOP
+Background TRECTANGLE-21 "" 0 0 -1 255 255 255 1 1 255 255 255 1 0 20354 - 
+Title TTEXT-21 "" 0 0 -1 0 0 0 1 1 0 0 0 0 0 128 -NODOSCALEDIM- "Arial" 14 1 0 "" "" 0 0 
+Line TPOLYLINE-21 "" 0 0 -1 0 0 0 0.4 1 0 0 0 0 0 897 - 
+Labels TMULTI-21 "" 0 0 -1 0 0 0 1 1 0 0 0 0 0 896 - 
+Label TTEXT-21 "" 0 0 -1 0 0 0 1 1 0 0 0 0 0 16384 - "Arial" 10 1 0 "" "" 0 0 
+MajorTicks TMULTI-21 "" 0 0 -1 0 0 0 0.4 1 0 0 0 0 0 896 - 
+MinorTicks TMULTI-21 "" 0 0 -1 0 0 0 0.4 1 0 0 0 0 0 896 - 
+Properties 
+OSOBJECT Axis
+7 
+1 1
+7 
+1 6
+AxisAutomatic 1 1
+AxisAutomaticLayer 9 1
+AxisManual 1 0
+AxisRefScale 1 0
+AxisAxisLink 9 0
+AxisFrom 6 2000
+AxisTo 6 7000
+AxisRatio 6 0
+AxisLog 9 0
+AxisSynchronized 9 0
+AxisLine 9 1
+AxisTitle 9 1
+AxisLabels 9 1
+AxisBackground 9 0
+AxisMajor 9 1
+AxisMajorIsIncrement 9 1
+AxisMajorIsNum 9 0
+AxisMajorIncrement 6 500
+AxisMajorNum 1 4
+AxisMajorIsStart 9 0
+AxisMajorStart 6 0
+AxisMajorStartIncrement 6 20
+AxisMinor 9 1
+AxisMinorNum 1 4
+AxisMajorGrid 1 1
+AxisMinorGrid 1 0
+AxisOffset_unit 6 0
+AxisTitleStr 8 "Engine_Speed"
+AxisTitleOffset_unit 6 0
+AxisTitleAlignment 1 7
+AxisTitleAngle 6 0
+AxisTitleAligned 9 1
+AxisTitleAutomatic 9 1
+AxisMajorOffset_unit 6 0
+AxisMajorLength_unit 6 6
+AxisMinorOffset_unit 6 0
+AxisMinorLength_unit 6 3
+AxisLabelsOffset_unit 6 9
+AxisLabelsAutomatic 9 1
+AxisLabelsScientific 9 0
+AxisLabelsFixed 9 0
+AxisLabelsPrecision 1 4
+AxisLabelsHorizontal 9 1
+AxisLabelsVertical 9 0
+AxisLabelsTextValues 9 1
+AxisLabelsTextUserDefined 9 0
+AxisLabelsTextA 10 array-1 none 0 0
+AxisUnit 8 "ang_vel~rpm"
+AxisUnitUnknown 8 "ang_vel~rpm"
+AxisUnitShow 9 1
+AxisUnitAutomatic 9 1
+AxisUnitAux 8 ""
+..
+--
+AXIS RIGHT
+Background TRECTANGLE-21 "" 0 0 -1 255 255 255 1 1 255 255 255 1 0 20354 - 
+Title TTEXT-21 "" 0 0 -1 0 0 0 1 1 0 0 0 0 0 128 -NODOSCALEDIM- "Arial" 14 1 0 "" "" 0 0 
+Line TPOLYLINE-21 "" 0 0 -1 0 0 0 0.4 1 0 0 0 0 0 897 - 
+Labels TMULTI-21 "" 0 0 -1 0 0 0 1 1 0 0 0 0 0 896 - 
+Label TTEXT-21 "" 0 0 -1 0 0 0 1 1 0 0 0 0 0 16384 - "Arial" 10 1 0 "" "" 0 0 
+MajorTicks TMULTI-21 "" 0 0 -1 0 0 0 0.4 1 0 0 0 0 0 896 - 
+MinorTicks TMULTI-21 "" 0 0 -1 0 0 0 0.4 1 0 0 0 0 0 896 - 
+Properties 
+OSOBJECT Axis
+7 
+1 2
+7 
+1 6
+AxisAutomatic 1 1
+AxisAutomaticLayer 9 1
+AxisManual 1 0
+AxisRefScale 1 0
+AxisAxisLink 9 0
+AxisFrom 6 41
+AxisTo 6 50
+AxisRatio 6 0
+AxisLog 9 0
+AxisSynchronized 9 0
+AxisLine 9 1
+AxisTitle 9 1
+AxisLabels 9 1
+AxisBackground 9 0
+AxisMajor 9 1
+AxisMajorIsIncrement 9 1
+AxisMajorIsNum 9 0
+AxisMajorIncrement 6 1
+AxisMajorNum 1 4
+AxisMajorIsStart 9 0
+AxisMajorStart 6 0
+AxisMajorStartIncrement 6 20
+AxisMinor 9 1
+AxisMinorNum 1 4
+AxisMajorGrid 1 1
+AxisMinorGrid 1 0
+AxisOffset_unit 6 0
+AxisTitleStr 8 "Torque"
+AxisTitleOffset_unit 6 0
+AxisTitleAlignment 1 3
+AxisTitleAngle 6 90
+AxisTitleAligned 9 1
+AxisTitleAutomatic 9 1
+AxisMajorOffset_unit 6 0
+AxisMajorLength_unit 6 6
+AxisMinorOffset_unit 6 0
+AxisMinorLength_unit 6 3
+AxisLabelsOffset_unit 6 9
+AxisLabelsAutomatic 9 1
+AxisLabelsScientific 9 0
+AxisLabelsFixed 9 0
+AxisLabelsPrecision 1 4
+AxisLabelsHorizontal 9 1
+AxisLabelsVertical 9 0
+AxisLabelsTextValues 9 1
+AxisLabelsTextUserDefined 9 0
+AxisLabelsTextA 10 array-1 none 0 0
+AxisUnit 8 "moment~Nm"
+AxisUnitUnknown 8 "moment~Nm"
+AxisUnitShow 9 1
+AxisUnitAutomatic 9 1
+AxisUnitAux 8 ""
+..
+--
+AXIS BOTTOM
+Background TRECTANGLE-21 "" 0 0 -1 255 255 255 1 1 255 255 255 1 0 20355 - 
+Title TTEXT-21 "" 0 0 -1 0 0 0 1 1 0 0 0 0 0 128 -NODOSCALEDIM- "Arial" 14 1 1 "Engine_Speed (rpm)" "" 319 842 
+Line TPOLYLINE-21 "" 0 0 -1 0 0 0 0.4 1 0 0 0 0 0 896 - 
+Labels TMULTI-21 "" 0 0 -1 0 0 0 1 1 0 0 0 0 0 896 - 
+Label TTEXT-21 "" 0 0 -1 0 0 0 1 1 0 0 0 0 0 16384 - "Arial" 10 1 0 "" "" 0 0 
+MajorTicks TMULTI-21 "" 0 0 -1 0 0 0 0.4 1 0 0 0 0 0 896 - 
+MinorTicks TMULTI-21 "" 0 0 -1 0 0 0 0.4 1 0 0 0 0 0 896 - 
+Properties 
+OSOBJECT Axis
+7 
+1 3
+7 
+1 6
+AxisAutomatic 1 1
+AxisAutomaticLayer 9 1
+AxisManual 1 0
+AxisRefScale 1 0
+AxisAxisLink 9 0
+AxisFrom 6 2000
+AxisTo 6 7000
+AxisRatio 6 0
+AxisLog 9 0
+AxisSynchronized 9 0
+AxisLine 9 1
+AxisTitle 9 1
+AxisLabels 9 1
+AxisBackground 9 0
+AxisMajor 9 1
+AxisMajorIsIncrement 9 1
+AxisMajorIsNum 9 0
+AxisMajorIncrement 6 500
+AxisMajorNum 1 4
+AxisMajorIsStart 9 0
+AxisMajorStart 6 0
+AxisMajorStartIncrement 6 20
+AxisMinor 9 1
+AxisMinorNum 1 4
+AxisMajorGrid 1 1
+AxisMinorGrid 1 0
+AxisOffset_unit 6 0
+AxisTitleStr 8 "Engine_Speed"
+AxisTitleOffset_unit 6 0
+AxisTitleAlignment 1 1
+AxisTitleAngle 6 0
+AxisTitleAligned 9 1
+AxisTitleAutomatic 9 1
+AxisMajorOffset_unit 6 0
+AxisMajorLength_unit 6 6
+AxisMinorOffset_unit 6 0
+AxisMinorLength_unit 6 3
+AxisLabelsOffset_unit 6 9
+AxisLabelsAutomatic 9 1
+AxisLabelsScientific 9 0
+AxisLabelsFixed 9 0
+AxisLabelsPrecision 1 4
+AxisLabelsHorizontal 9 1
+AxisLabelsVertical 9 0
+AxisLabelsTextValues 9 1
+AxisLabelsTextUserDefined 9 0
+AxisLabelsTextA 10 array-1 none 0 0
+AxisUnit 8 "ang_vel~rpm"
+AxisUnitUnknown 8 "ang_vel~rpm"
+AxisUnitShow 9 1
+AxisUnitAutomatic 9 1
+AxisUnitAux 8 ""
+..
+--
+GRID MAJORX
+Lines TMULTI-21 "" 31 0 -1 192 192 192 0.4 3 0 0 0 0 0 898 - 
+--
+GRID MINORX
+Lines TMULTI-21 "" 33 0 -1 192 192 192 0.4 3 0 0 0 0 0 899 - 
+--
+GRID MAJORY
+Lines TMULTI-21 "" 32 0 -1 192 192 192 0.4 3 0 0 0 0 0 898 - 
+--
+GRID MINORY
+Lines TMULTI-21 "" 34 0 -1 192 192 192 0.4 3 0 0 0 0 0 899 - 
+--
+LEGEND
+Frame1 TRECTANGLE-21 "" 0 0 -1 0 0 0 0.5 1 0 0 0 5 0 8064 - 4 
+364 599 
+526 599 
+526 624 
+364 624 
+Background TRECTANGLE-21 "" 0 0 -1 255 255 255 0.5 1 255 255 255 1 0 8064 - 
+Label TTEXT-21 "" 0 0 -1 0 0 0 1 1 0 0 0 0 0 16386 - "Arial" 11 1 0 " " "" 0 0 
+Properties 
+OSOBJECT Legend
+7 
+7 
+1 0
+LegendFrame 9 1
+LegendBackground 9 1
+LegendLabels 9 1
+LegendLines 9 1
+LegendColumn 9 1
+LegendRow 9 0
+LegendNumRows 1 INF
+LegendNumCols 1 INF
+LegendHMargin_unit 6 5
+LegendVMargin_unit 6 5
+LegendHSpacing_unit 6 5
+LegendVSpacing_unit 6 0
+LegendAlignment 9 1
+LegendNoAlignment 9 0
+LegendHOffset_unit 6 0
+LegendVOffset_unit 6 0
+LegendPosition 1 2
+LegendLayerPosition 1 2
+LegendLabelsAuto 9 1
+LegendLabelsUser 9 0
+LegendLabelsA 10 array-1 none 1 0
+string "---"
+LegendDefault 9 0
+LegendDefaultStr 8 ""
+LegendShowUnits 9 1
+LegendShowPostFix 9 1
+..
+--
+INFO
+Frame TRECTANGLE-21 "" 0 0 -1 0 0 0 0.5 1 0 0 0 5 0 8064 - 4 
+0 0 
+100 0 
+100 20 
+0 20 
+Background TRECTANGLE-21 "" 0 0 -1 255 255 255 0.5 1 222 222 222 1 0 8064 - 
+Label TTEXT-21 "" 0 0 -1 0 0 0 1 1 0 0 0 0 0 16386 - "Arial" 11 1 0 " " "" 0 0 
+Properties 
+OSOBJECT Info
+7 
+7 
+1 0
+InfoFrame 9 1
+InfoBackground 9 1
+InfoHMargin_unit 6 5
+InfoVMargin_unit 6 5
+InfoHSpacing_unit 6 5
+InfoVSpacing_unit 6 0
+InfoAlignment 9 1
+InfoNoAlignment 9 0
+InfoHOffset_unit 6 0
+InfoVOffset_unit 6 0
+InfoPosition 1 2
+InfoLayerPosition 1 8
+InfoYMin 9 1
+InfoYMax 9 1
+InfoYMinAtX 9 1
+InfoYMaxAtX 9 1
+InfoYMean 9 1
+InfoYMeanGeom 9 1
+InfoYMeanInt 9 1
+..
+--
+COLORBAR
+Title TTEXT-21 "" 0 0 -1 0 0 0 1 1 0 0 0 0 0 2 - "Arial" 12 1 0 "" "" 0 0 
+Labels TMULTI-21 "" 0 0 -1 0 0 0 1 1 0 0 0 0 0 2 - 
+Label TTEXT-21 "" 0 0 -1 0 0 0 1 1 0 0 0 0 0 16386 - "Arial" 11 1 0 " " "" 0 0 
+Bar TRECTANGLE-21 "" 0 0 -1 0 0 0 1 1 0 0 0 0 0 2 -USERDRAWN- 4 
+0 0 
+10 0 
+10 10 
+0 10 
+Properties 
+OSOBJECT ColorBar
+7 
+7 
+1 0
+ColorBarType 8 "AVL_Standard"
+ColorBarFrame 9 0
+ColorBarBackground 9 0
+ColorBarTitle 9 1
+ColorBarTitleStr 8 "CurveIndex"
+ColorBarAlignment 9 1
+ColorBarNoAlignment 9 0
+ColorBarHOffset_unit 6 10
+ColorBarVOffset_unit 6 0
+ColorBarPosition 1 0
+ColorBarLayerPosition 1 2
+ColorBarHorizontal 9 0
+ColorBarVertical 9 1
+ColorBarHMargin_unit 6 3
+ColorBarVMargin_unit 6 2
+ColorBarAutomatic 9 1
+ColorBarManual 9 0
+ColorBarFrom 6 1
+ColorBarTo 6 1
+ColorBarLog 9 0
+..
+--
+READER
+Title TTEXT-21 "" 0 0 -1 0 0 0 1 1 0 0 0 0 0 16385 - "Arial" 10 1 7 "" "" 0 0 
+TitleBackground TPOLYGON-21 "" 0 0 -1 128 128 128 0.25 1 255 255 255 1 0 8064 - 
+Line TLINE-21 "" 0 0 -1 0 0 0 0.25 3 0 0 0 0 0 896 - 
+Background TMULTI-21 "" 0 0 -1 0 0 0 0.25 1 255 255 222 1 0 8064 - 
+Backgrounds TMULTI-21 "" 0 0 -1 0 0 0 0.25 1 255 255 222 1 0 8064 - 
+BackgroundRectangle TRECTANGLE-21 "" 0 0 -1 222 222 222 0.25 1 222 222 222 1 0 8065 - 
+Value TMULTI-21 "" 0 0 -1 0 0 0 1 1 0 0 0 0 0 0 - 
+Values TMULTI-21 "" 0 0 -1 0 0 0 1 1 0 0 0 0 0 0 - 
+Properties 
+OSOBJECT Boundary
+7 
+7 
+7 
+BoundaryBits 1 0
+BoundaryName 8 "boundary"
+BoundaryType 1 0
+BoundaryPosition 6 1e+100
+BoundaryPositionPolar 6 0
+BoundaryWidth 6 0
+BoundarySynchronized 9 0
+BoundaryDatawise 9 0
+BoundaryFrame 9 1
+BoundaryTitle 9 0
+BoundaryLine 9 1
+BoundaryTopLine 9 0
+BoundaryBottomLine 9 0
+BoundaryCurve 9 1
+BoundaryBlock 9 0
+BoundaryLeft 9 0
+BoundaryRight 9 0
+BoundaryInclude 9 0
+BoundaryIndex 9 0
+BoundaryOffset_unit 6 5
+BoundaryAlways 9 0
+BoundaryTitleStr 8 "Title"
+BoundaryTitleOffset_unit 6 5
+BoundaryHorizontal 9 1
+BoundaryVertical 9 0
+BoundaryPosIndex 1 -1
+..
+--
+--
+@$&!!
+@$&!? ---------- curve_223322880_layout.tmp ----------
+VERSION-22.10
+Polyline TMULTIPOLYLINE-21 "" 36 0 -1 255 0 0 1 1 0 0 0 0 0 896 -USERDRAWN- 
+Symbols TMULTIPOINT-21 "" 37 0 -1 255 0 0 0.25 1 255 255 255 1 1 8064 -NODRAW-USERDRAWN- 
+Bars TMULTI-21 "" 35 0 -1 255 0 0 1 1 255 0 0 1 0 8064 -NODRAW-USERDRAWN- 
+Labels TMULTITEXT-21 "" 38 0 -1 0 0 0 1 1 0 0 0 0 0 8064 -NODRAW-USERDRAWN- 
+Arrows TMULTILINE-21 "" 44 0 -1 255 0 0 1 1 255 0 0 0 0 8064 -NODRAW-USERDRAWN- 
+Phasors TMULTILINE-21 "" 44 0 -1 255 0 0 1 1 255 0 0 0 0 8064 -NODRAW-USERDRAWN- 
+Coords 0 0 0
+CoordsXUnit "ang_vel~rpm"
+CoordsYUnit "moment~Nm"
+CoordsLUnit ""
+CoordsXUnitUnknown "ang_vel~rpm"
+CoordsYUnitUnknown "moment~Nm"
+CoordsLUnitUnknown ""
+Properties 
+OSOBJECT Curve
+7 
+7 
+7 
+CurveBits 1 0
+7 
+CurveName 8 "Curve"
+CurveVarName 8 "C1"
+CurveDescription 8 ""
+CurveLine 9 1
+CurveArrows 9 0
+CurveArrowsNum 1 3
+CurveSymbols 9 0
+CurveSymbolsType 1 1
+CurveSymbolsWidth_unit 6 8
+CurveBars 9 0
+CurveBarsWidth 1 50
+CurveLabels 9 0
+CurveLabelsAlignment 1 8
+CurvePhasors 9 0
+CurveReader 9 0
+CurveBoundary 9 1
+CurveSkipDont 9 0
+CurveSkipFreq 9 0
+CurveSkipFreqValue 1 1
+CurveSkipDist 9 1
+CurveSkipDistValue_unit 6 10
+CurveSkipFreqD 9 0
+CurveSkipFreqValueD 1 1
+CurveSkipDistD 9 0
+CurveSkipDistValueD 6 0
+CurveLegendStr 8 "Torque Engine 1"
+CurveLegendStr 8 "Torque Engine 1 (N.m)"
+CurveLegendDefaultStr 8 "Torque Engine 1"
+CurveLegendPostfix 8 ""
+CurveVisible 9 1
+CurveLegendVisible 9 1
+CurveInfoVisible 9 1
+CurveSelectable 9 1
+CurveEmptyX 1 0
+CurveEmptyY 1 0
+CurveAutomaticColor 9 1
+CurveAutomaticSymbols 9 0
+CurveIndex 1 0
+CurveXUnitAux 8 ""
+CurveYUnitAux 8 ""
+CurveLUnitAux 8 ""
+..
+Class 
+_C_ "Curve" "curve" V1
+	ase_key long 3051955
+	_C_ "Make" "make" V1
+		make string "location"
+		_C_ "loc" "x" V1
+			valid int 1
+			keys array-1 none 5 0
+				string "key_id"
+				string "key_file"
+				string "key_label"
+				string "key_start"
+				string "key_end"
+				DEF
+			specs array-1 none 5 0
+				string "GIDAS"
+				string "C:\Assignment\Powertrain-Assignment-AMM\Boost\Task1\/single500_GDi.Case_Set_1/simulation.dir/sEG1____1.gid"
+				string "Engine_Speed"
+				int -1
+				int -1
+				DEF
+		..
+		_C_ "loc" "y" V1
+			valid int 1
+			keys array-1 none 5 0
+				string "key_id"
+				string "key_file"
+				string "key_label"
+				string "key_start"
+				string "key_end"
+				DEF
+			specs array-1 none 5 0
+				string "GIDAS"
+				string "C:\Assignment\Powertrain-Assignment-AMM\Boost\Task1\/single500_GDi.Case_Set_1/simulation.dir/sEG1____1.gid"
+				string "TORQUE_PF"
+				int -1
+				int -1
+				DEF
+		..
+		_C_ "loc" "l" V1
+			valid int 1
+			keys array-1 none 0 0
+				DEF
+			specs array-1 none 0 0
+				DEF
+		..
+	..
+..
+Variables 
+_C_ "Domain" "C1" V1
+	_C_ "Variable" "X_MIN" V1
+		var_type string "local"
+		var_enabled int 0
+		system int 1
+		var_value string "2000"
+	..
+	_C_ "Variable" "X_MAX" V1
+		var_type string "local"
+		var_enabled int 0
+		system int 1
+		var_value string "7000"
+	..
+	_C_ "Variable" "Y_MIN" V1
+		var_type string "local"
+		var_enabled int 0
+		system int 1
+		var_value string "41.9186"
+	..
+	_C_ "Variable" "Y_MAX" V1
+		var_type string "local"
+		var_enabled int 0
+		system int 1
+		var_value string "49.9947"
+	..
+	_C_ "Variable" "X_OF_YMIN" V1
+		var_type string "local"
+		var_enabled int 0
+		system int 1
+		var_value string "2000"
+	..
+	_C_ "Variable" "X_OF_YMAX" V1
+		var_type string "local"
+		var_enabled int 0
+		system int 1
+		var_value string "6000"
+	..
+	_C_ "Variable" "Y_OF_XMIN" V1
+		var_type string "local"
+		var_enabled int 0
+		system int 1
+		var_value string "41.9186"
+	..
+	_C_ "Variable" "Y_OF_XMAX" V1
+		var_type string "local"
+		var_enabled int 0
+		system int 1
+		var_value string "46.3377"
+	..
+	_C_ "Variable" "Y_MEAN" V1
+		var_type string "local"
+		var_enabled int 0
+		system int 1
+		var_value string "46.154"
+	..
+	_C_ "Variable" "Y_MEAN_GEOM" V1
+		var_type string "local"
+		var_enabled int 0
+		system int 1
+		var_value string "46.0712"
+	..
+	_C_ "Variable" "Y_MEAN_INT_DX" V1
+		var_type string "local"
+		var_enabled int 0
+		system int 1
+		var_value string "0"
+	..
+	_C_ "Variable" "FILE" V1
+		var_type string "local"
+		var_enabled int 0
+		system int 1
+		var_value string ""
+	..
+	_C_ "Variable" "AUTOLABEL" V1
+		var_type string "local"
+		var_enabled int 0
+		system int 1
+		var_value string "Torque Engine 1"
+	..
+	_C_ "Variable" "UNIT_X" V1
+		var_type string "local"
+		var_enabled int 0
+		system int 1
+		var_value string "rpm"
+	..
+	_C_ "Variable" "UNIT_Y" V1
+		var_type string "local"
+		var_enabled int 0
+		system int 1
+		var_value string "Nm"
+	..
+	_C_ "Variable" "Engine_Speed" V1
+		var_type string "local"
+		var_enabled int 1
+		var_value string "7000"
+	..
+	_C_ "Variable" "AF_Ratio" V1
+		var_type string "local"
+		var_enabled int 1
+		var_value string "14.5"
+	..
+	_C_ "Variable" "Cylinder_Head_T" V1
+		var_type string "local"
+		var_enabled int 1
+		var_value string "650"
+	..
+	_C_ "Variable" "Duration_of_Combustion" V1
+		var_type string "local"
+		var_enabled int 1
+		var_value string "50"
+	..
+	_C_ "Variable" "Exhaust_Port_Wall_T" V1
+		var_type string "local"
+		var_enabled int 1
+		var_value string "600"
+	..
+	_C_ "Variable" "Liner_BDC_T" V1
+		var_type string "local"
+		var_enabled int 1
+		var_value string "455"
+	..
+	_C_ "Variable" "Liner_TDC_T" V1
+		var_type string "local"
+		var_enabled int 1
+		var_value string "460"
+	..
+	_C_ "Variable" "Piston_T" V1
+		var_type string "local"
+		var_enabled int 1
+		var_value string "570"
+	..
+	_C_ "Variable" "Start_of_Combustion" V1
+		var_type string "local"
+		var_enabled int 1
+		var_value string "-8"
+	..
+	_C_ "Variable" "Vibe_Shape" V1
+		var_type string "local"
+		var_enabled int 1
+		var_value string "1.25"
+	..
+	_C_ "Variable" "exh_shift" V1
+		var_type string "local"
+		var_enabled int 1
+		var_value string "0"
+	..
+	_C_ "Variable" "int_shift" V1
+		var_type string "local"
+		var_enabled int 1
+		var_value string "0"
+	..
+..
+READER
+Title TTEXT-21 "" 0 0 -1 0 0 0 1 1 0 0 0 0 0 16385 - "Arial" 10 1 7 "" "" 0 0 
+TitleBackground TPOLYGON-21 "" 0 0 -1 128 128 128 0.25 1 255 255 255 1 0 8064 - 
+Line TLINE-21 "" 0 0 -1 0 0 0 0.25 3 0 0 0 0 0 896 - 
+Background TMULTI-21 "" 0 0 -1 0 0 0 0.25 1 255 255 222 1 0 8064 - 
+Backgrounds TMULTI-21 "" 0 0 -1 0 0 0 0.25 1 255 255 222 1 0 8064 - 
+BackgroundRectangle TRECTANGLE-21 "" 0 0 -1 222 222 222 0.25 1 222 222 222 1 0 8065 - 
+Value TMULTI-21 "" 0 0 -1 0 0 0 1 1 0 0 0 0 0 0 - 
+Values TMULTI-21 "" 0 0 -1 0 0 0 1 1 0 0 0 0 0 0 - 
+Properties 
+OSOBJECT Boundary
+7 
+7 
+7 
+BoundaryBits 1 0
+BoundaryName 8 "boundary"
+BoundaryType 1 2
+BoundaryPosition 6 1e+100
+BoundaryPositionPolar 6 0
+BoundaryWidth 6 0
+BoundarySynchronized 9 0
+BoundaryDatawise 9 0
+BoundaryFrame 9 1
+BoundaryTitle 9 0
+BoundaryLine 9 1
+BoundaryTopLine 9 0
+BoundaryBottomLine 9 0
+BoundaryCurve 9 1
+BoundaryBlock 9 0
+BoundaryLeft 9 0
+BoundaryRight 9 0
+BoundaryInclude 9 0
+BoundaryIndex 9 0
+BoundaryOffset_unit 6 5
+BoundaryAlways 9 0
+BoundaryTitleStr 8 "Title"
+BoundaryTitleOffset_unit 6 5
+BoundaryHorizontal 9 1
+BoundaryVertical 9 0
+BoundaryPosIndex 1 -1
+..
+--
+@$&!!
+@$&!? ---------- curve_223322880_data.tmp ----------
+Coords 11
+7000 46.337706 0
+6500 48.632353 1
+6000 49.994685 2
+5500 49.366115 3
+5000 46.652248 4
+4500 47.102471 5
+4000 47.078131 6
+3500 46.218112 7
+3000 42.322631 8
+2500 42.070908 9
+2000 41.918622 10
+CoordsXUnit "ang_vel~rpm"
+CoordsYUnit "moment~Nm"
+@$&!!
+@$&!? ---------- layer_223335440_layout.tmp ----------
+VERSION-22.10
+LAYER-1 CARTESIAN "Layer_3" -1 -1 NoRef
+ZOrder 47
+Frame TRECTANGLE-21 "" 0 0 -1 0 0 0 0.5 1 0 0 0 0 0 896 - 
+Title TTEXT-21 "" 0 0 -1 0 0 0 1 1 0 0 0 0 0 0 -REALIZE- "Arial" 18 4 7 "Layer_3" "" 318.5 319 
+SubTitle TTEXT-21 "" 0 0 -1 0 0 0 1 1 0 0 0 0 0 1 -REALIZE- "Arial" 14 1 0 "Subtitle" "" 0 0 
+Background TRECTANGLE-21 "" 0 0 -1 255 255 255 0.1 1 255 255 255 1 0 3971 - 
+Properties 
+OSOBJECT Layer
+7 
+7 
+7 
+LayerBits 1 0
+7 
+LayerName 8 "Layer_3"
+LayerDescription 8 ""
+LayerPage 1 0
+LayerRealized 1 1
+LayerVisible 1 1
+LayerLeft_unit 6 100
+LayerTop_unit 6 324
+LayerRight_unit 6 537
+LayerBottom_unit 6 542
+LayerSortX 9 0
+LayerAutoLayers 9 0
+LayerMeasRef 9 1
+LayerMeasRefExtent 9 0
+LayerMeasXExtFrom 1 0
+LayerMeasXExtTo 1 100
+LayerMeasYExtFrom 1 0
+LayerMeasYExtTo 1 100
+LayerMeasRefClip 9 0
+LayerBackground 9 0
+LayerBorder 9 1
+LayerTitle 9 1
+LayerSubTitle 9 0
+LayerLegend 9 1
+LayerInfo 9 0
+LayerColorbar 1 0
+LayerReader 9 0
+LayerMarker 9 1
+LayerCursor 9 0
+LayerLeftAxis 9 1
+LayerTopAxis 9 0
+LayerRightAxis 9 0
+LayerBottomAxis 9 1
+LayerIndicator 9 1
+LayerRegular 9 1
+LayerStacked 9 0
+LayerStackedLinear 9 1
+LayerStackedLog 9 0
+LayerWaterfall 9 0
+LayerWaterfallAngle 6 30
+LayerWaterfallOffset 6 20
+LayerFringe 9 0
+LayerFringeParam 8 ""
+LayerFringeParamUnit 8 ""
+LayerFringeInterpolateX 9 1
+LayerFringeInterpolateY 9 1
+LayerFringeInterpolateYSimple 9 0
+LayerFringeInverse 9 0
+LayerFringeInverse_0 9 0
+LayerFringeShiftX 1 0
+LayerFringeShiftXOffset 6 90
+LayerRegularParam 8 ""
+LayerRegularParamUnit 0 
+LayerOrderLinesMajor 9 0
+LayerOrderLinesMinor 9 0
+LayerOrderLinesSlope 6 60
+LayerOrderLinesFrom 6 0
+LayerOrderLinesTo 6 40
+LayerOrderLinesIncr 6 5
+LayerOrderLinesNumMinor 1 5
+LayerPolarCounter 9 0
+LayerPolarStart 6 0
+LayerTitleStr 8 "Layer_3"
+LayerSubTitleStr 8 "Subtitle"
+LayerTitleOffset_unit 6 5
+LayerSubTitleOffset_unit 6 5
+LayerOrderLine_XFreq 9 1
+LayerOrderLine_XSpeed 9 0
+LayerUseCBColors 9 0
+LayerStackedNew 9 0
+LayerStackedNewYMax 6 100
+LayerStackedNewYMin 6 0
+LayerColorbarPrevVisible 1 0
+LayerPrevTypeFringe 9 0
+LayerKeepAspectRatio 9 0
+XAxis 8 "Engine_Speed"
+YAxis 8 "Power"
+ZAxis 8 "Power"
+ZAxisUnit 8 "Z Axis Unit"
+BottomAxis 8 "Engine_Speed"
+TopAxis 8 "Engine_Speed"
+LeftAxis 8 "Power"
+RightAxis 8 "Power"
+LayerReaderUpdate 1 1
+..
+Class 
+_C_ "layer" "layer" V1
+	_C_ "Domain" "L3" V1
+	..
+..
+AXIS LEFT
+Background TRECTANGLE-21 "" 0 0 -1 255 255 255 1 1 255 255 255 1 0 20355 - 
+Title TTEXT-21 "" 0 0 -1 0 0 0 1 1 0 0 0 0 0 128 -NODOSCALEDIM- "Arial" 14 1 7 "Power (hp)" "" 75 433 
+Line TPOLYLINE-21 "" 0 0 -1 0 0 0 0.4 1 0 0 0 0 0 896 - 
+Labels TMULTI-21 "" 0 0 -1 0 0 0 1 1 0 0 0 0 0 896 - 
+Label TTEXT-21 "" 0 0 -1 0 0 0 1 1 0 0 0 0 0 16384 - "Arial" 10 1 0 "" "" 0 0 
+MajorTicks TMULTI-21 "" 0 0 -1 0 0 0 0.4 1 0 0 0 0 0 896 - 
+MinorTicks TMULTI-21 "" 0 0 -1 0 0 0 0.4 1 0 0 0 0 0 896 - 
+Properties 
+OSOBJECT Axis
+7 
+1 0
+7 
+1 6
+AxisAutomatic 9 1
+AxisAutomaticLayer 9 1
+AxisManual 9 0
+AxisRefScale 9 0
+AxisAxisLink 9 0
+AxisFrom 6 10
+AxisTo 6 50
+AxisRatio 6 0
+AxisLog 9 0
+AxisSynchronized 9 0
+AxisLine 9 1
+AxisTitle 9 1
+AxisLabels 9 1
+AxisBackground 9 0
+AxisMajor 9 1
+AxisMajorIsIncrement 9 1
+AxisMajorIsNum 9 0
+AxisMajorIncrement 6 5
+AxisMajorNum 1 4
+AxisMajorIsStart 9 0
+AxisMajorStart 6 0
+AxisMajorStartIncrement 6 20
+AxisMinor 9 1
+AxisMinorNum 1 4
+AxisMajorGrid 9 1
+AxisMinorGrid 9 0
+AxisOffset_unit 6 4
+AxisTitleStr 8 "Power"
+AxisTitleOffset_unit 6 0
+AxisTitleAlignment 1 5
+AxisTitleAngle 6 90
+AxisTitleAligned 9 1
+AxisTitleAutomatic 9 1
+AxisMajorOffset_unit 6 0
+AxisMajorLength_unit 6 6
+AxisMinorOffset_unit 6 0
+AxisMinorLength_unit 6 3
+AxisLabelsOffset_unit 6 9
+AxisLabelsAutomatic 9 1
+AxisLabelsScientific 9 0
+AxisLabelsFixed 9 0
+AxisLabelsPrecision 1 4
+AxisLabelsHorizontal 9 1
+AxisLabelsVertical 9 0
+AxisLabelsTextValues 9 1
+AxisLabelsTextUserDefined 9 0
+AxisLabelsTextA 10 array-1 none 0 0
+AxisUnit 8 "power~hp"
+AxisUnitUnknown 8 "power~hp"
+AxisUnitShow 9 1
+AxisUnitAutomatic 9 1
+AxisUnitAux 8 ""
+..
+--
+AXIS TOP
+Background TRECTANGLE-21 "" 0 0 -1 255 255 255 1 1 255 255 255 1 0 20354 - 
+Title TTEXT-21 "" 0 0 -1 0 0 0 1 1 0 0 0 0 0 128 -NODOSCALEDIM- "Arial" 14 1 0 "" "" 0 0 
+Line TPOLYLINE-21 "" 0 0 -1 0 0 0 0.4 1 0 0 0 0 0 897 - 
+Labels TMULTI-21 "" 0 0 -1 0 0 0 1 1 0 0 0 0 0 896 - 
+Label TTEXT-21 "" 0 0 -1 0 0 0 1 1 0 0 0 0 0 16384 - "Arial" 10 1 0 "" "" 0 0 
+MajorTicks TMULTI-21 "" 0 0 -1 0 0 0 0.4 1 0 0 0 0 0 896 - 
+MinorTicks TMULTI-21 "" 0 0 -1 0 0 0 0.4 1 0 0 0 0 0 896 - 
+Properties 
+OSOBJECT Axis
+7 
+1 1
+7 
+1 6
+AxisAutomatic 9 1
+AxisAutomaticLayer 9 1
+AxisManual 9 0
+AxisRefScale 9 0
+AxisAxisLink 9 0
+AxisFrom 6 2000
+AxisTo 6 7000
+AxisRatio 6 0
+AxisLog 9 0
+AxisSynchronized 9 0
+AxisLine 9 1
+AxisTitle 9 1
+AxisLabels 9 1
+AxisBackground 9 0
+AxisMajor 9 1
+AxisMajorIsIncrement 9 1
+AxisMajorIsNum 9 0
+AxisMajorIncrement 6 500
+AxisMajorNum 1 4
+AxisMajorIsStart 9 0
+AxisMajorStart 6 0
+AxisMajorStartIncrement 6 20
+AxisMinor 9 1
+AxisMinorNum 1 4
+AxisMajorGrid 9 1
+AxisMinorGrid 9 0
+AxisOffset_unit 6 0
+AxisTitleStr 8 "Engine_Speed"
+AxisTitleOffset_unit 6 0
+AxisTitleAlignment 1 7
+AxisTitleAngle 6 0
+AxisTitleAligned 9 1
+AxisTitleAutomatic 9 1
+AxisMajorOffset_unit 6 0
+AxisMajorLength_unit 6 6
+AxisMinorOffset_unit 6 0
+AxisMinorLength_unit 6 3
+AxisLabelsOffset_unit 6 9
+AxisLabelsAutomatic 9 1
+AxisLabelsScientific 9 0
+AxisLabelsFixed 9 0
+AxisLabelsPrecision 1 4
+AxisLabelsHorizontal 9 1
+AxisLabelsVertical 9 0
+AxisLabelsTextValues 9 1
+AxisLabelsTextUserDefined 9 0
+AxisLabelsTextA 10 array-1 none 0 0
+AxisUnit 8 "ang_vel~rpm"
+AxisUnitUnknown 8 "ang_vel~rpm"
+AxisUnitShow 9 1
+AxisUnitAutomatic 9 1
+AxisUnitAux 8 ""
+..
+--
+AXIS RIGHT
+Background TRECTANGLE-21 "" 0 0 -1 255 255 255 1 1 255 255 255 1 0 20354 - 
+Title TTEXT-21 "" 0 0 -1 0 0 0 1 1 0 0 0 0 0 128 -NODOSCALEDIM- "Arial" 14 1 0 "" "" 0 0 
+Line TPOLYLINE-21 "" 0 0 -1 0 0 0 0.4 1 0 0 0 0 0 897 - 
+Labels TMULTI-21 "" 0 0 -1 0 0 0 1 1 0 0 0 0 0 896 - 
+Label TTEXT-21 "" 0 0 -1 0 0 0 1 1 0 0 0 0 0 16384 - "Arial" 10 1 0 "" "" 0 0 
+MajorTicks TMULTI-21 "" 0 0 -1 0 0 0 0.4 1 0 0 0 0 0 896 - 
+MinorTicks TMULTI-21 "" 0 0 -1 0 0 0 0.4 1 0 0 0 0 0 896 - 
+Properties 
+OSOBJECT Axis
+7 
+1 2
+7 
+1 6
+AxisAutomatic 9 1
+AxisAutomaticLayer 9 1
+AxisManual 9 0
+AxisRefScale 9 0
+AxisAxisLink 9 0
+AxisFrom 6 10
+AxisTo 6 50
+AxisRatio 6 0
+AxisLog 9 0
+AxisSynchronized 9 0
+AxisLine 9 1
+AxisTitle 9 1
+AxisLabels 9 1
+AxisBackground 9 0
+AxisMajor 9 1
+AxisMajorIsIncrement 9 1
+AxisMajorIsNum 9 0
+AxisMajorIncrement 6 5
+AxisMajorNum 1 4
+AxisMajorIsStart 9 0
+AxisMajorStart 6 0
+AxisMajorStartIncrement 6 20
+AxisMinor 9 1
+AxisMinorNum 1 4
+AxisMajorGrid 9 1
+AxisMinorGrid 9 0
+AxisOffset_unit 6 0
+AxisTitleStr 8 "Power"
+AxisTitleOffset_unit 6 0
+AxisTitleAlignment 1 3
+AxisTitleAngle 6 90
+AxisTitleAligned 9 1
+AxisTitleAutomatic 9 1
+AxisMajorOffset_unit 6 0
+AxisMajorLength_unit 6 6
+AxisMinorOffset_unit 6 0
+AxisMinorLength_unit 6 3
+AxisLabelsOffset_unit 6 9
+AxisLabelsAutomatic 9 1
+AxisLabelsScientific 9 0
+AxisLabelsFixed 9 0
+AxisLabelsPrecision 1 4
+AxisLabelsHorizontal 9 1
+AxisLabelsVertical 9 0
+AxisLabelsTextValues 9 1
+AxisLabelsTextUserDefined 9 0
+AxisLabelsTextA 10 array-1 none 0 0
+AxisUnit 8 "power~hp"
+AxisUnitUnknown 8 "power~hp"
+AxisUnitShow 9 1
+AxisUnitAutomatic 9 1
+AxisUnitAux 8 ""
+..
+--
+AXIS BOTTOM
+Background TRECTANGLE-21 "" 0 0 -1 255 255 255 1 1 255 255 255 1 0 20355 - 
+Title TTEXT-21 "" 0 0 -1 0 0 0 1 1 0 0 0 0 0 128 -NODOSCALEDIM- "Arial" 14 1 1 "Engine_Speed (rpm)" "" 318.5 564 
+Line TPOLYLINE-21 "" 0 0 -1 0 0 0 0.4 1 0 0 0 0 0 896 - 
+Labels TMULTI-21 "" 0 0 -1 0 0 0 1 1 0 0 0 0 0 896 - 
+Label TTEXT-21 "" 0 0 -1 0 0 0 1 1 0 0 0 0 0 16384 - "Arial" 10 1 0 "" "" 0 0 
+MajorTicks TMULTI-21 "" 0 0 -1 0 0 0 0.4 1 0 0 0 0 0 896 - 
+MinorTicks TMULTI-21 "" 0 0 -1 0 0 0 0.4 1 0 0 0 0 0 896 - 
+Properties 
+OSOBJECT Axis
+7 
+1 3
+7 
+1 6
+AxisAutomatic 9 1
+AxisAutomaticLayer 9 1
+AxisManual 9 0
+AxisRefScale 9 0
+AxisAxisLink 9 0
+AxisFrom 6 2000
+AxisTo 6 7000
+AxisRatio 6 0
+AxisLog 9 0
+AxisSynchronized 9 0
+AxisLine 9 1
+AxisTitle 9 1
+AxisLabels 9 1
+AxisBackground 9 0
+AxisMajor 9 1
+AxisMajorIsIncrement 9 1
+AxisMajorIsNum 9 0
+AxisMajorIncrement 6 500
+AxisMajorNum 1 4
+AxisMajorIsStart 9 0
+AxisMajorStart 6 0
+AxisMajorStartIncrement 6 20
+AxisMinor 9 1
+AxisMinorNum 1 4
+AxisMajorGrid 9 1
+AxisMinorGrid 9 0
+AxisOffset_unit 6 0
+AxisTitleStr 8 "Engine_Speed"
+AxisTitleOffset_unit 6 0
+AxisTitleAlignment 1 1
+AxisTitleAngle 6 0
+AxisTitleAligned 9 1
+AxisTitleAutomatic 9 1
+AxisMajorOffset_unit 6 0
+AxisMajorLength_unit 6 6
+AxisMinorOffset_unit 6 0
+AxisMinorLength_unit 6 3
+AxisLabelsOffset_unit 6 9
+AxisLabelsAutomatic 9 1
+AxisLabelsScientific 9 0
+AxisLabelsFixed 9 0
+AxisLabelsPrecision 1 4
+AxisLabelsHorizontal 9 1
+AxisLabelsVertical 9 0
+AxisLabelsTextValues 9 1
+AxisLabelsTextUserDefined 9 0
+AxisLabelsTextA 10 array-1 none 0 0
+AxisUnit 8 "ang_vel~rpm"
+AxisUnitUnknown 8 "ang_vel~rpm"
+AxisUnitShow 9 1
+AxisUnitAutomatic 9 1
+AxisUnitAux 8 ""
+..
+--
+GRID MAJORX
+Lines TMULTI-21 "" 48 0 -1 192 192 192 0.4 3 0 0 0 0 0 898 - 
+--
+GRID MINORX
+Lines TMULTI-21 "" 50 0 -1 192 192 192 0.4 3 0 0 0 0 0 899 - 
+--
+GRID MAJORY
+Lines TMULTI-21 "" 49 0 -1 192 192 192 0.4 3 0 0 0 0 0 898 - 
+--
+GRID MINORY
+Lines TMULTI-21 "" 51 0 -1 192 192 192 0.4 3 0 0 0 0 0 899 - 
+--
+LEGEND
+Frame1 TRECTANGLE-21 "" 0 0 -1 0 0 0 0.5 1 0 0 0 5 0 8064 - 4 
+383 324 
+537 324 
+537 349 
+383 349 
+Background TRECTANGLE-21 "" 0 0 -1 255 255 255 0.5 1 255 255 255 1 0 8064 - 
+Label TTEXT-21 "" 0 0 -1 0 0 0 1 1 0 0 0 0 0 16386 - "Arial" 11 1 0 " " "" 0 0 
+Properties 
+OSOBJECT Legend
+7 
+7 
+1 0
+LegendFrame 9 1
+LegendBackground 9 1
+LegendLabels 9 1
+LegendLines 9 1
+LegendColumn 9 1
+LegendRow 9 0
+LegendNumRows 1 INF
+LegendNumCols 1 INF
+LegendHMargin_unit 6 5
+LegendVMargin_unit 6 5
+LegendHSpacing_unit 6 5
+LegendVSpacing_unit 6 0
+LegendAlignment 9 1
+LegendNoAlignment 9 0
+LegendHOffset_unit 6 0
+LegendVOffset_unit 6 0
+LegendPosition 1 2
+LegendLayerPosition 1 2
+LegendLabelsAuto 9 1
+LegendLabelsUser 9 0
+LegendLabelsA 10 array-1 none 1 0
+string "---"
+LegendDefault 9 0
+LegendDefaultStr 8 ""
+LegendShowUnits 9 1
+LegendShowPostFix 9 1
+..
+--
+INFO
+Frame TRECTANGLE-21 "" 0 0 -1 0 0 0 0.5 1 0 0 0 5 0 8064 - 4 
+0 0 
+100 0 
+100 20 
+0 20 
+Background TRECTANGLE-21 "" 0 0 -1 255 255 255 0.5 1 222 222 222 1 0 8064 - 
+Label TTEXT-21 "" 0 0 -1 0 0 0 1 1 0 0 0 0 0 16386 - "Arial" 11 1 0 " " "" 0 0 
+Properties 
+OSOBJECT Info
+7 
+7 
+1 0
+InfoFrame 9 1
+InfoBackground 9 1
+InfoHMargin_unit 6 5
+InfoVMargin_unit 6 5
+InfoHSpacing_unit 6 5
+InfoVSpacing_unit 6 0
+InfoAlignment 9 1
+InfoNoAlignment 9 0
+InfoHOffset_unit 6 0
+InfoVOffset_unit 6 0
+InfoPosition 1 2
+InfoLayerPosition 1 8
+InfoYMin 9 1
+InfoYMax 9 1
+InfoYMinAtX 9 1
+InfoYMaxAtX 9 1
+InfoYMean 9 1
+InfoYMeanGeom 9 1
+InfoYMeanInt 9 1
+..
+--
+COLORBAR
+Title TTEXT-21 "" 0 0 -1 0 0 0 1 1 0 0 0 0 0 2 - "Arial" 12 1 0 "" "" 0 0 
+Labels TMULTI-21 "" 0 0 -1 0 0 0 1 1 0 0 0 0 0 2 - 
+Label TTEXT-21 "" 0 0 -1 0 0 0 1 1 0 0 0 0 0 16386 - "Arial" 11 1 0 " " "" 0 0 
+Bar TRECTANGLE-21 "" 0 0 -1 0 0 0 1 1 0 0 0 0 0 2 -USERDRAWN- 4 
+0 0 
+10 0 
+10 10 
+0 10 
+Properties 
+OSOBJECT ColorBar
+7 
+7 
+1 0
+ColorBarType 8 "AVL_Standard"
+ColorBarFrame 9 0
+ColorBarBackground 9 0
+ColorBarTitle 9 1
+ColorBarTitleStr 8 "CurveIndex"
+ColorBarAlignment 9 1
+ColorBarNoAlignment 9 0
+ColorBarHOffset_unit 6 10
+ColorBarVOffset_unit 6 0
+ColorBarPosition 1 0
+ColorBarLayerPosition 1 2
+ColorBarHorizontal 9 0
+ColorBarVertical 9 1
+ColorBarHMargin_unit 6 3
+ColorBarVMargin_unit 6 2
+ColorBarAutomatic 9 1
+ColorBarManual 9 0
+ColorBarFrom 6 1
+ColorBarTo 6 1
+ColorBarLog 9 0
+..
+--
+READER
+Title TTEXT-21 "" 0 0 -1 0 0 0 1 1 0 0 0 0 0 16385 - "Arial" 10 1 7 "" "" 0 0 
+TitleBackground TPOLYGON-21 "" 0 0 -1 128 128 128 0.25 1 255 255 255 1 0 8064 - 
+Line TLINE-21 "" 0 0 -1 0 0 0 0.25 3 0 0 0 0 0 896 - 
+Background TMULTI-21 "" 0 0 -1 0 0 0 0.25 1 255 255 222 1 0 8064 - 
+Backgrounds TMULTI-21 "" 0 0 -1 0 0 0 0.25 1 255 255 222 1 0 8064 - 
+BackgroundRectangle TRECTANGLE-21 "" 0 0 -1 222 222 222 0.25 1 222 222 222 1 0 8065 - 
+Value TMULTI-21 "" 0 0 -1 0 0 0 1 1 0 0 0 0 0 0 - 
+Values TMULTI-21 "" 0 0 -1 0 0 0 1 1 0 0 0 0 0 0 - 
+Properties 
+OSOBJECT Boundary
+7 
+7 
+7 
+BoundaryBits 1 0
+BoundaryName 8 "boundary"
+BoundaryType 1 0
+BoundaryPosition 6 1e+100
+BoundaryPositionPolar 6 0
+BoundaryWidth 6 0
+BoundarySynchronized 9 0
+BoundaryDatawise 9 0
+BoundaryFrame 9 1
+BoundaryTitle 9 0
+BoundaryLine 9 1
+BoundaryTopLine 9 0
+BoundaryBottomLine 9 0
+BoundaryCurve 9 1
+BoundaryBlock 9 0
+BoundaryLeft 9 0
+BoundaryRight 9 0
+BoundaryInclude 9 0
+BoundaryIndex 9 0
+BoundaryOffset_unit 6 5
+BoundaryAlways 9 0
+BoundaryTitleStr 8 "Title"
+BoundaryTitleOffset_unit 6 5
+BoundaryHorizontal 9 1
+BoundaryVertical 9 0
+BoundaryPosIndex 1 -1
+..
+--
+--
+@$&!!
+@$&!? ---------- curve_223335600_layout.tmp ----------
+VERSION-22.10
+Polyline TMULTIPOLYLINE-21 "" 53 0 -1 255 0 0 1 1 0 0 0 0 0 896 -USERDRAWN- 
+Symbols TMULTIPOINT-21 "" 54 0 -1 255 0 0 0.25 1 255 255 255 1 1 8064 -NODRAW-USERDRAWN- 
+Bars TMULTI-21 "" 52 0 -1 255 0 0 1 1 255 0 0 1 0 8064 -NODRAW-USERDRAWN- 
+Labels TMULTITEXT-21 "" 55 0 -1 0 0 0 1 1 0 0 0 0 0 8064 -NODRAW-USERDRAWN- 
+Arrows TMULTILINE-21 "" 61 0 -1 255 0 0 1 1 255 0 0 0 0 8064 -NODRAW-USERDRAWN- 
+Phasors TMULTILINE-21 "" 61 0 -1 255 0 0 1 1 255 0 0 0 0 8064 -NODRAW-USERDRAWN- 
+Coords 0 0 0
+CoordsXUnit "ang_vel~rpm"
+CoordsYUnit "power~hp"
+CoordsLUnit ""
+CoordsXUnitUnknown "ang_vel~rpm"
+CoordsYUnitUnknown "power~W"
+CoordsLUnitUnknown ""
+Properties 
+OSOBJECT Curve
+7 
+7 
+7 
+CurveBits 1 0
+7 
+CurveName 8 "Curve"
+CurveVarName 8 "C1"
+CurveDescription 8 ""
+CurveLine 1 1
+CurveArrows 1 0
+CurveArrowsNum 1 3
+CurveSymbols 1 0
+CurveSymbolsType 1 1
+CurveSymbolsWidth_unit 6 7.99999993701
+CurveBars 1 0
+CurveBarsWidth 1 50
+CurveLabels 1 0
+CurveLabelsAlignment 1 8
+CurvePhasors 1 0
+CurveReader 1 0
+CurveBoundary 9 1
+CurveSkipDont 1 0
+CurveSkipFreq 9 0
+CurveSkipFreqValue 1 1
+CurveSkipDist 1 1
+CurveSkipDistValue_unit 6 10.000000063
+CurveSkipFreqD 1 0
+CurveSkipFreqValueD 1 1
+CurveSkipDistD 9 0
+CurveSkipDistValueD 6 0
+CurveLegendStr 8 "Power Engine 1 "
+CurveLegendStr 8 "Power Engine 1 (hp)"
+CurveLegendDefaultStr 8 "Power Engine 1"
+CurveLegendPostfix 8 ""
+CurveVisible 9 1
+CurveLegendVisible 9 1
+CurveInfoVisible 9 1
+CurveSelectable 9 1
+CurveEmptyX 1 0
+CurveEmptyY 1 0
+CurveAutomaticColor 9 1
+CurveAutomaticSymbols 9 0
+CurveIndex 1 0
+CurveXUnitAux 8 ""
+CurveYUnitAux 8 "power~hp"
+CurveLUnitAux 8 ""
+..
+Class 
+_C_ "Curve" "curve" V1
+	ase_key long 3051963
+	_C_ "Make" "make" V1
+		make string "formula"
+		_C_ "FormulaConvertUnit" "fo_convertunit" V1
+			UX int -1
+			UY int -1
+			delete_all int 0
+			show_all int 0
+			apply_to_x string "Y"
+			UY_unit void 
+			C0_curve void 
+			U0_units void 
+			C0 int 1
+			C0_y_unit_from void 
+			C0_y_unit_key_from string "power~W"
+			C0_y_unit_title_from string "W"
+			C0_y_unit_key_to string "power~hp"
+			C0_y_unit_title_to string "hp"
+		..
+		_C_ "MakeOp" "makeop" V1
+			_C_ "Make" "make" V1
+				make string "location"
+				_C_ "loc" "x" V1
+					valid int 1
+					keys array-1 none 5 0
+						string "key_id"
+						string "key_file"
+						string "key_label"
+						string "key_start"
+						string "key_end"
+						DEF
+					specs array-1 none 5 0
+						string "GIDAS"
+						string "C:\Assignment\Powertrain-Assignment-AMM\Boost\Task1\/single500_GDi.Case_Set_1/simulation.dir/sEG1____1.gid"
+						string "Engine_Speed"
+						int -1
+						int -1
+						DEF
+				..
+				_C_ "loc" "y" V1
+					valid int 1
+					keys array-1 none 5 0
+						string "key_id"
+						string "key_file"
+						string "key_label"
+						string "key_start"
+						string "key_end"
+						DEF
+					specs array-1 none 5 0
+						string "GIDAS"
+						string "C:\Assignment\Powertrain-Assignment-AMM\Boost\Task1\/single500_GDi.Case_Set_1/simulation.dir/sEG1____1.gid"
+						string "POWER_PF"
+						int -1
+						int -1
+						DEF
+				..
+				_C_ "loc" "l" V1
+					valid int 1
+					keys array-1 none 0 0
+						DEF
+					specs array-1 none 0 0
+						DEF
+				..
+			..
+		..
+	..
+..
+Variables 
+_C_ "Domain" "C1" V1
+	_C_ "Variable" "X_MIN" V1
+		var_type string "local"
+		var_enabled int 0
+		system int 1
+		var_value string "2000"
+	..
+	_C_ "Variable" "X_MAX" V1
+		var_type string "local"
+		var_enabled int 0
+		system int 1
+		var_value string "7000"
+	..
+	_C_ "Variable" "Y_MIN" V1
+		var_type string "local"
+		var_enabled int 0
+		system int 1
+		var_value string "11.7734"
+	..
+	_C_ "Variable" "Y_MAX" V1
+		var_type string "local"
+		var_enabled int 0
+		system int 1
+		var_value string "45.5509"
+	..
+	_C_ "Variable" "X_OF_YMIN" V1
+		var_type string "local"
+		var_enabled int 0
+		system int 1
+		var_value string "2000"
+	..
+	_C_ "Variable" "X_OF_YMAX" V1
+		var_type string "local"
+		var_enabled int 0
+		system int 1
+		var_value string "7000"
+	..
+	_C_ "Variable" "Y_OF_XMIN" V1
+		var_type string "local"
+		var_enabled int 0
+		system int 1
+		var_value string "11.7734"
+	..
+	_C_ "Variable" "Y_OF_XMAX" V1
+		var_type string "local"
+		var_enabled int 0
+		system int 1
+		var_value string "45.5509"
+	..
+	_C_ "Variable" "Y_MEAN" V1
+		var_type string "local"
+		var_enabled int 0
+		system int 1
+		var_value string "29.6596"
+	..
+	_C_ "Variable" "Y_MEAN_GEOM" V1
+		var_type string "local"
+		var_enabled int 0
+		system int 1
+		var_value string "27.146"
+	..
+	_C_ "Variable" "Y_MEAN_INT_DX" V1
+		var_type string "local"
+		var_enabled int 0
+		system int 1
+		var_value string "29.7593"
+	..
+	_C_ "Variable" "FILE" V1
+		var_type string "local"
+		var_enabled int 0
+		system int 1
+		var_value string "C:\Assignment\Powertrain-Assignment-AMM\Boost\Task1\/single500_GDi.Case_Set_1/simulation.dir/sEG1____1.gid"
+	..
+	_C_ "Variable" "AUTOLABEL" V1
+		var_type string "local"
+		var_enabled int 0
+		system int 1
+		var_value string "Power Engine 1"
+	..
+	_C_ "Variable" "UNIT_X" V1
+		var_type string "local"
+		var_enabled int 0
+		system int 1
+		var_value string "rpm"
+	..
+	_C_ "Variable" "UNIT_Y" V1
+		var_type string "local"
+		var_enabled int 0
+		system int 1
+		var_value string "hp"
+	..
+	_C_ "Variable" "Engine_Speed" V1
+		var_type string "local"
+		var_enabled int 1
+		var_value string "7000"
+	..
+	_C_ "Variable" "AF_Ratio" V1
+		var_type string "local"
+		var_enabled int 1
+		var_value string "14.5"
+	..
+	_C_ "Variable" "Cylinder_Head_T" V1
+		var_type string "local"
+		var_enabled int 1
+		var_value string "650"
+	..
+	_C_ "Variable" "Duration_of_Combustion" V1
+		var_type string "local"
+		var_enabled int 1
+		var_value string "50"
+	..
+	_C_ "Variable" "Exhaust_Port_Wall_T" V1
+		var_type string "local"
+		var_enabled int 1
+		var_value string "600"
+	..
+	_C_ "Variable" "Liner_BDC_T" V1
+		var_type string "local"
+		var_enabled int 1
+		var_value string "455"
+	..
+	_C_ "Variable" "Liner_TDC_T" V1
+		var_type string "local"
+		var_enabled int 1
+		var_value string "460"
+	..
+	_C_ "Variable" "Piston_T" V1
+		var_type string "local"
+		var_enabled int 1
+		var_value string "570"
+	..
+	_C_ "Variable" "Start_of_Combustion" V1
+		var_type string "local"
+		var_enabled int 1
+		var_value string "-8"
+	..
+	_C_ "Variable" "Vibe_Shape" V1
+		var_type string "local"
+		var_enabled int 1
+		var_value string "1.25"
+	..
+	_C_ "Variable" "exh_shift" V1
+		var_type string "local"
+		var_enabled int 1
+		var_value string "0"
+	..
+	_C_ "Variable" "int_shift" V1
+		var_type string "local"
+		var_enabled int 1
+		var_value string "0"
+	..
+..
+READER
+Title TTEXT-21 "" 0 0 -1 0 0 0 1 1 0 0 0 0 0 16385 - "Arial" 10 1 7 "" "" 0 0 
+TitleBackground TPOLYGON-21 "" 0 0 -1 128 128 128 0.25 1 255 255 255 1 0 8064 - 
+Line TLINE-21 "" 0 0 -1 0 0 0 0.25 3 0 0 0 0 0 896 - 
+Background TMULTI-21 "" 0 0 -1 0 0 0 0.25 1 255 255 222 1 0 8064 - 
+Backgrounds TMULTI-21 "" 0 0 -1 0 0 0 0.25 1 255 255 222 1 0 8064 - 
+BackgroundRectangle TRECTANGLE-21 "" 0 0 -1 222 222 222 0.25 1 222 222 222 1 0 8065 - 
+Value TMULTI-21 "" 0 0 -1 0 0 0 1 1 0 0 0 0 0 0 - 
+Values TMULTI-21 "" 0 0 -1 0 0 0 1 1 0 0 0 0 0 0 - 
+Properties 
+OSOBJECT Boundary
+7 
+7 
+7 
+BoundaryBits 1 0
+BoundaryName 8 "boundary"
+BoundaryType 1 2
+BoundaryPosition 6 1e+100
+BoundaryPositionPolar 6 0
+BoundaryWidth 6 0
+BoundarySynchronized 9 0
+BoundaryDatawise 9 0
+BoundaryFrame 9 1
+BoundaryTitle 9 0
+BoundaryLine 9 1
+BoundaryTopLine 9 0
+BoundaryBottomLine 9 0
+BoundaryCurve 9 1
+BoundaryBlock 9 0
+BoundaryLeft 9 0
+BoundaryRight 9 0
+BoundaryInclude 9 0
+BoundaryIndex 9 0
+BoundaryOffset_unit 6 5
+BoundaryAlways 9 0
+BoundaryTitleStr 8 "Title"
+BoundaryTitleOffset_unit 6 5
+BoundaryHorizontal 9 1
+BoundaryVertical 9 0
+BoundaryPosIndex 1 -1
+..
+--
+@$&!!
+@$&!? ---------- curve_223335600_data.tmp ----------
+Coords 11
+2000 11.7733902533 0
+2500 14.7702023558 1
+3000 17.8302927313 2
+3500 22.7166768368 3
+4000 26.4450105887 4
+4500 29.7660196091 5
+5000 32.7572270439 6
+5500 38.1290678509 7
+6000 42.1249730583 8
+6500 44.3918448447 9
+7000 45.5509170572 10
+CoordsXUnit "ang_vel~rpm"
+CoordsYUnit "power~hp"
+@$&!!
+@$&!%
+ENDSECTION
