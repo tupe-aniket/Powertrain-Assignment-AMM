@@ -1,0 +1,25 @@
+ERROR: An unexpected error occured:
+Traceback (most recent call last):
+  File "/work1/jenkins/workspace/_gen_ast_rte_pipeline_R2022.1/ast-rte/src/env/aws/client.py", line 25, in call
+  File "C:\Program Files (x86)\AVL\R2022.1\BOOST\bin\boost_batch.py", line 507, in main
+    sys.exit(Boost(args=sys.argv[1:]).run())
+  File "/work1/jenkins/workspace/_gen_ast_rte_pipeline_R2022.1/ast-rte/src/env/aws/client.py", line 185, in run
+  File "C:\Program Files (x86)\AVL\R2022.1\BOOST\bin\boost_batch.py", line 365, in do_simulation
+    if not self.check_auci_index_file():
+  File "C:\Program Files (x86)\AVL\R2022.1\BOOST\bin\boost_batch.py", line 132, in check_auci_index_file
+    import act
+  File "d:\jenkins\workspace\_gen_act_release_v178\ast_arch\x86_64-unknown-winnt_i19v19\py_ver\py2\act\src\python\act.py", line 2, in <module>
+  File "", line 139, in load_module
+  File "", line 38, in _load_code
+  File "d:\jenkins\workspace\_gen_act_release_v178\ast_arch\x86_64-unknown-winnt_i19v19\py_ver\py2\act\src\python\act\__init__.py", line 15, in <module>
+  File "", line 187, in load_module
+LicenseMissing: Licenses (sdt_base, act) are not available:
+Cannot connect to license server system.
+ The license server manager (lmgrd) has not been started yet,
+ the wrong port@host or license file is being used, or the
+ port or hostname in the license file has been changed.
+Feature:       sdt_base_t
+Server name:   138.250.50.17
+License path:  27000@cclic-3.central.cranfield.ac.uk;27999@cclic-3.central.cranfield.ac.uk;27999@CCLIC-3.central.cranfield.ac.uk;27111@cclic-1.central.cranfield.ac.uk;license.dat;*.lic;
+FlexNet Licensing error:-15,10.  System Error: 10061 "WinSock: Connection refused"
+
