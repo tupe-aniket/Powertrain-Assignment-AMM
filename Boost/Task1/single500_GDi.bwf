@@ -38,20 +38,20 @@ _C_ "GTEManager" "gtemanager" V1
 						string "Start_of_Combustion"
 						string "Vibe_Shape"
 						DEF
-					CaseColumnWidth int 100
+					CaseColumnWidth int 57
 					ParamColumnWidths array-1 none 12 0
-						int 100
-						int 68
-						int 100
-						int 100
+						int 77
+						int 50
+						int 46
+						int 50
+						int 93
+						int 137
 						int 111
-						int 145
-						int 118
-						int 98
-						int 100
-						int 100
-						int 120
-						int 75
+						int 70
+						int 70
+						int 49
+						int 115
+						int 64
 						DEF
 				..
 			..
@@ -97,13 +97,13 @@ _C_ "GTEManager" "gtemanager" V1
 			_C_ "Variable" "Start_of_Combustion" V1
 				var_type string "auto"
 				var_enabled int 1
-				var_value string "-8"
+				var_value string "-10"
 				var_unit string "angle~deg"
 			..
 			_C_ "Variable" "Duration_of_Combustion" V1
 				var_type string "auto"
 				var_enabled int 1
-				var_value string "34"
+				var_value string "38"
 				var_unit string "angle~deg"
 			..
 			_C_ "Variable" "Vibe_Shape" V1
@@ -145,13 +145,13 @@ _C_ "GTEManager" "gtemanager" V1
 			_C_ "Variable" "int_shift" V1
 				var_type string "auto"
 				var_enabled int 1
-				var_value string "0"
+				var_value string "20"
 				var_unit string "angle~deg"
 			..
 			_C_ "Variable" "exh_shift" V1
 				var_type string "auto"
 				var_enabled int 1
-				var_value string "0"
+				var_value string "-12"
 				var_unit string "angle~deg"
 			..
 		..
@@ -166,7 +166,7 @@ _C_ "GTEManager" "gtemanager" V1
 		_C_ "Variable" "Duration_of_Combustion" V1
 			var_type string "local"
 			var_enabled int 1
-			var_value string "34"
+			var_value string "38"
 			var_unit string "angle~deg"
 			var_variant int 1
 			var_value_saved string "47"
@@ -241,7 +241,7 @@ _C_ "GTEManager" "gtemanager" V1
 		_C_ "Variable" "Start_of_Combustion" V1
 			var_type string "local"
 			var_enabled int 1
-			var_value string "-8"
+			var_value string "-10"
 			var_unit string "angle~deg"
 			var_variant int 1
 			var_value_saved string "-5"
@@ -313,7 +313,7 @@ _C_ "GTEManager" "gtemanager" V1
 		_C_ "Variable" "exh_shift" V1
 			var_type string "local"
 			var_enabled int 1
-			var_value string "0"
+			var_value string "-12"
 			var_unit string "angle~deg"
 			var_variant int 1
 			var_value_saved string "0"
@@ -321,7 +321,7 @@ _C_ "GTEManager" "gtemanager" V1
 		_C_ "Variable" "int_shift" V1
 			var_type string "local"
 			var_enabled int 1
-			var_value string "0"
+			var_value string "20"
 			var_unit string "angle~deg"
 			var_variant int 1
 			var_value_saved string "0"
@@ -409,16 +409,16 @@ _C_ "GTEManager" "gtemanager" V1
 					string "545"
 					string "535"
 				array-1 none 11 0
-					string "34"
-					string "34"
-					string "34"
 					string "38"
 					string "38"
+					string "38"
+					string "38"
+					string "38"
 					string "44"
 					string "44"
 					string "44"
-					string "50"
-					string "50"
+					string "48"
+					string "48"
 					string "50"
 				array-1 none 11 0
 					string "600"
@@ -430,7 +430,7 @@ _C_ "GTEManager" "gtemanager" V1
 					string "555"
 					string "545"
 					string "540"
-					string "530"
+					string "535"
 					string "525"
 				array-1 none 11 0
 					string "455"
@@ -469,16 +469,16 @@ _C_ "GTEManager" "gtemanager" V1
 					string "525"
 					string "520"
 				array-1 none 11 0
-					string "-8"
-					string "-8"
+					string "-10"
+					string "-10"
+					string "-10"
+					string "-14"
+					string "-14"
 					string "-12"
-					string "-16"
-					string "-14"
-					string "-14"
 					string "-10"
 					string "-10"
 					string "-8"
-					string "-4"
+					string "-6"
 					string "-2"
 				array-1 none 11 0
 					string "1.25"
@@ -493,28 +493,28 @@ _C_ "GTEManager" "gtemanager" V1
 					string "1.25"
 					string "1.25"
 				array-1 none 11 0
+					string "-12"
+					string "-12"
+					string "-8"
 					string "0"
 					string "0"
 					string "0"
 					string "0"
 					string "0"
-					string "0"
-					string "0"
-					string "0"
-					string "0"
-					string "0"
+					string "-6"
+					string "-8"
 					string "0"
 				array-1 none 11 0
+					string "20"
+					string "20"
+					string "12"
 					string "0"
 					string "0"
 					string "0"
 					string "0"
 					string "0"
 					string "0"
-					string "0"
-					string "0"
-					string "0"
-					string "0"
+					string "8"
 					string "0"
 				DEF
 			variant_active string "Case 1"
@@ -584,13 +584,13 @@ _C_ "Domain" "C1" V1
 	_C_ "Variable" "Start_of_Combustion" V1
 		var_type string "auto"
 		var_enabled int 1
-		var_value string "-8"
+		var_value string "-10"
 		var_unit string "angle~deg"
 	..
 	_C_ "Variable" "Duration_of_Combustion" V1
 		var_type string "auto"
 		var_enabled int 1
-		var_value string "34"
+		var_value string "38"
 		var_unit string "angle~deg"
 	..
 	_C_ "Variable" "Vibe_Shape" V1
@@ -632,13 +632,13 @@ _C_ "Domain" "C1" V1
 	_C_ "Variable" "int_shift" V1
 		var_type string "auto"
 		var_enabled int 1
-		var_value string "0"
+		var_value string "20"
 		var_unit string "angle~deg"
 	..
 	_C_ "Variable" "exh_shift" V1
 		var_type string "auto"
 		var_enabled int 1
-		var_value string "0"
+		var_value string "-12"
 		var_unit string "angle~deg"
 	..
 ..
@@ -1318,7 +1318,7 @@ _C_ "noname" "noname" V1
 	0_version int 36
 	_C_ "Cylinder" "bt_cylin" V1
 		tree_title string "Cylinder"
-		0_page string "pgVPSValve"
+		0_page string "pgVPSValve.pgVDCLiftCurve"
 		0_version int 36
 		ord long 1
 		0_ok int 1
@@ -1328,7 +1328,7 @@ _C_ "noname" "noname" V1
 			lbl_element_author string "M Harrison"
 			lbl_element_comment string ""
 			res_name string ""
-			lbl_element_date string "12. Aug 2024 05:02:20"
+			lbl_element_date string "13. Oct 2025 12:57:03"
 			dBore double 86 "length~mm"
 			dStroke double 86 "length~mm"
 			dCompressionRatio double 10.5 "dimensionless~no"
@@ -3650,60 +3650,60 @@ _C_ "noname" "noname" V1
 								0_type string "class"
 								dLiftCurve array-1 none 2 5
 									array-1 double 28 0
+330
 340
 350
-360
-370
-380
-390
-400
-410
-420
-430
-440
-450
-460
-470
-480
-490
-500
-510
-520
-530
-540
-550
+359.545454545
+369.090909091
+378.636363636
+388.181818182
+397.727272727
+407.272727273
+416.818181818
+426.363636364
+435.909090909
+445.454545455
+455
+464.545454545
+474.090909091
+483.636363636
+493.181818182
+502.727272727
+512.272727273
+521.818181818
+531.363636364
+540.909090909
+550.454545455
 560
 570
 580
 590
-600
-610
 									array-1 double 28 0
 0
 0.15
 0.74
-1.78
-2.93
-4.14
-5.28
-6.37
-7.31
-8.12
-8.77
-9.25
-9.52
-9.58
-9.44
-9.13
-8.63
-7.96
-7.12
-6.2
-5.25
-4.12
-2.94
-1.76
-0.75
+1.7481669175
+2.84589419023
+4.00089419023
+5.08907600841
+6.12953055386
+7.02680328114
+7.79998509932
+8.42043964477
+8.87862146295
+9.13634873568
+9.19362146295
+9.05998509932
+8.76407600841
+8.28680328114
+7.64725782659
+6.84543964477
+5.96725782659
+5.06043964477
+3.98180328114
+2.85543964477
+1.72907600841
+0.764985099318
 0.17
 0.05
 0
@@ -3758,16 +3758,16 @@ _C_ "noname" "noname" V1
 								file_mod_time long 1384539868
 								_C_ "Struct" "specify" V1
 									0_type string "struct"
-									opening double 340 "angle~deg"
-									cam_length double 270 "angle~deg"
+									opening double 330 "angle~deg"
+									cam_length double 260 "angle~deg"
 									choice int 0
-									increment double 10 "angle~deg"
+									increment double 9.6296296 "angle~deg"
 									points int 28
 								..
 								_C_ "Struct" "modify" V1
 									0_type string "struct"
-									new_opening double 340 "angle~deg"
-									new_cam_length double 270 "angle~deg"
+									new_opening double 330 "angle~deg"
+									new_cam_length double 260 "angle~deg"
 								..
 							..
 							_C_ "pgCyl_VDC_DynSwirl" "pgVDCDynSwirl" V1
@@ -7428,10 +7428,10 @@ _C_ "noname" "noname" V1
 			lbl_element_author string "M Harrison"
 			lbl_element_comment string ""
 			res_name string ""
-			lbl_element_date string "13. Oct 2025 08:31:11"
+			lbl_element_date string "13. Oct 2025 13:02:43"
 			pipe_length double 160 "length~mm"
 			gridPoints int 10
-			diameter double 32 "length~mm"
+			diameter double 33 "length~mm"
 			diameter~sel string "const"
 			hydraulicSetting int 0
 			isBendingRadius int 0
@@ -11180,7 +11180,7 @@ AWS_JMS_Section_submission_options
 74723E436173652053657420313C2F7374723E0A3C7374723E6E616D653C2F7374723E0A3C7374723E436173652031313C2F7374723E0A3C2F646963743E0A3C2F6F626A6563743E0A3C2F6C6973743E0A3C2F646963743E0A3C2F6F626A6563743E0A3C7374723E73656374696F6E733C2F7374723E0A3C6469637420747970653D22636F6C6C656374696F6E732E4F72646572656444696374222069643D223238223E0A3C74797065206E616D653D226A6D732E646D2E7375626D69742E53657474696E677353656374696F6E47656E6572616C222F3E0A3C6F626A65637420747970653D226A6D732E646D2E7375626D69742E53657474696E6773536563
 74696F6E47656E6572616C222069643D223239223E0A3C6469637420747970653D22636F6C6C656374696F6E732E4F72646572656444696374222069643D223330223E0A3C7374723E70726F6A6E616D653C2F7374723E0A3C7374722F3E0A3C7374723E7375626D697373696F6E5F6F726967696E3C2F7374723E0A3C6F626A65637420747970653D226A6D732E646D2E7375626D69742E5375626D697373696F6E4F726967696E222069643D223331223E0A3C646963743E0A3C7374723E76616C75653C2F7374723E0A3C7374723E6D756C74693C2F7374723E0A3C2F646963743E0A3C2F6F626A6563743E0A3C7374723E636F6E6669726D5F726572756E
 3C2F7374723E0A3C747275652F3E0A3C7374723E6D6F64656C6E616D653C2F7374723E0A3C7374722F3E0A3C7374723E616C6C63617365733C2F7374723E0A3C6F626A65637420747970653D226163742E4C697374222069643D223332223E0A3C646963742069643D223333223E0A3C7374723E636F6E7461696E65723C2F7374723E0A3C6C6973742069643D223334223E0A3C7265662069643D2236222F3E0A3C7265662069643D2238222F3E0A3C7265662069643D223130222F3E0A3C7265662069643D223132222F3E0A3C7265662069643D223134222F3E0A3C7265662069643D223136222F3E0A3C7265662069643D223138222F3E0A3C7265662069
-643D223230222F3E0A3C7265662069643D223232222F3E0A3C7265662069643D223234222F3E0A3C7265662069643D223236222F3E0A3C2F6C6973743E0A3C2F646963743E0A3C2F6F626A6563743E0A3C7374723E6E616D653C2F7374723E0A3C7374723E73696E676C653530305F47446920323032352D31302D31332030383A35313A34383C2F7374723E0A3C7374723E73656374696F6E6E616D653C2F7374723E0A3C7374723E47656E6572616C3C2F7374723E0A3C7374723E6F726465725F63617365733C2F7374723E0A3C66616C73652F3E0A3C7374723E70726F647563746E616D653C2F7374723E0A3C7374723E424F4F53543C2F7374723E0A3C
+643D223230222F3E0A3C7265662069643D223232222F3E0A3C7265662069643D223234222F3E0A3C7265662069643D223236222F3E0A3C2F6C6973743E0A3C2F646963743E0A3C2F6F626A6563743E0A3C7374723E6E616D653C2F7374723E0A3C7374723E73696E676C653530305F47446920323032352D31302D31332031343A32313A34383C2F7374723E0A3C7374723E73656374696F6E6E616D653C2F7374723E0A3C7374723E47656E6572616C3C2F7374723E0A3C7374723E6F726465725F63617365733C2F7374723E0A3C66616C73652F3E0A3C7374723E70726F647563746E616D653C2F7374723E0A3C7374723E424F4F53543C2F7374723E0A3C
 7374723E70726570726F636573735F6572726F723C2F7374723E0A3C66616C73652F3E0A3C7374723E76657273696F6E3C2F7374723E0A3C7374722F3E0A3C7374723E70726570726F636573733C2F7374723E0A3C6C6973742069643D223335222F3E0A3C7374723E616C6C7461736B733C2F7374723E0A3C6F626A65637420747970653D226A6D732E626173652E5461736B536574222069643D223336223E0A3C646963742069643D223337223E0A3C7374723E636F6E7461696E65723C2F7374723E0A3C6C6973742069643D223338223E0A3C6F626A65637420747970653D226A6D732E626173652E495461736B222069643D223339223E0A3C64696374
 2069643D223430223E0A3C7374723E73706C6974746572733C2F7374723E0A3C6C6973742069643D223431222F3E0A3C7374723E73696E676C65746F6E3C2F7374723E0A3C66616C73652F3E0A3C7374723E73656C65637465643C2F7374723E0A3C747275652F3E0A3C7374723E6E616D653C2F7374723E0A3C7374723E6372656174696F6E3C2F7374723E0A3C7374723E646F5F73686F773C2F7374723E0A3C747275652F3E0A3C7374723E6370755F636F756E743C2F7374723E0A3C6E756D3E313C2F6E756D3E0A3C7374723E617267756D656E743C2F7374723E0A3C7374722F3E0A3C7374723E776F726B696E675F6469725F7375666669783C2F7374
 723E0A3C7374722F3E0A3C7374723E6661696C5F666C61673C2F7374723E0A3C7374723E73746F705F69665F6F6E655F6661696C3C2F7374723E0A3C7374723E6170706C69636174696F6E3C2F7374723E0A3C7374723E626F6F73743C2F7374723E0A3C7374723E636F6D6D616E643C2F7374723E0A3C7374722F3E0A3C7374723E7072656465636573736F72733C2F7374723E0A3C6C6973742069643D223432222F3E0A3C7374723E6261636B656E647461623C2F7374723E0A3C7374723E5374616E646172643C2F7374723E0A3C7374723E706F736974696F6E3C2F7374723E0A3C6E756D3E313C2F6E756D3E0A3C7374723E706174683C2F7374723E0A
@@ -11311,7 +11311,7 @@ AWS_JMS_Section_submission_backend
 ENDSECTION
 SECTION EMBEDDED
 AWS_JMS_Section_submission_name
-3C3F786D6C2076657273696F6E3D22312E302220656E636F64696E673D227574662D38223F3E0A3C6163742076657273696F6E3D22322E3138372E3333223E0A3C7374723E73696E676C653530305F47446920323032352D31302D31332030383A35313A34383C2F7374723E0A3C2F6163743E0A
+3C3F786D6C2076657273696F6E3D22312E302220656E636F64696E673D227574662D38223F3E0A3C6163742076657273696F6E3D22322E3138372E3333223E0A3C7374723E73696E676C653530305F47446920323032352D31302D31332031343A32313A34383C2F7374723E0A3C2F6163743E0A
 ENDSECTION
 SECTION EMBEDDED
 AWS_JMS_Section_jms_fea_cache
