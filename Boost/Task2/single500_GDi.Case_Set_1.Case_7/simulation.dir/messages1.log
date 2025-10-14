@@ -1,6 +1,6 @@
 MESSAGE
 RUNINFO      1 CONTROL      1 BOOST       0.00 DEGCRA
- System date and time : 13.10.2025 14:54:44
+ System date and time : 14.10.2025 19:31:36
 ENDOFMESSAGE
 MESSAGE
 RUNINFO      2 CONTROL      2 BOOST       0.00 DEGCRA
@@ -93,28 +93,36 @@ RUNINFO      0 CYLINDER      4 READ_INDIVIDUAL_CYLINDER       0.00 DEGCRA
  Closing shift :     0.000
 ENDOFMESSAGE
 MESSAGE
-WARNING  21772 RESTRICTION      2 INPUT       0.00 DEGCRA
- Area difference too small to create a quarterwave resonator.
- Minimum resonator diameter [mm]:      10.00
- Calculated diameter        [mm]:       5.77
+RUNINFO 121776 RESTRICTION      2 INPUT       0.00 DEGCRA
+ Restriction end correction [mm]:       0.38
 ENDOFMESSAGE
 MESSAGE
-WARNING  21772 RESTRICTION      4 INPUT       0.00 DEGCRA
- Area difference too small to create a quarterwave resonator.
- Minimum resonator diameter [mm]:      10.00
- Calculated diameter        [mm]:       5.77
+RUNINFO 121773 RESTRICTION      2 INPUT       0.00 DEGCRA
+ Flow coefficients from a restriction with extension not used.
 ENDOFMESSAGE
 MESSAGE
-WARNING  21772 RESTRICTION      6 INPUT       0.00 DEGCRA
- Area difference too small to create a quarterwave resonator.
- Minimum resonator diameter [mm]:      10.00
- Calculated diameter        [mm]:       5.77
+RUNINFO 121776 RESTRICTION      4 INPUT       0.00 DEGCRA
+ Restriction end correction [mm]:       0.38
 ENDOFMESSAGE
 MESSAGE
-WARNING  21772 RESTRICTION      8 INPUT       0.00 DEGCRA
- Area difference too small to create a quarterwave resonator.
- Minimum resonator diameter [mm]:      10.00
- Calculated diameter        [mm]:       5.77
+RUNINFO 121773 RESTRICTION      4 INPUT       0.00 DEGCRA
+ Flow coefficients from a restriction with extension not used.
+ENDOFMESSAGE
+MESSAGE
+RUNINFO 121776 RESTRICTION      6 INPUT       0.00 DEGCRA
+ Restriction end correction [mm]:       0.38
+ENDOFMESSAGE
+MESSAGE
+RUNINFO 121773 RESTRICTION      6 INPUT       0.00 DEGCRA
+ Flow coefficients from a restriction with extension not used.
+ENDOFMESSAGE
+MESSAGE
+RUNINFO 121776 RESTRICTION      8 INPUT       0.00 DEGCRA
+ Restriction end correction [mm]:       0.38
+ENDOFMESSAGE
+MESSAGE
+RUNINFO 121773 RESTRICTION      8 INPUT       0.00 DEGCRA
+ Flow coefficients from a restriction with extension not used.
 ENDOFMESSAGE
 MESSAGE
 RUNINFO  10660 GLOBAL      1 LICENSING       0.00 DEGCRA
@@ -129,601 +137,2655 @@ RUNINFO      0 POSTLINKS      0 BOOST       0.00 DEGCRA
  Unit Number :    13
 ENDOFMESSAGE
 MESSAGE
+RUNINFO 150002 RESTRICTION      2 BOOST       0.00 DEGCRA
+ Extension length smaller than pipe cell size. Extension ignored.
+ Try reducing model cell size.
+ENDOFMESSAGE
+MESSAGE
+RUNINFO 150002 RESTRICTION      4 BOOST       0.00 DEGCRA
+ Extension length smaller than pipe cell size. Extension ignored.
+ Try reducing model cell size.
+ENDOFMESSAGE
+MESSAGE
+RUNINFO 150002 RESTRICTION      6 BOOST       0.00 DEGCRA
+ Extension length smaller than pipe cell size. Extension ignored.
+ Try reducing model cell size.
+ENDOFMESSAGE
+MESSAGE
+RUNINFO 150002 RESTRICTION      8 BOOST       0.00 DEGCRA
+ Extension length smaller than pipe cell size. Extension ignored.
+ Try reducing model cell size.
+ENDOFMESSAGE
+MESSAGE
 RUNINFO 150006 SYSTEMBOUNDARY      1 BOOST       0.00 DEGCRA
- Open end correction for PIPE :    17
- End correction   [mm] :      9.900
- Original Length  [mm] :    160.000
- Corrected Length [mm] :    169.900
+ Open end correction for PIPE :     9
+ End correction   [mm] :     10.800
+ Original Length  [mm] :     80.000
+ Corrected Length [mm] :     90.800
 ENDOFMESSAGE
 MESSAGE
 RUNINFO 150006 SYSTEMBOUNDARY      2 BOOST       0.00 DEGCRA
- Open end correction for PIPE :    16
- End correction   [mm] :     10.200
- Original Length  [mm] :    500.000
- Corrected Length [mm] :    510.200
+ Open end correction for PIPE :    23
+ End correction   [mm] :     12.000
+ Original Length  [mm] :    300.000
+ Corrected Length [mm] :    312.000
 ENDOFMESSAGE
 MESSAGE
-CONVERGENCEFAIL 342500 JUNCTION      2 KNOTEN     194.33 DEGCRA
+CONVERGENCEFAIL 342500 JUNCTION      6 KNOTEN     185.93 DEGCRA
  The iteration of the junction massflow failed to
  converge within  25 iterations.
                     24 iteration   25 iteration
- Pressure    [Pa]:    154407.39      154407.39
+ Pressure    [Pa]:    155524.19      155524.19
  Difference in percent of meanvalue:    0.00
- Mass flow error [percent of total massflow]:  -1.11
+ Mass flow error [percent of total massflow]:  -0.58
 ENDOFMESSAGE
 MESSAGE
-CONVERGENCEFAIL 342500 JUNCTION      2 KNOTEN     195.10 DEGCRA
+CONVERGENCEFAIL 342500 JUNCTION      6 KNOTEN     186.68 DEGCRA
  The iteration of the junction massflow failed to
  converge within  25 iterations.
                     24 iteration   25 iteration
- Pressure    [Pa]:    154407.39      154407.39
+ Pressure    [Pa]:    155524.19      155524.19
  Difference in percent of meanvalue:    0.00
- Mass flow error [percent of total massflow]:  -2.08
+ Mass flow error [percent of total massflow]:  -1.48
 ENDOFMESSAGE
 MESSAGE
-CONVERGENCEFAIL 342500 JUNCTION      2 KNOTEN     195.86 DEGCRA
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN     189.69 DEGCRA
  The iteration of the junction massflow failed to
  converge within  25 iterations.
                     24 iteration   25 iteration
- Pressure    [Pa]:    154407.39      154407.39
+ Pressure    [Pa]:    145535.14      145535.14
  Difference in percent of meanvalue:    0.00
- Mass flow error [percent of total massflow]:  -2.95
+ Mass flow error [percent of total massflow]:  -1.08
 ENDOFMESSAGE
 MESSAGE
-CONVERGENCEFAIL 342500 JUNCTION      2 KNOTEN     196.62 DEGCRA
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN     190.45 DEGCRA
  The iteration of the junction massflow failed to
  converge within  25 iterations.
                     24 iteration   25 iteration
- Pressure    [Pa]:    154407.39      154407.39
+ Pressure    [Pa]:    145535.14      145535.14
  Difference in percent of meanvalue:    0.00
- Mass flow error [percent of total massflow]:  -3.69
+ Mass flow error [percent of total massflow]:  -2.17
 ENDOFMESSAGE
 MESSAGE
-CONVERGENCEFAIL 342500 JUNCTION      2 KNOTEN     198.88 DEGCRA
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN     191.97 DEGCRA
  The iteration of the junction massflow failed to
  converge within  25 iterations.
                     24 iteration   25 iteration
- Pressure    [Pa]:    151540.11      151540.11
+ Pressure    [Pa]:    143327.38      143327.38
  Difference in percent of meanvalue:    0.00
- Mass flow error [percent of total massflow]:  -0.55
+ Mass flow error [percent of total massflow]:  -1.04
 ENDOFMESSAGE
 MESSAGE
-CONVERGENCEFAIL 342500 JUNCTION      2 KNOTEN     294.39 DEGCRA
+CONVERGENCEFAIL 342500 JUNCTION      5 KNOTEN     192.73 DEGCRA
  The iteration of the junction massflow failed to
  converge within  25 iterations.
                     24 iteration   25 iteration
- Pressure    [Pa]:    115246.13      115246.13
+ Pressure    [Pa]:    142267.36      142267.36
  Difference in percent of meanvalue:    0.00
- Mass flow error [percent of total massflow]:   0.91
+ Mass flow error [percent of total massflow]:  -0.51
 ENDOFMESSAGE
 MESSAGE
-CONVERGENCEFAIL 342500 JUNCTION      2 KNOTEN     343.16 DEGCRA
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN     192.73 DEGCRA
  The iteration of the junction massflow failed to
  converge within  25 iterations.
                     24 iteration   25 iteration
- Pressure    [Pa]:    110944.73      110944.73
+ Pressure    [Pa]:    143327.38      143327.38
  Difference in percent of meanvalue:    0.00
- Mass flow error [percent of total massflow]:   0.58
+ Mass flow error [percent of total massflow]:  -2.16
 ENDOFMESSAGE
 MESSAGE
-CONVERGENCEFAIL 342500 JUNCTION      2 KNOTEN     351.45 DEGCRA
+CONVERGENCEFAIL 342500 JUNCTION      5 KNOTEN     193.49 DEGCRA
  The iteration of the junction massflow failed to
  converge within  25 iterations.
                     24 iteration   25 iteration
- Pressure    [Pa]:    125116.93      125116.93
- Difference in percent of meanvalue:    0.00
- Mass flow error [percent of total massflow]:   1.42
-ENDOFMESSAGE
-MESSAGE
-CONVERGENCEFAIL 342500 JUNCTION      2 KNOTEN     353.10 DEGCRA
- The iteration of the junction massflow failed to
- converge within  25 iterations.
-                    24 iteration   25 iteration
- Pressure    [Pa]:    126743.31      126743.31
- Difference in percent of meanvalue:    0.00
- Mass flow error [percent of total massflow]:   1.00
-ENDOFMESSAGE
-MESSAGE
-CONVERGENCEFAIL 342500 JUNCTION      2 KNOTEN     354.75 DEGCRA
- The iteration of the junction massflow failed to
- converge within  25 iterations.
-                    24 iteration   25 iteration
- Pressure    [Pa]:    128087.29      128087.29
- Difference in percent of meanvalue:    0.00
- Mass flow error [percent of total massflow]:   0.80
-ENDOFMESSAGE
-MESSAGE
-CONVERGENCEFAIL 342500 JUNCTION      2 KNOTEN     355.58 DEGCRA
- The iteration of the junction massflow failed to
- converge within  25 iterations.
-                    24 iteration   25 iteration
- Pressure    [Pa]:    128087.29      128087.29
- Difference in percent of meanvalue:    0.00
- Mass flow error [percent of total massflow]:   1.08
-ENDOFMESSAGE
-MESSAGE
-CONVERGENCEFAIL 342500 JUNCTION      2 KNOTEN     356.41 DEGCRA
- The iteration of the junction massflow failed to
- converge within  25 iterations.
-                    24 iteration   25 iteration
- Pressure    [Pa]:    128087.29      128087.29
- Difference in percent of meanvalue:    0.00
- Mass flow error [percent of total massflow]:   0.74
-ENDOFMESSAGE
-MESSAGE
-CONVERGENCEFAIL 342500 JUNCTION      2 KNOTEN     374.83 DEGCRA
- The iteration of the junction massflow failed to
- converge within  25 iterations.
-                    24 iteration   25 iteration
- Pressure    [Pa]:    137267.60      137267.60
- Difference in percent of meanvalue:    0.00
- Mass flow error [percent of total massflow]:  -0.81
-ENDOFMESSAGE
-MESSAGE
-CONVERGENCEFAIL 342500 JUNCTION      2 KNOTEN     375.62 DEGCRA
- The iteration of the junction massflow failed to
- converge within  25 iterations.
-                    24 iteration   25 iteration
- Pressure    [Pa]:    137267.60      137267.60
- Difference in percent of meanvalue:    0.00
- Mass flow error [percent of total massflow]:  -1.61
-ENDOFMESSAGE
-MESSAGE
-CONVERGENCEFAIL 342500 JUNCTION      2 KNOTEN     376.41 DEGCRA
- The iteration of the junction massflow failed to
- converge within  25 iterations.
-                    24 iteration   25 iteration
- Pressure    [Pa]:    137267.60      137267.60
- Difference in percent of meanvalue:    0.00
- Mass flow error [percent of total massflow]:  -2.61
-ENDOFMESSAGE
-MESSAGE
-CONVERGENCEFAIL 342500 JUNCTION      2 KNOTEN     377.19 DEGCRA
- The iteration of the junction massflow failed to
- converge within  25 iterations.
-                    24 iteration   25 iteration
- Pressure    [Pa]:    137267.60      137267.60
- Difference in percent of meanvalue:   -0.00
- Mass flow error [percent of total massflow]:  -3.73
-ENDOFMESSAGE
-MESSAGE
-CONVERGENCEFAIL 342500 JUNCTION      2 KNOTEN     378.75 DEGCRA
- The iteration of the junction massflow failed to
- converge within  25 iterations.
-                    24 iteration   25 iteration
- Pressure    [Pa]:    133766.47      133766.47
- Difference in percent of meanvalue:    0.00
- Mass flow error [percent of total massflow]:  -1.63
-ENDOFMESSAGE
-MESSAGE
-CONVERGENCEFAIL 342500 JUNCTION      2 KNOTEN     379.50 DEGCRA
- The iteration of the junction massflow failed to
- converge within  25 iterations.
-                    24 iteration   25 iteration
- Pressure    [Pa]:    133766.47      133766.47
- Difference in percent of meanvalue:    0.00
- Mass flow error [percent of total massflow]:  -3.33
-ENDOFMESSAGE
-MESSAGE
-CONVERGENCEFAIL 342500 JUNCTION      2 KNOTEN     380.98 DEGCRA
- The iteration of the junction massflow failed to
- converge within  25 iterations.
-                    24 iteration   25 iteration
- Pressure    [Pa]:    130760.20      130760.20
- Difference in percent of meanvalue:    0.00
- Mass flow error [percent of total massflow]:  -1.87
-ENDOFMESSAGE
-MESSAGE
-CONVERGENCEFAIL 342500 JUNCTION      2 KNOTEN     409.31 DEGCRA
- The iteration of the junction massflow failed to
- converge within  25 iterations.
-                    24 iteration   25 iteration
- Pressure    [Pa]:    101391.51      101391.51
- Difference in percent of meanvalue:    0.00
- Mass flow error [percent of total massflow]:  -0.66
-ENDOFMESSAGE
-MESSAGE
-CONVERGENCEFAIL 342500 JUNCTION      2 KNOTEN     410.11 DEGCRA
- The iteration of the junction massflow failed to
- converge within  25 iterations.
-                    24 iteration   25 iteration
- Pressure    [Pa]:    105251.90      105251.90
- Difference in percent of meanvalue:   -0.00
- Mass flow error [percent of total massflow]:  -2.01
-ENDOFMESSAGE
-MESSAGE
-CONVERGENCEFAIL 342500 JUNCTION      2 KNOTEN     457.23 DEGCRA
- The iteration of the junction massflow failed to
- converge within  25 iterations.
-                    24 iteration   25 iteration
- Pressure    [Pa]:    111324.30      111324.30
- Difference in percent of meanvalue:    0.00
- Mass flow error [percent of total massflow]:   0.55
-ENDOFMESSAGE
-MESSAGE
-CONVERGENCEFAIL 342500 JUNCTION      2 KNOTEN     458.11 DEGCRA
- The iteration of the junction massflow failed to
- converge within  25 iterations.
-                    24 iteration   25 iteration
- Pressure    [Pa]:    109834.76      109834.76
- Difference in percent of meanvalue:    0.00
- Mass flow error [percent of total massflow]:   0.58
-ENDOFMESSAGE
-MESSAGE
-CONVERGENCEFAIL 342500 JUNCTION      2 KNOTEN     459.00 DEGCRA
- The iteration of the junction massflow failed to
- converge within  25 iterations.
-                    24 iteration   25 iteration
- Pressure    [Pa]:    108304.57      108304.57
- Difference in percent of meanvalue:    0.00
- Mass flow error [percent of total massflow]:   0.60
-ENDOFMESSAGE
-MESSAGE
-CONVERGENCEFAIL 342500 JUNCTION      2 KNOTEN     459.90 DEGCRA
- The iteration of the junction massflow failed to
- converge within  25 iterations.
-                    24 iteration   25 iteration
- Pressure    [Pa]:    106708.72      106708.72
- Difference in percent of meanvalue:    0.00
- Mass flow error [percent of total massflow]:   0.67
-ENDOFMESSAGE
-MESSAGE
-CONVERGENCEFAIL 342500 JUNCTION      2 KNOTEN     460.80 DEGCRA
- The iteration of the junction massflow failed to
- converge within  25 iterations.
-                    24 iteration   25 iteration
- Pressure    [Pa]:    105084.44      105084.44
- Difference in percent of meanvalue:    0.00
- Mass flow error [percent of total massflow]:   0.70
-ENDOFMESSAGE
-MESSAGE
-CONVERGENCEFAIL 342500 JUNCTION      2 KNOTEN     461.70 DEGCRA
- The iteration of the junction massflow failed to
- converge within  25 iterations.
-                    24 iteration   25 iteration
- Pressure    [Pa]:    103432.01      103432.01
- Difference in percent of meanvalue:    0.00
- Mass flow error [percent of total massflow]:   0.75
-ENDOFMESSAGE
-MESSAGE
-CONVERGENCEFAIL 342500 JUNCTION      2 KNOTEN     462.61 DEGCRA
- The iteration of the junction massflow failed to
- converge within  25 iterations.
-                    24 iteration   25 iteration
- Pressure    [Pa]:    101770.34      101770.34
- Difference in percent of meanvalue:    0.00
- Mass flow error [percent of total massflow]:   0.78
-ENDOFMESSAGE
-MESSAGE
-CONVERGENCEFAIL 342500 JUNCTION      2 KNOTEN     463.52 DEGCRA
- The iteration of the junction massflow failed to
- converge within  25 iterations.
-                    24 iteration   25 iteration
- Pressure    [Pa]:    100102.80      100102.80
- Difference in percent of meanvalue:    0.00
- Mass flow error [percent of total massflow]:   0.79
-ENDOFMESSAGE
-MESSAGE
-CONVERGENCEFAIL 342500 JUNCTION      2 KNOTEN     464.44 DEGCRA
- The iteration of the junction massflow failed to
- converge within  25 iterations.
-                    24 iteration   25 iteration
- Pressure    [Pa]:     98644.89       98644.89
- Difference in percent of meanvalue:    0.00
- Mass flow error [percent of total massflow]:   0.56
-ENDOFMESSAGE
-MESSAGE
-CONVERGENCEFAIL 342500 JUNCTION      2 KNOTEN     469.99 DEGCRA
- The iteration of the junction massflow failed to
- converge within  25 iterations.
-                    24 iteration   25 iteration
- Pressure    [Pa]:     95210.09       95210.09
- Difference in percent of meanvalue:   -0.00
- Mass flow error [percent of total massflow]:  -1.27
-ENDOFMESSAGE
-MESSAGE
-CONVERGENCEFAIL 342500 JUNCTION      2 KNOTEN     477.62 DEGCRA
- The iteration of the junction massflow failed to
- converge within  25 iterations.
-                    24 iteration   25 iteration
- Pressure    [Pa]:     97483.36       97483.36
- Difference in percent of meanvalue:    0.00
- Mass flow error [percent of total massflow]:   4.22
-ENDOFMESSAGE
-MESSAGE
-CONVERGENCEFAIL 342500 JUNCTION      2 KNOTEN     527.12 DEGCRA
- The iteration of the junction massflow failed to
- converge within  25 iterations.
-                    24 iteration   25 iteration
- Pressure    [Pa]:     94086.11       94086.11
- Difference in percent of meanvalue:    0.00
- Mass flow error [percent of total massflow]:   0.75
-ENDOFMESSAGE
-MESSAGE
-CONVERGENCEFAIL 342500 JUNCTION      2 KNOTEN     527.91 DEGCRA
- The iteration of the junction massflow failed to
- converge within  25 iterations.
-                    24 iteration   25 iteration
- Pressure    [Pa]:     94086.11       94086.11
- Difference in percent of meanvalue:    0.00
- Mass flow error [percent of total massflow]:   2.26
-ENDOFMESSAGE
-MESSAGE
-CONVERGENCEFAIL 342500 JUNCTION      2 KNOTEN     528.69 DEGCRA
- The iteration of the junction massflow failed to
- converge within  25 iterations.
-                    24 iteration   25 iteration
- Pressure    [Pa]:     94086.11       94086.11
- Difference in percent of meanvalue:    0.00
- Mass flow error [percent of total massflow]:   3.55
-ENDOFMESSAGE
-MESSAGE
-CONVERGENCEFAIL 342500 JUNCTION      2 KNOTEN     549.45 DEGCRA
- The iteration of the junction massflow failed to
- converge within  25 iterations.
-                    24 iteration   25 iteration
- Pressure    [Pa]:    132789.48      132789.48
- Difference in percent of meanvalue:    0.00
- Mass flow error [percent of total massflow]:  -0.68
-ENDOFMESSAGE
-MESSAGE
-CONVERGENCEFAIL 342500 JUNCTION      2 KNOTEN     550.21 DEGCRA
- The iteration of the junction massflow failed to
- converge within  25 iterations.
-                    24 iteration   25 iteration
- Pressure    [Pa]:    132789.48      132789.48
- Difference in percent of meanvalue:    0.00
- Mass flow error [percent of total massflow]:  -1.17
-ENDOFMESSAGE
-MESSAGE
-CONVERGENCEFAIL 342500 JUNCTION      2 KNOTEN     550.97 DEGCRA
- The iteration of the junction massflow failed to
- converge within  25 iterations.
-                    24 iteration   25 iteration
- Pressure    [Pa]:    132789.48      132789.48
- Difference in percent of meanvalue:    0.00
- Mass flow error [percent of total massflow]:  -1.96
-ENDOFMESSAGE
-MESSAGE
-CONVERGENCEFAIL 342500 JUNCTION      2 KNOTEN     551.72 DEGCRA
- The iteration of the junction massflow failed to
- converge within  25 iterations.
-                    24 iteration   25 iteration
- Pressure    [Pa]:    132789.48      132789.48
- Difference in percent of meanvalue:    0.00
- Mass flow error [percent of total massflow]:  -2.94
-ENDOFMESSAGE
-MESSAGE
-CONVERGENCEFAIL 342500 JUNCTION      2 KNOTEN     552.47 DEGCRA
- The iteration of the junction massflow failed to
- converge within  25 iterations.
-                    24 iteration   25 iteration
- Pressure    [Pa]:    132789.48      132789.48
- Difference in percent of meanvalue:    0.00
- Mass flow error [percent of total massflow]:  -4.14
-ENDOFMESSAGE
-MESSAGE
-CONVERGENCEFAIL 342500 JUNCTION      2 KNOTEN     553.91 DEGCRA
- The iteration of the junction massflow failed to
- converge within  25 iterations.
-                    24 iteration   25 iteration
- Pressure    [Pa]:    129068.89      129068.89
- Difference in percent of meanvalue:    0.00
- Mass flow error [percent of total massflow]:  -1.27
-ENDOFMESSAGE
-MESSAGE
-CONVERGENCEFAIL 342500 JUNCTION      2 KNOTEN     554.61 DEGCRA
- The iteration of the junction massflow failed to
- converge within  25 iterations.
-                    24 iteration   25 iteration
- Pressure    [Pa]:    129068.89      129068.89
- Difference in percent of meanvalue:    0.00
- Mass flow error [percent of total massflow]:  -2.53
-ENDOFMESSAGE
-MESSAGE
-CONVERGENCEFAIL 342500 JUNCTION      2 KNOTEN     644.84 DEGCRA
- The iteration of the junction massflow failed to
- converge within  25 iterations.
-                    24 iteration   25 iteration
- Pressure    [Pa]:    106826.37      106826.37
- Difference in percent of meanvalue:    0.00
- Mass flow error [percent of total massflow]:   0.90
-ENDOFMESSAGE
-MESSAGE
-CONVERGENCEFAIL 342500 JUNCTION      2 KNOTEN     701.60 DEGCRA
- The iteration of the junction massflow failed to
- converge within  25 iterations.
-                    24 iteration   25 iteration
- Pressure    [Pa]:     96844.58       96844.58
- Difference in percent of meanvalue:    0.00
- Mass flow error [percent of total massflow]:  -0.94
-ENDOFMESSAGE
-MESSAGE
-CONVERGENCEFAIL 342500 JUNCTION      2 KNOTEN     707.97 DEGCRA
- The iteration of the junction massflow failed to
- converge within  25 iterations.
-                    24 iteration   25 iteration
- Pressure    [Pa]:     97146.03       97146.03
- Difference in percent of meanvalue:    0.00
- Mass flow error [percent of total massflow]:   0.91
-ENDOFMESSAGE
-MESSAGE
-CONVERGENCEFAIL 342500 JUNCTION      2 KNOTEN     708.75 DEGCRA
- The iteration of the junction massflow failed to
- converge within  25 iterations.
-                    24 iteration   25 iteration
- Pressure    [Pa]:     97146.03       97146.03
- Difference in percent of meanvalue:    0.00
- Mass flow error [percent of total massflow]:   3.64
-ENDOFMESSAGE
-MESSAGE
-CONVERGENCEFAIL 342500 JUNCTION      2 KNOTEN     710.32 DEGCRA
- The iteration of the junction massflow failed to
- converge within  25 iterations.
-                    24 iteration   25 iteration
- Pressure    [Pa]:     99689.76       99689.76
- Difference in percent of meanvalue:    0.00
- Mass flow error [percent of total massflow]:   4.56
-ENDOFMESSAGE
-MESSAGE
-CONVERGENCEFAIL 342500 JUNCTION      2 KNOTEN     711.88 DEGCRA
- The iteration of the junction massflow failed to
- converge within  25 iterations.
-                    24 iteration   25 iteration
- Pressure    [Pa]:    103278.51      103278.51
- Difference in percent of meanvalue:    0.00
- Mass flow error [percent of total massflow]:   4.10
-ENDOFMESSAGE
-MESSAGE
-CONVERGENCEFAIL 342500 JUNCTION      2 KNOTEN     713.45 DEGCRA
- The iteration of the junction massflow failed to
- converge within  25 iterations.
-                    24 iteration   25 iteration
- Pressure    [Pa]:    107073.46      107073.46
- Difference in percent of meanvalue:    0.00
- Mass flow error [percent of total massflow]:   2.85
-ENDOFMESSAGE
-MESSAGE
-CONVERGENCEFAIL 342500 JUNCTION      2 KNOTEN     732.01 DEGCRA
- The iteration of the junction massflow failed to
- converge within  25 iterations.
-                    24 iteration   25 iteration
- Pressure    [Pa]:    123137.34      123137.34
- Difference in percent of meanvalue:    0.00
- Mass flow error [percent of total massflow]:  -0.63
-ENDOFMESSAGE
-MESSAGE
-CONVERGENCEFAIL 342500 JUNCTION      2 KNOTEN     732.78 DEGCRA
- The iteration of the junction massflow failed to
- converge within  25 iterations.
-                    24 iteration   25 iteration
- Pressure    [Pa]:    123137.34      123137.34
- Difference in percent of meanvalue:    0.00
- Mass flow error [percent of total massflow]:  -1.31
-ENDOFMESSAGE
-MESSAGE
-CONVERGENCEFAIL 342500 JUNCTION      2 KNOTEN     733.54 DEGCRA
- The iteration of the junction massflow failed to
- converge within  25 iterations.
-                    24 iteration   25 iteration
- Pressure    [Pa]:    123137.34      123137.34
- Difference in percent of meanvalue:    0.00
- Mass flow error [percent of total massflow]:  -2.24
-ENDOFMESSAGE
-MESSAGE
-CONVERGENCEFAIL 342500 JUNCTION      2 KNOTEN     734.27 DEGCRA
- The iteration of the junction massflow failed to
- converge within  25 iterations.
-                    24 iteration   25 iteration
- Pressure    [Pa]:    123137.34      123137.34
- Difference in percent of meanvalue:    0.00
- Mass flow error [percent of total massflow]:  -3.27
-ENDOFMESSAGE
-MESSAGE
-CONVERGENCEFAIL 342500 JUNCTION      2 KNOTEN     734.99 DEGCRA
- The iteration of the junction massflow failed to
- converge within  25 iterations.
-                    24 iteration   25 iteration
- Pressure    [Pa]:    123137.34      123137.34
- Difference in percent of meanvalue:    0.00
- Mass flow error [percent of total massflow]:  -4.42
-ENDOFMESSAGE
-MESSAGE
-CONVERGENCEFAIL 342500 JUNCTION      2 KNOTEN     736.38 DEGCRA
- The iteration of the junction massflow failed to
- converge within  25 iterations.
-                    24 iteration   25 iteration
- Pressure    [Pa]:    119631.80      119631.80
- Difference in percent of meanvalue:    0.00
- Mass flow error [percent of total massflow]:  -1.16
-ENDOFMESSAGE
-MESSAGE
-CONVERGENCEFAIL 342500 JUNCTION      2 KNOTEN     879.40 DEGCRA
- The iteration of the junction massflow failed to
- converge within  25 iterations.
-                    24 iteration   25 iteration
- Pressure    [Pa]:    100782.39      100782.39
- Difference in percent of meanvalue:    0.00
- Mass flow error [percent of total massflow]:   0.56
-ENDOFMESSAGE
-MESSAGE
-CONVERGENCEFAIL 342500 JUNCTION      2 KNOTEN     882.35 DEGCRA
- The iteration of the junction massflow failed to
- converge within  25 iterations.
-                    24 iteration   25 iteration
- Pressure    [Pa]:    100782.39      100782.39
- Difference in percent of meanvalue:    0.00
- Mass flow error [percent of total massflow]:  -1.24
-ENDOFMESSAGE
-MESSAGE
-CONVERGENCEFAIL 342500 JUNCTION      2 KNOTEN     894.52 DEGCRA
- The iteration of the junction massflow failed to
- converge within  25 iterations.
-                    24 iteration   25 iteration
- Pressure    [Pa]:     98738.92       98738.92
- Difference in percent of meanvalue:    0.00
- Mass flow error [percent of total massflow]:  -0.94
-ENDOFMESSAGE
-MESSAGE
-CONVERGENCEFAIL 342500 JUNCTION      2 KNOTEN     895.43 DEGCRA
- The iteration of the junction massflow failed to
- converge within  25 iterations.
-                    24 iteration   25 iteration
- Pressure    [Pa]:     98738.92       98738.92
- Difference in percent of meanvalue:    0.00
- Mass flow error [percent of total massflow]:  -0.89
-ENDOFMESSAGE
-MESSAGE
-CONVERGENCEFAIL 342500 JUNCTION      2 KNOTEN     898.13 DEGCRA
- The iteration of the junction massflow failed to
- converge within  25 iterations.
-                    24 iteration   25 iteration
- Pressure    [Pa]:     98738.92       98738.92
+ Pressure    [Pa]:    142267.36      142267.36
  Difference in percent of meanvalue:    0.00
  Mass flow error [percent of total massflow]:  -1.13
 ENDOFMESSAGE
 MESSAGE
-CONVERGENCEFAIL 342500 JUNCTION      2 KNOTEN     900.89 DEGCRA
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN     194.25 DEGCRA
  The iteration of the junction massflow failed to
  converge within  25 iterations.
                     24 iteration   25 iteration
- Pressure    [Pa]:     98154.37       98154.37
+ Pressure    [Pa]:    141141.00      141141.00
  Difference in percent of meanvalue:    0.00
- Mass flow error [percent of total massflow]:  -0.81
+ Mass flow error [percent of total massflow]:  -1.02
 ENDOFMESSAGE
 MESSAGE
-CONVERGENCEFAIL 342500 JUNCTION      2 KNOTEN     946.00 DEGCRA
+CONVERGENCEFAIL 342500 JUNCTION      5 KNOTEN     195.01 DEGCRA
  The iteration of the junction massflow failed to
  converge within  25 iterations.
                     24 iteration   25 iteration
- Pressure    [Pa]:     95497.87       95497.87
+ Pressure    [Pa]:    141238.71      141238.71
  Difference in percent of meanvalue:    0.00
- Mass flow error [percent of total massflow]:   0.98
+ Mass flow error [percent of total massflow]:  -0.92
 ENDOFMESSAGE
 MESSAGE
-CONVERGENCEFAIL 342500 JUNCTION      2 KNOTEN     947.85 DEGCRA
+CONVERGENCEFAIL 342500 JUNCTION      5 KNOTEN     197.29 DEGCRA
  The iteration of the junction massflow failed to
  converge within  25 iterations.
                     24 iteration   25 iteration
- Pressure    [Pa]:     95942.06       95942.06
+ Pressure    [Pa]:    139718.99      139718.99
  Difference in percent of meanvalue:    0.00
- Mass flow error [percent of total massflow]:   0.87
+ Mass flow error [percent of total massflow]:  -1.44
 ENDOFMESSAGE
 MESSAGE
-CONVERGENCEFAIL 342500 JUNCTION      2 KNOTEN    2645.88 DEGCRA
+CONVERGENCEFAIL 342500 JUNCTION      5 KNOTEN     198.82 DEGCRA
  The iteration of the junction massflow failed to
  converge within  25 iterations.
                     24 iteration   25 iteration
- Pressure    [Pa]:     94157.27       94157.27
+ Pressure    [Pa]:    138371.14      138371.14
+ Difference in percent of meanvalue:   -0.00
+ Mass flow error [percent of total massflow]:  -1.90
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      5 KNOTEN     201.89 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    134962.67      134962.67
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -2.15
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      6 KNOTEN     223.12 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    148343.88      148343.88
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   1.12
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      6 KNOTEN     253.18 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    115522.60      115522.60
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   1.44
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      6 KNOTEN     256.68 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    113176.87      113176.87
+ Difference in percent of meanvalue:   -0.00
+ Mass flow error [percent of total massflow]: -12.66
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      6 KNOTEN     257.55 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    112002.81      112002.81
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]: -10.01
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      6 KNOTEN     258.42 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    110731.49      110731.49
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]: -10.13
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      6 KNOTEN     259.29 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    109347.48      109347.48
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]: -10.82
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      6 KNOTEN     260.16 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    108006.93      108006.93
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -9.91
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      6 KNOTEN     261.03 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    106825.72      106825.72
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -7.36
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      6 KNOTEN     261.90 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    105757.46      105757.46
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -4.49
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      6 KNOTEN     262.77 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    104824.03      104824.03
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -2.69
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      6 KNOTEN     263.64 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    104043.16      104043.16
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -0.54
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN     280.85 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    111123.36      111123.36
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -0.83
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN     283.39 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    109544.55      109544.55
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -0.65
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN     298.39 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    107591.20      107591.20
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -0.80
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN     300.06 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    106737.19      106737.19
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -0.94
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN     301.74 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    105658.32      105658.32
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -1.11
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN     346.42 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    103029.99      103029.99
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   1.79
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN     347.89 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    104531.81      104531.81
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   1.55
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      6 KNOTEN     360.00 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    109552.00      109552.00
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   1.26
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      6 KNOTEN     360.71 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    109552.00      109552.00
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   1.88
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      6 KNOTEN     362.13 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    110972.53      110972.53
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   1.26
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      6 KNOTEN     363.57 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    111888.41      111888.41
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   0.68
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      5 KNOTEN     365.01 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    144093.71      144093.71
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -1.17
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      5 KNOTEN     365.73 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    144093.71      144093.71
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -2.42
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN     367.91 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    122976.72      122976.72
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -1.02
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN     368.64 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    122976.72      122976.72
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -1.71
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN     369.37 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    122976.72      122976.72
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -2.87
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN     371.57 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    119382.80      119382.80
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -1.14
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      6 KNOTEN     372.30 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    113260.20      113260.20
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -1.07
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      6 KNOTEN     373.04 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    113260.20      113260.20
+ Difference in percent of meanvalue:   -0.00
+ Mass flow error [percent of total massflow]:  -2.27
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      6 KNOTEN     374.51 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    111549.22      111549.22
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -0.99
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      6 KNOTEN     375.25 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    111549.22      111549.22
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -1.68
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      6 KNOTEN     375.99 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    111549.22      111549.22
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -2.23
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      6 KNOTEN     376.73 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    111549.22      111549.22
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -2.56
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      6 KNOTEN     377.48 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    111549.22      111549.22
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -2.79
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      5 KNOTEN     401.40 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    132683.46      132683.46
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   0.50
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      5 KNOTEN     424.40 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    117504.13      117504.13
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -3.67
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      5 KNOTEN     435.77 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:     97489.13       97489.13
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -0.62
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      5 KNOTEN     436.75 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:     95171.14       95171.14
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -1.28
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      5 KNOTEN     437.73 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:     93273.58       93273.58
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -3.05
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      5 KNOTEN     438.71 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:     91529.97       91529.97
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -2.95
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      5 KNOTEN     439.69 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:     90075.65       90075.65
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -2.31
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      5 KNOTEN     440.67 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:     88855.21       88855.21
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -2.28
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      5 KNOTEN     441.66 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:     87777.69       87777.69
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -2.80
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      5 KNOTEN     442.65 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:     86936.04       86936.04
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -3.17
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      5 KNOTEN     443.65 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:     86327.63       86327.63
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -2.32
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      5 KNOTEN     444.65 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:     86038.91       86038.91
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -0.94
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      5 KNOTEN     454.82 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:     99450.85       99450.85
+ Difference in percent of meanvalue:   -0.00
+ Mass flow error [percent of total massflow]:  -1.99
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      6 KNOTEN     462.78 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:     94845.77       94845.77
+ Difference in percent of meanvalue:   -0.00
+ Mass flow error [percent of total massflow]:  -1.53
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN     462.78 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    102650.36      102650.36
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -0.51
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      5 KNOTEN     464.76 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    106333.17      106333.17
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   1.11
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      5 KNOTEN     466.72 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    106908.87      106908.87
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   0.75
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      5 KNOTEN     467.71 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    106908.87      106908.87
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   0.93
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      6 KNOTEN     470.68 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:     90867.08       90867.08
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -0.52
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      5 KNOTEN     489.07 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:     85854.02       85854.02
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   0.76
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      5 KNOTEN     491.12 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:     84699.16       84699.16
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   0.64
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      6 KNOTEN     495.23 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:     80323.32       80323.32
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -0.74
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      5 KNOTEN     496.26 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:     83950.39       83950.39
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   0.89
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      5 KNOTEN     498.31 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:     84580.26       84580.26
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   0.70
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      5 KNOTEN     500.35 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:     85027.66       85027.66
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   0.63
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      5 KNOTEN     502.37 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:     85587.57       85587.57
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   0.92
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      6 KNOTEN     506.23 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:     92530.63       92530.63
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   0.57
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      6 KNOTEN     507.16 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:     93355.42       93355.42
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   0.65
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      5 KNOTEN     517.45 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:     91898.66       91898.66
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   1.09
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      6 KNOTEN     523.72 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    114796.50      114796.50
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   1.71
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      6 KNOTEN     525.22 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    115831.33      115831.33
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   1.08
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      6 KNOTEN     526.69 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    116800.53      116800.53
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   1.47
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN     527.42 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    108656.23      108656.23
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   1.16
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN     528.86 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    109213.54      109213.54
  Difference in percent of meanvalue:    0.00
  Mass flow error [percent of total massflow]:   1.00
 ENDOFMESSAGE
 MESSAGE
-CONVERGENCEFAIL 342500 JUNCTION      2 KNOTEN    2646.67 DEGCRA
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN     529.58 DEGCRA
  The iteration of the junction massflow failed to
  converge within  25 iterations.
                     24 iteration   25 iteration
- Pressure    [Pa]:     93222.35       93222.35
+ Pressure    [Pa]:    109213.54      109213.54
  Difference in percent of meanvalue:    0.00
- Mass flow error [percent of total massflow]:   0.91
+ Mass flow error [percent of total massflow]:   1.66
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN     530.29 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    109213.54      109213.54
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   2.25
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN     531.00 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    109213.54      109213.54
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   2.77
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN     531.71 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    109213.54      109213.54
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   3.16
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN     532.41 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    109213.54      109213.54
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   3.56
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN     534.54 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    110767.65      110767.65
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   0.68
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      5 KNOTEN     535.25 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    101994.20      101994.20
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   0.75
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN     535.25 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    110767.65      110767.65
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   1.17
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      5 KNOTEN     535.95 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    101994.20      101994.20
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   1.14
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      5 KNOTEN     536.66 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    101994.20      101994.20
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   1.64
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN     536.66 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    111693.93      111693.93
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   0.59
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      5 KNOTEN     537.37 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    101994.20      101994.20
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   2.24
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      5 KNOTEN     538.08 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    101994.20      101994.20
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   2.66
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      5 KNOTEN     538.79 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    101994.20      101994.20
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   3.23
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      5 KNOTEN     540.72 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    104114.84      104114.84
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   0.84
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      5 KNOTEN     541.43 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    104114.84      104114.84
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   2.06
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      5 KNOTEN     542.88 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    105742.02      105742.02
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   1.48
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      6 KNOTEN     545.77 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    139962.64      139962.64
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -1.13
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      6 KNOTEN     546.50 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    139962.64      139962.64
+ Difference in percent of meanvalue:   -0.00
+ Mass flow error [percent of total massflow]:  -2.40
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN     549.41 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    120590.10      120590.10
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -1.18
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN     550.14 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    120590.10      120590.10
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -1.94
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN     550.88 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    120590.10      120590.10
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -2.61
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN     553.08 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    118341.73      118341.73
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -0.75
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN     571.52 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    130071.14      130071.14
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   0.90
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN     572.98 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    131134.25      131134.25
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   0.77
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN     574.44 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    132074.10      132074.10
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   0.55
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      6 KNOTEN     588.83 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    131703.94      131703.94
+ Difference in percent of meanvalue:   -0.00
+ Mass flow error [percent of total massflow]:  -2.01
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      6 KNOTEN     589.65 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    130281.85      130281.85
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   0.61
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      6 KNOTEN     590.48 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    130281.85      130281.85
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -2.50
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      6 KNOTEN     591.33 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    129185.29      129185.29
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -0.57
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      6 KNOTEN     608.97 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    109958.78      109958.78
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -0.99
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      6 KNOTEN     609.88 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    107485.45      107485.45
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -1.93
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      6 KNOTEN     610.80 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    105429.23      105429.23
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -1.80
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      6 KNOTEN     611.71 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    104022.17      104022.17
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -1.78
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      6 KNOTEN     612.63 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    103008.60      103008.60
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -0.80
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      5 KNOTEN     643.41 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:     95413.79       95413.79
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -1.64
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      5 KNOTEN     644.44 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:     94578.24       94578.24
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -0.99
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      5 KNOTEN     645.46 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:     93777.20       93777.20
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -0.61
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN     648.54 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:     96909.36       96909.36
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -0.52
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN     649.57 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:     96909.36       96909.36
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -0.98
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN     650.60 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:     96909.36       96909.36
+ Difference in percent of meanvalue:   -0.00
+ Mass flow error [percent of total massflow]:  -2.03
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN     652.65 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:     95298.78       95298.78
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -1.48
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      5 KNOTEN     655.72 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:     88923.71       88923.71
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   1.49
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN     706.19 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:     97856.36       97856.36
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   1.89
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN     707.66 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:     98827.85       98827.85
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   1.79
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN     708.38 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:     98827.85       98827.85
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   3.54
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN     709.82 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    100636.67      100636.67
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   1.82
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN     710.53 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    100636.67      100636.67
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   3.42
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN     711.96 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    102642.02      102642.02
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   1.11
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN     712.66 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    102642.02      102642.02
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   2.02
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN     714.08 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    104217.95      104217.95
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   1.18
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      6 KNOTEN     715.49 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:     96040.06       96040.06
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   2.21
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      6 KNOTEN     716.89 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:     97458.70       97458.70
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   2.47
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      6 KNOTEN     717.59 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:     97458.70       97458.70
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   4.94
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      6 KNOTEN     718.98 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    100166.86      100166.86
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   2.26
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      6 KNOTEN     720.00 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    102176.23      102176.23
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   1.69
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      5 KNOTEN     724.92 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    135789.44      135789.44
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -1.16
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      5 KNOTEN     725.62 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    135789.44      135789.44
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -2.41
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN     729.16 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    119386.73      119386.73
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -0.90
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN     729.86 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    119386.73      119386.73
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -1.73
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN     730.57 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    119386.73      119386.73
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -2.54
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN     731.99 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    117133.84      117133.84
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -0.56
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      5 KNOTEN     752.76 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    138667.79      138667.79
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   0.78
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      6 KNOTEN     762.67 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    147373.93      147373.93
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   0.96
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      5 KNOTEN     768.86 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    130352.14      130352.14
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -2.16
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      5 KNOTEN     797.37 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:     99170.36       99170.36
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   1.60
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN     827.72 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:     95220.78       95220.78
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -0.84
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN     829.77 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:     94620.94       94620.94
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -0.58
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      5 KNOTEN     883.64 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:     87909.25       87909.25
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   5.10
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      5 KNOTEN     885.61 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:     87644.17       87644.17
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -4.13
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN     885.61 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:     92126.73       92126.73
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   1.35
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN     886.59 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:     92126.73       92126.73
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   2.59
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      6 KNOTEN     887.56 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    100412.52      100412.52
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -0.62
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN     888.53 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:     92861.70       92861.70
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   0.84
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN     889.48 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:     92861.70       92861.70
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   0.56
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      6 KNOTEN     894.25 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    100824.58      100824.58
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -1.02
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      6 KNOTEN     895.18 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    100824.58      100824.58
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -1.59
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      6 KNOTEN     897.97 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    100824.58      100824.58
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -0.75
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN     900.91 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:     96166.41       96166.41
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -0.67
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      6 KNOTEN     916.22 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:     95951.47       95951.47
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   0.56
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN     921.66 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:     97819.65       97819.65
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   0.68
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      6 KNOTEN     924.43 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:     94785.04       94785.04
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   0.61
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN     935.88 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    104802.57      104802.57
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -1.00
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      6 KNOTEN     989.07 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    101461.92      101461.92
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   2.16
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      6 KNOTEN     990.10 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    102132.22      102132.22
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   1.82
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      5 KNOTEN    1006.28 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:     98949.77       98949.77
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   0.75
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      5 KNOTEN    1084.76 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    117367.15      117367.15
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -1.12
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN    1087.61 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    106056.19      106056.19
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -0.99
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN    1089.48 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    105274.75      105274.75
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -0.66
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN    1102.25 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:     99291.71       99291.71
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   1.66
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN    1104.96 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:     99393.53       99393.53
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   0.69
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN    1108.60 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    100245.67      100245.67
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   1.57
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      5 KNOTEN    1110.43 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    100792.46      100792.46
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   0.80
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN    1110.43 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    101091.47      101091.47
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   2.82
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN    1112.27 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    102716.46      102716.46
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   2.43
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      6 KNOTEN    1262.80 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    118728.12      118728.12
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   0.69
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      6 KNOTEN    1263.72 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    119331.46      119331.46
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   0.69
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      6 KNOTEN    1264.64 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    119712.43      119712.43
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   0.51
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      6 KNOTEN    1268.27 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    123646.08      123646.08
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   3.08
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      5 KNOTEN    1437.20 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    113294.21      113294.21
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -0.94
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      5 KNOTEN    1448.16 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    115226.09      115226.09
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   6.64
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      5 KNOTEN    1449.05 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    118570.00      118570.00
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -7.20
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN    1450.85 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    107973.07      107973.07
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -0.97
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      5 KNOTEN    1451.76 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    116160.57      116160.57
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -0.51
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      5 KNOTEN    1452.67 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    115251.42      115251.42
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -1.10
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      5 KNOTEN    1453.58 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    113177.80      113177.80
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   3.58
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      5 KNOTEN    1454.51 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    113177.80      113177.80
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -2.22
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      5 KNOTEN    1455.44 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    111414.57      111414.57
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -1.45
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      5 KNOTEN    1456.39 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    110409.50      110409.50
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -1.26
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      6 KNOTEN    1630.71 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    145246.99      145246.99
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   0.78
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN    1823.92 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    147497.50      147497.50
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -0.80
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      5 KNOTEN    2169.35 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    139599.89      139599.89
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -0.97
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      6 KNOTEN    2336.83 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    128096.61      128096.61
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -0.72
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      6 KNOTEN    2337.33 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    128096.61      128096.61
+ Difference in percent of meanvalue:   -0.00
+ Mass flow error [percent of total massflow]:  -0.69
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN    2341.53 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    125709.00      125709.00
+ Difference in percent of meanvalue:   -0.00
+ Mass flow error [percent of total massflow]:  -0.89
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN    2361.64 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    148120.89      148120.89
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   0.88
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      6 KNOTEN    2428.92 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:     90483.06       90483.06
+ Difference in percent of meanvalue:   -0.00
+ Mass flow error [percent of total massflow]:  -2.83
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      6 KNOTEN    2429.74 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:     89075.39       89075.39
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   1.15
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN    2433.77 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:     86995.87       86995.87
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -0.57
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN    2434.57 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:     86995.87       86995.87
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -0.78
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN    2435.36 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:     86995.87       86995.87
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -0.55
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN    2442.42 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:     87387.06       87387.06
+ Difference in percent of meanvalue:   -0.00
+ Mass flow error [percent of total massflow]:  -0.75
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN    2445.53 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:     88626.30       88626.30
+ Difference in percent of meanvalue:   -0.00
+ Mass flow error [percent of total massflow]:  -0.99
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      6 KNOTEN    2464.72 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:     87446.64       87446.64
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   0.79
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      6 KNOTEN    2465.61 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:     87446.64       87446.64
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   1.30
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN    2480.38 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:     89143.38       89143.38
+ Difference in percent of meanvalue:   -0.00
+ Mass flow error [percent of total massflow]:  -1.41
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN    2486.95 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:     90596.54       90596.54
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   2.31
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN    2487.63 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:     91093.43       91093.43
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   1.32
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN    2488.29 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:     91618.58       91618.58
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   1.31
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN    2625.94 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:     86602.49       86602.49
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -0.65
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN    2665.51 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:     89720.16       89720.16
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   1.12
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN    2666.19 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:     90154.00       90154.00
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   1.00
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      6 KNOTEN    2707.18 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    144955.44      144955.44
+ Difference in percent of meanvalue:   -0.00
+ Mass flow error [percent of total massflow]:  -1.41
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN    2843.01 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:     88972.49       88972.49
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   1.00
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN    2843.74 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:     89112.71       89112.71
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   0.92
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN    2844.45 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:     89265.51       89265.51
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   0.56
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      5 KNOTEN    2874.21 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    135118.10      135118.10
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -0.67
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      5 KNOTEN    2874.71 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    135118.10      135118.10
+ Difference in percent of meanvalue:   -0.00
+ Mass flow error [percent of total massflow]:  -0.71
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN    2878.22 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    131937.91      131937.91
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -0.66
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN    2878.73 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    131937.91      131937.91
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -0.59
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      5 KNOTEN    2887.20 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    143900.90      143900.90
+ Difference in percent of meanvalue:   -0.00
+ Mass flow error [percent of total massflow]:   1.24
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN    3021.47 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:     90821.31       90821.31
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   0.66
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      6 KNOTEN    3066.69 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    142266.52      142266.52
+ Difference in percent of meanvalue:   -0.00
+ Mass flow error [percent of total massflow]:   1.30
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      6 KNOTEN    3149.93 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:     87005.76       87005.76
+ Difference in percent of meanvalue:   -0.00
+ Mass flow error [percent of total massflow]:  -0.52
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      5 KNOTEN    3247.17 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    148935.36      148935.36
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   0.79
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      6 KNOTEN    3427.70 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    145519.92      145519.92
+ Difference in percent of meanvalue:   -0.00
+ Mass flow error [percent of total massflow]:  -1.00
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      5 KNOTEN    3608.22 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    142082.07      142082.08
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   1.06
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      6 KNOTEN    3788.77 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    140709.47      140709.47
+ Difference in percent of meanvalue:   -0.00
+ Mass flow error [percent of total massflow]:  -1.13
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN    3798.86 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    150033.39      150033.39
+ Difference in percent of meanvalue:   -0.00
+ Mass flow error [percent of total massflow]:  -0.73
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      6 KNOTEN    3885.60 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:     86228.30       86228.30
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -0.51
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      6 KNOTEN    3886.37 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:     86257.57       86257.57
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -0.50
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN    3978.23 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    154907.78      154907.78
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -0.50
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      6 KNOTEN    4148.20 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    143757.28      143757.30
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   1.33
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      6 KNOTEN    4247.67 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:     86268.35       86268.35
+ Difference in percent of meanvalue:   -0.00
+ Mass flow error [percent of total massflow]:   0.54
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      5 KNOTEN    4328.21 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    142132.45      142132.44
+ Difference in percent of meanvalue:   -0.00
+ Mass flow error [percent of total massflow]:  -0.76
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      5 KNOTEN    4429.23 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:     86173.35       86173.35
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -0.55
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      6 KNOTEN    4508.76 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    140812.72      140812.72
+ Difference in percent of meanvalue:   -0.00
+ Mass flow error [percent of total massflow]:  -1.29
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN    4518.86 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    150153.11      150153.11
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -1.03
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      6 KNOTEN    4605.55 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:     86111.97       86111.97
+ Difference in percent of meanvalue:   -0.00
+ Mass flow error [percent of total massflow]:   0.57
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN    4698.22 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    154927.13      154927.13
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -0.61
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      5 KNOTEN    5048.21 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    142252.61      142252.61
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   0.68
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      6 KNOTEN    5228.76 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    140846.55      140846.53
+ Difference in percent of meanvalue:   -0.00
+ Mass flow error [percent of total massflow]:  -1.39
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN    5418.22 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    154994.92      154994.92
+ Difference in percent of meanvalue:   -0.00
+ Mass flow error [percent of total massflow]:  -0.72
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      5 KNOTEN    5505.51 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:     86247.98       86247.98
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   0.60
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      6 KNOTEN    5588.19 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    143748.71      143748.71
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   1.27
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      5 KNOTEN    5768.21 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    142230.74      142230.74
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   0.59
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN    6103.15 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    114002.13      114002.13
+ Difference in percent of meanvalue:   -0.00
+ Mass flow error [percent of total massflow]:   0.51
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN    6138.22 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    155029.79      155029.79
+ Difference in percent of meanvalue:   -0.00
+ Mass flow error [percent of total massflow]:  -0.78
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      5 KNOTEN    6225.51 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:     86253.86       86253.86
+ Difference in percent of meanvalue:   -0.00
+ Mass flow error [percent of total massflow]:   0.60
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      6 KNOTEN    6308.19 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    143754.81      143754.81
+ Difference in percent of meanvalue:   -0.00
+ Mass flow error [percent of total massflow]:   1.23
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      5 KNOTEN    6488.21 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    142207.58      142207.58
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -1.00
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      6 KNOTEN    6765.55 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:     86087.23       86087.23
+ Difference in percent of meanvalue:   -0.00
+ Mass flow error [percent of total massflow]:   0.58
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN    6858.22 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    155039.39      155039.39
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   0.57
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      5 KNOTEN    6945.51 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:     86253.79       86253.79
+ Difference in percent of meanvalue:   -0.00
+ Mass flow error [percent of total massflow]:   0.59
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      6 KNOTEN    7028.19 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    143753.21      143753.21
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   1.23
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      5 KNOTEN    7208.21 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    142228.57      142228.58
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -1.04
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      6 KNOTEN    7485.55 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:     86125.56       86125.56
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   0.50
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN    7543.14 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    113983.32      113983.32
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   0.51
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN    7578.22 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    155044.38      155044.38
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -0.81
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      5 KNOTEN    7653.75 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:     88939.89       88939.89
+ Difference in percent of meanvalue:   -0.00
+ Mass flow error [percent of total massflow]:   0.56
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      5 KNOTEN    7665.51 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:     86261.31       86261.31
+ Difference in percent of meanvalue:   -0.00
+ Mass flow error [percent of total massflow]:   0.59
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      6 KNOTEN    7748.19 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    143761.82      143761.82
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   1.22
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      5 KNOTEN    7928.21 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    142227.00      142226.99
+ Difference in percent of meanvalue:   -0.00
+ Mass flow error [percent of total massflow]:  -1.03
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      6 KNOTEN    8205.55 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:     86090.35       86090.34
+ Difference in percent of meanvalue:   -0.00
+ Mass flow error [percent of total massflow]:   0.57
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN    8298.22 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    155026.62      155026.62
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -0.81
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      5 KNOTEN    8385.51 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:     86251.96       86251.96
+ Difference in percent of meanvalue:   -0.00
+ Mass flow error [percent of total massflow]:   0.59
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      5 KNOTEN    8648.21 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    142213.65      142213.65
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -1.03
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN    9018.22 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    155046.50      155046.50
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   0.52
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      5 KNOTEN    9105.51 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:     86249.51       86249.51
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   0.59
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      6 KNOTEN    9188.19 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    143755.00      143755.00
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   1.23
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      5 KNOTEN    9368.21 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    142204.23      142204.23
+ Difference in percent of meanvalue:   -0.00
+ Mass flow error [percent of total massflow]:   0.62
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN    9738.22 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    155037.45      155037.45
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   0.52
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      5 KNOTEN    9825.51 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:     86253.75       86253.75
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   0.59
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      5 KNOTEN   10088.21 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    142234.48      142234.48
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -1.06
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN   10458.22 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    155041.20      155041.20
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -0.81
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      5 KNOTEN   10808.21 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    142208.55      142208.55
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:  -1.01
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      6 KNOTEN   11085.55 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:     86087.22       86087.22
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   0.58
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN   11178.22 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    155041.88      155041.88
+ Difference in percent of meanvalue:   -0.00
+ Mass flow error [percent of total massflow]:   0.53
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      5 KNOTEN   11528.21 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    142230.10      142230.10
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   0.57
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN   11898.22 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    155042.40      155042.40
+ Difference in percent of meanvalue:   -0.00
+ Mass flow error [percent of total massflow]:   0.53
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      5 KNOTEN   12248.21 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    142232.96      142232.96
+ Difference in percent of meanvalue:   -0.00
+ Mass flow error [percent of total massflow]:   0.57
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN   12618.22 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    155041.50      155041.50
+ Difference in percent of meanvalue:   -0.00
+ Mass flow error [percent of total massflow]:  -0.80
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      5 KNOTEN   12705.51 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:     86255.04       86255.04
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   0.58
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      5 KNOTEN   12968.21 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    142237.06      142237.05
+ Difference in percent of meanvalue:   -0.00
+ Mass flow error [percent of total massflow]:   0.56
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN   13338.22 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    155036.82      155036.82
+ Difference in percent of meanvalue:   -0.00
+ Mass flow error [percent of total massflow]:  -0.79
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      6 KNOTEN   13508.19 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    143766.19      143766.19
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   1.20
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      5 KNOTEN   13688.21 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    142207.63      142207.63
+ Difference in percent of meanvalue:    0.00
+ Mass flow error [percent of total massflow]:   0.62
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      7 KNOTEN   14058.22 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    155040.91      155040.91
+ Difference in percent of meanvalue:   -0.00
+ Mass flow error [percent of total massflow]:  -0.82
+ENDOFMESSAGE
+MESSAGE
+CONVERGENCEFAIL 342500 JUNCTION      6 KNOTEN   14228.19 DEGCRA
+ The iteration of the junction massflow failed to
+ converge within  25 iterations.
+                    24 iteration   25 iteration
+ Pressure    [Pa]:    143756.60      143756.60
+ Difference in percent of meanvalue:   -0.00
+ Mass flow error [percent of total massflow]:   1.23
 ENDOFMESSAGE

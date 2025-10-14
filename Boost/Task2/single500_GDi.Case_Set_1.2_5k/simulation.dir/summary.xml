@@ -1,0 +1,1462 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="summary.xsl" type="text/xsl"?>
+<summary>
+  <element name="GLOBALS" shortname="GL" ord="1">
+    <svalue name="VERSION">v2022.1.0.0.0</svalue>
+    <svalue name="BUILD">Apr 27 2022 22:44:48</svalue>
+    <svalue name="GIT_BUILD_HASH">7670062eda46b95e13935a621f250d93513addf7</svalue>
+    <svalue name="SYSTEM">x86_64-unknown-winnt_i19v19</svalue>
+    <svalue name="SIMULATION_MODE">simulation</svalue>
+    <svalue name="SIMULATION_SUBMODE">BOOST</svalue>
+    <svalue name="PROJECT">"4-Cylinder"</svalue>
+    <svalue name="RUN">"WOT"</svalue>
+    <svalue name="DATE">"7.3.2000"</svalue>
+    <dvalue name="INPUT_CPU_TIME" unit="s">4.57100000</dvalue>
+    <dvalue name="CALCULATION_CPU_TIME" unit="s">32.98800000</dvalue>
+    <dvalue name="OUTPUT_CPU_TIME" unit="s">0.06900000</dvalue>
+    <dvalue name="TOTAL_CPU_TIME" unit="s">37.62800000</dvalue>
+    <dvalue name="REQUIRED_CPU_TIME" unit="s">18.31250000</dvalue>
+    <dvalue name="INDICATED_TORQUE" unit="Nm">175.22498906</dvalue>
+    <dvalue name="INDICATED_SPECIFIC_TORQUE" unit="Nm/l">87.69015043</dvalue>
+    <dvalue name="INDICATED_POWER" unit="kW">45.87379486</dvalue>
+    <dvalue name="INDICATED_POWER_PS" unit="PS">62.37100316</dvalue>
+    <dvalue name="INDICATED_SPECIFIC_POWER" unit="kW/l">22.95722770</dvalue>
+    <dvalue name="INDICATED_SPECIFIC_POWER_PS_l" unit="PS/l">31.21314305</dvalue>
+    <dvalue name="FRICTION_TORQUE" unit="Nm">17.03721429</dvalue>
+    <dvalue name="FRICTION_POWER" unit="kW">4.46033227</dvalue>
+    <dvalue name="EFFECTIVE_TORQUE" unit="Nm">158.18777477</dvalue>
+    <dvalue name="EFFECTIVE_SPECIFIC_TORQUE" unit="Nm/l">79.16399277</dvalue>
+    <dvalue name="EFFECTIVE_POWER" unit="kW">41.41346259</dvalue>
+    <dvalue name="EFFECTIVE_POWER_PS" unit="PS">56.30663899</dvalue>
+    <dvalue name="EFFECTIVE_SPECIFIC_POWER" unit="kW/l">20.72508484</dvalue>
+    <dvalue name="EFFECTIVE_SPECIFIC_POWER_PS_l" unit="PS/l">28.17827337</dvalue>
+    <dvalue name="ENGINE_SPEED" unit="rpm">2500.00000000</dvalue>
+    <dvalue name="CYCLE_DURATION" unit="degrees">720.00000000</dvalue>
+    <dvalue name="CRANKANGLE_STEP" unit="degrees">0.49149168</dvalue>
+    <dvalue name="TIME_STEP" unit="ms">0.03276611</dvalue>
+    <ivalue name="CYCLES_CALCULATED">20</ivalue>
+    <ivalue name="CONVERGED">0</ivalue>
+  </element>
+  <element name="PIPE" shortname="PI" ord="1">
+    <ivalue name="CELLS">2</ivalue>
+    <dvalue name="CELL_SIZE" unit="mm">40.00000000</dvalue>
+    <dvalue name="WALL_HEAT_FLOW" unit="kJ">0.00041415</dvalue>
+    <dvalue name="WALL_HEAT_FLOW_RATE" unit="kW">0.00862802</dvalue>
+    <dvalue name="WALL_TEMPERATURE" unit="K">340.00000000</dvalue>
+    <element_ref name="PIPE_END" position="INLET" ord="13"/>
+    <element_ref name="PIPE_END" position="OUTLET" ord="3"/>
+  </element>
+  <element name="PIPE" shortname="PI" ord="2">
+    <ivalue name="CELLS">2</ivalue>
+    <dvalue name="CELL_SIZE" unit="mm">30.00000000</dvalue>
+    <dvalue name="WALL_HEAT_FLOW" unit="kJ">-0.00463068</dvalue>
+    <dvalue name="WALL_HEAT_FLOW_RATE" unit="kW">-0.09647242</dvalue>
+    <dvalue name="WALL_TEMPERATURE" unit="K">850.00000000</dvalue>
+    <element_ref name="PIPE_END" position="INLET" ord="4"/>
+    <element_ref name="PIPE_END" position="OUTLET" ord="11"/>
+  </element>
+  <element name="PIPE" shortname="PI" ord="3">
+    <ivalue name="CELLS">2</ivalue>
+    <dvalue name="CELL_SIZE" unit="mm">40.00000000</dvalue>
+    <dvalue name="WALL_HEAT_FLOW" unit="kJ">0.00045434</dvalue>
+    <dvalue name="WALL_HEAT_FLOW_RATE" unit="kW">0.00946545</dvalue>
+    <dvalue name="WALL_TEMPERATURE" unit="K">340.00000000</dvalue>
+    <element_ref name="PIPE_END" position="INLET" ord="17"/>
+    <element_ref name="PIPE_END" position="OUTLET" ord="5"/>
+  </element>
+  <element name="PIPE" shortname="PI" ord="4">
+    <ivalue name="CELLS">2</ivalue>
+    <dvalue name="CELL_SIZE" unit="mm">30.00000000</dvalue>
+    <dvalue name="WALL_HEAT_FLOW" unit="kJ">-0.00472387</dvalue>
+    <dvalue name="WALL_HEAT_FLOW_RATE" unit="kW">-0.09841404</dvalue>
+    <dvalue name="WALL_TEMPERATURE" unit="K">850.00000000</dvalue>
+    <element_ref name="PIPE_END" position="INLET" ord="6"/>
+    <element_ref name="PIPE_END" position="OUTLET" ord="15"/>
+  </element>
+  <element name="PIPE" shortname="PI" ord="5">
+    <ivalue name="CELLS">2</ivalue>
+    <dvalue name="CELL_SIZE" unit="mm">40.00000000</dvalue>
+    <dvalue name="WALL_HEAT_FLOW" unit="kJ">0.00033598</dvalue>
+    <dvalue name="WALL_HEAT_FLOW_RATE" unit="kW">0.00699950</dvalue>
+    <dvalue name="WALL_TEMPERATURE" unit="K">340.00000000</dvalue>
+    <element_ref name="PIPE_END" position="INLET" ord="21"/>
+    <element_ref name="PIPE_END" position="OUTLET" ord="7"/>
+  </element>
+  <element name="PIPE" shortname="PI" ord="6">
+    <ivalue name="CELLS">2</ivalue>
+    <dvalue name="CELL_SIZE" unit="mm">30.00000000</dvalue>
+    <dvalue name="WALL_HEAT_FLOW" unit="kJ">-0.00466397</dvalue>
+    <dvalue name="WALL_HEAT_FLOW_RATE" unit="kW">-0.09716598</dvalue>
+    <dvalue name="WALL_TEMPERATURE" unit="K">850.00000000</dvalue>
+    <element_ref name="PIPE_END" position="INLET" ord="8"/>
+    <element_ref name="PIPE_END" position="OUTLET" ord="19"/>
+  </element>
+  <element name="PIPE" shortname="PI" ord="7">
+    <ivalue name="CELLS">2</ivalue>
+    <dvalue name="CELL_SIZE" unit="mm">40.00000000</dvalue>
+    <dvalue name="WALL_HEAT_FLOW" unit="kJ">0.00044982</dvalue>
+    <dvalue name="WALL_HEAT_FLOW_RATE" unit="kW">0.00937122</dvalue>
+    <dvalue name="WALL_TEMPERATURE" unit="K">340.00000000</dvalue>
+    <element_ref name="PIPE_END" position="INLET" ord="25"/>
+    <element_ref name="PIPE_END" position="OUTLET" ord="9"/>
+  </element>
+  <element name="PIPE" shortname="PI" ord="8">
+    <ivalue name="CELLS">2</ivalue>
+    <dvalue name="CELL_SIZE" unit="mm">30.00000000</dvalue>
+    <dvalue name="WALL_HEAT_FLOW" unit="kJ">-0.00486338</dvalue>
+    <dvalue name="WALL_HEAT_FLOW_RATE" unit="kW">-0.10132035</dvalue>
+    <dvalue name="WALL_TEMPERATURE" unit="K">850.00000000</dvalue>
+    <element_ref name="PIPE_END" position="INLET" ord="10"/>
+    <element_ref name="PIPE_END" position="OUTLET" ord="23"/>
+  </element>
+  <element name="PIPE" shortname="PI" ord="9">
+    <ivalue name="CELLS">9</ivalue>
+    <dvalue name="CELL_SIZE" unit="mm">29.20000000</dvalue>
+    <dvalue name="WALL_HEAT_FLOW" unit="kJ">0.00101737</dvalue>
+    <dvalue name="WALL_HEAT_FLOW_RATE" unit="kW">0.02119518</dvalue>
+    <dvalue name="WALL_TEMPERATURE" unit="K">300.00000000</dvalue>
+    <element_ref name="PIPE_END" position="INLET" ord="1"/>
+    <element_ref name="PIPE_END" position="OUTLET" ord="27"/>
+  </element>
+  <element name="PIPE" shortname="PI" ord="10">
+    <ivalue name="CELLS">4</ivalue>
+    <dvalue name="CELL_SIZE" unit="mm">35.00000000</dvalue>
+    <dvalue name="WALL_HEAT_FLOW" unit="kJ">0.00020554</dvalue>
+    <dvalue name="WALL_HEAT_FLOW_RATE" unit="kW">0.00428210</dvalue>
+    <dvalue name="WALL_TEMPERATURE" unit="K">300.00000000</dvalue>
+    <element_ref name="PIPE_END" position="INLET" ord="28"/>
+    <element_ref name="PIPE_END" position="OUTLET" ord="14"/>
+  </element>
+  <element name="PIPE" shortname="PI" ord="11">
+    <ivalue name="CELLS">2</ivalue>
+    <dvalue name="CELL_SIZE" unit="mm">40.00000000</dvalue>
+    <dvalue name="WALL_HEAT_FLOW" unit="kJ">0.00048249</dvalue>
+    <dvalue name="WALL_HEAT_FLOW_RATE" unit="kW">0.01005187</dvalue>
+    <dvalue name="WALL_TEMPERATURE" unit="K">300.00000000</dvalue>
+    <element_ref name="PIPE_END" position="INLET" ord="29"/>
+    <element_ref name="PIPE_END" position="OUTLET" ord="30"/>
+  </element>
+  <element name="PIPE" shortname="PI" ord="12">
+    <ivalue name="CELLS">4</ivalue>
+    <dvalue name="CELL_SIZE" unit="mm">35.00000000</dvalue>
+    <dvalue name="WALL_HEAT_FLOW" unit="kJ">0.00017700</dvalue>
+    <dvalue name="WALL_HEAT_FLOW_RATE" unit="kW">0.00368749</dvalue>
+    <dvalue name="WALL_TEMPERATURE" unit="K">300.00000000</dvalue>
+    <element_ref name="PIPE_END" position="INLET" ord="31"/>
+    <element_ref name="PIPE_END" position="OUTLET" ord="18"/>
+  </element>
+  <element name="PIPE" shortname="PI" ord="13">
+    <ivalue name="CELLS">4</ivalue>
+    <dvalue name="CELL_SIZE" unit="mm">35.00000000</dvalue>
+    <dvalue name="WALL_HEAT_FLOW" unit="kJ">0.00006295</dvalue>
+    <dvalue name="WALL_HEAT_FLOW_RATE" unit="kW">0.00131139</dvalue>
+    <dvalue name="WALL_TEMPERATURE" unit="K">300.00000000</dvalue>
+    <element_ref name="PIPE_END" position="INLET" ord="33"/>
+    <element_ref name="PIPE_END" position="OUTLET" ord="22"/>
+  </element>
+  <element name="PIPE" shortname="PI" ord="14">
+    <ivalue name="CELLS">2</ivalue>
+    <dvalue name="CELL_SIZE" unit="mm">40.00000000</dvalue>
+    <dvalue name="WALL_HEAT_FLOW" unit="kJ">0.00033795</dvalue>
+    <dvalue name="WALL_HEAT_FLOW_RATE" unit="kW">0.00704067</dvalue>
+    <dvalue name="WALL_TEMPERATURE" unit="K">300.00000000</dvalue>
+    <element_ref name="PIPE_END" position="INLET" ord="32"/>
+    <element_ref name="PIPE_END" position="OUTLET" ord="34"/>
+  </element>
+  <element name="PIPE" shortname="PI" ord="15">
+    <ivalue name="CELLS">2</ivalue>
+    <dvalue name="CELL_SIZE" unit="mm">40.00000000</dvalue>
+    <dvalue name="WALL_HEAT_FLOW" unit="kJ">0.00020740</dvalue>
+    <dvalue name="WALL_HEAT_FLOW_RATE" unit="kW">0.00432079</dvalue>
+    <dvalue name="WALL_TEMPERATURE" unit="K">300.00000000</dvalue>
+    <element_ref name="PIPE_END" position="INLET" ord="35"/>
+    <element_ref name="PIPE_END" position="OUTLET" ord="36"/>
+  </element>
+  <element name="PIPE" shortname="PI" ord="16">
+    <ivalue name="CELLS">4</ivalue>
+    <dvalue name="CELL_SIZE" unit="mm">35.00000000</dvalue>
+    <dvalue name="WALL_HEAT_FLOW" unit="kJ">0.00013690</dvalue>
+    <dvalue name="WALL_HEAT_FLOW_RATE" unit="kW">0.00285209</dvalue>
+    <dvalue name="WALL_TEMPERATURE" unit="K">300.00000000</dvalue>
+    <element_ref name="PIPE_END" position="INLET" ord="37"/>
+    <element_ref name="PIPE_END" position="OUTLET" ord="26"/>
+  </element>
+  <element name="PIPE" shortname="PI" ord="17">
+    <ivalue name="CELLS">6</ivalue>
+    <dvalue name="CELL_SIZE" unit="mm">33.33333333</dvalue>
+    <dvalue name="WALL_HEAT_FLOW" unit="kJ">-0.06415564</dvalue>
+    <dvalue name="WALL_HEAT_FLOW_RATE" unit="kW">-1.33657579</dvalue>
+    <dvalue name="WALL_TEMPERATURE" unit="K">300.00000000</dvalue>
+    <element_ref name="PIPE_END" position="INLET" ord="16"/>
+    <element_ref name="PIPE_END" position="OUTLET" ord="38"/>
+  </element>
+  <element name="PIPE" shortname="PI" ord="18">
+    <ivalue name="CELLS">6</ivalue>
+    <dvalue name="CELL_SIZE" unit="mm">33.33333333</dvalue>
+    <dvalue name="WALL_HEAT_FLOW" unit="kJ">-0.06404507</dvalue>
+    <dvalue name="WALL_HEAT_FLOW_RATE" unit="kW">-1.33427220</dvalue>
+    <dvalue name="WALL_TEMPERATURE" unit="K">300.00000000</dvalue>
+    <element_ref name="PIPE_END" position="INLET" ord="20"/>
+    <element_ref name="PIPE_END" position="OUTLET" ord="39"/>
+  </element>
+  <element name="PIPE" shortname="PI" ord="19">
+    <ivalue name="CELLS">6</ivalue>
+    <dvalue name="CELL_SIZE" unit="mm">33.33333333</dvalue>
+    <dvalue name="WALL_HEAT_FLOW" unit="kJ">-0.06375760</dvalue>
+    <dvalue name="WALL_HEAT_FLOW_RATE" unit="kW">-1.32828328</dvalue>
+    <dvalue name="WALL_TEMPERATURE" unit="K">300.00000000</dvalue>
+    <element_ref name="PIPE_END" position="INLET" ord="12"/>
+    <element_ref name="PIPE_END" position="OUTLET" ord="41"/>
+  </element>
+  <element name="PIPE" shortname="PI" ord="20">
+    <ivalue name="CELLS">6</ivalue>
+    <dvalue name="CELL_SIZE" unit="mm">33.33333333</dvalue>
+    <dvalue name="WALL_HEAT_FLOW" unit="kJ">-0.06529340</dvalue>
+    <dvalue name="WALL_HEAT_FLOW_RATE" unit="kW">-1.36027915</dvalue>
+    <dvalue name="WALL_TEMPERATURE" unit="K">300.00000000</dvalue>
+    <element_ref name="PIPE_END" position="INLET" ord="24"/>
+    <element_ref name="PIPE_END" position="OUTLET" ord="42"/>
+  </element>
+  <element name="PIPE" shortname="PI" ord="21">
+    <ivalue name="CELLS">5</ivalue>
+    <dvalue name="CELL_SIZE" unit="mm">30.00000000</dvalue>
+    <dvalue name="WALL_HEAT_FLOW" unit="kJ">-0.09361171</dvalue>
+    <dvalue name="WALL_HEAT_FLOW_RATE" unit="kW">-1.95024399</dvalue>
+    <dvalue name="WALL_TEMPERATURE" unit="K">300.00000000</dvalue>
+    <element_ref name="PIPE_END" position="INLET" ord="43"/>
+    <element_ref name="PIPE_END" position="OUTLET" ord="44"/>
+  </element>
+  <element name="PIPE" shortname="PI" ord="22">
+    <ivalue name="CELLS">5</ivalue>
+    <dvalue name="CELL_SIZE" unit="mm">30.00000000</dvalue>
+    <dvalue name="WALL_HEAT_FLOW" unit="kJ">-0.09319090</dvalue>
+    <dvalue name="WALL_HEAT_FLOW_RATE" unit="kW">-1.94147712</dvalue>
+    <dvalue name="WALL_TEMPERATURE" unit="K">300.00000000</dvalue>
+    <element_ref name="PIPE_END" position="INLET" ord="40"/>
+    <element_ref name="PIPE_END" position="OUTLET" ord="45"/>
+  </element>
+  <element name="PIPE" shortname="PI" ord="23">
+    <ivalue name="CELLS">7</ivalue>
+    <dvalue name="CELL_SIZE" unit="mm">30.28571429</dvalue>
+    <dvalue name="WALL_HEAT_FLOW" unit="kJ">-0.19528558</dvalue>
+    <dvalue name="WALL_HEAT_FLOW_RATE" unit="kW">-4.06844961</dvalue>
+    <dvalue name="WALL_TEMPERATURE" unit="K">300.00000000</dvalue>
+    <element_ref name="PIPE_END" position="INLET" ord="46"/>
+    <element_ref name="PIPE_END" position="OUTLET" ord="2"/>
+  </element>
+  <element name="MEASURINGPOINT" shortname="MP" ord="1">
+    <dvalue name="LOCATION" unit="mm">10.00000000</dvalue>
+    <dvalue name="PRESSURE" unit="Pa">99650.87628147</dvalue>
+    <dvalue name="VELOCITY" unit="m/s">9.81704360</dvalue>
+    <dvalue name="TEMPERATURE" unit="K">311.91292712</dvalue>
+    <dvalue name="MASSFLOW" unit="kg/cycle">0.00047051</dvalue>
+    <dvalue name="MASSFLOWPERS" unit="kg/s">0.00980224</dvalue>
+    <dvalue name="MASSFLOWAVERAGED-TEMPERATURE" unit="K">292.76613076</dvalue>
+    <dvalue name="MACHNUMBER" unit="-">0.02858387</dvalue>
+    <dvalue name="STAGNATIONPRESSURE" unit="Pa">100201.02942638</dvalue>
+    <dvalue name="STAGNATIONTEMPERATURE" unit="K">312.39279161</dvalue>
+    <dvalue name="ENTHALPYFLOWPERS" unit="J/s">-35.67479840</dvalue>
+    <dvalue name="REYNOLDSNUMBER" unit="-">33743.20750317</dvalue>
+    <dvalue name="WALLTEMPERATURE" unit="K">340.00000000</dvalue>
+    <dvalue name="CONVERGENCE" unit="-">0.00000008</dvalue>
+    <dvalue name="DENSITY" unit="-">1.11653694</dvalue>
+    <dvalue name="SPECHEATCP" unit="J/kgK">1008.23851971</dvalue>
+    <dvalue name="ISENTROPIC-EXPONENT" unit="-">1.39771975</dvalue>
+    <dvalue name="GAS-CONSTANT" unit="J/kgK">286.88914941</dvalue>
+    <element_att name="PIPE" ord="1"/>
+  </element>
+  <element name="MEASURINGPOINT" shortname="MP" ord="2">
+    <dvalue name="LOCATION" unit="mm">10.00000000</dvalue>
+    <dvalue name="PRESSURE" unit="Pa">104576.86156742</dvalue>
+    <dvalue name="VELOCITY" unit="m/s">26.21918848</dvalue>
+    <dvalue name="TEMPERATURE" unit="K">1013.57374509</dvalue>
+    <dvalue name="MASSFLOW" unit="kg/cycle">0.00050350</dvalue>
+    <dvalue name="MASSFLOWPERS" unit="kg/s">0.01048966</dvalue>
+    <dvalue name="MASSFLOWAVERAGED-TEMPERATURE" unit="K">1257.71956630</dvalue>
+    <dvalue name="MACHNUMBER" unit="-">0.03888900</dvalue>
+    <dvalue name="STAGNATIONPRESSURE" unit="Pa">105566.15070207</dvalue>
+    <dvalue name="STAGNATIONTEMPERATURE" unit="K">1015.82648283</dvalue>
+    <dvalue name="ENTHALPYFLOWPERS" unit="J/s">12343.36837203</dvalue>
+    <dvalue name="REYNOLDSNUMBER" unit="-">9865.03281191</dvalue>
+    <dvalue name="WALLTEMPERATURE" unit="K">300.00000000</dvalue>
+    <dvalue name="CONVERGENCE" unit="-">0.00001206</dvalue>
+    <dvalue name="DENSITY" unit="-">0.36312302</dvalue>
+    <dvalue name="SPECHEATCP" unit="J/kgK">1256.80145551</dvalue>
+    <dvalue name="ISENTROPIC-EXPONENT" unit="-">1.29357138</dvalue>
+    <dvalue name="GAS-CONSTANT" unit="J/kgK">285.08961079</dvalue>
+    <element_att name="PIPE" ord="19"/>
+  </element>
+  <element name="MEASURINGPOINT" shortname="MP" ord="3">
+    <dvalue name="LOCATION" unit="mm">10.00000000</dvalue>
+    <dvalue name="PRESSURE" unit="Pa">98703.92238464</dvalue>
+    <dvalue name="VELOCITY" unit="m/s">10.31882062</dvalue>
+    <dvalue name="TEMPERATURE" unit="K">313.00564638</dvalue>
+    <dvalue name="MASSFLOW" unit="kg/cycle">0.00047875</dvalue>
+    <dvalue name="MASSFLOWPERS" unit="kg/s">0.00997400</dvalue>
+    <dvalue name="MASSFLOWAVERAGED-TEMPERATURE" unit="K">292.15855283</dvalue>
+    <dvalue name="MACHNUMBER" unit="-">0.03008632</dvalue>
+    <dvalue name="STAGNATIONPRESSURE" unit="Pa">99308.50557161</dvalue>
+    <dvalue name="STAGNATIONTEMPERATURE" unit="K">313.54018123</dvalue>
+    <dvalue name="ENTHALPYFLOWPERS" unit="J/s">-34.24682743</dvalue>
+    <dvalue name="REYNOLDSNUMBER" unit="-">34159.57392389</dvalue>
+    <dvalue name="WALLTEMPERATURE" unit="K">340.00000000</dvalue>
+    <dvalue name="CONVERGENCE" unit="-">0.00000047</dvalue>
+    <dvalue name="DENSITY" unit="-">1.10086319</dvalue>
+    <dvalue name="SPECHEATCP" unit="J/kgK">1008.29767944</dvalue>
+    <dvalue name="ISENTROPIC-EXPONENT" unit="-">1.39762519</dvalue>
+    <dvalue name="GAS-CONSTANT" unit="J/kgK">286.85833665</dvalue>
+    <element_att name="PIPE" ord="3"/>
+  </element>
+  <element name="MEASURINGPOINT" shortname="MP" ord="4">
+    <dvalue name="LOCATION" unit="mm">10.00000000</dvalue>
+    <dvalue name="PRESSURE" unit="Pa">104574.94660569</dvalue>
+    <dvalue name="VELOCITY" unit="m/s">26.67410713</dvalue>
+    <dvalue name="TEMPERATURE" unit="K">1014.53107905</dvalue>
+    <dvalue name="MASSFLOW" unit="kg/cycle">0.00051241</dvalue>
+    <dvalue name="MASSFLOWPERS" unit="kg/s">0.01067526</dvalue>
+    <dvalue name="MASSFLOWAVERAGED-TEMPERATURE" unit="K">1260.23945121</dvalue>
+    <dvalue name="MACHNUMBER" unit="-">0.03952967</dvalue>
+    <dvalue name="STAGNATIONPRESSURE" unit="Pa">105599.20977146</dvalue>
+    <dvalue name="STAGNATIONTEMPERATURE" unit="K">1016.86140901</dvalue>
+    <dvalue name="ENTHALPYFLOWPERS" unit="J/s">12608.77702400</dvalue>
+    <dvalue name="REYNOLDSNUMBER" unit="-">9953.07324781</dvalue>
+    <dvalue name="WALLTEMPERATURE" unit="K">300.00000000</dvalue>
+    <dvalue name="CONVERGENCE" unit="-">0.00000156</dvalue>
+    <dvalue name="DENSITY" unit="-">0.36277144</dvalue>
+    <dvalue name="SPECHEATCP" unit="J/kgK">1257.03506150</dvalue>
+    <dvalue name="ISENTROPIC-EXPONENT" unit="-">1.29350061</dvalue>
+    <dvalue name="GAS-CONSTANT" unit="J/kgK">285.09011087</dvalue>
+    <element_att name="PIPE" ord="17"/>
+  </element>
+  <element name="MEASURINGPOINT" shortname="MP" ord="5">
+    <dvalue name="LOCATION" unit="mm">10.00000000</dvalue>
+    <dvalue name="PRESSURE" unit="Pa">98857.55106103</dvalue>
+    <dvalue name="VELOCITY" unit="m/s">10.19896677</dvalue>
+    <dvalue name="TEMPERATURE" unit="K">325.98758991</dvalue>
+    <dvalue name="MASSFLOW" unit="kg/cycle">0.00047227</dvalue>
+    <dvalue name="MASSFLOWPERS" unit="kg/s">0.00983901</dvalue>
+    <dvalue name="MASSFLOWAVERAGED-TEMPERATURE" unit="K">292.66345740</dvalue>
+    <dvalue name="MACHNUMBER" unit="-">0.02971252</dvalue>
+    <dvalue name="STAGNATIONPRESSURE" unit="Pa">99463.19215480</dvalue>
+    <dvalue name="STAGNATIONTEMPERATURE" unit="K">326.53379177</dvalue>
+    <dvalue name="ENTHALPYFLOWPERS" unit="J/s">-32.66568101</dvalue>
+    <dvalue name="REYNOLDSNUMBER" unit="-">34118.00730175</dvalue>
+    <dvalue name="WALLTEMPERATURE" unit="K">340.00000000</dvalue>
+    <dvalue name="CONVERGENCE" unit="-">0.00000099</dvalue>
+    <dvalue name="DENSITY" unit="-">1.06196056</dvalue>
+    <dvalue name="SPECHEATCP" unit="J/kgK">1011.11706310</dvalue>
+    <dvalue name="ISENTROPIC-EXPONENT" unit="-">1.39557643</dvalue>
+    <dvalue name="GAS-CONSTANT" unit="J/kgK">286.59223039</dvalue>
+    <element_att name="PIPE" ord="5"/>
+  </element>
+  <element name="MEASURINGPOINT" shortname="MP" ord="6">
+    <dvalue name="LOCATION" unit="mm">10.00000000</dvalue>
+    <dvalue name="PRESSURE" unit="Pa">104573.35631529</dvalue>
+    <dvalue name="VELOCITY" unit="m/s">26.30582161</dvalue>
+    <dvalue name="TEMPERATURE" unit="K">1012.98619032</dvalue>
+    <dvalue name="MASSFLOW" unit="kg/cycle">0.00050548</dvalue>
+    <dvalue name="MASSFLOWPERS" unit="kg/s">0.01053087</dvalue>
+    <dvalue name="MASSFLOWAVERAGED-TEMPERATURE" unit="K">1258.33849220</dvalue>
+    <dvalue name="MACHNUMBER" unit="-">0.03901135</dvalue>
+    <dvalue name="STAGNATIONPRESSURE" unit="Pa">105574.99618829</dvalue>
+    <dvalue name="STAGNATIONTEMPERATURE" unit="K">1015.26277287</dvalue>
+    <dvalue name="ENTHALPYFLOWPERS" unit="J/s">12405.27210212</dvalue>
+    <dvalue name="REYNOLDSNUMBER" unit="-">9951.16917176</dvalue>
+    <dvalue name="WALLTEMPERATURE" unit="K">300.00000000</dvalue>
+    <dvalue name="CONVERGENCE" unit="-">0.00000280</dvalue>
+    <dvalue name="DENSITY" unit="-">0.36331764</dvalue>
+    <dvalue name="SPECHEATCP" unit="J/kgK">1256.65405266</dvalue>
+    <dvalue name="ISENTROPIC-EXPONENT" unit="-">1.29361838</dvalue>
+    <dvalue name="GAS-CONSTANT" unit="J/kgK">285.09141781</dvalue>
+    <element_att name="PIPE" ord="18"/>
+  </element>
+  <element name="MEASURINGPOINT" shortname="MP" ord="7">
+    <dvalue name="LOCATION" unit="mm">10.00000000</dvalue>
+    <dvalue name="PRESSURE" unit="Pa">99049.13701692</dvalue>
+    <dvalue name="VELOCITY" unit="m/s">10.85312750</dvalue>
+    <dvalue name="TEMPERATURE" unit="K">319.70418044</dvalue>
+    <dvalue name="MASSFLOW" unit="kg/cycle">0.00049291</dvalue>
+    <dvalue name="MASSFLOWPERS" unit="kg/s">0.01026892</dvalue>
+    <dvalue name="MASSFLOWAVERAGED-TEMPERATURE" unit="K">291.13174810</dvalue>
+    <dvalue name="MACHNUMBER" unit="-">0.03170938</dvalue>
+    <dvalue name="STAGNATIONPRESSURE" unit="Pa">99698.91107925</dvalue>
+    <dvalue name="STAGNATIONTEMPERATURE" unit="K">320.28684451</dvalue>
+    <dvalue name="ENTHALPYFLOWPERS" unit="J/s">-42.59307906</dvalue>
+    <dvalue name="REYNOLDSNUMBER" unit="-">34794.58921389</dvalue>
+    <dvalue name="WALLTEMPERATURE" unit="K">340.00000000</dvalue>
+    <dvalue name="CONVERGENCE" unit="-">0.00000425</dvalue>
+    <dvalue name="DENSITY" unit="-">1.08162256</dvalue>
+    <dvalue name="SPECHEATCP" unit="J/kgK">1009.67984878</dvalue>
+    <dvalue name="ISENTROPIC-EXPONENT" unit="-">1.39656221</dvalue>
+    <dvalue name="GAS-CONSTANT" unit="J/kgK">286.70052630</dvalue>
+    <element_att name="PIPE" ord="7"/>
+  </element>
+  <element name="MEASURINGPOINT" shortname="MP" ord="8">
+    <dvalue name="LOCATION" unit="mm">10.00000000</dvalue>
+    <dvalue name="PRESSURE" unit="Pa">104584.00647284</dvalue>
+    <dvalue name="VELOCITY" unit="m/s">27.33833296</dvalue>
+    <dvalue name="TEMPERATURE" unit="K">1010.76366749</dvalue>
+    <dvalue name="MASSFLOW" unit="kg/cycle">0.00052784</dvalue>
+    <dvalue name="MASSFLOWPERS" unit="kg/s">0.01099661</dvalue>
+    <dvalue name="MASSFLOWAVERAGED-TEMPERATURE" unit="K">1261.53122060</dvalue>
+    <dvalue name="MACHNUMBER" unit="-">0.04050304</dvalue>
+    <dvalue name="STAGNATIONPRESSURE" unit="Pa">105666.01240940</dvalue>
+    <dvalue name="STAGNATIONTEMPERATURE" unit="K">1013.20557560</dvalue>
+    <dvalue name="ENTHALPYFLOWPERS" unit="J/s">13025.26342040</dvalue>
+    <dvalue name="REYNOLDSNUMBER" unit="-">10234.63696998</dvalue>
+    <dvalue name="WALLTEMPERATURE" unit="K">300.00000000</dvalue>
+    <dvalue name="CONVERGENCE" unit="-">0.00000629</dvalue>
+    <dvalue name="DENSITY" unit="-">0.36416380</dvalue>
+    <dvalue name="SPECHEATCP" unit="J/kgK">1256.03526517</dvalue>
+    <dvalue name="ISENTROPIC-EXPONENT" unit="-">1.29381204</dvalue>
+    <dvalue name="GAS-CONSTANT" unit="J/kgK">285.09279500</dvalue>
+    <element_att name="PIPE" ord="20"/>
+  </element>
+  <element name="SYSTEMBOUNDARY" shortname="SB" ord="1">
+    <element_ref name="PIPE_END" ord="1"/>
+  </element>
+  <element name="SYSTEMBOUNDARY" shortname="SB" ord="2">
+    <element_ref name="PIPE_END" ord="2"/>
+  </element>
+  <element name="ENGINE" shortname="EN" ord="1">
+    <dvalue name="DISPLACED_VOLUME" unit="l">1.99822886</dvalue>
+    <dvalue name="ENDOFCYCLE-TIME" unit="s">0.96000000</dvalue>
+    <dvalue name="CYCLEAVERAGEDSPEED" unit="rpm">2500.00000000</dvalue>
+    <dvalue name="CYCLEFREQUENCY" unit="Hz">20.83333333</dvalue>
+    <dvalue name="CYCLEPERIOD" unit="s">0.04800000</dvalue>
+    <dvalue name="PRESSURE-AMB" unit="Pa">100000.00000000</dvalue>
+    <dvalue name="TEMPERATURE-AMB" unit="K">298.00000000</dvalue>
+    <dvalue name="A/F-RATIO-STOICH_SHP" unit="-">14.50000000</dvalue>
+    <dvalue name="LOWER-HEAT-VALUE_C" unit="J/kg">0.435000000000E+08</dvalue>
+    <dvalue name="NBR-OF-CYLINDERS_GEO" unit="-">4.00000000</dvalue>
+    <dvalue name="ENGINE-DISPLACEMENT_GEO" unit="m3">0.00199823</dvalue>
+    <dvalue name="IMEP_PF" unit="bar">11.01946930</dvalue>
+    <dvalue name="BMEP_PF" unit="bar">9.94804072</dvalue>
+    <dvalue name="FMEP_PF" unit="bar">1.07142857</dvalue>
+    <dvalue name="AMEP_PF" unit="bar">0.00000000</dvalue>
+    <dvalue name="TORQUE_PF" unit="Nm">158.18777477</dvalue>
+    <dvalue name="POWER_PF" unit="kW">41.41346259</dvalue>
+    <dvalue name="FRICTIONTORQUE_PF" unit="Nm">17.03721429</dvalue>
+    <dvalue name="FRICTIONPOWER_PF" unit="kW">4.46033227</dvalue>
+    <dvalue name="ISFC1_PF" unit="g/kWh">216.12439421</dvalue>
+    <dvalue name="ISFC2_PF" unit="g/kWh">216.12439421</dvalue>
+    <dvalue name="BSFC_PF" unit="g/kWh">239.40152559</dvalue>
+    <dvalue name="IMEP-EX_PF" unit="bar">-1.03805888</dvalue>
+    <dvalue name="IMEP-IN_PF" unit="bar">0.93785531</dvalue>
+    <dvalue name="IMEP-GE_PF" unit="bar">-0.10020357</dvalue>
+    <dvalue name="IMEP-HP_PF" unit="bar">11.11967287</dvalue>
+    <dvalue name="DELIVERYRATIO-AMB_G" unit="-">0.82058645</dvalue>
+    <dvalue name="DELIVERYRATIO-INT_G" unit="-">0.82058645</dvalue>
+    <dvalue name="AIRDELIVERYRATIO-AMB_G" unit="-">0.82063968</dvalue>
+    <dvalue name="AIRDELIVERYRATIO-INT_G" unit="-">0.82063968</dvalue>
+    <dvalue name="VOLUMETRICEFFICIENCY-AMB_G" unit="-">0.82063968</dvalue>
+    <dvalue name="VOLUMETRICEFFICIENCY-INT_G" unit="-">0.82063968</dvalue>
+    <dvalue name="TRAPPED-FUEL_MB" unit="kg">0.00013219</dvalue>
+    <dvalue name="MASS-ASPIRATED_MB" unit="kg">0.00191656</dvalue>
+    <dvalue name="AIRMASS-ASPIRATED_MB" unit="kg">0.00191668</dvalue>
+    <dvalue name="FUELMASS-ASPIRATED_MB" unit="kg">0.00000000</dvalue>
+    <dvalue name="MASS-ASPIRATED-PERS_MB" unit="kg/s">0.03992823</dvalue>
+    <dvalue name="AIRMASS-ASPIRATED-PERS_MB" unit="kg/s">0.03993082</dvalue>
+    <dvalue name="FUELMASS-ASPIRATED-PERS_MB" unit="kg/s">0.00000001</dvalue>
+    <dvalue name="FUEL-ENERGY_EB" unit="J">5751.00828110</dvalue>
+    <dvalue name="FUEL-ENERGY-PERS_EB" unit="W">119812.67252287</dvalue>
+    <dvalue name="RELEASED-ENERGY_EB" unit="J">5574.25527277</dvalue>
+    <dvalue name="RELEASED-ENERGY-PERS_EB" unit="W">116130.31818271</dvalue>
+    <dvalue name="GROSS-RELEASED-ENERGY_EB" unit="J">5574.25527277</dvalue>
+    <dvalue name="EFF-RELEASED-ENERGY_EB" unit="J">5568.06565117</dvalue>
+    <dvalue name="EFF-RELEASED-ENERGY-PERS_EB" unit="W">116001.36773278</dvalue>
+    <dvalue name="EFF-GROSS-RELEASED-ENERGY_EB" unit="J">5568.06565117</dvalue>
+    <dvalue name="ISO-VOL-COMB-EFFICIENCY_PF" unit="-">0.91610790</dvalue>
+    <dvalue name="ENERGYBALANCE_EB" unit="-">0.99882320</dvalue>
+    <dvalue name="EFFENERGYBALANCE_EB" unit="-">0.99771411</dvalue>
+    <dvalue name="WALLHEATFLOW_H" unit="J/cycle">-857.85604502</dvalue>
+    <dvalue name="WALLHEATFLOWPERS_H" unit="W">-17872.00093794</dvalue>
+    <dvalue name="PISTONWALLHEATFLOW_H" unit="J/cycle">-245.39933539</dvalue>
+    <dvalue name="HEADWALLHEATFLOW_H" unit="J/cycle">-310.84898637</dvalue>
+    <dvalue name="LINERWALLHEATFLOW_H" unit="J/cycle">-301.60772326</dvalue>
+    <dvalue name="PISTONTEMPERATURE_H" unit="K">525.00000000</dvalue>
+    <dvalue name="HEADTEMPERATURE_H" unit="K">545.00000000</dvalue>
+    <dvalue name="LINERTDCTEMPERATURE_H" unit="K">437.00000000</dvalue>
+    <dvalue name="LINERBDCTEMPERATURE_H" unit="K">432.00000000</dvalue>
+    <dvalue name="PEAKCYLINDERPRESSURE_C" unit="Pa">0.458194922218E+07</dvalue>
+    <dvalue name="PEAKCYLINDERPRESSURE-CRANKANGLE_C" unit="deg">20.63332117</dvalue>
+    <dvalue name="PEAKPRESSURERISE_C" unit="Pa/deg">171835.86560840</dvalue>
+    <dvalue name="PEAKPRESSURERISE-CRANKANGLE_C" unit="deg">8.60922220</dvalue>
+    <dvalue name="RES-GASCOMPRESS_C" unit="bar">1.30387805</dvalue>
+    <dvalue name="RES-GASCOMPRESS-CRANKANGLE_C" unit="deg">357.24267764</dvalue>
+    <dvalue name="RESIDUALGASMASSIN_MB" unit="kg">0.00000000</dvalue>
+    <dvalue name="RESIDUALGASMASSIN-PERS_MB" unit="kg/s">0.00000000</dvalue>
+    <dvalue name="RESIDUALGASMASSINTOCYL_MB" unit="kg">0.00005209</dvalue>
+    <dvalue name="RESIDUALGASMASSEX_MB" unit="kg">0.00204695</dvalue>
+    <dvalue name="RESIDUALGASMASSEXTOCYL_MB" unit="kg">0.00004648</dvalue>
+    <dvalue name="TOTALRESIDUALGAS-CONC_MB" unit="-">0.06846424</dvalue>
+    <dvalue name="A/F-RATIO-UNBRND_SHP" unit="-">14.52914460</dvalue>
+    <dvalue name="AIR-EXCESS-RATIO_SHP" unit="-">1.00200997</dvalue>
+    <dvalue name="ACCUMULATEDNOX_M" unit="g/kWh">6.49042759</dvalue>
+    <dvalue name="ACCUMULATEDCO_M" unit="g/kWh">0.45606571</dvalue>
+    <dvalue name="ACCUMULATEDHC_M" unit="g/kWh">0.65460324</dvalue>
+    <dvalue name="ACCUMULATEDNOX-TIME_M" unit="kg/s">0.00007466</dvalue>
+    <dvalue name="ACCUMULATEDCO-TIME_M" unit="kg/s">0.00000525</dvalue>
+    <dvalue name="ACCUMULATEDHC-TIME_M" unit="kg/s">0.00000753</dvalue>
+    <dvalue name="ACCUMULATEDNOX-MOLEFRACTION_M" unit="-">0.00169358</dvalue>
+    <dvalue name="ACCUMULATEDCO-MOLEFRACTION_M" unit="-">0.00012748</dvalue>
+    <dvalue name="ACCUMULATEDHC-MOLEFRACTION_M" unit="-">0.00012203</dvalue>
+    <dvalue name="ACCUMULATEDSOOT-TIME_M" unit="kg/s">0.00000000</dvalue>
+    <dvalue name="OCTANENUMBER_C" unit="-">87.43035291</dvalue>
+    <dvalue name="SWIRL_G" unit="-">0.00000000</dvalue>
+    <dvalue name="BLOWBY_G" unit="kg/cycle">0.00000000</dvalue>
+    <dvalue name="BLOWBYENTHALPYFLOW_EB" unit="J/cycle">0.00000000</dvalue>
+    <dvalue name="EVAPORATIONENERGY_EB" unit="J/cycle">-38.86209735</dvalue>
+    <dvalue name="COMPRESSIONRATIO_GEO" unit="-">10.50000000</dvalue>
+    <dvalue name="ENTHALPYFLUX-IN_EB" unit="W">-116.89388548</dvalue>
+    <dvalue name="ENTHALPYFLUX-EX_EB" unit="W">50993.04319819</dvalue>
+    <dvalue name="PORTWALLHEATFLOW-IN_EB" unit="W">-47.36981451</dvalue>
+    <dvalue name="PORTWALLHEATFLOW-EX_EB" unit="W">-609.15628318</dvalue>
+    <dvalue name="TRAPPED-FUEL-PERS_MB" unit="kg/s">0.00275401</dvalue>
+    <dvalue name="COMBUSTIONSTART_C" unit="deg">-3.00000000</dvalue>
+    <dvalue name="COMBUSTIONDURATION_C" unit="deg">50.00000000</dvalue>
+    <dvalue name="PEAKCYLINDERTEMPERATURE" unit="K">2463.13391098</dvalue>
+    <dvalue name="PEAKCYLINDERTEMPERATURE-CRANKANGLE" unit="deg">31.22991595</dvalue>
+    <dvalue name="PEAKTEMPERATUREBURNEDZONE_C" unit="K">2637.03276195</dvalue>
+    <dvalue name="PEAKTEMPERATUREBURNEDZONE-CRANKANGLE_C" unit="deg">16.54089556</dvalue>
+    <dvalue name="FUELMASSINJECTED" unit="kg">0.00013218</dvalue>
+    <dvalue name="MEAN-EFF-HTC_H" unit="W/(m^2.K)">279.16031126</dvalue>
+    <dvalue name="MEAN-EFF-HTGASTEMP_H" unit="K">1310.03129519</dvalue>
+    <dvalue name="CONVERGENCE" unit="-">0.00000000</dvalue>
+    <dvalue name="ENTHALPYFLUX-FUEL_EB" unit="W">-1092.24731582</dvalue>
+    <dvalue name="INDICATED-EFFICIENCY_PF" unit="-">0.38292124</dvalue>
+    <dvalue name="EFFECTIVE-EFFICIENCY_PF" unit="-">0.34568961</dvalue>
+    <dvalue name="MECHANICAL-EFFICIENCY_PF" unit="-">0.90276949</dvalue>
+    <dvalue name="BRAKE_POWER_PERCENT" unit="%">35.66119790</dvalue>
+    <dvalue name="LOSS_FRICTION_PCENT" unit="%">3.84079915</dvalue>
+    <dvalue name="LOSS_WHT_PISTON_PCENT" unit="%">4.40236988</dvalue>
+    <dvalue name="LOSS_WHT_HEAD_PCENT" unit="%">5.57651150</dvalue>
+    <dvalue name="LOSS_WHT_LINER_PCENT" unit="%">5.41072679</dvalue>
+    <dvalue name="LOSS_WHT_INTAKE_PCENT" unit="%">0.04079022</dvalue>
+    <dvalue name="LOSS_WHT_EXHAUST_PCENT" unit="%">0.52454544</dvalue>
+    <dvalue name="LOSS_EXH_GASES_PCENT" unit="%">44.01084737</dvalue>
+    <dvalue name="DYNAMIC_COMPRESSION_RATIO" unit="-">7.99924004</dvalue>
+    <dvalue name="FUEL_MASS_DELIVERED_RATE" unit="g/s">2.75401281</dvalue>
+    <dvalue name="INTAKE_PORT_WALL_T" unit="K">360.00000000</dvalue>
+    <dvalue name="EXHAUST_PORT_WALL_T" unit="K">530.00000000</dvalue>
+  </element>
+  <element name="CYLINDER" shortname="CY" ord="1">
+    <dvalue name="BORE" unit="mm">86.00000000</dvalue>
+    <dvalue name="STROKE" unit="mm">86.00000000</dvalue>
+    <dvalue name="COMPRESSION_RATIO" unit="-">10.50000000</dvalue>
+    <dvalue name="DYNAMIC_COMPRESSION_RATIO" unit="-">8.01479118</dvalue>
+    <dvalue name="CONROD_LENGTH" unit="mm">143.50000000</dvalue>
+    <dvalue name="CRANK_RADIUS" unit="mm">43.00000000</dvalue>
+    <dvalue name="FIRING_TDC" unit="degrees">0.00000000</dvalue>
+    <dvalue name="DISPLACED_VOLUME" unit="l">0.49955721</dvalue>
+    <dvalue name="COMPRESSED_VOLUME" unit="l">0.05258497</dvalue>
+    <dvalue name="PISTON_PIN_OFFSET" unit="mm">0.00000000</dvalue>
+    <dvalue name="BLOWBY_GAP" unit="mm">0.00000000</dvalue>
+    <dvalue name="CYLINDER-DISPLACEMENT" unit="m3">0.00049956</dvalue>
+    <dvalue name="IMEP" unit="bar">10.87081777</dvalue>
+    <dvalue name="BMEP" unit="bar">9.79938920</dvalue>
+    <dvalue name="FMEP" unit="bar">1.07142857</dvalue>
+    <dvalue name="ISFC1" unit="g/kWh">215.31490732</dvalue>
+    <dvalue name="ISFC2" unit="g/kWh">215.31490732</dvalue>
+    <dvalue name="BSFC" unit="g/kWh">238.85663415</dvalue>
+    <dvalue name="IMEP-EX" unit="bar">-1.03773590</dvalue>
+    <dvalue name="IMEP-IN" unit="bar">0.96499377</dvalue>
+    <dvalue name="IMEP-GE" unit="bar">-0.07274212</dvalue>
+    <dvalue name="HP-START-PRESSURE_SHP" unit="Pa">135296.94065356</dvalue>
+    <dvalue name="HP-START-TEMPERATURE_SHP" unit="K">393.01159032</dvalue>
+    <dvalue name="HP-START-TOTALMASS_SHP" unit="kg">0.00051229</dvalue>
+    <dvalue name="HP-START-AIRMASS_SHP" unit="kg">0.00047096</dvalue>
+    <dvalue name="TOTALRESIDUALGAS-CONC_SHP" unit="-">0.06924958</dvalue>
+    <dvalue name="DELIVERYRATIO-AMB" unit="-">0.80650500</dvalue>
+    <dvalue name="DELIVERYRATIO-INT" unit="-">0.80650500</dvalue>
+    <dvalue name="AIRDELIVERYRATIO-AMB" unit="-">0.80657844</dvalue>
+    <dvalue name="VOLUMETRICEFFICIENCY-AMB" unit="-">0.80657844</dvalue>
+    <dvalue name="VOLUMETRICEFFICIENCY-INT" unit="-">0.80657844</dvalue>
+    <dvalue name="A/F-RATIO-UNBRND_SHP" unit="-">14.52977403</dvalue>
+    <dvalue name="A/F-RATIO-BRND_SHP" unit="-">14.49944978</dvalue>
+    <dvalue name="AIR-EXCESS-RATIO_SHP" unit="-">1.00205338</dvalue>
+    <dvalue name="TOTALFUELMASS" unit="kg">0.00003248</dvalue>
+    <dvalue name="FUELMASSINJECTED" unit="kg">0.00003248</dvalue>
+    <dvalue name="FUELMASS-ASPIRATED" unit="kg">0.00000000</dvalue>
+    <dvalue name="RESIDUALGASMASSIN_G" unit="kg">-0.00000001</dvalue>
+    <dvalue name="RESIDUALGASMASSINTOCYL_G" unit="kg">0.00001379</dvalue>
+    <dvalue name="RESIDUALGASMASSEX_G" unit="kg">0.00050294</dvalue>
+    <dvalue name="RESIDUALGASMASSEXTOCYL_G" unit="kg">0.00001140</dvalue>
+    <dvalue name="WALLHEATFLOW_H" unit="J/cycle">-210.35496233</dvalue>
+    <dvalue name="PISTONWALLHEATFLOW_H" unit="J/cycle">-60.18719082</dvalue>
+    <dvalue name="HEADWALLHEATFLOW_H" unit="J/cycle">-76.22158367</dvalue>
+    <dvalue name="LINERWALLHEATFLOW_H" unit="J/cycle">-73.94618784</dvalue>
+    <dvalue name="PISTONTEMPERATURE_H" unit="K">525.00000000</dvalue>
+    <dvalue name="HEADTEMPERATURE_H" unit="K">545.00000000</dvalue>
+    <dvalue name="LINERTDCTEMPERATURE_H" unit="K">437.00000000</dvalue>
+    <dvalue name="LINERBDCTEMPERATURE_H" unit="K">432.00000000</dvalue>
+    <dvalue name="MEAN-EFF-HTC_H" unit="W/(m^2.K)">276.34432456</dvalue>
+    <dvalue name="MEAN-EFF-HTGASTEMP_H" unit="K">1303.03998161</dvalue>
+    <dvalue name="PEAKCYLINDERPRESSURE" unit="Pa">0.449694134065E+07</dvalue>
+    <dvalue name="PEAKCYLINDERPRESSURE-CRANKANGLE" unit="deg">20.59149460</dvalue>
+    <dvalue name="PEAKCYLINDERTEMPERATURE" unit="K">2458.66192567</dvalue>
+    <dvalue name="PEAKCYLINDERTEMPERATURE-CRANKANGLE" unit="deg">31.32442836</dvalue>
+    <dvalue name="PEAKPRESSURERISE" unit="Pa/deg">169301.41354754</dvalue>
+    <dvalue name="PEAKPRESSURERISE-CRANKANGLE" unit="deg">8.29379079</dvalue>
+    <dvalue name="RES-GASCOMPRESS" unit="bar">1.29702027</dvalue>
+    <dvalue name="RES-GASCOMPRESS-CRANKANGLE" unit="deg">357.34911310</dvalue>
+    <dvalue name="BLOWBY_G" unit="kg/cycle">0.00000000</dvalue>
+    <dvalue name="BLOWBYENTHALPYFLOW_H" unit="J/cycle">0.00000000</dvalue>
+    <dvalue name="AIRDELIVERYRATIO-INT" unit="-">0.80657844</dvalue>
+    <dvalue name="COMBUSTIONSTART_C" unit="deg">-3.00000000</dvalue>
+    <dvalue name="COMBUSTIONDURATION_C" unit="deg">50.00000000</dvalue>
+    <dvalue name="PEAKTEMPERATUREBURNEDZONE_C" unit="K">2632.65962591</dvalue>
+    <dvalue name="PEAKTEMPERATUREBURNEDZONE-CRANKANGLE_C" unit="deg">16.70869602</dvalue>
+    <dvalue name="ACCUMULATEDNOX_M" unit="g/kWh">6.24297543</dvalue>
+    <dvalue name="ACCUMULATEDCO_M" unit="g/kWh">0.44720676</dvalue>
+    <dvalue name="ACCUMULATEDHC_M" unit="g/kWh">0.66437875</dvalue>
+    <dvalue name="ACCUMULATEDNOX-TIME_M" unit="kg/s">0.00001769</dvalue>
+    <dvalue name="ACCUMULATEDCO-TIME_M" unit="kg/s">0.00000127</dvalue>
+    <dvalue name="ACCUMULATEDHC-TIME_M" unit="kg/s">0.00000188</dvalue>
+    <dvalue name="ACCUMULATEDNOX-MOLEFRACTION_M" unit="-">0.00163275</dvalue>
+    <dvalue name="ACCUMULATEDCO-MOLEFRACTION_M" unit="-">0.00012529</dvalue>
+    <dvalue name="ACCUMULATEDHC-MOLEFRACTION_M" unit="-">0.00012414</dvalue>
+    <dvalue name="OCTANENUMBER_C" unit="-">83.88207692</dvalue>
+    <dvalue name="MASS-FRAC-BURNED-02-CRANKANGLE_C" unit="deg">0.73728094</dvalue>
+    <dvalue name="MASS-FRAC-BURNED-05-CRANKANGLE_C" unit="deg">2.65968249</dvalue>
+    <dvalue name="MASS-FRAC-BURNED-10-CRANKANGLE_C" unit="deg">4.79235708</dvalue>
+    <dvalue name="MASS-FRAC-BURNED-50-CRANKANGLE_C" unit="deg">15.00556201</dvalue>
+    <dvalue name="MASS-FRAC-BURNED-90-CRANKANGLE_C" unit="deg">27.70122552</dvalue>
+    <dvalue name="MASS-FRAC-BURNED-95-CRANKANGLE_C" unit="deg">31.51508917</dvalue>
+    <dvalue name="EVAPORATIONENERGY_C" unit="J/cycle">-9.54872492</dvalue>
+    <dvalue name="SOC-TEMPERATURE_C" unit="K">737.46759303</dvalue>
+    <dvalue name="HP-START-FBMASS_SHP" unit="kg">0.00000229</dvalue>
+    <dvalue name="ENTHALPYFLUX-FUEL" unit="J/cycle">-12.88193234</dvalue>
+    <dvalue name="INDICATED-EFFICIENCY_PF" unit="-">0.38436085</dvalue>
+    <dvalue name="EFFECTIVE-EFFICIENCY_PF" unit="-">0.34647822</dvalue>
+    <dvalue name="SOC-PRESSURE_C" unit="Pa">0.205198578378E+07</dvalue>
+    <dvalue name="BRAKE_POWER_PERCENT" unit="%">35.74336593</dvalue>
+    <dvalue name="LOSS_FRICTION_PCENT" unit="%">3.90804597</dvalue>
+    <dvalue name="LOSS_WHT_PISTON_PCENT" unit="%">4.39455879</dvalue>
+    <dvalue name="LOSS_WHT_HEAD_PCENT" unit="%">5.56530760</dvalue>
+    <dvalue name="LOSS_WHT_LINER_PCENT" unit="%">5.39916992</dvalue>
+    <dvalue name="LOSS_WHT_INTAKE_PCENT" unit="%">0.04243322</dvalue>
+    <dvalue name="LOSS_WHT_EXHAUST_PCENT" unit="%">0.52837837</dvalue>
+    <dvalue name="LOSS_EXH_GASES_PCENT" unit="%">43.88683699</dvalue>
+    <element_ref name="PORT" position="INTAKE" ord="1"/>
+    <element_ref name="PORT" position="EXHAUST" ord="2"/>
+  </element>
+  <element name="CYLINDER" shortname="CY" ord="2">
+    <dvalue name="BORE" unit="mm">86.00000000</dvalue>
+    <dvalue name="STROKE" unit="mm">86.00000000</dvalue>
+    <dvalue name="COMPRESSION_RATIO" unit="-">10.50000000</dvalue>
+    <dvalue name="DYNAMIC_COMPRESSION_RATIO" unit="-">7.98963461</dvalue>
+    <dvalue name="CONROD_LENGTH" unit="mm">143.50000000</dvalue>
+    <dvalue name="CRANK_RADIUS" unit="mm">43.00000000</dvalue>
+    <dvalue name="FIRING_TDC" unit="degrees">540.00000000</dvalue>
+    <dvalue name="DISPLACED_VOLUME" unit="l">0.49955721</dvalue>
+    <dvalue name="COMPRESSED_VOLUME" unit="l">0.05258497</dvalue>
+    <dvalue name="PISTON_PIN_OFFSET" unit="mm">0.00000000</dvalue>
+    <dvalue name="BLOWBY_GAP" unit="mm">0.00000000</dvalue>
+    <dvalue name="CYLINDER-DISPLACEMENT" unit="m3">0.00049956</dvalue>
+    <dvalue name="IMEP" unit="bar">11.02084286</dvalue>
+    <dvalue name="BMEP" unit="bar">9.94941429</dvalue>
+    <dvalue name="FMEP" unit="bar">1.07142857</dvalue>
+    <dvalue name="ISFC1" unit="g/kWh">216.14426534</dvalue>
+    <dvalue name="ISFC2" unit="g/kWh">216.14426534</dvalue>
+    <dvalue name="BSFC" unit="g/kWh">239.42032309</dvalue>
+    <dvalue name="IMEP-EX" unit="bar">-1.03790718</dvalue>
+    <dvalue name="IMEP-IN" unit="bar">0.93768906</dvalue>
+    <dvalue name="IMEP-GE" unit="bar">-0.10021811</dvalue>
+    <dvalue name="HP-START-PRESSURE_SHP" unit="Pa">139008.33198885</dvalue>
+    <dvalue name="HP-START-TEMPERATURE_SHP" unit="K">396.67804440</dvalue>
+    <dvalue name="HP-START-TOTALMASS_SHP" unit="kg">0.00051989</dvalue>
+    <dvalue name="HP-START-AIRMASS_SHP" unit="kg">0.00047927</dvalue>
+    <dvalue name="TOTALRESIDUALGAS-CONC_SHP" unit="-">0.06661586</dvalue>
+    <dvalue name="DELIVERYRATIO-AMB" unit="-">0.82073466</dvalue>
+    <dvalue name="DELIVERYRATIO-INT" unit="-">0.82073466</dvalue>
+    <dvalue name="AIRDELIVERYRATIO-AMB" unit="-">0.82080989</dvalue>
+    <dvalue name="VOLUMETRICEFFICIENCY-AMB" unit="-">0.82080989</dvalue>
+    <dvalue name="VOLUMETRICEFFICIENCY-INT" unit="-">0.82080989</dvalue>
+    <dvalue name="A/F-RATIO-UNBRND_SHP" unit="-">14.52891600</dvalue>
+    <dvalue name="A/F-RATIO-BRND_SHP" unit="-">14.49900611</dvalue>
+    <dvalue name="AIR-EXCESS-RATIO_SHP" unit="-">1.00199421</dvalue>
+    <dvalue name="TOTALFUELMASS" unit="kg">0.00003306</dvalue>
+    <dvalue name="FUELMASSINJECTED" unit="kg">0.00003305</dvalue>
+    <dvalue name="FUELMASS-ASPIRATED" unit="kg">0.00000000</dvalue>
+    <dvalue name="RESIDUALGASMASSIN_G" unit="kg">-0.00000001</dvalue>
+    <dvalue name="RESIDUALGASMASSINTOCYL_G" unit="kg">0.00001184</dvalue>
+    <dvalue name="RESIDUALGASMASSEX_G" unit="kg">0.00051181</dvalue>
+    <dvalue name="RESIDUALGASMASSEXTOCYL_G" unit="kg">0.00001066</dvalue>
+    <dvalue name="WALLHEATFLOW_H" unit="J/cycle">-214.14752274</dvalue>
+    <dvalue name="PISTONWALLHEATFLOW_H" unit="J/cycle">-61.27766794</dvalue>
+    <dvalue name="HEADWALLHEATFLOW_H" unit="J/cycle">-77.61964243</dvalue>
+    <dvalue name="LINERWALLHEATFLOW_H" unit="J/cycle">-75.25021237</dvalue>
+    <dvalue name="PISTONTEMPERATURE_H" unit="K">525.00000000</dvalue>
+    <dvalue name="HEADTEMPERATURE_H" unit="K">545.00000000</dvalue>
+    <dvalue name="LINERTDCTEMPERATURE_H" unit="K">437.00000000</dvalue>
+    <dvalue name="LINERBDCTEMPERATURE_H" unit="K">432.00000000</dvalue>
+    <dvalue name="MEAN-EFF-HTC_H" unit="W/(m^2.K)">278.99462981</dvalue>
+    <dvalue name="MEAN-EFF-HTGASTEMP_H" unit="K">1309.62867301</dvalue>
+    <dvalue name="PEAKCYLINDERPRESSURE" unit="Pa">0.457645238173E+07</dvalue>
+    <dvalue name="PEAKCYLINDERPRESSURE-CRANKANGLE" unit="deg">20.72794266</dvalue>
+    <dvalue name="PEAKCYLINDERTEMPERATURE" unit="K">2464.96658599</dvalue>
+    <dvalue name="PEAKCYLINDERTEMPERATURE-CRANKANGLE" unit="deg">31.32247184</dvalue>
+    <dvalue name="PEAKPRESSURERISE" unit="Pa/deg">172213.89793938</dvalue>
+    <dvalue name="PEAKPRESSURERISE-CRANKANGLE" unit="deg">8.55040167</dvalue>
+    <dvalue name="RES-GASCOMPRESS" unit="bar">1.30397640</dvalue>
+    <dvalue name="RES-GASCOMPRESS-CRANKANGLE" unit="deg">357.45148758</dvalue>
+    <dvalue name="BLOWBY_G" unit="kg/cycle">0.00000000</dvalue>
+    <dvalue name="BLOWBYENTHALPYFLOW_H" unit="J/cycle">0.00000000</dvalue>
+    <dvalue name="AIRDELIVERYRATIO-INT" unit="-">0.82080989</dvalue>
+    <dvalue name="COMBUSTIONSTART_C" unit="deg">-3.00000000</dvalue>
+    <dvalue name="COMBUSTIONDURATION_C" unit="deg">50.00000000</dvalue>
+    <dvalue name="PEAKTEMPERATUREBURNEDZONE_C" unit="K">2638.78275387</dvalue>
+    <dvalue name="PEAKTEMPERATUREBURNEDZONE-CRANKANGLE_C" unit="deg">16.46321869</dvalue>
+    <dvalue name="ACCUMULATEDNOX_M" unit="g/kWh">6.56127639</dvalue>
+    <dvalue name="ACCUMULATEDCO_M" unit="g/kWh">0.45989771</dvalue>
+    <dvalue name="ACCUMULATEDHC_M" unit="g/kWh">0.65299634</dvalue>
+    <dvalue name="ACCUMULATEDNOX-TIME_M" unit="kg/s">0.00001887</dvalue>
+    <dvalue name="ACCUMULATEDCO-TIME_M" unit="kg/s">0.00000132</dvalue>
+    <dvalue name="ACCUMULATEDHC-TIME_M" unit="kg/s">0.00000188</dvalue>
+    <dvalue name="ACCUMULATEDNOX-MOLEFRACTION_M" unit="-">0.00171189</dvalue>
+    <dvalue name="ACCUMULATEDCO-MOLEFRACTION_M" unit="-">0.00012854</dvalue>
+    <dvalue name="ACCUMULATEDHC-MOLEFRACTION_M" unit="-">0.00012172</dvalue>
+    <dvalue name="OCTANENUMBER_C" unit="-">85.24995088</dvalue>
+    <dvalue name="MASS-FRAC-BURNED-02-CRANKANGLE_C" unit="deg">0.73728619</dvalue>
+    <dvalue name="MASS-FRAC-BURNED-05-CRANKANGLE_C" unit="deg">2.65989680</dvalue>
+    <dvalue name="MASS-FRAC-BURNED-10-CRANKANGLE_C" unit="deg">4.79235427</dvalue>
+    <dvalue name="MASS-FRAC-BURNED-50-CRANKANGLE_C" unit="deg">15.00582748</dvalue>
+    <dvalue name="MASS-FRAC-BURNED-90-CRANKANGLE_C" unit="deg">27.70134356</dvalue>
+    <dvalue name="MASS-FRAC-BURNED-95-CRANKANGLE_C" unit="deg">31.51503879</dvalue>
+    <dvalue name="EVAPORATIONENERGY_C" unit="J/cycle">-9.71787354</dvalue>
+    <dvalue name="SOC-TEMPERATURE_C" unit="K">741.85987202</dvalue>
+    <dvalue name="HP-START-FBMASS_SHP" unit="kg">0.00000223</dvalue>
+    <dvalue name="ENTHALPYFLUX-FUEL" unit="J/cycle">-13.11010524</dvalue>
+    <dvalue name="INDICATED-EFFICIENCY_PF" unit="-">0.38288603</dvalue>
+    <dvalue name="EFFECTIVE-EFFICIENCY_PF" unit="-">0.34566247</dvalue>
+    <dvalue name="SOC-PRESSURE_C" unit="Pa">0.209429180824E+07</dvalue>
+    <dvalue name="BRAKE_POWER_PERCENT" unit="%">35.66019286</dvalue>
+    <dvalue name="LOSS_FRICTION_PCENT" unit="%">3.84016068</dvalue>
+    <dvalue name="LOSS_WHT_PISTON_PCENT" unit="%">4.39646041</dvalue>
+    <dvalue name="LOSS_WHT_HEAD_PCENT" unit="%">5.56894047</dvalue>
+    <dvalue name="LOSS_WHT_LINER_PCENT" unit="%">5.39894207</dvalue>
+    <dvalue name="LOSS_WHT_INTAKE_PCENT" unit="%">0.03592930</dvalue>
+    <dvalue name="LOSS_WHT_EXHAUST_PCENT" unit="%">0.52436965</dvalue>
+    <dvalue name="LOSS_EXH_GASES_PCENT" unit="%">44.03855434</dvalue>
+    <element_ref name="PORT" position="INTAKE" ord="3"/>
+    <element_ref name="PORT" position="EXHAUST" ord="4"/>
+  </element>
+  <element name="CYLINDER" shortname="CY" ord="3">
+    <dvalue name="BORE" unit="mm">86.00000000</dvalue>
+    <dvalue name="STROKE" unit="mm">86.00000000</dvalue>
+    <dvalue name="COMPRESSION_RATIO" unit="-">10.50000000</dvalue>
+    <dvalue name="DYNAMIC_COMPRESSION_RATIO" unit="-">8.01253102</dvalue>
+    <dvalue name="CONROD_LENGTH" unit="mm">143.50000000</dvalue>
+    <dvalue name="CRANK_RADIUS" unit="mm">43.00000000</dvalue>
+    <dvalue name="FIRING_TDC" unit="degrees">180.00000000</dvalue>
+    <dvalue name="DISPLACED_VOLUME" unit="l">0.49955721</dvalue>
+    <dvalue name="COMPRESSED_VOLUME" unit="l">0.05258497</dvalue>
+    <dvalue name="PISTON_PIN_OFFSET" unit="mm">0.00000000</dvalue>
+    <dvalue name="BLOWBY_GAP" unit="mm">0.00000000</dvalue>
+    <dvalue name="CYLINDER-DISPLACEMENT" unit="m3">0.00049956</dvalue>
+    <dvalue name="IMEP" unit="bar">10.86193298</dvalue>
+    <dvalue name="BMEP" unit="bar">9.79050441</dvalue>
+    <dvalue name="FMEP" unit="bar">1.07142857</dvalue>
+    <dvalue name="ISFC1" unit="g/kWh">216.34109134</dvalue>
+    <dvalue name="ISFC2" unit="g/kWh">216.34109134</dvalue>
+    <dvalue name="BSFC" unit="g/kWh">240.01648301</dvalue>
+    <dvalue name="IMEP-EX" unit="bar">-1.03811925</dvalue>
+    <dvalue name="IMEP-IN" unit="bar">0.93349397</dvalue>
+    <dvalue name="IMEP-GE" unit="bar">-0.10462529</dvalue>
+    <dvalue name="HP-START-PRESSURE_SHP" unit="Pa">138480.49955227</dvalue>
+    <dvalue name="HP-START-TEMPERATURE_SHP" unit="K">399.46000942</dvalue>
+    <dvalue name="HP-START-TOTALMASS_SHP" unit="kg">0.00051574</dvalue>
+    <dvalue name="HP-START-AIRMASS_SHP" unit="kg">0.00047279</dvalue>
+    <dvalue name="TOTALRESIDUALGAS-CONC_SHP" unit="-">0.07187483</dvalue>
+    <dvalue name="DELIVERYRATIO-AMB" unit="-">0.80964104</dvalue>
+    <dvalue name="DELIVERYRATIO-INT" unit="-">0.80964104</dvalue>
+    <dvalue name="AIRDELIVERYRATIO-AMB" unit="-">0.80971534</dvalue>
+    <dvalue name="VOLUMETRICEFFICIENCY-AMB" unit="-">0.80971534</dvalue>
+    <dvalue name="VOLUMETRICEFFICIENCY-INT" unit="-">0.80971534</dvalue>
+    <dvalue name="A/F-RATIO-UNBRND_SHP" unit="-">14.52912817</dvalue>
+    <dvalue name="A/F-RATIO-BRND_SHP" unit="-">14.49913000</dvalue>
+    <dvalue name="AIR-EXCESS-RATIO_SHP" unit="-">1.00200884</dvalue>
+    <dvalue name="TOTALFUELMASS" unit="kg">0.00003261</dvalue>
+    <dvalue name="FUELMASSINJECTED" unit="kg">0.00003261</dvalue>
+    <dvalue name="FUELMASS-ASPIRATED" unit="kg">0.00000000</dvalue>
+    <dvalue name="RESIDUALGASMASSIN_G" unit="kg">-0.00000000</dvalue>
+    <dvalue name="RESIDUALGASMASSINTOCYL_G" unit="kg">0.00001450</dvalue>
+    <dvalue name="RESIDUALGASMASSEX_G" unit="kg">0.00050490</dvalue>
+    <dvalue name="RESIDUALGASMASSEXTOCYL_G" unit="kg">0.00001293</dvalue>
+    <dvalue name="WALLHEATFLOW_H" unit="J/cycle">-212.92923842</dvalue>
+    <dvalue name="PISTONWALLHEATFLOW_H" unit="J/cycle">-60.87478450</dvalue>
+    <dvalue name="HEADWALLHEATFLOW_H" unit="J/cycle">-77.10968703</dvalue>
+    <dvalue name="LINERWALLHEATFLOW_H" unit="J/cycle">-74.94476689</dvalue>
+    <dvalue name="PISTONTEMPERATURE_H" unit="K">525.00000000</dvalue>
+    <dvalue name="HEADTEMPERATURE_H" unit="K">545.00000000</dvalue>
+    <dvalue name="LINERTDCTEMPERATURE_H" unit="K">437.00000000</dvalue>
+    <dvalue name="LINERBDCTEMPERATURE_H" unit="K">432.00000000</dvalue>
+    <dvalue name="MEAN-EFF-HTC_H" unit="W/(m^2.K)">277.11120206</dvalue>
+    <dvalue name="MEAN-EFF-HTGASTEMP_H" unit="K">1309.77870133</dvalue>
+    <dvalue name="PEAKCYLINDERPRESSURE" unit="Pa">0.453247819060E+07</dvalue>
+    <dvalue name="PEAKCYLINDERPRESSURE-CRANKANGLE" unit="deg">20.42462348</dvalue>
+    <dvalue name="PEAKCYLINDERTEMPERATURE" unit="K">2459.68009523</dvalue>
+    <dvalue name="PEAKCYLINDERTEMPERATURE-CRANKANGLE" unit="deg">31.20167925</dvalue>
+    <dvalue name="PEAKPRESSURERISE" unit="Pa/deg">169250.80087795</dvalue>
+    <dvalue name="PEAKPRESSURERISE-CRANKANGLE" unit="deg">8.81882250</dvalue>
+    <dvalue name="RES-GASCOMPRESS" unit="bar">1.30726018</dvalue>
+    <dvalue name="RES-GASCOMPRESS-CRANKANGLE" unit="deg">356.90183519</dvalue>
+    <dvalue name="BLOWBY_G" unit="kg/cycle">0.00000000</dvalue>
+    <dvalue name="BLOWBYENTHALPYFLOW_H" unit="J/cycle">0.00000000</dvalue>
+    <dvalue name="AIRDELIVERYRATIO-INT" unit="-">0.80971534</dvalue>
+    <dvalue name="COMBUSTIONSTART_C" unit="deg">-3.00000000</dvalue>
+    <dvalue name="COMBUSTIONDURATION_C" unit="deg">50.00000000</dvalue>
+    <dvalue name="PEAKTEMPERATUREBURNEDZONE_C" unit="K">2633.59961243</dvalue>
+    <dvalue name="PEAKTEMPERATUREBURNEDZONE-CRANKANGLE_C" unit="deg">16.53022996</dvalue>
+    <dvalue name="ACCUMULATEDNOX_M" unit="g/kWh">6.34294618</dvalue>
+    <dvalue name="ACCUMULATEDCO_M" unit="g/kWh">0.45160359</dvalue>
+    <dvalue name="ACCUMULATEDHC_M" unit="g/kWh">0.66491026</dvalue>
+    <dvalue name="ACCUMULATEDNOX-TIME_M" unit="kg/s">0.00001795</dvalue>
+    <dvalue name="ACCUMULATEDCO-TIME_M" unit="kg/s">0.00000128</dvalue>
+    <dvalue name="ACCUMULATEDHC-TIME_M" unit="kg/s">0.00000188</dvalue>
+    <dvalue name="ACCUMULATEDNOX-MOLEFRACTION_M" unit="-">0.00165093</dvalue>
+    <dvalue name="ACCUMULATEDCO-MOLEFRACTION_M" unit="-">0.00012592</dvalue>
+    <dvalue name="ACCUMULATEDHC-MOLEFRACTION_M" unit="-">0.00012364</dvalue>
+    <dvalue name="OCTANENUMBER_C" unit="-">85.50559160</dvalue>
+    <dvalue name="MASS-FRAC-BURNED-02-CRANKANGLE_C" unit="deg">0.73727806</dvalue>
+    <dvalue name="MASS-FRAC-BURNED-05-CRANKANGLE_C" unit="deg">2.65949561</dvalue>
+    <dvalue name="MASS-FRAC-BURNED-10-CRANKANGLE_C" unit="deg">4.79276082</dvalue>
+    <dvalue name="MASS-FRAC-BURNED-50-CRANKANGLE_C" unit="deg">15.00580865</dvalue>
+    <dvalue name="MASS-FRAC-BURNED-90-CRANKANGLE_C" unit="deg">27.70378855</dvalue>
+    <dvalue name="MASS-FRAC-BURNED-95-CRANKANGLE_C" unit="deg">31.51575583</dvalue>
+    <dvalue name="EVAPORATIONENERGY_C" unit="J/cycle">-9.58630680</dvalue>
+    <dvalue name="SOC-TEMPERATURE_C" unit="K">746.59919880</dvalue>
+    <dvalue name="HP-START-FBMASS_SHP" unit="kg">0.00000239</dvalue>
+    <dvalue name="ENTHALPYFLUX-FUEL" unit="J/cycle">-12.93247999</dvalue>
+    <dvalue name="INDICATED-EFFICIENCY_PF" unit="-">0.38253769</dvalue>
+    <dvalue name="EFFECTIVE-EFFICIENCY_PF" unit="-">0.34480391</dvalue>
+    <dvalue name="SOC-PRESSURE_C" unit="Pa">0.208951891988E+07</dvalue>
+    <dvalue name="BRAKE_POWER_PERCENT" unit="%">35.57090718</dvalue>
+    <dvalue name="LOSS_FRICTION_PCENT" unit="%">3.89271938</dvalue>
+    <dvalue name="LOSS_WHT_PISTON_PCENT" unit="%">4.42733185</dvalue>
+    <dvalue name="LOSS_WHT_HEAD_PCENT" unit="%">5.60807198</dvalue>
+    <dvalue name="LOSS_WHT_LINER_PCENT" unit="%">5.45062059</dvalue>
+    <dvalue name="LOSS_WHT_INTAKE_PCENT" unit="%">0.04905290</dvalue>
+    <dvalue name="LOSS_WHT_EXHAUST_PCENT" unit="%">0.52846529</dvalue>
+    <dvalue name="LOSS_EXH_GASES_PCENT" unit="%">43.92970694</dvalue>
+    <element_ref name="PORT" position="INTAKE" ord="5"/>
+    <element_ref name="PORT" position="EXHAUST" ord="6"/>
+  </element>
+  <element name="CYLINDER" shortname="CY" ord="4">
+    <dvalue name="BORE" unit="mm">86.00000000</dvalue>
+    <dvalue name="STROKE" unit="mm">86.00000000</dvalue>
+    <dvalue name="COMPRESSION_RATIO" unit="-">10.50000000</dvalue>
+    <dvalue name="DYNAMIC_COMPRESSION_RATIO" unit="-">7.98000333</dvalue>
+    <dvalue name="CONROD_LENGTH" unit="mm">143.50000000</dvalue>
+    <dvalue name="CRANK_RADIUS" unit="mm">43.00000000</dvalue>
+    <dvalue name="FIRING_TDC" unit="degrees">360.00000000</dvalue>
+    <dvalue name="DISPLACED_VOLUME" unit="l">0.49955721</dvalue>
+    <dvalue name="COMPRESSED_VOLUME" unit="l">0.05258497</dvalue>
+    <dvalue name="PISTON_PIN_OFFSET" unit="mm">0.00000000</dvalue>
+    <dvalue name="BLOWBY_GAP" unit="mm">0.00000000</dvalue>
+    <dvalue name="CYLINDER-DISPLACEMENT" unit="m3">0.00049956</dvalue>
+    <dvalue name="IMEP" unit="bar">11.32428358</dvalue>
+    <dvalue name="BMEP" unit="bar">10.25285501</dvalue>
+    <dvalue name="FMEP" unit="bar">1.07142857</dvalue>
+    <dvalue name="ISFC1" unit="g/kWh">216.67427784</dvalue>
+    <dvalue name="ISFC2" unit="g/kWh">216.67427784</dvalue>
+    <dvalue name="BSFC" unit="g/kWh">239.31685026</dvalue>
+    <dvalue name="IMEP-EX" unit="bar">-1.03847320</dvalue>
+    <dvalue name="IMEP-IN" unit="bar">0.91524445</dvalue>
+    <dvalue name="IMEP-GE" unit="bar">-0.12322876</dvalue>
+    <dvalue name="HP-START-PRESSURE_SHP" unit="Pa">144814.36143089</dvalue>
+    <dvalue name="HP-START-TEMPERATURE_SHP" unit="K">400.88923180</dvalue>
+    <dvalue name="HP-START-TOTALMASS_SHP" unit="kg">0.00053528</dvalue>
+    <dvalue name="HP-START-AIRMASS_SHP" unit="kg">0.00049366</dvalue>
+    <dvalue name="TOTALRESIDUALGAS-CONC_SHP" unit="-">0.06622178</dvalue>
+    <dvalue name="DELIVERYRATIO-AMB" unit="-">0.84546510</dvalue>
+    <dvalue name="DELIVERYRATIO-INT" unit="-">0.84546510</dvalue>
+    <dvalue name="AIRDELIVERYRATIO-AMB" unit="-">0.84545504</dvalue>
+    <dvalue name="VOLUMETRICEFFICIENCY-AMB" unit="-">0.84545504</dvalue>
+    <dvalue name="VOLUMETRICEFFICIENCY-INT" unit="-">0.84545504</dvalue>
+    <dvalue name="A/F-RATIO-UNBRND_SHP" unit="-">14.52878184</dvalue>
+    <dvalue name="A/F-RATIO-BRND_SHP" unit="-">14.49871920</dvalue>
+    <dvalue name="AIR-EXCESS-RATIO_SHP" unit="-">1.00198495</dvalue>
+    <dvalue name="TOTALFUELMASS" unit="kg">0.00003405</dvalue>
+    <dvalue name="FUELMASSINJECTED" unit="kg">0.00003404</dvalue>
+    <dvalue name="FUELMASS-ASPIRATED" unit="kg">0.00000000</dvalue>
+    <dvalue name="RESIDUALGASMASSIN_G" unit="kg">0.00000003</dvalue>
+    <dvalue name="RESIDUALGASMASSINTOCYL_G" unit="kg">0.00001195</dvalue>
+    <dvalue name="RESIDUALGASMASSEX_G" unit="kg">0.00052729</dvalue>
+    <dvalue name="RESIDUALGASMASSEXTOCYL_G" unit="kg">0.00001150</dvalue>
+    <dvalue name="WALLHEATFLOW_H" unit="J/cycle">-220.42432154</dvalue>
+    <dvalue name="PISTONWALLHEATFLOW_H" unit="J/cycle">-63.05969213</dvalue>
+    <dvalue name="HEADWALLHEATFLOW_H" unit="J/cycle">-79.89807324</dvalue>
+    <dvalue name="LINERWALLHEATFLOW_H" unit="J/cycle">-77.46655616</dvalue>
+    <dvalue name="PISTONTEMPERATURE_H" unit="K">525.00000000</dvalue>
+    <dvalue name="HEADTEMPERATURE_H" unit="K">545.00000000</dvalue>
+    <dvalue name="LINERTDCTEMPERATURE_H" unit="K">437.00000000</dvalue>
+    <dvalue name="LINERBDCTEMPERATURE_H" unit="K">432.00000000</dvalue>
+    <dvalue name="MEAN-EFF-HTC_H" unit="W/(m^2.K)">284.19108862</dvalue>
+    <dvalue name="MEAN-EFF-HTGASTEMP_H" unit="K">1317.67782483</dvalue>
+    <dvalue name="PEAKCYLINDERPRESSURE" unit="Pa">0.472192497573E+07</dvalue>
+    <dvalue name="PEAKCYLINDERPRESSURE-CRANKANGLE" unit="deg">20.78922393</dvalue>
+    <dvalue name="PEAKCYLINDERTEMPERATURE" unit="K">2469.22703704</dvalue>
+    <dvalue name="PEAKCYLINDERTEMPERATURE-CRANKANGLE" unit="deg">31.07108435</dvalue>
+    <dvalue name="PEAKPRESSURERISE" unit="Pa/deg">176577.35006874</dvalue>
+    <dvalue name="PEAKPRESSURERISE-CRANKANGLE" unit="deg">8.77387384</dvalue>
+    <dvalue name="RES-GASCOMPRESS" unit="bar">1.30725536</dvalue>
+    <dvalue name="RES-GASCOMPRESS-CRANKANGLE" unit="deg">357.26827468</dvalue>
+    <dvalue name="BLOWBY_G" unit="kg/cycle">0.00000000</dvalue>
+    <dvalue name="BLOWBYENTHALPYFLOW_H" unit="J/cycle">0.00000000</dvalue>
+    <dvalue name="AIRDELIVERYRATIO-INT" unit="-">0.84545504</dvalue>
+    <dvalue name="COMBUSTIONSTART_C" unit="deg">-3.00000000</dvalue>
+    <dvalue name="COMBUSTIONDURATION_C" unit="deg">50.00000000</dvalue>
+    <dvalue name="PEAKTEMPERATUREBURNEDZONE_C" unit="K">2643.08905561</dvalue>
+    <dvalue name="PEAKTEMPERATUREBURNEDZONE-CRANKANGLE_C" unit="deg">16.46143759</dvalue>
+    <dvalue name="ACCUMULATEDNOX_M" unit="g/kWh">6.79901417</dvalue>
+    <dvalue name="ACCUMULATEDCO_M" unit="g/kWh">0.46507515</dvalue>
+    <dvalue name="ACCUMULATEDHC_M" unit="g/kWh">0.63697721</dvalue>
+    <dvalue name="ACCUMULATEDNOX-TIME_M" unit="kg/s">0.00002015</dvalue>
+    <dvalue name="ACCUMULATEDCO-TIME_M" unit="kg/s">0.00000138</dvalue>
+    <dvalue name="ACCUMULATEDHC-TIME_M" unit="kg/s">0.00000189</dvalue>
+    <dvalue name="ACCUMULATEDNOX-MOLEFRACTION_M" unit="-">0.00177465</dvalue>
+    <dvalue name="ACCUMULATEDCO-MOLEFRACTION_M" unit="-">0.00013004</dvalue>
+    <dvalue name="ACCUMULATEDHC-MOLEFRACTION_M" unit="-">0.00011878</dvalue>
+    <dvalue name="OCTANENUMBER_C" unit="-">87.43035291</dvalue>
+    <dvalue name="MASS-FRAC-BURNED-02-CRANKANGLE_C" unit="deg">0.73727716</dvalue>
+    <dvalue name="MASS-FRAC-BURNED-05-CRANKANGLE_C" unit="deg">2.65952801</dvalue>
+    <dvalue name="MASS-FRAC-BURNED-10-CRANKANGLE_C" unit="deg">4.79256724</dvalue>
+    <dvalue name="MASS-FRAC-BURNED-50-CRANKANGLE_C" unit="deg">15.00583708</dvalue>
+    <dvalue name="MASS-FRAC-BURNED-90-CRANKANGLE_C" unit="deg">27.70468191</dvalue>
+    <dvalue name="MASS-FRAC-BURNED-95-CRANKANGLE_C" unit="deg">31.51307106</dvalue>
+    <dvalue name="EVAPORATIONENERGY_C" unit="J/cycle">-10.00919209</dvalue>
+    <dvalue name="SOC-TEMPERATURE_C" unit="K">747.48488910</dvalue>
+    <dvalue name="HP-START-FBMASS_SHP" unit="kg">0.00000229</dvalue>
+    <dvalue name="ENTHALPYFLUX-FUEL" unit="J/cycle">-13.50335359</dvalue>
+    <dvalue name="INDICATED-EFFICIENCY_PF" unit="-">0.38194945</dvalue>
+    <dvalue name="EFFECTIVE-EFFICIENCY_PF" unit="-">0.34581193</dvalue>
+    <dvalue name="SOC-PRESSURE_C" unit="Pa">0.216990845073E+07</dvalue>
+    <dvalue name="BRAKE_POWER_PERCENT" unit="%">35.67026012</dvalue>
+    <dvalue name="LOSS_FRICTION_PCENT" unit="%">3.72756035</dvalue>
+    <dvalue name="LOSS_WHT_PISTON_PCENT" unit="%">4.39165355</dvalue>
+    <dvalue name="LOSS_WHT_HEAD_PCENT" unit="%">5.56432556</dvalue>
+    <dvalue name="LOSS_WHT_LINER_PCENT" unit="%">5.39498790</dvalue>
+    <dvalue name="LOSS_WHT_INTAKE_PCENT" unit="%">0.03602938</dvalue>
+    <dvalue name="LOSS_WHT_EXHAUST_PCENT" unit="%">0.51730660</dvalue>
+    <dvalue name="LOSS_EXH_GASES_PCENT" unit="%">44.17993384</dvalue>
+    <element_ref name="PORT" position="INTAKE" ord="7"/>
+    <element_ref name="PORT" position="EXHAUST" ord="8"/>
+  </element>
+  <element name="PORT" shortname="PO" ord="1">
+    <svalue name="TYPE">INTAKE</svalue>
+    <dvalue name="PORTWALLTEMPERATURE" unit="K">360.00000000</dvalue>
+    <dvalue name="PORTWALLHEAT" unit="J/cycle">-0.58115876</dvalue>
+    <dvalue name="VALVEPORTOPENING-CLR0MM-CRANKANGLE" unit="deg">339.99969392</dvalue>
+    <dvalue name="VALVEPORTOPENING-EFF0MM-CRANKANGLE" unit="deg">339.99969392</dvalue>
+    <dvalue name="VALVEPORTOPENING-EFF1MM-CRANKANGLE" unit="deg">362.50018606</dvalue>
+    <dvalue name="VALVEPORTOPENING-UDEFMM-CRANKANGLE" unit="deg">339.99969392</dvalue>
+    <dvalue name="VALVEPORTCLOSING-CLR0MM-CRANKANGLE" unit="deg">609.99946387</dvalue>
+    <dvalue name="VALVEPORTCLOSING-EFF0MM-CRANKANGLE" unit="deg">609.99946387</dvalue>
+    <dvalue name="VALVEPORTCLOSING-EFF1MM-CRANKANGLE" unit="deg">577.52422707</dvalue>
+    <dvalue name="VALVEPORTCLOSING-UDEFMM-CRANKANGLE" unit="deg">609.99946387</dvalue>
+    <dvalue name="CAMPHASING" unit="deg">0.00000000</dvalue>
+    <element_ref name="PIPE_END" ord="3"/>
+  </element>
+  <element name="PORT" shortname="PO" ord="2">
+    <svalue name="TYPE">EXHAUST</svalue>
+    <dvalue name="PORTWALLTEMPERATURE" unit="K">530.00000000</dvalue>
+    <dvalue name="PORTWALLHEAT" unit="J/cycle">-7.23658765</dvalue>
+    <dvalue name="VALVEPORTOPENING-CLR0MM-CRANKANGLE" unit="deg">130.00034190</dvalue>
+    <dvalue name="VALVEPORTOPENING-EFF0MM-CRANKANGLE" unit="deg">130.00034190</dvalue>
+    <dvalue name="VALVEPORTOPENING-EFF1MM-CRANKANGLE" unit="deg">150.84080541</dvalue>
+    <dvalue name="VALVEPORTOPENING-UDEFMM-CRANKANGLE" unit="deg">130.00034190</dvalue>
+    <dvalue name="VALVEPORTCLOSING-CLR0MM-CRANKANGLE" unit="deg">390.00003180</dvalue>
+    <dvalue name="VALVEPORTCLOSING-EFF0MM-CRANKANGLE" unit="deg">390.00003180</dvalue>
+    <dvalue name="VALVEPORTCLOSING-EFF1MM-CRANKANGLE" unit="deg">355.99990027</dvalue>
+    <dvalue name="VALVEPORTCLOSING-UDEFMM-CRANKANGLE" unit="deg">390.00003180</dvalue>
+    <dvalue name="CAMPHASING" unit="deg">0.00000000</dvalue>
+    <element_ref name="PIPE_END" ord="4"/>
+  </element>
+  <element name="PORT" shortname="PO" ord="3">
+    <svalue name="TYPE">INTAKE</svalue>
+    <dvalue name="PORTWALLTEMPERATURE" unit="K">360.00000000</dvalue>
+    <dvalue name="PORTWALLHEAT" unit="J/cycle">-0.50078097</dvalue>
+    <dvalue name="VALVEPORTOPENING-CLR0MM-CRANKANGLE" unit="deg">339.99978767</dvalue>
+    <dvalue name="VALVEPORTOPENING-EFF0MM-CRANKANGLE" unit="deg">339.99978767</dvalue>
+    <dvalue name="VALVEPORTOPENING-EFF1MM-CRANKANGLE" unit="deg">362.50009051</dvalue>
+    <dvalue name="VALVEPORTOPENING-UDEFMM-CRANKANGLE" unit="deg">339.99978767</dvalue>
+    <dvalue name="VALVEPORTCLOSING-CLR0MM-CRANKANGLE" unit="deg">609.99954617</dvalue>
+    <dvalue name="VALVEPORTCLOSING-EFF0MM-CRANKANGLE" unit="deg">609.99954617</dvalue>
+    <dvalue name="VALVEPORTCLOSING-EFF1MM-CRANKANGLE" unit="deg">577.52415739</dvalue>
+    <dvalue name="VALVEPORTCLOSING-UDEFMM-CRANKANGLE" unit="deg">609.99954617</dvalue>
+    <dvalue name="CAMPHASING" unit="deg">0.00000000</dvalue>
+    <element_ref name="PIPE_END" ord="5"/>
+  </element>
+  <element name="PORT" shortname="PO" ord="4">
+    <svalue name="TYPE">EXHAUST</svalue>
+    <dvalue name="PORTWALLTEMPERATURE" unit="K">530.00000000</dvalue>
+    <dvalue name="PORTWALLHEAT" unit="J/cycle">-7.30864059</dvalue>
+    <dvalue name="VALVEPORTOPENING-CLR0MM-CRANKANGLE" unit="deg">130.00044231</dvalue>
+    <dvalue name="VALVEPORTOPENING-EFF0MM-CRANKANGLE" unit="deg">130.00044231</dvalue>
+    <dvalue name="VALVEPORTOPENING-EFF1MM-CRANKANGLE" unit="deg">150.84124164</dvalue>
+    <dvalue name="VALVEPORTOPENING-UDEFMM-CRANKANGLE" unit="deg">130.00044231</dvalue>
+    <dvalue name="VALVEPORTCLOSING-CLR0MM-CRANKANGLE" unit="deg">390.00041242</dvalue>
+    <dvalue name="VALVEPORTCLOSING-EFF0MM-CRANKANGLE" unit="deg">390.00041242</dvalue>
+    <dvalue name="VALVEPORTCLOSING-EFF1MM-CRANKANGLE" unit="deg">356.00025926</dvalue>
+    <dvalue name="VALVEPORTCLOSING-UDEFMM-CRANKANGLE" unit="deg">390.00041242</dvalue>
+    <dvalue name="CAMPHASING" unit="deg">0.00000000</dvalue>
+    <element_ref name="PIPE_END" ord="6"/>
+  </element>
+  <element name="PORT" shortname="PO" ord="5">
+    <svalue name="TYPE">INTAKE</svalue>
+    <dvalue name="PORTWALLTEMPERATURE" unit="K">360.00000000</dvalue>
+    <dvalue name="PORTWALLHEAT" unit="J/cycle">-0.67446597</dvalue>
+    <dvalue name="VALVEPORTOPENING-CLR0MM-CRANKANGLE" unit="deg">339.99982750</dvalue>
+    <dvalue name="VALVEPORTOPENING-EFF0MM-CRANKANGLE" unit="deg">339.99982750</dvalue>
+    <dvalue name="VALVEPORTOPENING-EFF1MM-CRANKANGLE" unit="deg">362.49988635</dvalue>
+    <dvalue name="VALVEPORTOPENING-UDEFMM-CRANKANGLE" unit="deg">339.99982750</dvalue>
+    <dvalue name="VALVEPORTCLOSING-CLR0MM-CRANKANGLE" unit="deg">610.00050265</dvalue>
+    <dvalue name="VALVEPORTCLOSING-EFF0MM-CRANKANGLE" unit="deg">610.00050265</dvalue>
+    <dvalue name="VALVEPORTCLOSING-EFF1MM-CRANKANGLE" unit="deg">577.52452294</dvalue>
+    <dvalue name="VALVEPORTCLOSING-UDEFMM-CRANKANGLE" unit="deg">610.00050265</dvalue>
+    <dvalue name="CAMPHASING" unit="deg">0.00000000</dvalue>
+    <element_ref name="PIPE_END" ord="7"/>
+  </element>
+  <element name="PORT" shortname="PO" ord="6">
+    <svalue name="TYPE">EXHAUST</svalue>
+    <dvalue name="PORTWALLTEMPERATURE" unit="K">530.00000000</dvalue>
+    <dvalue name="PORTWALLHEAT" unit="J/cycle">-7.26627503</dvalue>
+    <dvalue name="VALVEPORTOPENING-CLR0MM-CRANKANGLE" unit="deg">129.99975675</dvalue>
+    <dvalue name="VALVEPORTOPENING-EFF0MM-CRANKANGLE" unit="deg">129.99975675</dvalue>
+    <dvalue name="VALVEPORTOPENING-EFF1MM-CRANKANGLE" unit="deg">150.84123776</dvalue>
+    <dvalue name="VALVEPORTOPENING-UDEFMM-CRANKANGLE" unit="deg">129.99975675</dvalue>
+    <dvalue name="VALVEPORTCLOSING-CLR0MM-CRANKANGLE" unit="deg">389.99970208</dvalue>
+    <dvalue name="VALVEPORTCLOSING-EFF0MM-CRANKANGLE" unit="deg">389.99970208</dvalue>
+    <dvalue name="VALVEPORTCLOSING-EFF1MM-CRANKANGLE" unit="deg">355.99987303</dvalue>
+    <dvalue name="VALVEPORTCLOSING-UDEFMM-CRANKANGLE" unit="deg">389.99970208</dvalue>
+    <dvalue name="CAMPHASING" unit="deg">0.00000000</dvalue>
+    <element_ref name="PIPE_END" ord="8"/>
+  </element>
+  <element name="PORT" shortname="PO" ord="7">
+    <svalue name="TYPE">INTAKE</svalue>
+    <dvalue name="PORTWALLTEMPERATURE" unit="K">360.00000000</dvalue>
+    <dvalue name="PORTWALLHEAT" unit="J/cycle">-0.51734540</dvalue>
+    <dvalue name="VALVEPORTOPENING-CLR0MM-CRANKANGLE" unit="deg">339.99989752</dvalue>
+    <dvalue name="VALVEPORTOPENING-EFF0MM-CRANKANGLE" unit="deg">339.99989752</dvalue>
+    <dvalue name="VALVEPORTOPENING-EFF1MM-CRANKANGLE" unit="deg">362.50016565</dvalue>
+    <dvalue name="VALVEPORTOPENING-UDEFMM-CRANKANGLE" unit="deg">339.99989752</dvalue>
+    <dvalue name="VALVEPORTCLOSING-CLR0MM-CRANKANGLE" unit="deg">610.00047757</dvalue>
+    <dvalue name="VALVEPORTCLOSING-EFF0MM-CRANKANGLE" unit="deg">610.00047757</dvalue>
+    <dvalue name="VALVEPORTCLOSING-EFF1MM-CRANKANGLE" unit="deg">577.52472458</dvalue>
+    <dvalue name="VALVEPORTCLOSING-UDEFMM-CRANKANGLE" unit="deg">610.00047757</dvalue>
+    <dvalue name="CAMPHASING" unit="deg">0.00000000</dvalue>
+    <element_ref name="PIPE_END" ord="9"/>
+  </element>
+  <element name="PORT" shortname="PO" ord="8">
+    <svalue name="TYPE">EXHAUST</svalue>
+    <dvalue name="PORTWALLTEMPERATURE" unit="K">530.00000000</dvalue>
+    <dvalue name="PORTWALLHEAT" unit="J/cycle">-7.42799831</dvalue>
+    <dvalue name="VALVEPORTOPENING-CLR0MM-CRANKANGLE" unit="deg">130.00043249</dvalue>
+    <dvalue name="VALVEPORTOPENING-EFF0MM-CRANKANGLE" unit="deg">130.00043249</dvalue>
+    <dvalue name="VALVEPORTOPENING-EFF1MM-CRANKANGLE" unit="deg">150.84146621</dvalue>
+    <dvalue name="VALVEPORTOPENING-UDEFMM-CRANKANGLE" unit="deg">130.00043249</dvalue>
+    <dvalue name="VALVEPORTCLOSING-CLR0MM-CRANKANGLE" unit="deg">389.99977644</dvalue>
+    <dvalue name="VALVEPORTCLOSING-EFF0MM-CRANKANGLE" unit="deg">389.99977644</dvalue>
+    <dvalue name="VALVEPORTCLOSING-EFF1MM-CRANKANGLE" unit="deg">356.00017062</dvalue>
+    <dvalue name="VALVEPORTCLOSING-UDEFMM-CRANKANGLE" unit="deg">389.99977644</dvalue>
+    <dvalue name="CAMPHASING" unit="deg">0.00000000</dvalue>
+    <element_ref name="PIPE_END" ord="10"/>
+  </element>
+  <element name="JUNCTION" shortname="JC" ord="1">
+    <svalue name="TYPE">CONSTANT_STATIC_PRESSURE</svalue>
+    <element_ref name="PIPE_END" ord="27"/>
+    <element_ref name="PIPE_END" ord="28"/>
+    <element_ref name="PIPE_END" ord="29"/>
+  </element>
+  <element name="JUNCTION" shortname="JC" ord="2">
+    <svalue name="TYPE">CONSTANT_STATIC_PRESSURE</svalue>
+    <element_ref name="PIPE_END" ord="30"/>
+    <element_ref name="PIPE_END" ord="31"/>
+    <element_ref name="PIPE_END" ord="32"/>
+  </element>
+  <element name="JUNCTION" shortname="JC" ord="3">
+    <svalue name="TYPE">CONSTANT_STATIC_PRESSURE</svalue>
+    <element_ref name="PIPE_END" ord="33"/>
+    <element_ref name="PIPE_END" ord="34"/>
+    <element_ref name="PIPE_END" ord="35"/>
+  </element>
+  <element name="JUNCTION" shortname="JC" ord="4">
+    <svalue name="TYPE">CONSTANT_STATIC_PRESSURE</svalue>
+    <element_ref name="PIPE_END" ord="36"/>
+    <element_ref name="PIPE_END" ord="37"/>
+  </element>
+  <element name="JUNCTION" shortname="JC" ord="5">
+    <svalue name="TYPE">CONSTANT_STATIC_PRESSURE</svalue>
+    <element_ref name="PIPE_END" ord="38"/>
+    <element_ref name="PIPE_END" ord="39"/>
+    <element_ref name="PIPE_END" ord="40"/>
+  </element>
+  <element name="JUNCTION" shortname="JC" ord="6">
+    <svalue name="TYPE">CONSTANT_STATIC_PRESSURE</svalue>
+    <element_ref name="PIPE_END" ord="41"/>
+    <element_ref name="PIPE_END" ord="42"/>
+    <element_ref name="PIPE_END" ord="43"/>
+  </element>
+  <element name="JUNCTION" shortname="JC" ord="7">
+    <svalue name="TYPE">CONSTANT_STATIC_PRESSURE</svalue>
+    <element_ref name="PIPE_END" ord="44"/>
+    <element_ref name="PIPE_END" ord="45"/>
+    <element_ref name="PIPE_END" ord="46"/>
+  </element>
+  <element name="RESTRICTION" shortname="FR" ord="1">
+    <element_ref name="PIPE_END" ord="11"/>
+    <element_ref name="PIPE_END" ord="12"/>
+  </element>
+  <element name="RESTRICTION" shortname="FR" ord="2">
+    <element_ref name="PIPE_END" ord="13"/>
+    <element_ref name="PIPE_END" ord="14"/>
+  </element>
+  <element name="RESTRICTION" shortname="FR" ord="3">
+    <element_ref name="PIPE_END" ord="15"/>
+    <element_ref name="PIPE_END" ord="16"/>
+  </element>
+  <element name="RESTRICTION" shortname="FR" ord="4">
+    <element_ref name="PIPE_END" ord="17"/>
+    <element_ref name="PIPE_END" ord="18"/>
+  </element>
+  <element name="RESTRICTION" shortname="FR" ord="5">
+    <element_ref name="PIPE_END" ord="19"/>
+    <element_ref name="PIPE_END" ord="20"/>
+  </element>
+  <element name="RESTRICTION" shortname="FR" ord="6">
+    <element_ref name="PIPE_END" ord="21"/>
+    <element_ref name="PIPE_END" ord="22"/>
+  </element>
+  <element name="RESTRICTION" shortname="FR" ord="7">
+    <element_ref name="PIPE_END" ord="23"/>
+    <element_ref name="PIPE_END" ord="24"/>
+  </element>
+  <element name="RESTRICTION" shortname="FR" ord="8">
+    <element_ref name="PIPE_END" ord="25"/>
+    <element_ref name="PIPE_END" ord="26"/>
+  </element>
+  <element name="PIPE_END" shortname="PE" ord="1">
+    <dvalue name="FLOWCOEFFICIENT" unit="-">1.00000000</dvalue>
+    <dvalue name="MASSFLOW" unit="kg/cycle">0.00191558</dvalue>
+    <dvalue name="VELOCITY" unit="m/s">7.44415951</dvalue>
+    <element_att name="PIPE" ord="9"/>
+    <element_att name="SYSTEMBOUNDARY" ord="1"/>
+  </element>
+  <element name="PIPE_END" shortname="PE" ord="2">
+    <dvalue name="FLOWCOEFFICIENT" unit="-">1.00000000</dvalue>
+    <dvalue name="MASSFLOW" unit="kg/cycle">0.00204846</dvalue>
+    <dvalue name="VELOCITY" unit="m/s">96.07748527</dvalue>
+    <element_att name="PIPE" ord="23"/>
+    <element_att name="SYSTEMBOUNDARY" ord="2"/>
+  </element>
+  <element name="PIPE_END" shortname="PE" ord="3">
+    <dvalue name="FLOWCOEFFICIENT" unit="-">0.23803679</dvalue>
+    <dvalue name="MASSFLOW" unit="kg/cycle">0.00047092</dvalue>
+    <dvalue name="VELOCITY" unit="m/s">9.85859748</dvalue>
+    <element_att name="PIPE" ord="1"/>
+    <element_att name="CYLINDER" ord="1"/>
+  </element>
+  <element name="PIPE_END" shortname="PE" ord="4">
+    <dvalue name="FLOWCOEFFICIENT" unit="-">0.21904573</dvalue>
+    <dvalue name="MASSFLOW" unit="kg/cycle">0.00050339</dvalue>
+    <dvalue name="VELOCITY" unit="m/s">43.72382126</dvalue>
+    <element_att name="PIPE" ord="2"/>
+    <element_att name="CYLINDER" ord="1"/>
+  </element>
+  <element name="PIPE_END" shortname="PE" ord="5">
+    <dvalue name="FLOWCOEFFICIENT" unit="-">0.23803692</dvalue>
+    <dvalue name="MASSFLOW" unit="kg/cycle">0.00047923</dvalue>
+    <dvalue name="VELOCITY" unit="m/s">10.34919984</dvalue>
+    <element_att name="PIPE" ord="3"/>
+    <element_att name="CYLINDER" ord="2"/>
+  </element>
+  <element name="PIPE_END" shortname="PE" ord="6">
+    <dvalue name="FLOWCOEFFICIENT" unit="-">0.21904560</dvalue>
+    <dvalue name="MASSFLOW" unit="kg/cycle">0.00051228</dvalue>
+    <dvalue name="VELOCITY" unit="m/s">44.34705559</dvalue>
+    <element_att name="PIPE" ord="4"/>
+    <element_att name="CYLINDER" ord="2"/>
+  </element>
+  <element name="PIPE_END" shortname="PE" ord="7">
+    <dvalue name="FLOWCOEFFICIENT" unit="-">0.23803743</dvalue>
+    <dvalue name="MASSFLOW" unit="kg/cycle">0.00047275</dvalue>
+    <dvalue name="VELOCITY" unit="m/s">10.20994466</dvalue>
+    <element_att name="PIPE" ord="5"/>
+    <element_att name="CYLINDER" ord="3"/>
+  </element>
+  <element name="PIPE_END" shortname="PE" ord="8">
+    <dvalue name="FLOWCOEFFICIENT" unit="-">0.21904564</dvalue>
+    <dvalue name="MASSFLOW" unit="kg/cycle">0.00050536</dvalue>
+    <dvalue name="VELOCITY" unit="m/s">43.85747779</dvalue>
+    <element_att name="PIPE" ord="6"/>
+    <element_att name="CYLINDER" ord="3"/>
+  </element>
+  <element name="PIPE_END" shortname="PE" ord="9">
+    <dvalue name="FLOWCOEFFICIENT" unit="-">0.23803721</dvalue>
+    <dvalue name="MASSFLOW" unit="kg/cycle">0.00049367</dvalue>
+    <dvalue name="VELOCITY" unit="m/s">10.87656412</dvalue>
+    <element_att name="PIPE" ord="7"/>
+    <element_att name="CYLINDER" ord="4"/>
+  </element>
+  <element name="PIPE_END" shortname="PE" ord="10">
+    <dvalue name="FLOWCOEFFICIENT" unit="-">0.21904611</dvalue>
+    <dvalue name="MASSFLOW" unit="kg/cycle">0.00052770</dvalue>
+    <dvalue name="VELOCITY" unit="m/s">45.25604876</dvalue>
+    <element_att name="PIPE" ord="8"/>
+    <element_att name="CYLINDER" ord="4"/>
+  </element>
+  <element name="PIPE_END" shortname="PE" ord="11">
+    <dvalue name="FLOWCOEFFICIENT" unit="-">1.16130737</dvalue>
+    <dvalue name="MASSFLOW" unit="kg/cycle">0.00050338</dvalue>
+    <dvalue name="VELOCITY" unit="m/s">47.42878317</dvalue>
+    <element_att name="PIPE" ord="2"/>
+    <element_att name="RESTRICTION" ord="1"/>
+  </element>
+  <element name="PIPE_END" shortname="PE" ord="12">
+    <dvalue name="FLOWCOEFFICIENT" unit="-">0.74360855</dvalue>
+    <dvalue name="MASSFLOW" unit="kg/cycle">0.00050350</dvalue>
+    <dvalue name="VELOCITY" unit="m/s">26.30797203</dvalue>
+    <element_att name="PIPE" ord="19"/>
+    <element_att name="RESTRICTION" ord="1"/>
+  </element>
+  <element name="PIPE_END" shortname="PE" ord="13">
+    <dvalue name="FLOWCOEFFICIENT" unit="-">1.10362177</dvalue>
+    <dvalue name="MASSFLOW" unit="kg/cycle">0.00047092</dvalue>
+    <dvalue name="VELOCITY" unit="m/s">9.75850351</dvalue>
+    <element_att name="PIPE" ord="1"/>
+    <element_att name="RESTRICTION" ord="2"/>
+  </element>
+  <element name="PIPE_END" shortname="PE" ord="14">
+    <dvalue name="FLOWCOEFFICIENT" unit="-">0.85774176</dvalue>
+    <dvalue name="MASSFLOW" unit="kg/cycle">0.00047086</dvalue>
+    <dvalue name="VELOCITY" unit="m/s">7.49499317</dvalue>
+    <element_att name="PIPE" ord="10"/>
+    <element_att name="RESTRICTION" ord="2"/>
+  </element>
+  <element name="PIPE_END" shortname="PE" ord="15">
+    <dvalue name="FLOWCOEFFICIENT" unit="-">1.16365671</dvalue>
+    <dvalue name="MASSFLOW" unit="kg/cycle">0.00051228</dvalue>
+    <dvalue name="VELOCITY" unit="m/s">48.29563079</dvalue>
+    <element_att name="PIPE" ord="4"/>
+    <element_att name="RESTRICTION" ord="3"/>
+  </element>
+  <element name="PIPE_END" shortname="PE" ord="16">
+    <dvalue name="FLOWCOEFFICIENT" unit="-">0.74523461</dvalue>
+    <dvalue name="MASSFLOW" unit="kg/cycle">0.00051241</dvalue>
+    <dvalue name="VELOCITY" unit="m/s">26.76415801</dvalue>
+    <element_att name="PIPE" ord="17"/>
+    <element_att name="RESTRICTION" ord="3"/>
+  </element>
+  <element name="PIPE_END" shortname="PE" ord="17">
+    <dvalue name="FLOWCOEFFICIENT" unit="-">1.10477398</dvalue>
+    <dvalue name="MASSFLOW" unit="kg/cycle">0.00047922</dvalue>
+    <dvalue name="VELOCITY" unit="m/s">10.25031810</dvalue>
+    <element_att name="PIPE" ord="3"/>
+    <element_att name="RESTRICTION" ord="4"/>
+  </element>
+  <element name="PIPE_END" shortname="PE" ord="18">
+    <dvalue name="FLOWCOEFFICIENT" unit="-">0.85860983</dvalue>
+    <dvalue name="MASSFLOW" unit="kg/cycle">0.00047912</dvalue>
+    <dvalue name="VELOCITY" unit="m/s">7.84856177</dvalue>
+    <element_att name="PIPE" ord="12"/>
+    <element_att name="RESTRICTION" ord="4"/>
+  </element>
+  <element name="PIPE_END" shortname="PE" ord="19">
+    <dvalue name="FLOWCOEFFICIENT" unit="-">1.16262317</dvalue>
+    <dvalue name="MASSFLOW" unit="kg/cycle">0.00050537</dvalue>
+    <dvalue name="VELOCITY" unit="m/s">47.64172244</dvalue>
+    <element_att name="PIPE" ord="6"/>
+    <element_att name="RESTRICTION" ord="5"/>
+  </element>
+  <element name="PIPE_END" shortname="PE" ord="20">
+    <dvalue name="FLOWCOEFFICIENT" unit="-">0.74438604</dvalue>
+    <dvalue name="MASSFLOW" unit="kg/cycle">0.00050549</dvalue>
+    <dvalue name="VELOCITY" unit="m/s">26.39603001</dvalue>
+    <element_att name="PIPE" ord="18"/>
+    <element_att name="RESTRICTION" ord="5"/>
+  </element>
+  <element name="PIPE_END" shortname="PE" ord="21">
+    <dvalue name="FLOWCOEFFICIENT" unit="-">1.10965457</dvalue>
+    <dvalue name="MASSFLOW" unit="kg/cycle">0.00047275</dvalue>
+    <dvalue name="VELOCITY" unit="m/s">10.10809786</dvalue>
+    <element_att name="PIPE" ord="5"/>
+    <element_att name="RESTRICTION" ord="6"/>
+  </element>
+  <element name="PIPE_END" shortname="PE" ord="22">
+    <dvalue name="FLOWCOEFFICIENT" unit="-">0.86260515</dvalue>
+    <dvalue name="MASSFLOW" unit="kg/cycle">0.00047267</dvalue>
+    <dvalue name="VELOCITY" unit="m/s">7.73753673</dvalue>
+    <element_att name="PIPE" ord="13"/>
+    <element_att name="RESTRICTION" ord="6"/>
+  </element>
+  <element name="PIPE_END" shortname="PE" ord="23">
+    <dvalue name="FLOWCOEFFICIENT" unit="-">1.16549100</dvalue>
+    <dvalue name="MASSFLOW" unit="kg/cycle">0.00052770</dvalue>
+    <dvalue name="VELOCITY" unit="m/s">49.46536098</dvalue>
+    <element_att name="PIPE" ord="8"/>
+    <element_att name="RESTRICTION" ord="7"/>
+  </element>
+  <element name="PIPE_END" shortname="PE" ord="24">
+    <dvalue name="FLOWCOEFFICIENT" unit="-">0.74608741</dvalue>
+    <dvalue name="MASSFLOW" unit="kg/cycle">0.00052782</dvalue>
+    <dvalue name="VELOCITY" unit="m/s">27.42888383</dvalue>
+    <element_att name="PIPE" ord="20"/>
+    <element_att name="RESTRICTION" ord="7"/>
+  </element>
+  <element name="PIPE_END" shortname="PE" ord="25">
+    <dvalue name="FLOWCOEFFICIENT" unit="-">1.10182674</dvalue>
+    <dvalue name="MASSFLOW" unit="kg/cycle">0.00049367</dvalue>
+    <dvalue name="VELOCITY" unit="m/s">10.77190695</dvalue>
+    <element_att name="PIPE" ord="7"/>
+    <element_att name="RESTRICTION" ord="8"/>
+  </element>
+  <element name="PIPE_END" shortname="PE" ord="26">
+    <dvalue name="FLOWCOEFFICIENT" unit="-">0.85638511</dvalue>
+    <dvalue name="MASSFLOW" unit="kg/cycle">0.00049356</dvalue>
+    <dvalue name="VELOCITY" unit="m/s">8.23361518</dvalue>
+    <element_att name="PIPE" ord="16"/>
+    <element_att name="RESTRICTION" ord="8"/>
+  </element>
+  <element name="PIPE_END" shortname="PE" ord="27">
+    <dvalue name="FLOWCOEFFICIENT" unit="-">1.00000000</dvalue>
+    <dvalue name="MASSFLOW" unit="kg/cycle">0.00191559</dvalue>
+    <dvalue name="VELOCITY" unit="m/s">7.45460748</dvalue>
+    <element_att name="PIPE" ord="9"/>
+    <element_att name="JUNCTION" ord="1"/>
+  </element>
+  <element name="PIPE_END" shortname="PE" ord="28">
+    <dvalue name="FLOWCOEFFICIENT" unit="-">1.00000000</dvalue>
+    <dvalue name="MASSFLOW" unit="kg/cycle">0.00047085</dvalue>
+    <dvalue name="VELOCITY" unit="m/s">7.47605403</dvalue>
+    <element_att name="PIPE" ord="10"/>
+    <element_att name="JUNCTION" ord="1"/>
+  </element>
+  <element name="PIPE_END" shortname="PE" ord="29">
+    <dvalue name="FLOWCOEFFICIENT" unit="-">1.00000000</dvalue>
+    <dvalue name="MASSFLOW" unit="kg/cycle">0.00144434</dvalue>
+    <dvalue name="VELOCITY" unit="m/s">23.22978642</dvalue>
+    <element_att name="PIPE" ord="11"/>
+    <element_att name="JUNCTION" ord="1"/>
+  </element>
+  <element name="PIPE_END" shortname="PE" ord="30">
+    <dvalue name="FLOWCOEFFICIENT" unit="-">1.00000000</dvalue>
+    <dvalue name="MASSFLOW" unit="kg/cycle">0.00144434</dvalue>
+    <dvalue name="VELOCITY" unit="m/s">23.29544527</dvalue>
+    <element_att name="PIPE" ord="11"/>
+    <element_att name="JUNCTION" ord="2"/>
+  </element>
+  <element name="PIPE_END" shortname="PE" ord="31">
+    <dvalue name="FLOWCOEFFICIENT" unit="-">1.00000000</dvalue>
+    <dvalue name="MASSFLOW" unit="kg/cycle">0.00047912</dvalue>
+    <dvalue name="VELOCITY" unit="m/s">7.83370312</dvalue>
+    <element_att name="PIPE" ord="12"/>
+    <element_att name="JUNCTION" ord="2"/>
+  </element>
+  <element name="PIPE_END" shortname="PE" ord="32">
+    <dvalue name="FLOWCOEFFICIENT" unit="-">1.00000000</dvalue>
+    <dvalue name="MASSFLOW" unit="kg/cycle">0.00096516</dvalue>
+    <dvalue name="VELOCITY" unit="m/s">15.72161383</dvalue>
+    <element_att name="PIPE" ord="14"/>
+    <element_att name="JUNCTION" ord="2"/>
+  </element>
+  <element name="PIPE_END" shortname="PE" ord="33">
+    <dvalue name="FLOWCOEFFICIENT" unit="-">1.00000000</dvalue>
+    <dvalue name="MASSFLOW" unit="kg/cycle">0.00047267</dvalue>
+    <dvalue name="VELOCITY" unit="m/s">7.72554802</dvalue>
+    <element_att name="PIPE" ord="13"/>
+    <element_att name="JUNCTION" ord="3"/>
+  </element>
+  <element name="PIPE_END" shortname="PE" ord="34">
+    <dvalue name="FLOWCOEFFICIENT" unit="-">1.00000000</dvalue>
+    <dvalue name="MASSFLOW" unit="kg/cycle">0.00096516</dvalue>
+    <dvalue name="VELOCITY" unit="m/s">15.76631080</dvalue>
+    <element_att name="PIPE" ord="14"/>
+    <element_att name="JUNCTION" ord="3"/>
+  </element>
+  <element name="PIPE_END" shortname="PE" ord="35">
+    <dvalue name="FLOWCOEFFICIENT" unit="-">1.00000000</dvalue>
+    <dvalue name="MASSFLOW" unit="kg/cycle">0.00049236</dvalue>
+    <dvalue name="VELOCITY" unit="m/s">8.16888878</dvalue>
+    <element_att name="PIPE" ord="15"/>
+    <element_att name="JUNCTION" ord="3"/>
+  </element>
+  <element name="PIPE_END" shortname="PE" ord="36">
+    <dvalue name="FLOWCOEFFICIENT" unit="-">1.00000000</dvalue>
+    <dvalue name="MASSFLOW" unit="kg/cycle">0.00049236</dvalue>
+    <dvalue name="VELOCITY" unit="m/s">8.19679698</dvalue>
+    <element_att name="PIPE" ord="15"/>
+    <element_att name="JUNCTION" ord="4"/>
+  </element>
+  <element name="PIPE_END" shortname="PE" ord="37">
+    <dvalue name="FLOWCOEFFICIENT" unit="-">1.00000000</dvalue>
+    <dvalue name="MASSFLOW" unit="kg/cycle">0.00049356</dvalue>
+    <dvalue name="VELOCITY" unit="m/s">8.21691405</dvalue>
+    <element_att name="PIPE" ord="16"/>
+    <element_att name="JUNCTION" ord="4"/>
+  </element>
+  <element name="PIPE_END" shortname="PE" ord="38">
+    <dvalue name="FLOWCOEFFICIENT" unit="-">1.00000000</dvalue>
+    <dvalue name="MASSFLOW" unit="kg/cycle">0.00051241</dvalue>
+    <dvalue name="VELOCITY" unit="m/s">24.80175648</dvalue>
+    <element_att name="PIPE" ord="17"/>
+    <element_att name="JUNCTION" ord="5"/>
+  </element>
+  <element name="PIPE_END" shortname="PE" ord="39">
+    <dvalue name="FLOWCOEFFICIENT" unit="-">1.00000000</dvalue>
+    <dvalue name="MASSFLOW" unit="kg/cycle">0.00050548</dvalue>
+    <dvalue name="VELOCITY" unit="m/s">24.42307373</dvalue>
+    <element_att name="PIPE" ord="18"/>
+    <element_att name="JUNCTION" ord="5"/>
+  </element>
+  <element name="PIPE_END" shortname="PE" ord="40">
+    <dvalue name="FLOWCOEFFICIENT" unit="-">1.00000000</dvalue>
+    <dvalue name="MASSFLOW" unit="kg/cycle">0.00101787</dvalue>
+    <dvalue name="VELOCITY" unit="m/s">50.01526283</dvalue>
+    <element_att name="PIPE" ord="22"/>
+    <element_att name="JUNCTION" ord="5"/>
+  </element>
+  <element name="PIPE_END" shortname="PE" ord="41">
+    <dvalue name="FLOWCOEFFICIENT" unit="-">1.00000000</dvalue>
+    <dvalue name="MASSFLOW" unit="kg/cycle">0.00050348</dvalue>
+    <dvalue name="VELOCITY" unit="m/s">24.33980979</dvalue>
+    <element_att name="PIPE" ord="19"/>
+    <element_att name="JUNCTION" ord="6"/>
+  </element>
+  <element name="PIPE_END" shortname="PE" ord="42">
+    <dvalue name="FLOWCOEFFICIENT" unit="-">1.00000000</dvalue>
+    <dvalue name="MASSFLOW" unit="kg/cycle">0.00052781</dvalue>
+    <dvalue name="VELOCITY" unit="m/s">25.44477103</dvalue>
+    <element_att name="PIPE" ord="20"/>
+    <element_att name="JUNCTION" ord="6"/>
+  </element>
+  <element name="PIPE_END" shortname="PE" ord="43">
+    <dvalue name="FLOWCOEFFICIENT" unit="-">1.00000000</dvalue>
+    <dvalue name="MASSFLOW" unit="kg/cycle">0.00103129</dvalue>
+    <dvalue name="VELOCITY" unit="m/s">50.58386634</dvalue>
+    <element_att name="PIPE" ord="21"/>
+    <element_att name="JUNCTION" ord="6"/>
+  </element>
+  <element name="PIPE_END" shortname="PE" ord="44">
+    <dvalue name="FLOWCOEFFICIENT" unit="-">1.00000000</dvalue>
+    <dvalue name="MASSFLOW" unit="kg/cycle">0.00103130</dvalue>
+    <dvalue name="VELOCITY" unit="m/s">47.74888125</dvalue>
+    <element_att name="PIPE" ord="21"/>
+    <element_att name="JUNCTION" ord="7"/>
+  </element>
+  <element name="PIPE_END" shortname="PE" ord="45">
+    <dvalue name="FLOWCOEFFICIENT" unit="-">1.00000000</dvalue>
+    <dvalue name="MASSFLOW" unit="kg/cycle">0.00101788</dvalue>
+    <dvalue name="VELOCITY" unit="m/s">47.18846013</dvalue>
+    <element_att name="PIPE" ord="22"/>
+    <element_att name="JUNCTION" ord="7"/>
+  </element>
+  <element name="PIPE_END" shortname="PE" ord="46">
+    <dvalue name="FLOWCOEFFICIENT" unit="-">1.00000000</dvalue>
+    <dvalue name="MASSFLOW" unit="kg/cycle">0.00204844</dvalue>
+    <dvalue name="VELOCITY" unit="m/s">101.53738451</dvalue>
+    <element_att name="PIPE" ord="23"/>
+    <element_att name="JUNCTION" ord="7"/>
+  </element>
+</summary>
