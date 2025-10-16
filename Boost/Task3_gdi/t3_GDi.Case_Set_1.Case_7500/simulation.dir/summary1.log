@@ -1,0 +1,429 @@
+ --------------------------------
+ AVL - B O O S T
+ Version:        v2022.1.0.0.0
+ Build:          Apr 27 2022 22:44:48
+ Git Build Hash: 7670062eda46b95e13935a621f250d93513addf7
+ System:         x86_64-unknown-winnt_i19v19
+ --------------------------------
+
+LICENSE
+-------
+ sys_1DCFD_solver 2022.0@ License will expire in 216 days
+
+PROJECT
+-------
+ Preprocessor Version :  2022.1
+ Calculation date     : 16.10.2025
+ File     : t3_GDi.bst
+ Case Set : "Case Set 1"
+ Case     : "Case 7500"
+ 
+ Project ID: "4-Cylinder"
+ Run ID:     "WOT"
+ Model date: "7.3.2000"
+
+ELEMENTS
+--------
+ Element Name        Number
+
+ PIPE                  14
+ SYSTEMBOUNDARY         2
+ PLENUM                 1
+ CYLINDER               3
+ RESTRICTION            1
+ MEASURINGPOINT         4
+ AIRCOOLER              1
+ CATALYST               1
+ TURBOCHARGER           1
+ JUNCTION               2
+ ENGINE                 1
+ PIPE_END              32
+ ASSEMBLED              2
+ ALL_PIPES             16
+ ALL_PLENUMS            5
+ ALL_BOUNDARIES         2
+ ALL_CHARGERS           1
+ RESTRICTIONS           1
+ ALL_PIDS               1
+ PIPE_VAR_WALL_TEMP    16
+
+GLOBAL DATA
+-----------
+  Engine Speed :         7500.0  rpm
+  Calculationmode:        BOOST  Single
+  Cycle Duration:        720.00  degrees
+  Max. calc. period:   14400.00  degrees
+  Cycles calculated:         20  cycles
+  Calc. time steps:     1.92570  degrees (max)
+                        1.21741  degrees
+                        0.02705  ms
+  Traces results step:  5.00000  degrees
+  User concentrations:        0
+  Ref. pressure:      100000.00  Pa
+  Ref. temperature:     298.000  K
+  Gas properties:      Variable
+  Gasproperties File:     GASOLINE.BGP
+     bgp_build_version:   v2013.0.0.0.0
+     bgp_build_host:      boosthost
+     bgp_build_user:      boost
+     bgp_build_date:      2012.03.23
+     bgp_build_time:      08:00:00
+  Lower calorific:  0.43500E+08  J/kg
+  Stoic. A/F-ratio:      14.500
+
+  Warnings:                   0
+  Convergence errors:        66
+
+PIPES
+-----
+
+ Total number of pipe cells:    110
+
+ Pipe   Cells   Cell size       W.Heat     Wall T    Fric. coeff.   Lam. Fric. Coeff.  Heat Factor       Volume
+  nr.                [mm]         [kJ]        [K]             [-]                 [-]          [-]        [dm3]
+    1      13        30.8       -0.005     300.00        0.019000           64.000000     1.000000     1.130973
+    2      11        29.2       -0.000     300.00        0.019000           64.000000     1.000000     1.235353
+    3       3        33.3       -0.043     300.00        0.019000           64.000000     1.000000     0.282743
+    4       3        33.3       -0.077     300.00        0.019000           64.000000     1.000000     0.196350
+    5       5        30.0       -0.124     300.00        0.019000           64.000000     1.000000     0.424115
+    6      16        31.2       -0.033     300.00        0.019000           64.000000     1.000000     1.413717
+    7      13        30.8       -0.248     300.00        0.019000           64.000000     1.000000     1.697167
+    8      34        29.9       -0.664     300.00        0.019000           64.000000     1.000000     2.878327
+    9       2        40.0        0.000     340.00        0.040000           64.000000     1.000000     0.081430
+   10       2        30.0       -0.010     850.00        0.040000           64.000000     1.000000     0.061073
+   11       2        40.0        0.000     340.00        0.040000           64.000000     1.000000     0.081430
+   12       2        30.0       -0.010     850.00        0.040000           64.000000     1.000000     0.061073
+   13       2        40.0        0.000     340.00        0.040000           64.000000     1.000000     0.081430
+   14       2        30.0       -0.009     850.00        0.040000           64.000000     1.000000     0.061073
+   15      16        31.2       -0.255     303.15        0.738301       179307.274832    17.098211     1.000000  COOLER_PIPE     1
+   16      10        30.0        0.000     300.00       30.507454      1038829.549052     0.000000     3.000000  CATALYST_PIPE     1
+
+
+MEASURINGPOINTS: Average Values
+-------------------------------
+ Mp. Pipe Location   Diameter  Pressure  Temp. Ms.Temp.  Velo.   Massflow   Massflow To.Ent.f.  To.Ent.f.  Mach. Wtemp.  Converg.
+ nr.  nr.     [mm]       [mm]     [bar]    [K]      [K]  [m/s]      [g/s]  [g/cycle]    [kJ/s]  [kJ/cyc.]    [-]    [K]       [-]
+  1   1    20.0000    60.0000    2.4483  329.6    327.6   22.6   162.1745     2.5948     4.908     0.0785   0.06  300.0 0.224E-08
+  2   9    10.0000    36.0000    2.4086  345.5    321.5  -22.2   -54.0852    -0.8654    -1.550    -0.0248  -0.06  340.0 0.154E-01
+  3  11    10.0000    36.0000    2.4092  329.8    320.4   22.0    54.1071     0.8657     1.535     0.0246   0.06  340.0 0.161E-08
+  4   1    10.0000    60.0000    2.4487  329.7    327.7   22.6   162.1631     2.5946     4.916     0.0787   0.06  300.0 0.213E-08
+
+SYSTEMBOUNDARIES
+Attachments
+-----------
+ Type                 Nr.   Pipe       Mass flow
+                             Nr.       [g/cycle]
+ SYSTEMBOUNDARY        1      2          2.5907
+ SYSTEMBOUNDARY        2      8          3.2707
+
+PLENUMS: Average Values
+-----------------------
+                   Pl. Pressure   Temp.      Mass Wallheat
+                   nr.    [bar]     [K]       [g]     [kJ]
+ PLENUM             1    2.4394  328.83     2.583    0.000
+                                          Attached pipe   1:      2.5907 g/cycle
+                                          Attached pipe   9:     -0.8648 g/cycle
+                                          Attached pipe  11:      0.8645 g/cycle
+                                          Attached pipe  13:      0.8614 g/cycle
+ AIRCOOLER          1    2.5884  425.54     1.059    0.000
+                                          Attached pipe   6:      2.5907 g/cycle
+                                          Attached pipe  15:      2.5907 g/cycle
+ AIRCOOLER          1    2.4575  330.11     1.295    0.000
+                                          Attached pipe   1:      2.5907 g/cycle
+                                          Attached pipe  15:      2.5907 g/cycle
+ CATALYST           1    1.6035 1239.43     0.067    0.000
+                                          Attached pipe   7:      3.2707 g/cycle
+                                          Attached pipe  16:      3.2707 g/cycle
+ CATALYST           1    1.1141 1245.92     0.046    0.000
+                                          Attached pipe   8:      3.2707 g/cycle
+                                          Attached pipe  16:      3.2707 g/cycle
+
+PLENUMS
+Attachments
+-----------
+ Type                 Nr.   Pipe       Mass flow
+                             Nr.       [g/cycle]
+ PLENUM                1      1          2.5907
+ PLENUM                1      9         -0.8648
+ PLENUM                1     11          0.8645
+ PLENUM                1     13          0.8614
+ AIRCOOLER             1      6          2.5907
+ AIRCOOLER             1     15          2.5907
+ AIRCOOLER             1      1          2.5907
+ AIRCOOLER             1     15          2.5907
+ CATALYST              1      7          3.2707
+ CATALYST              1     16          3.2707
+ CATALYST              1      8          3.2707
+ CATALYST              1     16          3.2707
+
+TURBOCHARGERS: Average Values
+-----------------------------
+                  Compressor                           Turbine                              Efficiencies        Calculation
+TCh.    Work    Press.rat.  Boostpres.     Work  Press.rat. Dis.coeff. Turb./tot. VTG-pos Comp. Turb. mech. total      mode
+nr.      [kJ]      [-]       [bar]         [kJ]      [-]      [-]        [-]      [-]    [-]    [-]    [-]    [-]
+  1     0.3500     2.6000     2.5995     0.3571     1.5747     0.2500     0.7520 1.000    0.700 0.875 0.980 0.600  Wastegateflow
+  Attached pipe   2:      2.5907 g/cycle
+  Attached pipe   6:      2.5907 g/cycle
+  Attached pipe   7:      3.2707 g/cycle
+  Attached pipe   5:      3.2707 g/cycle
+
+CYLINDERS: Average Values
+-------------------------
+                               Total
+                              Engine         Cyl.   1       Cyl.   2       Cyl.   3
+Firing TDC [deg]                                  0.00         480.00         240.00
+Bore [mm]                                        77.08          77.08          77.08
+Stroke [mm]                                      71.37          71.37          71.37
+Conrodl. [mm]                                   143.50         143.50         143.50
+Piston pin offset [mm]                            0.00           0.00           0.00
+Swept Vol. [l]                   0.9991         0.3330         0.3330         0.3330
+Compression ratio [-]                            10.50          10.50          10.50
+Dyn. Comp. ratio [-]                              7.87           7.90           7.81
+
+Combustion Data:
+----------------
+Combustion Char.                               2Z-Vibe        2Z-Vibe        2Z-Vibe     
+Comb.start [deg]                                  5.00           5.00           5.00
+Comb.dur.1 [deg]                                 50.00          50.00          50.00
+Peak Fir.Pres. [bar]             101.21         101.28         101.27         101.07
+at Crankangle [deg]               28.60          28.17          29.45          28.18
+Peak Pres.Rise[bar/deg]            3.54           3.54           3.54           3.53
+at Crankangle [deg]               16.70          16.70          16.54          16.87
+Peak Fir. Temp. [K]             2600.37        2601.08        2600.50        2599.53
+at Crankangle [deg]               40.69          41.11          40.01          40.94
+Peak T_burned [K]               2780.16        2781.07        2780.54        2778.86
+at Crankangle [deg]               25.49          25.62          25.51          25.35
+Res. Gascompr. [bar]               1.74           1.48           1.72           2.00
+at Crankangle [deg]              312.28         324.01         304.79         308.03
+Evaporation Energy [kJ]         -0.0583        -0.0194        -0.0194        -0.0194
+Required O.N. [-]                 94.44          94.23          94.27          94.44
+
+Emissions (Classic Species Transport):
+--------------------------------------
+NOx: Calculated based on MTZ 34 1973 (12).
+CO:  Calculated based on SAE 2002-01-0006.
+HC:  Calculated based on SAE 2002-01-0006.
+NOX   [g/kWh]                  3.385828       3.387964       3.376892       3.392731
+NOX   [g/h]                  590.685283     198.397359     197.243137     195.044788
+NOX   [ppm]                      894.75         900.30         895.39         888.54
+CO    [g/kWh]                114.100617     113.139358     113.739131     115.447050
+CO    [g/h]                19905.782963    6625.380136    6643.463879    6636.938949
+CO    [ppm]                    32300.84       32207.04       32306.61       32389.21
+HC    [g/kWh]                  0.819650       0.813180       0.813666       0.832320
+HC    [g/h]                  142.994604      47.619356      47.525971      47.849277
+HC    [ppm]                      154.75         154.38         154.13         155.73
+
+Performance:
+------------
+IMEP [bar]                      29.8384        30.0338        29.9618        29.5195
+Rel. to Ave. [-]                                1.0065         1.0041         0.9893
+IMEP Exh. [bar]                 -2.0370        -1.8722        -1.9401        -2.2989
+IMEP Int. [bar]                  2.1594         2.1578         2.1595         2.1609
+IMEP Gasex. [bar]                0.1223         0.2856         0.2194        -0.1380
+IMEP HP [bar]                   29.7160        29.7482        29.7424        29.6575
+FMEP [bar]                       1.9000         1.9000         1.9000         1.9000
+BMEP [bar]                      27.9384        28.1338        28.0618        27.6195
+AMEP;SMEP [bar]                  0.0000         0.0000         0.0000         0.0000
+ISFC [g/kWh]                   239.2938       237.9854       238.5336       241.3966
+Rel. to Ave. [-]                                0.9945         0.9968         1.0088
+ISFC (tr.f.) [g/kWh]           239.2174       237.9073       238.4535       241.3256
+BSFC [g/kWh]                   255.5674       254.0576       254.6841       258.0028
+Indicated Eff. [-]               0.3460         0.3479         0.3471         0.3429
+Iso vol. comb. Eff [-]           0.8521         0.8523         0.8522         0.8518
+Polytropic Coeff. [-]                           1.2721         1.2728         1.2722
+
+Fuel Mass Balance:
+------------------
+Inj. Fuelmass [g]              0.198159       0.066133       0.066110       0.065916
+Asp.Trap. Fuelmass [g]        -0.000063      -0.000032      -0.000017      -0.000014
+Fuelmassfl.(A+I) [g/s]        12.384951       4.132633       4.132226       4.120092
+Fuelmass tot.trap. [g]         0.198096       0.066100       0.066093       0.065902
+Trapped Fuelm.fl.[g/s]        12.380993       4.131276       4.130839       4.118879
+Trapp. Eff. Fuel [-]             0.9997         0.9997         0.9997         0.9997
+
+Energy Balance Cylinder:
+------------------------
+Fuel Energy [kJ]                8.62016        2.87632        2.87588        2.86795
+Released Energy [kJ]            8.60875        2.87252        2.87258        2.86366
+-> Brake Power     [%]           32.424         32.618         32.534         32.121
+-> Loss: Friction  [%]            2.205          2.203          2.203          2.210
+-> Loss: Piston    [%]            2.235          2.218          2.227          2.261
+-> Loss: Head      [%]            2.539          2.519          2.529          2.569
+-> Loss: Liner     [%]            3.044          3.011          3.027          3.094
+-> Loss: Int. Port [%]           -0.006         -0.006         -0.006         -0.006
+-> Loss: Exh. Port [%]            0.184          0.182          0.183          0.187
+-> Loss: Exh. Gas  [%]           57.701         57.564         57.624         57.916
+Eff. Rel. Energy [kJ]           7.46691        2.49209        2.49136        2.48347
+Gross Rel. Energy [kJ]          8.60875        2.87252        2.87258        2.86366
+Eff.Gross Rel.Ener.[kJ]         7.46691        2.49209        2.49136        2.48347
+Energy Balance [-]               0.9987         0.9987         0.9989         0.9986
+Eff. Energy Balance [-]          0.8663         0.8665         0.8663         0.8660
+
+Blowby:
+-------
+Blowbymass [g]                 0.000000       0.000000       0.000000       0.000000
+Blowbymassfl. [g/s]            0.000000       0.000000       0.000000       0.000000
+Blowby Heat Flow [kJ]          0.000000       0.000000       0.000000       0.000000
+
+Reference Values at Start of High Pressure:
+-------------------------------------------
+Pressure at SHP[bar]             3.7163         3.7103         3.6900         3.7487
+Temperature [K]                  412.75         412.24         411.76         414.25
+Air Massfl.  [g/s]           161.917432      54.053234      54.029541      53.834657
+Fuel Massfl. [g/s]            12.384951       4.132633       4.132226       4.120092
+Trapp. Eff. Air [-]              0.9944         0.9941         0.9942         0.9948
+Trapp. Eff.Fuel [-]              0.9997         0.9997         0.9997         0.9997
+A/F-Ratio (Cmb.) [-]              13.09          13.09          13.09          13.09
+Excess Air Ratio [-]             0.9027         0.9027         0.9025         0.9029
+
+Reference Values at Start Of Combustion:
+----------------------------------------
+Pressure [bar]                  53.8465        53.8881        53.9051        53.7464
+Temperature [K]                  750.50         750.19         750.40         750.92
+
+Residual Gas:
+-------------
+Res.gas content [-]              0.0147         0.0139         0.0144         0.0159
+External EGR [-]                -0.0000        -0.0000         0.0000         0.0000
+Internal EGR [-]                 0.0147         0.0140         0.0144         0.0158
+Com.Prod.Mass. at EO [g]       2.810760       0.937257       0.937541       0.935961
+Res.gas mass at SHP [g]        0.039044       0.012317       0.012726       0.014001
+Res.gas aspirated IN [g]      -0.000000      -0.000020       0.000011       0.000009
+Res.gas from intake [g]        0.000020       0.000000       0.000011       0.000009
+Rel. to Total [-]                0.0005         0.0000         0.0008         0.0006
+Res.gas flow EX [g]            2.771862       0.925028       0.924860       0.921973
+Res.gas from exhaust [g]       0.000000       0.000000       0.000000       0.000000
+Rel. to Total [-]                0.0000         0.0000         0.0000         0.0000
+
+Gas Exchange:
+-------------
+Volumetric Eff. [-]              2.2060         2.2086         2.2079         2.2014
+Rel. to Ave. [-]                                1.0012         1.0009         0.9979
+     Rel. To PL 1 [-]            0.9979         0.9991         0.9987         0.9958
+Total Mass at SHP[g]             2.6507         0.8839         0.8839         0.8828
+Mass Delivered [g]              2.59068        0.86482        0.86449        0.86137
+Mass Delivered [g/s]          161.91743       54.05134       54.03054       53.83556
+Delivery Ratio [-]               2.2185         2.2217         2.2208         2.2128
+Rel. to Ave. [-]                                1.0015         1.0011         0.9975
+     Rel. To PL 1 [-]            1.0035         1.0050         1.0046         1.0010
+Av.Airmass at SHP[g]             2.5761         0.8597         0.8594         0.8569
+Air Delivered [g]               2.59068        0.86485        0.86447        0.86135
+Air Delivered [g/s]           161.91743       54.05323       54.02954       53.83466
+Airdeliveryratio [-]             2.2185         2.2218         2.2208         2.2128
+Rel. to Ave. [-]                                1.0015         1.0011         0.9974
+     Rel. To PL 1 [-]            1.0035         1.0050         1.0046         1.0009
+Airmass Trapped [g]             2.57609        0.85974        0.85945        0.85691
+Airmass Trapped [g/s]         161.00587       53.73347       53.71541       53.55698
+Trapp. Eff. Air [-]              0.9944         0.9941         0.9942         0.9948
+Rel. to Ave. [-]                                0.9997         0.9998         1.0005
+Airpurity [-]                    0.9719         0.9727         0.9723         0.9706
+Dyn. Swirl [-]                   0.0000         0.0000         0.0000         0.0000
+Dyn. Tumble [-]                  0.0000         0.0000         0.0000         0.0000
+
+Wall Heatlosses:
+----------------
+Piston [kJ]                     -0.1924        -0.0637        -0.0640        -0.0647
+Piston Temperature [K]                          575.00         575.00         575.00
+Cylinderhead [kJ]              -0.21858       -0.07235       -0.07266       -0.07357
+Head Temperature [K]                            655.00         655.00         655.00
+Cylinderliner [kJ]             -0.26206       -0.08650       -0.08695       -0.08861
+LinerTDC Temperature [K]                        463.00         463.00         463.00
+LinerBDC Temperature [K]                        458.00         458.00         458.00
+Sum of Wallheat [kJ]           -0.67308       -0.22257       -0.22359       -0.22693
+Wall Heatlosses in High Pressure Phase:
+Piston HP [kJ]                 -0.15864       -0.05300       -0.05289       -0.05275
+Cylinderhead HP [kJ]           -0.18846       -0.06297       -0.06283       -0.06266
+Cylinderliner HP [kJ]          -0.13705       -0.04597       -0.04565       -0.04543
+Sum of Wallheat HP [kJ]        -0.48415       -0.16195       -0.16136       -0.16084
+Wall Heatlosses Related to Heatinput:
+Piston [-]                      -0.0223        -0.0222        -0.0223        -0.0226
+Cylinderhead [-]                -0.0254        -0.0252        -0.0253        -0.0257
+Cylinderliner [-]               -0.0304        -0.0301        -0.0302        -0.0309
+Sum of Wallheat [-]             -0.0781        -0.0774        -0.0778        -0.0792
+M. Eff. HTC [W/m2/K]            1087.50        1082.84        1085.17        1094.50
+M. Eff. Temp. [K]               1204.90        1203.50        1204.61        1206.60
+
+Reference Values at EO:
+-----------------------
+Pressure [bar]                    15.79          15.72          15.83          15.84
+Temperature [K]                 1861.85        1860.13        1862.71        1862.72
+A/F-Ratio [-]                     13.00          13.01          13.00          13.00
+Com.Prod.Conc. [-]              0.99918        0.99917        0.99928        0.99909
+Fuel Concentr. [-]             0.000059       0.000060       0.000052       0.000065
+
+Average Values of Pipeattachements:
+-----------------------------------
+ Attached Pipe                                       9             11             13
+Vlv/Prt.Op.Clr.0mm[deg]                         340.00         340.00         340.00
+Vlv/Prt.Op.Eff.0mm[deg]                         340.00         340.00         340.00
+Vlv/Prt.Op.Eff.1mm[deg]                         362.50         362.50         362.50
+Vlv/Prt.Op.Udef.mm[deg]                         340.00         340.00         340.00
+Vlv/Prt.Cl.Clr.0mm[deg]                         610.00         610.00         610.00
+Vlv/Prt.Cl.Eff.0mm[deg]                         610.00         610.00         610.00
+Vlv/Prt.Cl.Eff.1mm[deg]                         577.52         577.52         577.52
+Vlv/Prt.Cl.Udef.mm[deg]                         610.00         610.00         610.00
+Cam Phasing [deg]                                 0.00           0.00           0.00
+Massflow [g/cycle]                           -0.864821       0.864489       0.861369
+Wallheat [kJ/cycle]                           0.000185       0.000185       0.000183
+rel.to Heatinp.[-]                              0.0001         0.0001         0.0001
+ Attached Pipe                                      10             12             14
+Vlv/Prt.Op.Clr.0mm[deg]                         130.00         130.00         130.00
+Vlv/Prt.Op.Eff.0mm[deg]                         130.00         130.00         130.00
+Vlv/Prt.Op.Eff.1mm[deg]                         150.84         150.84         150.84
+Vlv/Prt.Op.Udef.mm[deg]                         130.00         130.00         130.00
+Vlv/Prt.Cl.Clr.0mm[deg]                         390.00         390.00         390.00
+Vlv/Prt.Cl.Eff.0mm[deg]                         390.00         390.00         390.00
+Vlv/Prt.Cl.Eff.1mm[deg]                         356.00         356.00         356.00
+Vlv/Prt.Cl.Udef.mm[deg]                         390.00         390.00         390.00
+Cam Phasing [deg]                                 0.00           0.00           0.00
+Massflow [g/cycle]                            0.930955       0.930599       0.927285
+Wallheat [kJ/cycle]                          -0.005231      -0.005252      -0.005354
+rel.to Heatinp.[-]                             -0.0018        -0.0018        -0.0019
+
+FLOWRESTRICTIONS: Average Values
+--------------------------------
+ Flr. Att.Pi.  Massflow  Att.Pi.  Massflow
+  nr.  number [g/cycle]   number [g/cycle]
+    1       3    1.4095       14    0.9273
+
+ASSEMBLED: Average Values
+-------------------------
+ Type         Nr.  ----------Inlet-----------   ---------Outlet-----------    ----------------------Core----------------------
+                   Pressure Temperat.   Mass    Pressure Temperat.   Mass     Rej.Heat   Rej.Heat    Fric. coeff.  Heat Factor
+                    [bar]     [K]        [g]     [bar]      [K]       [g]       [kJ]       [kW]        [-]           [-]
+ AIRCOOLER     1    2.5884   425.54     1.059    2.4575   330.11     1.295    -0.2547   -15.9165       0.738301    17.098211
+ CATALYST      1    1.6035  1239.43     0.067    1.1141  1245.92     0.046     0.0000     0.0000      30.507454     0.000000
+
+ASSEMBLED
+Attachments
+-----------
+ Type                 Nr.   Pipe       Mass flow
+                             Nr.       [g/cycle]
+ AIRCOOLER             1      1          2.5907
+ AIRCOOLER             1      6          2.5907
+ CATALYST              1      7          3.2707
+ CATALYST              1      8          3.2707
+
+JUNCTIONS: Average Values
+-------------------------
+Junction   1: Attached pipe   3:     -1.4095 g/cycle
+              Attached pipe   4:     -2.3402 g/cycle
+              Attached pipe  12:     -0.9306 g/cycle
+Junction   2: Attached pipe   4:     -2.3402 g/cycle
+              Attached pipe   5:     -3.2707 g/cycle
+              Attached pipe  10:     -0.9310 g/cycle
+
+OVERALL ENGINE PERFORMANCE:
+===========================
+
+Indicated Torque          :    237.23 Nm                    Indicated Specific Torque :    237.45 Nm/l
+Indicated Power           :    186.32 kW,       253.33 PS   Indicated Specific Power  :    186.49 kW/l,     253.56 PS/l
+Friction Torque           :     15.11 Nm                    Friction Power            :     11.86 kW
+Effective Torque          :    222.13 Nm                    Effective Specific Torque :    222.33 Nm/l
+Effective Power           :    174.46 kW,       237.20 PS   Effective Specific Power  :    174.61 kW/l,     237.41 PS/l
+
+Required time for reading the inputfile and initialisation:       0.07 min
+Required time for the calculation: .........................      0.07 min
+Required time for writing the outputfile: ..................      0.00 min
+Required total time: .......................................      0.14 min
+Required total CPU-time: ...................................      3.84 sec
