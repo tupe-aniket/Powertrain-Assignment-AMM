@@ -3094,7 +3094,7 @@ ENDSECTION
 SECTION MESSAGES     1
 MESSAGE
 RUNINFO      1 CONTROL      1 BOOST       0.00 DEGCRA
- System date and time : 15.10.2025 11:59:19
+ System date and time : 16.10.2025 11:44:48
 ENDOFMESSAGE
 MESSAGE
 RUNINFO      2 CONTROL      2 BOOST       0.00 DEGCRA
@@ -17985,12 +17985,12 @@ SECTION SUMMARY     1
 
 LICENSE
 -------
- sys_1DCFD_solver 2022.0@ License will expire in 217 days
+ sys_1DCFD_solver 2022.0@ License will expire in 216 days
 
 PROJECT
 -------
  Preprocessor Version :  2022.1
- Calculation date     : 15.10.2025
+ Calculation date     : 16.10.2025
  File     : Nissan_vr38DETT_PFi_biturbo.bst
  Case Set : "Case Set 1"
  Case     : "Case 7500"
@@ -18421,7 +18421,7 @@ Required time for reading the inputfile and initialisation:       0.07 min
 Required time for the calculation: .........................      0.07 min
 Required time for writing the outputfile: ..................      0.00 min
 Required total time: .......................................      0.14 min
-Required total CPU-time: ...................................      3.83 sec
+Required total CPU-time: ...................................      3.78 sec
 ENDSECTION
 #
 #
@@ -18440,11 +18440,11 @@ SECTION XML_SUMMARY
     <svalue name="PROJECT">"4-Cylinder"</svalue>
     <svalue name="RUN">"WOT"</svalue>
     <svalue name="DATE">"7.3.2000"</svalue>
-    <dvalue name="INPUT_CPU_TIME" unit="s">4.24200000</dvalue>
-    <dvalue name="CALCULATION_CPU_TIME" unit="s">4.14400000</dvalue>
-    <dvalue name="OUTPUT_CPU_TIME" unit="s">0.02000000</dvalue>
-    <dvalue name="TOTAL_CPU_TIME" unit="s">8.40600000</dvalue>
-    <dvalue name="REQUIRED_CPU_TIME" unit="s">3.82812500</dvalue>
+    <dvalue name="INPUT_CPU_TIME" unit="s">4.21600000</dvalue>
+    <dvalue name="CALCULATION_CPU_TIME" unit="s">4.41800000</dvalue>
+    <dvalue name="OUTPUT_CPU_TIME" unit="s">0.02500000</dvalue>
+    <dvalue name="TOTAL_CPU_TIME" unit="s">8.65900000</dvalue>
+    <dvalue name="REQUIRED_CPU_TIME" unit="s">3.78125000</dvalue>
     <dvalue name="INDICATED_TORQUE" unit="Nm">245.58980673</dvalue>
     <dvalue name="INDICATED_SPECIFIC_TORQUE" unit="Nm/l">245.81030888</dvalue>
     <dvalue name="INDICATED_POWER" unit="kW">192.88578316</dvalue>

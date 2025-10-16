@@ -5,9 +5,9 @@ Built on Apr 29 2025 20:22:33
 Git revision 3a88ba574aebc5ba138dff0d869c577c71bb98d9
 
 Kernel input file: c:/pt/powertrain-assignment-amm/cruise/task4_2/simulation/C04023_HEV_P1_AMT_FWD/P1_ParCtrl.Performance.FLA/input/model.asix
-[message][simulation] Time used for 'Component reading': 0.01 seconds.
+[message][simulation] Time used for 'Component reading': 0.02 seconds.
 [message][simulation] Time used for 'Equation system buildup': 0.00 seconds.
-[message][simulation] Simulation start time: Wed, 15.10.2025 20:41:04
+[message][simulation] Simulation start time: Thu, 16.10.2025 16:14:27
 [message][simulation] Online monitoring active.
 [warning][Co-Simulation master - Solver 0(solver settings: Global)(Co-Simulation master)] The current component contains 1 loop(s).
 The details (port-name, component-name additional information):
@@ -44,26 +44,30 @@ Loop contains:
     (OUT_PORT_4, 'HCU P1/Output P1' channel name 'EM P1 Torque Demand')
     (OUT_PORT_1, 'HTCU P1 AMT /Shifting' channel name 'Flag')
 Suggested solution: Add a Signal Decoupling component in the loop(s). Result may vary w.r.t. location of Signal decoupling. No general rule can be given here.
-[message][simulation] Time used for 'License checkout': 4.22 seconds.
-[message][simulation] Time used for 'Initialization': 0.56 seconds.
+[message][simulation] Time used for 'License checkout': 4.18 seconds.
+[warning][Wheel FL(Wheel)] Wheel resistance force is zero since the setting Rolling resistance factor velocity dependent (Driving resistance: physical) is not activated.
+[warning][Wheel FR(Wheel)] Wheel resistance force is zero since the setting Rolling resistance factor velocity dependent (Driving resistance: physical) is not activated.
+[warning][Wheel RL(Wheel)] Wheel resistance force is zero since the setting Rolling resistance factor velocity dependent (Driving resistance: physical) is not activated.
+[warning][Wheel RR(Wheel)] Wheel resistance force is zero since the setting Rolling resistance factor velocity dependent (Driving resistance: physical) is not activated.
+[message][simulation] Time used for 'Initialization': 0.40 seconds.
 [message][simulation] Simulation started.
 [warning][E-Network 48V/E-Motor P1(Electric motor with inverter)] Full load characteristic used outside of defined range. Possible issues due to extrapolation.
 [warning][E-Network 48V/E-Motor P1(Electric motor with inverter)] Full load characteristic used outside of defined range. Possible issues due to extrapolation.
 NOTE: Further occurrences of this warning will be omitted.
-[message][Vehicle Task/FLA/Full Load Acceleration(Full load acceleration)] The exit condition 'constant acceleration' is satisfied.
+[message][Vehicle Task/FLA/Full Load Acceleration(Full load acceleration)] The exit condition 'constant velocity' is satisfied.
 [message][simulation] Simulation ended.
-[message][simulation] Time used for 'Simulation': 0.25 seconds.
-[message][simulation] Real-time factor: 0.013339
+[message][simulation] Time used for 'Simulation': 0.76 seconds.
+[message][simulation] Real-time factor: 0.013872
 [message][simulation] Writing results (directory: c:/pt/powertrain-assignment-amm/cruise/task4_2/simulation/C04023_HEV_P1_AMT_FWD/P1_ParCtrl.Performance.FLA/results).
 [message][simulation] Writing curve results.
 [message][simulation] Curve result writing successful.
 [message][simulation] Writing series results.
 [message][simulation] Series result writing successful.
 [message][simulation] Generating text report (level: 1, filename: c:/pt/powertrain-assignment-amm/cruise/task4_2/simulation/C04023_HEV_P1_AMT_FWD/P1_ParCtrl.Performance.FLA/results/summary.xml).
-[warning][HCU P1/Recuperation Factor(Map)] 1817 extrapolation(s) for table 'Characteristic'.
+[warning][HCU P1/Recuperation Factor(Map)] 5358 extrapolation(s) for table 'Characteristic'.
 [message][simulation] Text report generation successful.
 [message][simulation] Result writing successful.
 [message][simulation] Time used for 'Result writing': 0.08 seconds.
-[message][simulation] Average real-time factor: 0.0181672
-[warning][simulation] 5863 warning(s) occurred during simulation
-[warning][simulation] 5859 warning(s) have been suppressed
+[message][simulation] Average real-time factor: 0.0155544
+[warning][simulation] 54065 warning(s) occurred during simulation
+[warning][simulation] 54057 warning(s) have been suppressed

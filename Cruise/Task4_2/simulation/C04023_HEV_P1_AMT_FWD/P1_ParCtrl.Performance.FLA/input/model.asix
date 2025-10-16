@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <AST_input_data>
   <AST_information>
-    <modification_date t="date" v="20251015 20:40:10" />
+    <modification_date t="date" v="20251016 16:14:25" />
     <OS_info>
       <name t="string" v="Windows 10" />
       <version t="string" v="10.0.26100" />
@@ -232,9 +232,9 @@
             <critical_time t="float" u="time~s" v="10" />
             <soc_limits>
               <item>
-                <max_soc t="float" u="dimensionless~no" v="1" />
+                <max_soc t="float" u="dimensionless~no" v="0.65" />
                 <min_soc t="float" u="dimensionless~no" v="0" />
-                <stop_simulation t="bool" v="yes" />
+                <stop_simulation t="bool" v="no" />
               </item>
             </soc_limits>
           </general>
@@ -3087,7 +3087,7 @@
           </output_settings>
           <ports>
             <port reference_id="1befe68a7a99faffa06ecbdf6af25017">
-              <default t="float" v="100" />
+              <default t="float" v="65" />
               <direction t="string" v="OUT" />
               <is_connected t="bool" v="yes" />
               <kernel_name t="string" v="OUT_PORT_0" />
@@ -3119,7 +3119,7 @@
           </output_settings>
           <ports>
             <port reference_id="65ec3b86a2b3f78025d61266a31f8967">
-              <default t="float" v="10000" />
+              <default t="float" v="7840" />
               <direction t="string" v="OUT" />
               <is_connected t="bool" v="yes" />
               <kernel_name t="string" v="OUT_PORT_0" />
@@ -3648,24 +3648,24 @@
                 <abscissa2 index="2" t="map_abscissa" u="ang_vel~rad_s" user_unit="ang_vel~rpm" />
                 <ordinate1 index="3" t="map_ordinate" u="moment~Nm" user_unit="moment~Nm" />
                 4.000000000000000E+01 0.000000000000000E+00 2.132000000000000E+02
-                4.000000000000000E+01 4.209734155810323E+01 2.132000000000000E+02
-                4.000000000000000E+01 6.283185307179587E+01 1.472100000000000E+02
-                4.000000000000000E+01 8.429940287132612E+01 1.097200000000000E+02
-                4.000000000000000E+01 1.265014641845490E+02 7.312000000000000E+01
-                4.000000000000000E+01 1.687035254977719E+02 5.482000000000000E+01
-                4.000000000000000E+01 2.109055868109948E+02 4.385000000000000E+01
-                4.000000000000000E+01 2.531076481242177E+02 3.654000000000000E+01
-                4.000000000000000E+01 2.953097094374406E+02 3.132000000000000E+01
-                4.000000000000000E+01 3.375117707506635E+02 2.740000000000000E+01
-                4.000000000000000E+01 3.797138320638864E+02 2.436000000000000E+01
-                4.000000000000000E+01 4.219158933771093E+02 2.192000000000000E+01
-                4.000000000000000E+01 4.641179546903322E+02 1.993000000000000E+01
-                4.000000000000000E+01 5.063200160035551E+02 1.826000000000000E+01
-                4.000000000000000E+01 5.485220773167780E+02 1.686000000000000E+01
-                4.000000000000000E+01 5.907241386300009E+02 1.565000000000000E+01
-                4.000000000000000E+01 6.329261999432238E+02 1.461000000000000E+01
-                4.000000000000000E+01 6.751282612564466E+02 1.370000000000000E+01
-                4.000000000000000E+01 6.920928615858315E+02 1.400000000000000E+00
+                4.000000000000000E+01 4.209734155810323E+01 1.000000000000000E+02
+                4.000000000000000E+01 6.283185307179587E+01 1.000000000000000E+02
+                4.000000000000000E+01 8.429940287132612E+01 1.000000000000000E+02
+                4.000000000000000E+01 1.265014641845490E+02 1.000000000000000E+02
+                4.000000000000000E+01 1.687035254977719E+02 1.000000000000000E+02
+                4.000000000000000E+01 2.109055868109948E+02 1.000000000000000E+02
+                4.000000000000000E+01 2.531076481242177E+02 1.000000000000000E+02
+                4.000000000000000E+01 2.953097094374406E+02 1.000000000000000E+02
+                4.000000000000000E+01 3.375117707506635E+02 1.000000000000000E+02
+                4.000000000000000E+01 3.797138320638864E+02 1.000000000000000E+02
+                4.000000000000000E+01 4.219158933771093E+02 1.000000000000000E+02
+                4.000000000000000E+01 4.641179546903322E+02 1.000000000000000E+02
+                4.000000000000000E+01 5.063200160035551E+02 1.000000000000000E+02
+                4.000000000000000E+01 5.485220773167780E+02 1.000000000000000E+02
+                4.000000000000000E+01 5.907241386300009E+02 1.000000000000000E+02
+                4.000000000000000E+01 6.329261999432238E+02 1.000000000000000E+02
+                4.000000000000000E+01 6.751282612564466E+02 1.000000000000000E+02
+                4.000000000000000E+01 6.920928615858315E+02 1.000000000000000E+02
                 
               </ifun>
             </rifun>
@@ -4402,15 +4402,17 @@
             <data_buses_as_results t="bool" v="no" />
             <results_in_online_monitor t="bool" v="no" />
           </output_settings>
-          <speed_properties />
+          <speed_properties>
+            <maximum_speed t="float" u="ang_vel~rad_s" v="837.758040957278" />
+          </speed_properties>
           <kpis>
             <maximum_generator_power t="float" u="power~W" v="9249.82894907627" />
             <maximum_generator_torque t="float" u="moment~Nm" v="204.3" />
-            <maximum_motor_power t="float" u="power~W" v="9249.87083697832" />
+            <maximum_motor_power t="float" u="power~W" v="69209.2861585832" />
             <maximum_motor_torque t="float" u="moment~Nm" v="213.2" />
             <speed_at_max_generator_power t="float" u="ang_vel~rad_s" v="189.856916031943" />
             <speed_at_max_generator_torque t="float" u="ang_vel~rad_s" v="0" />
-            <speed_at_max_motor_power t="float" u="ang_vel~rad_s" v="464.117954690332" />
+            <speed_at_max_motor_power t="float" u="ang_vel~rad_s" v="692.092861585832" />
             <speed_at_max_motor_torque t="float" u="ang_vel~rad_s" v="0" />
           </kpis>
           <ports>
@@ -5249,25 +5251,25 @@
         </electric_node>
       </electric_nodes>
       <electric_properties>
-        <electric_property reference_id="aa1adcb9ec735ad5b647cc80ab5fe429">
+        <electric_property reference_id="a86e68f0e0099389b942a254a3ee45c0">
           <general>
             <circuit_name t="string" v="Electric circuit 1" />
           </general>
-          <extended_parameter_settings>
-            <parameters />
-          </extended_parameter_settings>
           <output_settings>
             <data_buses_as_results t="bool" v="no" />
             <results_in_online_monitor t="bool" v="no" />
           </output_settings>
+          <extended_parameter_settings>
+            <parameters />
+          </extended_parameter_settings>
           <meta_data>
             <component_name t="string" v="Electric properties" />
             <component_uuid t="string" v="5294bf85eefc4848890d885072680067" />
             <element_key t="string" v="" />
             <element_name t="string" v="Electric Properties" />
-            <element_path t="string" v="E-Network 48V/E-Motor P1" />
+            <element_path t="string" v="E-Network 48V/48V Bus" />
             <element_second_name t="string" v="" />
-            <element_uid t="string" v="b8720b6ceb4e40e396bc215aee4c1e55" />
+            <element_uid t="string" v="e76dc7f792b1436abce19908c65cddc8" />
             <icon t="string" v="ai-cruise-gas-composition" />
             <result_group t="string" v="Circuits" />
             <result_name t="string" v="Electric circuit 1" />
@@ -5497,12 +5499,12 @@
                 <abscissa1 index="1" t="map_abscissa" />
                 <ordinate1 index="2" t="map_ordinate" u="ang_vel~rad_s" user_unit="ang_vel~1_min" />
                 <ordinate2 index="3" t="map_ordinate" u="ang_vel~rad_s" user_unit="ang_vel~1_min" />
-                1.000000000000000E+00 5.969026041820607E+02 3.141592653589793E+02
-                2.000000000000000E+00 5.969026041820607E+02 3.141592653589793E+02
-                3.000000000000000E+00 5.969026041820607E+02 3.141592653589793E+02
-                4.000000000000000E+00 5.969026041820607E+02 3.141592653589793E+02
-                5.000000000000000E+00 5.969026041820607E+02 3.141592653589793E+02
-                6.000000000000000E+00 5.969026041820607E+02 3.141592653589793E+02
+                1.000000000000000E+00 5.235987755982990E+02 3.665191429188092E+02
+                2.000000000000000E+00 5.235987755982990E+02 3.665191429188092E+02
+                3.000000000000000E+00 5.235987755982990E+02 3.665191429188092E+02
+                4.000000000000000E+00 5.235987755982990E+02 3.665191429188092E+02
+                5.000000000000000E+00 5.235987755982990E+02 3.665191429188092E+02
+                6.000000000000000E+00 5.235987755982990E+02 3.665191429188092E+02
                 
               </ifun>
             </table>
@@ -5929,12 +5931,12 @@
                 <ifun map_type="interpolated_function" t="map">
                   <abscissa1 index="1" t="map_abscissa" />
                   <ordinate1 index="2" t="map_ordinate" u="dimensionless~no" user_unit="dimensionless~no" />
-                  1.000000000000000E+00 2.583000000000000E+00
-                  2.000000000000000E+00 2.071000000000000E+00
-                  3.000000000000000E+00 1.688000000000000E+00
-                  4.000000000000000E+00 1.412000000000000E+00
-                  5.000000000000000E+00 1.200000000000000E+00
-                  6.000000000000000E+00 1.048000000000000E+00
+                  1.000000000000000E+00 2.283000000000000E+00
+                  2.000000000000000E+00 1.771000000000000E+00
+                  3.000000000000000E+00 1.388000000000000E+00
+                  4.000000000000000E+00 1.212000000000000E+00
+                  5.000000000000000E+00 1.000000000000000E+00
+                  6.000000000000000E+00 8.480000000000000E-01
                   
                 </ifun>
               </transmission_ratio>
@@ -7542,12 +7544,11 @@
           </mass_properties>
           <settings>
             <dynamic_rolling_radius t="string" v="constant_value" />
-            <rolling_resistance_adjustment_inflation_pressure_dependent t="bool" v="no" />
-            <rolling_resistance_adjustment_temperature_dependent t="bool" v="no" />
-            <rolling_resistance_adjustment_wheel_load_dependent t="bool" v="no" />
-            <rolling_resistance_factor_velocity_dependent__driving_resistance__physical_ t="bool" v="yes" />
+            <rolling_resistance_factor_velocity_dependent__driving_resistance__physical_ t="bool" v="no" />
             <rolling_resistance_model t="string" v="standard" />
-            <slip t="string" v="deactivated" />
+            <slip t="string" v="function" />
+            <slip_limit t="bool" v="no" />
+            <slip_low_pass_filter t="bool" v="no" />
           </settings>
           <extended_parameter_settings>
             <parameters />
@@ -7558,35 +7559,41 @@
           <dynamic_rolling_radius__constant_>
             <dynamic_rolling_radius t="float" u="length~m" v="0.29" />
           </dynamic_rolling_radius__constant_>
-          <wheel_slip>
-            <friction_coefficient_of_tire t="float" u="no_unit~none" v="0.95" />
-            <reference_wheel_load t="float" u="force~N" v="1764" />
-            <wheel_load_correction_coefficient t="float" u="no_unit~none" v="0" />
-          </wheel_slip>
-          <rolling_resistance_factor_velocity_dependent>
+          <maximum_in_the_slip_characteristic>
             <characteristic>
               <approximation_settings>
                 <extrapolation t="string" v="linear_with_zero_limit" />
                 <interpolation t="string" v="linear" />
               </approximation_settings>
               <ifun map_type="interpolated_function" t="map">
-                <abscissa1 index="1" t="map_abscissa" u="velocity~m_s" user_unit="velocity~km_h" />
+                <abscissa1 index="1" t="map_abscissa" u="no_unit~none" user_unit="no_unit~none" />
                 <ordinate1 index="2" t="map_ordinate" u="dimensionless~no" user_unit="dimensionless~percent" />
-                0.000000000000000E+00 1.370000000000000E-02
-                5.555555555555555E+00 1.370000000000000E-02
-                1.388888888888889E+01 1.370000000000000E-02
-                2.777777777777778E+01 1.380000000000000E-02
-                3.333333333333334E+01 1.390000000000000E-02
-                4.166666666666666E+01 1.500000000000000E-02
-                5.000000000000000E+01 1.670000000000000E-02
-                5.555555555555556E+01 1.750000000000000E-02
-                6.388888888888889E+01 1.950000000000000E-02
-                6.944444444444444E+01 2.100000000000000E-02
-                7.777777777777777E+01 2.400000000000000E-02
+                1.000000000000000E-01 1.500000000000000E-01
+                1.050000000000000E+00 7.000000000000001E-02
                 
               </ifun>
             </characteristic>
-          </rolling_resistance_factor_velocity_dependent>
+          </maximum_in_the_slip_characteristic>
+          <asymptote_of_slip_characteristic>
+            <characteristic>
+              <approximation_settings>
+                <extrapolation t="string" v="linear_with_zero_limit" />
+                <interpolation t="string" v="linear" />
+              </approximation_settings>
+              <ifun map_type="interpolated_function" t="map">
+                <abscissa1 index="1" t="map_abscissa" u="no_unit~none" user_unit="no_unit~none" />
+                <ordinate1 index="2" t="map_ordinate" u="dimensionless~no" user_unit="dimensionless~percent" />
+                1.000000000000000E-01 9.000000000000000E-01
+                1.050000000000000E+00 7.000000000000000E-01
+                
+              </ifun>
+            </characteristic>
+          </asymptote_of_slip_characteristic>
+          <wheel_slip>
+            <friction_coefficient_of_tire t="float" u="no_unit~none" v="0.95" />
+            <reference_wheel_load t="float" u="force~N" v="1960" />
+            <wheel_load_correction_coefficient t="float" u="no_unit~none" v="0" />
+          </wheel_slip>
           <output_settings>
             <data_buses_as_results t="bool" v="no" />
             <results_in_online_monitor t="bool" v="no" />
@@ -7621,12 +7628,11 @@
           </mass_properties>
           <settings>
             <dynamic_rolling_radius t="string" v="constant_value" />
-            <rolling_resistance_adjustment_inflation_pressure_dependent t="bool" v="no" />
-            <rolling_resistance_adjustment_temperature_dependent t="bool" v="no" />
-            <rolling_resistance_adjustment_wheel_load_dependent t="bool" v="no" />
-            <rolling_resistance_factor_velocity_dependent__driving_resistance__physical_ t="bool" v="yes" />
+            <rolling_resistance_factor_velocity_dependent__driving_resistance__physical_ t="bool" v="no" />
             <rolling_resistance_model t="string" v="standard" />
-            <slip t="string" v="deactivated" />
+            <slip t="string" v="function" />
+            <slip_limit t="bool" v="no" />
+            <slip_low_pass_filter t="bool" v="no" />
           </settings>
           <extended_parameter_settings>
             <parameters />
@@ -7637,35 +7643,41 @@
           <dynamic_rolling_radius__constant_>
             <dynamic_rolling_radius t="float" u="length~m" v="0.306" />
           </dynamic_rolling_radius__constant_>
-          <wheel_slip>
-            <friction_coefficient_of_tire t="float" u="no_unit~none" v="0.95" />
-            <reference_wheel_load t="float" u="force~N" v="1764" />
-            <wheel_load_correction_coefficient t="float" u="no_unit~none" v="0" />
-          </wheel_slip>
-          <rolling_resistance_factor_velocity_dependent>
+          <maximum_in_the_slip_characteristic>
             <characteristic>
               <approximation_settings>
                 <extrapolation t="string" v="linear_with_zero_limit" />
                 <interpolation t="string" v="linear" />
               </approximation_settings>
               <ifun map_type="interpolated_function" t="map">
-                <abscissa1 index="1" t="map_abscissa" u="velocity~m_s" user_unit="velocity~km_h" />
+                <abscissa1 index="1" t="map_abscissa" u="no_unit~none" user_unit="no_unit~none" />
                 <ordinate1 index="2" t="map_ordinate" u="dimensionless~no" user_unit="dimensionless~percent" />
-                0.000000000000000E+00 1.370000000000000E-02
-                5.555555555555555E+00 1.370000000000000E-02
-                1.388888888888889E+01 1.370000000000000E-02
-                2.777777777777778E+01 1.380000000000000E-02
-                3.333333333333334E+01 1.390000000000000E-02
-                4.166666666666666E+01 1.500000000000000E-02
-                5.000000000000000E+01 1.670000000000000E-02
-                5.555555555555556E+01 1.750000000000000E-02
-                6.388888888888889E+01 1.950000000000000E-02
-                6.944444444444444E+01 2.100000000000000E-02
-                7.777777777777777E+01 2.400000000000000E-02
+                1.000000000000000E-01 1.000000000000000E-01
+                1.050000000000000E+00 4.000000000000000E-02
                 
               </ifun>
             </characteristic>
-          </rolling_resistance_factor_velocity_dependent>
+          </maximum_in_the_slip_characteristic>
+          <asymptote_of_slip_characteristic>
+            <characteristic>
+              <approximation_settings>
+                <extrapolation t="string" v="linear_with_zero_limit" />
+                <interpolation t="string" v="linear" />
+              </approximation_settings>
+              <ifun map_type="interpolated_function" t="map">
+                <abscissa1 index="1" t="map_abscissa" u="no_unit~none" user_unit="no_unit~none" />
+                <ordinate1 index="2" t="map_ordinate" u="dimensionless~no" user_unit="dimensionless~percent" />
+                1.000000000000000E-01 9.000000000000000E-01
+                1.050000000000000E+00 7.000000000000000E-01
+                
+              </ifun>
+            </characteristic>
+          </asymptote_of_slip_characteristic>
+          <wheel_slip>
+            <friction_coefficient_of_tire t="float" u="no_unit~none" v="0.95" />
+            <reference_wheel_load t="float" u="force~N" v="1960" />
+            <wheel_load_correction_coefficient t="float" u="no_unit~none" v="0" />
+          </wheel_slip>
           <output_settings>
             <data_buses_as_results t="bool" v="no" />
             <results_in_online_monitor t="bool" v="no" />
@@ -7700,12 +7712,11 @@
           </mass_properties>
           <settings>
             <dynamic_rolling_radius t="string" v="constant_value" />
-            <rolling_resistance_adjustment_inflation_pressure_dependent t="bool" v="no" />
-            <rolling_resistance_adjustment_temperature_dependent t="bool" v="no" />
-            <rolling_resistance_adjustment_wheel_load_dependent t="bool" v="no" />
-            <rolling_resistance_factor_velocity_dependent__driving_resistance__physical_ t="bool" v="yes" />
+            <rolling_resistance_factor_velocity_dependent__driving_resistance__physical_ t="bool" v="no" />
             <rolling_resistance_model t="string" v="standard" />
-            <slip t="string" v="deactivated" />
+            <slip t="string" v="function" />
+            <slip_limit t="bool" v="no" />
+            <slip_low_pass_filter t="bool" v="no" />
           </settings>
           <extended_parameter_settings>
             <parameters />
@@ -7716,35 +7727,41 @@
           <dynamic_rolling_radius__constant_>
             <dynamic_rolling_radius t="float" u="length~m" v="0.29" />
           </dynamic_rolling_radius__constant_>
-          <wheel_slip>
-            <friction_coefficient_of_tire t="float" u="no_unit~none" v="0.95" />
-            <reference_wheel_load t="float" u="force~N" v="1764" />
-            <wheel_load_correction_coefficient t="float" u="no_unit~none" v="0" />
-          </wheel_slip>
-          <rolling_resistance_factor_velocity_dependent>
+          <maximum_in_the_slip_characteristic>
             <characteristic>
               <approximation_settings>
                 <extrapolation t="string" v="linear_with_zero_limit" />
                 <interpolation t="string" v="linear" />
               </approximation_settings>
               <ifun map_type="interpolated_function" t="map">
-                <abscissa1 index="1" t="map_abscissa" u="velocity~m_s" user_unit="velocity~km_h" />
+                <abscissa1 index="1" t="map_abscissa" u="no_unit~none" user_unit="no_unit~none" />
                 <ordinate1 index="2" t="map_ordinate" u="dimensionless~no" user_unit="dimensionless~percent" />
-                0.000000000000000E+00 1.370000000000000E-02
-                5.555555555555555E+00 1.370000000000000E-02
-                1.388888888888889E+01 1.370000000000000E-02
-                2.777777777777778E+01 1.380000000000000E-02
-                3.333333333333334E+01 1.390000000000000E-02
-                4.166666666666666E+01 1.500000000000000E-02
-                5.000000000000000E+01 1.670000000000000E-02
-                5.555555555555556E+01 1.750000000000000E-02
-                6.388888888888889E+01 1.950000000000000E-02
-                6.944444444444444E+01 2.100000000000000E-02
-                7.777777777777777E+01 2.400000000000000E-02
+                1.000000000000000E-01 1.000000000000000E-01
+                1.050000000000000E+00 7.000000000000001E-02
                 
               </ifun>
             </characteristic>
-          </rolling_resistance_factor_velocity_dependent>
+          </maximum_in_the_slip_characteristic>
+          <asymptote_of_slip_characteristic>
+            <characteristic>
+              <approximation_settings>
+                <extrapolation t="string" v="linear_with_zero_limit" />
+                <interpolation t="string" v="linear" />
+              </approximation_settings>
+              <ifun map_type="interpolated_function" t="map">
+                <abscissa1 index="1" t="map_abscissa" u="no_unit~none" user_unit="no_unit~none" />
+                <ordinate1 index="2" t="map_ordinate" u="dimensionless~no" user_unit="dimensionless~percent" />
+                1.000000000000000E-01 9.000000000000000E-01
+                1.050000000000000E+00 7.000000000000000E-01
+                
+              </ifun>
+            </characteristic>
+          </asymptote_of_slip_characteristic>
+          <wheel_slip>
+            <friction_coefficient_of_tire t="float" u="no_unit~none" v="0.95" />
+            <reference_wheel_load t="float" u="force~N" v="1960" />
+            <wheel_load_correction_coefficient t="float" u="no_unit~none" v="0" />
+          </wheel_slip>
           <output_settings>
             <data_buses_as_results t="bool" v="no" />
             <results_in_online_monitor t="bool" v="no" />
@@ -7779,12 +7796,11 @@
           </mass_properties>
           <settings>
             <dynamic_rolling_radius t="string" v="constant_value" />
-            <rolling_resistance_adjustment_inflation_pressure_dependent t="bool" v="no" />
-            <rolling_resistance_adjustment_temperature_dependent t="bool" v="no" />
-            <rolling_resistance_adjustment_wheel_load_dependent t="bool" v="no" />
-            <rolling_resistance_factor_velocity_dependent__driving_resistance__physical_ t="bool" v="yes" />
+            <rolling_resistance_factor_velocity_dependent__driving_resistance__physical_ t="bool" v="no" />
             <rolling_resistance_model t="string" v="standard" />
-            <slip t="string" v="deactivated" />
+            <slip t="string" v="function" />
+            <slip_limit t="bool" v="no" />
+            <slip_low_pass_filter t="bool" v="no" />
           </settings>
           <extended_parameter_settings>
             <parameters />
@@ -7795,35 +7811,41 @@
           <dynamic_rolling_radius__constant_>
             <dynamic_rolling_radius t="float" u="length~m" v="0.303" />
           </dynamic_rolling_radius__constant_>
-          <wheel_slip>
-            <friction_coefficient_of_tire t="float" u="no_unit~none" v="0.95" />
-            <reference_wheel_load t="float" u="force~N" v="1764" />
-            <wheel_load_correction_coefficient t="float" u="no_unit~none" v="0" />
-          </wheel_slip>
-          <rolling_resistance_factor_velocity_dependent>
+          <maximum_in_the_slip_characteristic>
             <characteristic>
               <approximation_settings>
                 <extrapolation t="string" v="linear_with_zero_limit" />
                 <interpolation t="string" v="linear" />
               </approximation_settings>
               <ifun map_type="interpolated_function" t="map">
-                <abscissa1 index="1" t="map_abscissa" u="velocity~m_s" user_unit="velocity~km_h" />
+                <abscissa1 index="1" t="map_abscissa" u="no_unit~none" user_unit="no_unit~none" />
                 <ordinate1 index="2" t="map_ordinate" u="dimensionless~no" user_unit="dimensionless~percent" />
-                0.000000000000000E+00 1.370000000000000E-02
-                5.555555555555555E+00 1.370000000000000E-02
-                1.388888888888889E+01 1.370000000000000E-02
-                2.777777777777778E+01 1.380000000000000E-02
-                3.333333333333334E+01 1.390000000000000E-02
-                4.166666666666666E+01 1.500000000000000E-02
-                5.000000000000000E+01 1.670000000000000E-02
-                5.555555555555556E+01 1.750000000000000E-02
-                6.388888888888889E+01 1.950000000000000E-02
-                6.944444444444444E+01 2.100000000000000E-02
-                7.777777777777777E+01 2.400000000000000E-02
+                1.000000000000000E-01 1.000000000000000E-01
+                1.050000000000000E+00 4.000000000000000E-02
                 
               </ifun>
             </characteristic>
-          </rolling_resistance_factor_velocity_dependent>
+          </maximum_in_the_slip_characteristic>
+          <asymptote_of_slip_characteristic>
+            <characteristic>
+              <approximation_settings>
+                <extrapolation t="string" v="linear_with_zero_limit" />
+                <interpolation t="string" v="linear" />
+              </approximation_settings>
+              <ifun map_type="interpolated_function" t="map">
+                <abscissa1 index="1" t="map_abscissa" u="no_unit~none" user_unit="no_unit~none" />
+                <ordinate1 index="2" t="map_ordinate" u="dimensionless~no" user_unit="dimensionless~percent" />
+                1.000000000000000E-01 9.000000000000000E-01
+                1.050000000000000E+00 7.000000000000000E-01
+                
+              </ifun>
+            </characteristic>
+          </asymptote_of_slip_characteristic>
+          <wheel_slip>
+            <friction_coefficient_of_tire t="float" u="no_unit~none" v="0.95" />
+            <reference_wheel_load t="float" u="force~N" v="1960" />
+            <wheel_load_correction_coefficient t="float" u="no_unit~none" v="0" />
+          </wheel_slip>
           <output_settings>
             <data_buses_as_results t="bool" v="no" />
             <results_in_online_monitor t="bool" v="no" />
@@ -8659,7 +8681,7 @@
         <time_step_type t="string" v="auto" />
       </solver_settings>
       <circuits>
-        <circuit circuit_name="Electric circuit 1" circuit_reference_id="aa1adcb9ec735ad5b647cc80ab5fe429" circuit_type="electrical">
+        <circuit circuit_name="Electric circuit 1" circuit_reference_id="a86e68f0e0099389b942a254a3ee45c0" circuit_type="electrical">
           <electric_node id_reference="d365aa7247ab4b6ad6c03b9b10b8e008" />
           <ecm_battery id_reference="f7c3f0f643bb6dbf3c4c9084a46719d1" />
           <power_consumer id_reference="cd97d8223ab053e043e5b60cc5631ef4" />

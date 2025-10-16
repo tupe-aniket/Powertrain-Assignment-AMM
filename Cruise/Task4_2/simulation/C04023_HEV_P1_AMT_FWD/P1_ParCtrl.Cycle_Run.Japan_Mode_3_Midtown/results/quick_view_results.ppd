@@ -1,0 +1,3946 @@
+FOLDER "CRUISE M Simulation Results" "CRUISE M Simulation Results"
+  client = "CRUISE M"
+  version = "R2025.1"
+  FOLDER "batterylimits" "Battery Limits"
+    component_name = "Battery management system"
+    element_uid = "f0e03ffda8e946e8a6c7d80977bc7202"
+    icon = "ai-cruise-battery-management-system"
+    type = element
+    uuid = "486181eacaab4281a5d57756fd27af4c"
+    FOLDER "in" "In"
+      type = channel_group
+      CURVE "stateofcharge" "State of charge"
+        legend = "In/State of charge (Battery Limits)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./f0e03ffda8_cs_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./f0e03ffda8_cs_0.bin" "State of charge@In"
+        yunit = "no_unit~none"
+      ..
+    ..
+    FOLDER "out" "Out"
+      type = channel_group
+      CURVE "powerlimitcharge" "Power Limit Charge"
+        legend = "Out/Power Limit Charge (Battery Limits)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./f0e03ffda8_cs_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./f0e03ffda8_cs_0.bin" "Power Limit Charge@Out"
+        yunit = "power~W"
+      ..
+      CURVE "powerlimitdischarge" "Power Limit Discharge"
+        legend = "Out/Power Limit Discharge (Battery Limits)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./f0e03ffda8_cs_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./f0e03ffda8_cs_0.bin" "Power Limit Discharge@Out"
+        yunit = "power~W"
+      ..
+    ..
+  ..
+  FOLDER "brakefl" "Brake FL"
+    component_name = "Brake"
+    element_uid = "345b836dea10423e883c938a0453103d"
+    icon = "ai-cruise-brake"
+    type = element
+    uuid = "1056da684ff14c4d9cde7514e8dee49d"
+    FOLDER "mechanical" "Mechanical"
+      type = channel_group
+      CURVE "dynamicenergy" "Dynamic energy"
+        legend = "Mechanical/Dynamic energy (Brake FL)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./345b836dea_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./345b836dea_rm_0.bin" "Dynamic energy@Mechanical"
+        yunit = "work~J"
+      ..
+      CURVE "dynamicpower" "Dynamic power"
+        legend = "Mechanical/Dynamic power (Brake FL)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./345b836dea_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./345b836dea_rm_0.bin" "Dynamic power@Mechanical"
+        yunit = "power~W"
+      ..
+      CURVE "dynamictorque" "Dynamic torque"
+        legend = "Mechanical/Dynamic torque (Brake FL)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./345b836dea_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./345b836dea_rm_0.bin" "Dynamic torque@Mechanical"
+        yunit = "moment~Nm"
+      ..
+      CURVE "kineticenergy" "Kinetic energy"
+        legend = "Mechanical/Kinetic energy (Brake FL)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./345b836dea_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./345b836dea_rm_0.bin" "Kinetic energy@Mechanical"
+        yunit = "work~J"
+      ..
+      CURVE "kineticpower" "Kinetic power"
+        legend = "Mechanical/Kinetic power (Brake FL)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./345b836dea_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./345b836dea_rm_0.bin" "Kinetic power@Mechanical"
+        yunit = "power~W"
+      ..
+      CURVE "speed" "Speed"
+        legend = "Mechanical/Speed (Brake FL)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./345b836dea_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./345b836dea_rm_0.bin" "Speed@Mechanical"
+        yunit = "ang_vel~rad_s"
+      ..
+      CURVE "staticenergy" "Static energy"
+        legend = "Mechanical/Static energy (Brake FL)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./345b836dea_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./345b836dea_rm_0.bin" "Static energy@Mechanical"
+        yunit = "work~J"
+      ..
+      CURVE "statictorque" "Static torque"
+        legend = "Mechanical/Static torque (Brake FL)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./345b836dea_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./345b836dea_rm_0.bin" "Static torque@Mechanical"
+        yunit = "moment~Nm"
+      ..
+    ..
+    CURVE "heatflow" "Heat flow"
+      legend = "Heat flow (Brake FL)"
+      type = channel_id
+      xlocation = CRUISE_BINARY "./345b836dea_rm_0.bin" "Time"
+      xunit = "time~s"
+      ylocation = CRUISE_BINARY "./345b836dea_rm_0.bin" "Heat flow"
+      yunit = "power~W"
+    ..
+  ..
+  FOLDER "brakefr" "Brake FR"
+    component_name = "Brake"
+    element_uid = "0966b109ed99474594b6d51dc79e4a45"
+    icon = "ai-cruise-brake"
+    type = element
+    uuid = "1056da684ff14c4d9cde7514e8dee49d"
+    FOLDER "mechanical" "Mechanical"
+      type = channel_group
+      CURVE "dynamicenergy" "Dynamic energy"
+        legend = "Mechanical/Dynamic energy (Brake FR)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./0966b109ed_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./0966b109ed_rm_0.bin" "Dynamic energy@Mechanical"
+        yunit = "work~J"
+      ..
+      CURVE "dynamicpower" "Dynamic power"
+        legend = "Mechanical/Dynamic power (Brake FR)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./0966b109ed_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./0966b109ed_rm_0.bin" "Dynamic power@Mechanical"
+        yunit = "power~W"
+      ..
+      CURVE "dynamictorque" "Dynamic torque"
+        legend = "Mechanical/Dynamic torque (Brake FR)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./0966b109ed_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./0966b109ed_rm_0.bin" "Dynamic torque@Mechanical"
+        yunit = "moment~Nm"
+      ..
+      CURVE "kineticenergy" "Kinetic energy"
+        legend = "Mechanical/Kinetic energy (Brake FR)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./0966b109ed_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./0966b109ed_rm_0.bin" "Kinetic energy@Mechanical"
+        yunit = "work~J"
+      ..
+      CURVE "kineticpower" "Kinetic power"
+        legend = "Mechanical/Kinetic power (Brake FR)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./0966b109ed_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./0966b109ed_rm_0.bin" "Kinetic power@Mechanical"
+        yunit = "power~W"
+      ..
+      CURVE "speed" "Speed"
+        legend = "Mechanical/Speed (Brake FR)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./0966b109ed_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./0966b109ed_rm_0.bin" "Speed@Mechanical"
+        yunit = "ang_vel~rad_s"
+      ..
+      CURVE "staticenergy" "Static energy"
+        legend = "Mechanical/Static energy (Brake FR)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./0966b109ed_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./0966b109ed_rm_0.bin" "Static energy@Mechanical"
+        yunit = "work~J"
+      ..
+      CURVE "statictorque" "Static torque"
+        legend = "Mechanical/Static torque (Brake FR)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./0966b109ed_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./0966b109ed_rm_0.bin" "Static torque@Mechanical"
+        yunit = "moment~Nm"
+      ..
+    ..
+    CURVE "heatflow" "Heat flow"
+      legend = "Heat flow (Brake FR)"
+      type = channel_id
+      xlocation = CRUISE_BINARY "./0966b109ed_rm_0.bin" "Time"
+      xunit = "time~s"
+      ylocation = CRUISE_BINARY "./0966b109ed_rm_0.bin" "Heat flow"
+      yunit = "power~W"
+    ..
+  ..
+  FOLDER "brakerl" "Brake RL"
+    component_name = "Brake"
+    element_uid = "bc01f4a8f6db40ff85fa0dc3091b8d87"
+    icon = "ai-cruise-brake"
+    type = element
+    uuid = "1056da684ff14c4d9cde7514e8dee49d"
+    FOLDER "mechanical" "Mechanical"
+      type = channel_group
+      CURVE "dynamicenergy" "Dynamic energy"
+        legend = "Mechanical/Dynamic energy (Brake RL)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./bc01f4a8f6_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./bc01f4a8f6_rm_0.bin" "Dynamic energy@Mechanical"
+        yunit = "work~J"
+      ..
+      CURVE "dynamicpower" "Dynamic power"
+        legend = "Mechanical/Dynamic power (Brake RL)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./bc01f4a8f6_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./bc01f4a8f6_rm_0.bin" "Dynamic power@Mechanical"
+        yunit = "power~W"
+      ..
+      CURVE "dynamictorque" "Dynamic torque"
+        legend = "Mechanical/Dynamic torque (Brake RL)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./bc01f4a8f6_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./bc01f4a8f6_rm_0.bin" "Dynamic torque@Mechanical"
+        yunit = "moment~Nm"
+      ..
+      CURVE "kineticenergy" "Kinetic energy"
+        legend = "Mechanical/Kinetic energy (Brake RL)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./bc01f4a8f6_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./bc01f4a8f6_rm_0.bin" "Kinetic energy@Mechanical"
+        yunit = "work~J"
+      ..
+      CURVE "kineticpower" "Kinetic power"
+        legend = "Mechanical/Kinetic power (Brake RL)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./bc01f4a8f6_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./bc01f4a8f6_rm_0.bin" "Kinetic power@Mechanical"
+        yunit = "power~W"
+      ..
+      CURVE "speed" "Speed"
+        legend = "Mechanical/Speed (Brake RL)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./bc01f4a8f6_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./bc01f4a8f6_rm_0.bin" "Speed@Mechanical"
+        yunit = "ang_vel~rad_s"
+      ..
+      CURVE "staticenergy" "Static energy"
+        legend = "Mechanical/Static energy (Brake RL)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./bc01f4a8f6_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./bc01f4a8f6_rm_0.bin" "Static energy@Mechanical"
+        yunit = "work~J"
+      ..
+      CURVE "statictorque" "Static torque"
+        legend = "Mechanical/Static torque (Brake RL)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./bc01f4a8f6_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./bc01f4a8f6_rm_0.bin" "Static torque@Mechanical"
+        yunit = "moment~Nm"
+      ..
+    ..
+    CURVE "heatflow" "Heat flow"
+      legend = "Heat flow (Brake RL)"
+      type = channel_id
+      xlocation = CRUISE_BINARY "./bc01f4a8f6_rm_0.bin" "Time"
+      xunit = "time~s"
+      ylocation = CRUISE_BINARY "./bc01f4a8f6_rm_0.bin" "Heat flow"
+      yunit = "power~W"
+    ..
+  ..
+  FOLDER "brakerr" "Brake RR"
+    component_name = "Brake"
+    element_uid = "a3e975e6aca2493aa9bb26322f7d3780"
+    icon = "ai-cruise-brake"
+    type = element
+    uuid = "1056da684ff14c4d9cde7514e8dee49d"
+    FOLDER "mechanical" "Mechanical"
+      type = channel_group
+      CURVE "dynamicenergy" "Dynamic energy"
+        legend = "Mechanical/Dynamic energy (Brake RR)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./a3e975e6ac_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./a3e975e6ac_rm_0.bin" "Dynamic energy@Mechanical"
+        yunit = "work~J"
+      ..
+      CURVE "dynamicpower" "Dynamic power"
+        legend = "Mechanical/Dynamic power (Brake RR)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./a3e975e6ac_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./a3e975e6ac_rm_0.bin" "Dynamic power@Mechanical"
+        yunit = "power~W"
+      ..
+      CURVE "dynamictorque" "Dynamic torque"
+        legend = "Mechanical/Dynamic torque (Brake RR)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./a3e975e6ac_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./a3e975e6ac_rm_0.bin" "Dynamic torque@Mechanical"
+        yunit = "moment~Nm"
+      ..
+      CURVE "kineticenergy" "Kinetic energy"
+        legend = "Mechanical/Kinetic energy (Brake RR)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./a3e975e6ac_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./a3e975e6ac_rm_0.bin" "Kinetic energy@Mechanical"
+        yunit = "work~J"
+      ..
+      CURVE "kineticpower" "Kinetic power"
+        legend = "Mechanical/Kinetic power (Brake RR)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./a3e975e6ac_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./a3e975e6ac_rm_0.bin" "Kinetic power@Mechanical"
+        yunit = "power~W"
+      ..
+      CURVE "speed" "Speed"
+        legend = "Mechanical/Speed (Brake RR)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./a3e975e6ac_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./a3e975e6ac_rm_0.bin" "Speed@Mechanical"
+        yunit = "ang_vel~rad_s"
+      ..
+      CURVE "staticenergy" "Static energy"
+        legend = "Mechanical/Static energy (Brake RR)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./a3e975e6ac_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./a3e975e6ac_rm_0.bin" "Static energy@Mechanical"
+        yunit = "work~J"
+      ..
+      CURVE "statictorque" "Static torque"
+        legend = "Mechanical/Static torque (Brake RR)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./a3e975e6ac_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./a3e975e6ac_rm_0.bin" "Static torque@Mechanical"
+        yunit = "moment~Nm"
+      ..
+    ..
+    CURVE "heatflow" "Heat flow"
+      legend = "Heat flow (Brake RR)"
+      type = channel_id
+      xlocation = CRUISE_BINARY "./a3e975e6ac_rm_0.bin" "Time"
+      xunit = "time~s"
+      ylocation = CRUISE_BINARY "./a3e975e6ac_rm_0.bin" "Heat flow"
+      yunit = "power~W"
+    ..
+  ..
+  FOLDER "circuits" "Circuits"
+    type = subsystem
+    FOLDER "electriccircuit1" "Electric circuit 1"
+      component_name = "Electrical circuit"
+      element_uid = "uidForThisComponentIsNotSetelectriccircuit1"
+      icon = ""
+      type = element
+      CURVE "energyexchangedcircuit" "Energy Exchanged Circuit"
+        legend = "Energy Exchanged Circuit (Circuits/Electric circuit 1)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./electriccircuit1_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./electriccircuit1_0.bin" "Energy Exchanged Circuit"
+        yunit = "work~kJ"
+      ..
+    ..
+    FOLDER "vehiclecircuit_mechanicalcircuit1_mechanicalcircuit2_mechanicalcircuit3_mechanicalcircuit4_" "Vehicle circuit (Mechanical Circuit 1, Mechanical Circuit 2, Mechanical Circuit 3, Mechanical Circuit 4)"
+      component_name = "Rotational mechanical circuit"
+      element_uid = "uidForThisComponentIsNotSetvehiclecircuit_mechanicalcircuit1_mechanicalcircuit2_mechanicalcircuit3_mechanicalcircuit4_"
+      icon = ""
+      type = element
+      CURVE "energyexchangedcircuit" "Energy Exchanged Circuit"
+        legend = "Energy Exchanged Circuit (Circuits/Vehicle circuit (Mechanical Circuit 1, Mechanical Circuit 2, Mechanical Circuit 3, Mechanical Circuit 4))"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./vehiclecircuit_mec_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./vehiclecircuit_mec_0.bin" "Energy Exchanged Circuit"
+        yunit = "work~J"
+      ..
+      CURVE "energystoredcircuit" "Energy Stored Circuit"
+        legend = "Energy Stored Circuit (Circuits/Vehicle circuit (Mechanical Circuit 1, Mechanical Circuit 2, Mechanical Circuit 3, Mechanical Circuit 4))"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./vehiclecircuit_mec_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./vehiclecircuit_mec_0.bin" "Energy Stored Circuit"
+        yunit = "work~J"
+      ..
+    ..
+  ..
+  FOLDER "clutch" "Clutch"
+    component_name = "Clutch"
+    element_uid = "12abec8853c241be8d715a58762f9a0f"
+    icon = "ai-cruise-clutch"
+    type = element
+    uuid = "92a1168c4bad4745869981b630c0d8da"
+    FOLDER "primary" "Primary"
+      type = channel_group
+      CURVE "dynamicenergy" "Dynamic energy"
+        legend = "Primary/Dynamic energy (Clutch)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./12abec8853_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./12abec8853_rm_0.bin" "Dynamic energy@Primary"
+        yunit = "work~J"
+      ..
+      CURVE "dynamicpower" "Dynamic power"
+        legend = "Primary/Dynamic power (Clutch)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./12abec8853_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./12abec8853_rm_0.bin" "Dynamic power@Primary"
+        yunit = "power~W"
+      ..
+      CURVE "dynamictorque" "Dynamic torque"
+        legend = "Primary/Dynamic torque (Clutch)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./12abec8853_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./12abec8853_rm_0.bin" "Dynamic torque@Primary"
+        yunit = "moment~Nm"
+      ..
+      CURVE "kineticenergy" "Kinetic energy"
+        legend = "Primary/Kinetic energy (Clutch)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./12abec8853_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./12abec8853_rm_0.bin" "Kinetic energy@Primary"
+        yunit = "work~J"
+      ..
+      CURVE "kineticpower" "Kinetic power"
+        legend = "Primary/Kinetic power (Clutch)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./12abec8853_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./12abec8853_rm_0.bin" "Kinetic power@Primary"
+        yunit = "power~W"
+      ..
+      CURVE "speed" "Speed"
+        legend = "Primary/Speed (Clutch)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./12abec8853_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./12abec8853_rm_0.bin" "Speed@Primary"
+        yunit = "ang_vel~rad_s"
+      ..
+    ..
+    FOLDER "secondary" "Secondary"
+      type = channel_group
+      CURVE "dynamicenergy" "Dynamic energy"
+        legend = "Secondary/Dynamic energy (Clutch)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./12abec8853_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./12abec8853_rm_0.bin" "Dynamic energy@Secondary"
+        yunit = "work~J"
+      ..
+      CURVE "dynamicpower" "Dynamic power"
+        legend = "Secondary/Dynamic power (Clutch)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./12abec8853_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./12abec8853_rm_0.bin" "Dynamic power@Secondary"
+        yunit = "power~W"
+      ..
+      CURVE "dynamictorque" "Dynamic torque"
+        legend = "Secondary/Dynamic torque (Clutch)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./12abec8853_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./12abec8853_rm_0.bin" "Dynamic torque@Secondary"
+        yunit = "moment~Nm"
+      ..
+      CURVE "kineticenergy" "Kinetic energy"
+        legend = "Secondary/Kinetic energy (Clutch)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./12abec8853_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./12abec8853_rm_0.bin" "Kinetic energy@Secondary"
+        yunit = "work~J"
+      ..
+      CURVE "kineticpower" "Kinetic power"
+        legend = "Secondary/Kinetic power (Clutch)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./12abec8853_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./12abec8853_rm_0.bin" "Kinetic power@Secondary"
+        yunit = "power~W"
+      ..
+      CURVE "speed" "Speed"
+        legend = "Secondary/Speed (Clutch)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./12abec8853_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./12abec8853_rm_0.bin" "Speed@Secondary"
+        yunit = "ang_vel~rad_s"
+      ..
+    ..
+    FOLDER "thermalmodel" "Thermal Model"
+      type = channel_group
+      CURVE "walltemperature" "Wall temperature"
+        legend = "Thermal Model/Wall temperature (Clutch)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./12abec8853_th_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./12abec8853_th_0.bin" "Wall temperature@Thermal Model"
+        yunit = "temperature~K"
+      ..
+    ..
+    CURVE "clutchrelease" "Clutch release"
+      legend = "Clutch release (Clutch)"
+      type = channel_id
+      xlocation = CRUISE_BINARY "./12abec8853_rm_0.bin" "Time"
+      xunit = "time~s"
+      ylocation = CRUISE_BINARY "./12abec8853_rm_0.bin" "Clutch release"
+      yunit = "dimensionless~none"
+    ..
+    CURVE "clutchtorque" "Clutch torque"
+      legend = "Clutch torque (Clutch)"
+      type = channel_id
+      xlocation = CRUISE_BINARY "./12abec8853_rm_0.bin" "Time"
+      xunit = "time~s"
+      ylocation = CRUISE_BINARY "./12abec8853_rm_0.bin" "Clutch torque"
+      yunit = "moment~Nm"
+    ..
+    CURVE "heat" "Heat"
+      legend = "Heat (Clutch)"
+      type = channel_id
+      xlocation = CRUISE_BINARY "./12abec8853_rm_0.bin" "Time"
+      xunit = "time~s"
+      ylocation = CRUISE_BINARY "./12abec8853_rm_0.bin" "Heat"
+      yunit = "work~J"
+    ..
+    CURVE "heatflow" "Heat flow"
+      legend = "Heat flow (Clutch)"
+      type = channel_id
+      xlocation = CRUISE_BINARY "./12abec8853_rm_0.bin" "Time"
+      xunit = "time~s"
+      ylocation = CRUISE_BINARY "./12abec8853_rm_0.bin" "Heat flow"
+      yunit = "power~W"
+    ..
+  ..
+  FOLDER "cockpit" "Cockpit"
+    component_name = "Cockpit"
+    element_uid = "2e52755fc83744b4ab5482a7e95b3bc9"
+    icon = "ai-cruise-cockpit"
+    type = element
+    uuid = "ebe199ccab3c4f9b9ef2b0284dc03191"
+    FOLDER "in" "In"
+      type = channel_group
+      CURVE "acceleratorpedaltravel" "Accelerator pedal travel"
+        legend = "In/Accelerator pedal travel (Cockpit)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./2e52755fc8_me_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./2e52755fc8_me_0.bin" "Accelerator pedal travel@In"
+        yunit = "no_unit~none"
+      ..
+      CURVE "brakepedaltravel" "Brake pedal travel"
+        legend = "In/Brake pedal travel (Cockpit)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./2e52755fc8_me_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./2e52755fc8_me_0.bin" "Brake pedal travel@In"
+        yunit = "no_unit~none"
+      ..
+    ..
+    FOLDER "out" "Out"
+      type = channel_group
+      CURVE "clutchrelease" "Clutch release"
+        legend = "Out/Clutch release (Cockpit)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./2e52755fc8_me_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./2e52755fc8_me_0.bin" "Clutch release@Out"
+        yunit = "dimensionless~none"
+      ..
+    ..
+  ..
+  FOLDER "differentialf" "Differential F"
+    component_name = "Differential"
+    element_uid = "b53b7048574c4c81ab1845b95648bc81"
+    icon = "ai-cruise-differential"
+    type = element
+    uuid = "892899d751724016bf2edea064d72d3e"
+    FOLDER "primary" "Primary"
+      type = channel_group
+      CURVE "dynamicenergy" "Dynamic energy"
+        legend = "Primary/Dynamic energy (Differential F)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./b53b704857_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./b53b704857_rm_0.bin" "Dynamic energy@Primary"
+        yunit = "work~J"
+      ..
+      CURVE "dynamicpower" "Dynamic power"
+        legend = "Primary/Dynamic power (Differential F)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./b53b704857_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./b53b704857_rm_0.bin" "Dynamic power@Primary"
+        yunit = "power~W"
+      ..
+      CURVE "dynamictorque" "Dynamic torque"
+        legend = "Primary/Dynamic torque (Differential F)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./b53b704857_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./b53b704857_rm_0.bin" "Dynamic torque@Primary"
+        yunit = "moment~Nm"
+      ..
+      CURVE "kineticenergy" "Kinetic energy"
+        legend = "Primary/Kinetic energy (Differential F)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./b53b704857_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./b53b704857_rm_0.bin" "Kinetic energy@Primary"
+        yunit = "work~J"
+      ..
+      CURVE "kineticpower" "Kinetic power"
+        legend = "Primary/Kinetic power (Differential F)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./b53b704857_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./b53b704857_rm_0.bin" "Kinetic power@Primary"
+        yunit = "power~W"
+      ..
+      CURVE "speed" "Speed"
+        legend = "Primary/Speed (Differential F)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./b53b704857_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./b53b704857_rm_0.bin" "Speed@Primary"
+        yunit = "ang_vel~rad_s"
+      ..
+    ..
+    FOLDER "secondary1" "Secondary 1"
+      type = channel_group
+      CURVE "dynamicenergy" "Dynamic energy"
+        legend = "Secondary 1/Dynamic energy (Differential F)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./b53b704857_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./b53b704857_rm_0.bin" "Dynamic energy@Secondary 1"
+        yunit = "work~J"
+      ..
+      CURVE "dynamicpower" "Dynamic power"
+        legend = "Secondary 1/Dynamic power (Differential F)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./b53b704857_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./b53b704857_rm_0.bin" "Dynamic power@Secondary 1"
+        yunit = "power~W"
+      ..
+      CURVE "dynamictorque" "Dynamic torque"
+        legend = "Secondary 1/Dynamic torque (Differential F)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./b53b704857_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./b53b704857_rm_0.bin" "Dynamic torque@Secondary 1"
+        yunit = "moment~Nm"
+      ..
+      CURVE "kineticenergy" "Kinetic energy"
+        legend = "Secondary 1/Kinetic energy (Differential F)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./b53b704857_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./b53b704857_rm_0.bin" "Kinetic energy@Secondary 1"
+        yunit = "work~J"
+      ..
+      CURVE "kineticpower" "Kinetic power"
+        legend = "Secondary 1/Kinetic power (Differential F)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./b53b704857_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./b53b704857_rm_0.bin" "Kinetic power@Secondary 1"
+        yunit = "power~W"
+      ..
+      CURVE "speed" "Speed"
+        legend = "Secondary 1/Speed (Differential F)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./b53b704857_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./b53b704857_rm_0.bin" "Speed@Secondary 1"
+        yunit = "ang_vel~rad_s"
+      ..
+    ..
+    FOLDER "secondary2" "Secondary 2"
+      type = channel_group
+      CURVE "dynamicenergy" "Dynamic energy"
+        legend = "Secondary 2/Dynamic energy (Differential F)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./b53b704857_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./b53b704857_rm_0.bin" "Dynamic energy@Secondary 2"
+        yunit = "work~J"
+      ..
+      CURVE "dynamicpower" "Dynamic power"
+        legend = "Secondary 2/Dynamic power (Differential F)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./b53b704857_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./b53b704857_rm_0.bin" "Dynamic power@Secondary 2"
+        yunit = "power~W"
+      ..
+      CURVE "dynamictorque" "Dynamic torque"
+        legend = "Secondary 2/Dynamic torque (Differential F)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./b53b704857_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./b53b704857_rm_0.bin" "Dynamic torque@Secondary 2"
+        yunit = "moment~Nm"
+      ..
+      CURVE "kineticenergy" "Kinetic energy"
+        legend = "Secondary 2/Kinetic energy (Differential F)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./b53b704857_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./b53b704857_rm_0.bin" "Kinetic energy@Secondary 2"
+        yunit = "work~J"
+      ..
+      CURVE "kineticpower" "Kinetic power"
+        legend = "Secondary 2/Kinetic power (Differential F)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./b53b704857_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./b53b704857_rm_0.bin" "Kinetic power@Secondary 2"
+        yunit = "power~W"
+      ..
+      CURVE "speed" "Speed"
+        legend = "Secondary 2/Speed (Differential F)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./b53b704857_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./b53b704857_rm_0.bin" "Speed@Secondary 2"
+        yunit = "ang_vel~rad_s"
+      ..
+    ..
+    CURVE "heat" "Heat"
+      legend = "Heat (Differential F)"
+      type = channel_id
+      xlocation = CRUISE_BINARY "./b53b704857_rm_0.bin" "Time"
+      xunit = "time~s"
+      ylocation = CRUISE_BINARY "./b53b704857_rm_0.bin" "Heat"
+      yunit = "work~J"
+    ..
+    CURVE "heatflow" "Heat flow"
+      legend = "Heat flow (Differential F)"
+      type = channel_id
+      xlocation = CRUISE_BINARY "./b53b704857_rm_0.bin" "Time"
+      xunit = "time~s"
+      ylocation = CRUISE_BINARY "./b53b704857_rm_0.bin" "Heat flow"
+      yunit = "power~W"
+    ..
+  ..
+  FOLDER "e-network48v" "E-Network 48V"
+    type = subsystem
+    FOLDER "48vbus" "48V Bus"
+      component_name = "Electric node"
+      element_uid = "a248b81c6c354c81967ed810dd4d6d17"
+      icon = "ai-cruise-electric-node"
+      type = element
+      uuid = "0b52dc1db86742a19e15a319a806e577"
+      CURVE "potential" "Potential"
+        legend = "Potential (E-Network 48V/48V Bus)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./a248b81c6c_el_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./a248b81c6c_el_0.bin" "Potential"
+        yunit = "voltage~V"
+      ..
+    ..
+    FOLDER "battery" "Battery"
+      component_name = "Equivalent circuit model"
+      element_uid = "03efd55fc8204705bff48eaaa536569e"
+      icon = "ai-cruise-equivalent-circuit"
+      type = element
+      uuid = "b8b1757f367a422f824051c3bf2636f3"
+      FOLDER "minus" "Minus"
+        type = channel_group
+        CURVE "current" "Current"
+          legend = "Minus/Current (E-Network 48V/Battery)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./03efd55fc8_el_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./03efd55fc8_el_0.bin" "Current@Minus"
+          yunit = "amperage~A"
+        ..
+      ..
+      FOLDER "plus" "Plus"
+        type = channel_group
+        CURVE "current" "Current"
+          legend = "Plus/Current (E-Network 48V/Battery)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./03efd55fc8_el_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./03efd55fc8_el_0.bin" "Current@Plus"
+          yunit = "amperage~A"
+        ..
+      ..
+      FOLDER "thermalmodel" "Thermal Model"
+        type = channel_group
+        CURVE "walltemperature" "Wall temperature"
+          legend = "Thermal Model/Wall temperature (E-Network 48V/Battery)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./03efd55fc8_th_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./03efd55fc8_th_0.bin" "Wall temperature@Thermal Model"
+          yunit = "temperature~K"
+        ..
+      ..
+      CURVE "energystored" "Energy stored"
+        legend = "Energy stored (E-Network 48V/Battery)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./03efd55fc8_el_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./03efd55fc8_el_0.bin" "Energy stored"
+        yunit = "work~J"
+      ..
+      CURVE "heat" "Heat"
+        legend = "Heat (E-Network 48V/Battery)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./03efd55fc8_el_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./03efd55fc8_el_0.bin" "Heat"
+        yunit = "work~J"
+      ..
+      CURVE "heatflow" "Heat flow"
+        legend = "Heat flow (E-Network 48V/Battery)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./03efd55fc8_el_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./03efd55fc8_el_0.bin" "Heat flow"
+        yunit = "power~W"
+      ..
+      CURVE "powerstored" "Power stored"
+        legend = "Power stored (E-Network 48V/Battery)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./03efd55fc8_el_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./03efd55fc8_el_0.bin" "Power stored"
+        yunit = "power~W"
+      ..
+    ..
+    FOLDER "e-consumer" "E-Consumer"
+      component_name = "Power consumer"
+      element_uid = "a6e372684a594840b5d3451ce8bef29d"
+      icon = "ai-cruise-electrical-consumer"
+      type = element
+      uuid = "1c680950fcfc4a76b6d6a8b8d2e1c1e7"
+      FOLDER "minus" "Minus"
+        type = channel_group
+        CURVE "current" "Current"
+          legend = "Minus/Current (E-Network 48V/E-Consumer)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./a6e372684a_el_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./a6e372684a_el_0.bin" "Current@Minus"
+          yunit = "amperage~A"
+        ..
+      ..
+      FOLDER "plus" "Plus"
+        type = channel_group
+        CURVE "current" "Current"
+          legend = "Plus/Current (E-Network 48V/E-Consumer)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./a6e372684a_el_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./a6e372684a_el_0.bin" "Current@Plus"
+          yunit = "amperage~A"
+        ..
+      ..
+      FOLDER "thermalmodel" "Thermal Model"
+        type = channel_group
+        CURVE "walltemperature" "Wall temperature"
+          legend = "Thermal Model/Wall temperature (E-Network 48V/E-Consumer)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./a6e372684a_th_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./a6e372684a_th_0.bin" "Wall temperature@Thermal Model"
+          yunit = "temperature~K"
+        ..
+      ..
+      CURVE "energy" "Energy"
+        legend = "Energy (E-Network 48V/E-Consumer)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./a6e372684a_el_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./a6e372684a_el_0.bin" "Energy"
+        yunit = "work~J"
+      ..
+      CURVE "heat" "Heat"
+        legend = "Heat (E-Network 48V/E-Consumer)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./a6e372684a_el_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./a6e372684a_el_0.bin" "Heat"
+        yunit = "work~J"
+      ..
+      CURVE "heatflow" "Heat flow"
+        legend = "Heat flow (E-Network 48V/E-Consumer)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./a6e372684a_el_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./a6e372684a_el_0.bin" "Heat flow"
+        yunit = "power~W"
+      ..
+      CURVE "power" "Power"
+        legend = "Power (E-Network 48V/E-Consumer)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./a6e372684a_el_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./a6e372684a_el_0.bin" "Power"
+        yunit = "power~W"
+      ..
+    ..
+    FOLDER "e-motorp1" "E-Motor P1"
+      component_name = "Electric motor with inverter"
+      element_uid = "d334b27011874c64a19b9883a7fd2867"
+      icon = "ai-cruise-electric-machine"
+      type = element
+      uuid = "dd96d4a663a64dec8180b6099da28d3b"
+      FOLDER "mechanical" "Mechanical"
+        type = channel_group
+        CURVE "dynamicenergy" "Dynamic energy"
+          legend = "Mechanical/Dynamic energy (E-Network 48V/E-Motor P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./d334b27011_rm_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./d334b27011_rm_0.bin" "Dynamic energy@Mechanical"
+          yunit = "work~J"
+        ..
+        CURVE "dynamicpower" "Dynamic power"
+          legend = "Mechanical/Dynamic power (E-Network 48V/E-Motor P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./d334b27011_rm_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./d334b27011_rm_0.bin" "Dynamic power@Mechanical"
+          yunit = "power~W"
+        ..
+        CURVE "dynamictorque" "Dynamic torque"
+          legend = "Mechanical/Dynamic torque (E-Network 48V/E-Motor P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./d334b27011_rm_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./d334b27011_rm_0.bin" "Dynamic torque@Mechanical"
+          yunit = "moment~Nm"
+        ..
+        CURVE "kineticenergy" "Kinetic energy"
+          legend = "Mechanical/Kinetic energy (E-Network 48V/E-Motor P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./d334b27011_rm_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./d334b27011_rm_0.bin" "Kinetic energy@Mechanical"
+          yunit = "work~J"
+        ..
+        CURVE "kineticpower" "Kinetic power"
+          legend = "Mechanical/Kinetic power (E-Network 48V/E-Motor P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./d334b27011_rm_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./d334b27011_rm_0.bin" "Kinetic power@Mechanical"
+          yunit = "power~W"
+        ..
+        CURVE "speed" "Speed"
+          legend = "Mechanical/Speed (E-Network 48V/E-Motor P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./d334b27011_rm_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./d334b27011_rm_0.bin" "Speed@Mechanical"
+          yunit = "ang_vel~rad_s"
+        ..
+      ..
+      FOLDER "minus" "Minus"
+        type = channel_group
+        CURVE "current" "Current"
+          legend = "Minus/Current (E-Network 48V/E-Motor P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./d334b27011_el_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./d334b27011_el_0.bin" "Current@Minus"
+          yunit = "amperage~A"
+        ..
+      ..
+      FOLDER "plus" "Plus"
+        type = channel_group
+        CURVE "current" "Current"
+          legend = "Plus/Current (E-Network 48V/E-Motor P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./d334b27011_el_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./d334b27011_el_0.bin" "Current@Plus"
+          yunit = "amperage~A"
+        ..
+      ..
+      CURVE "electricenergy" "Electric energy"
+        legend = "Electric energy (E-Network 48V/E-Motor P1)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./d334b27011_el_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./d334b27011_el_0.bin" "Electric energy"
+        yunit = "work~J"
+      ..
+      CURVE "electricpower" "Electric power"
+        legend = "Electric power (E-Network 48V/E-Motor P1)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./d334b27011_el_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./d334b27011_el_0.bin" "Electric power"
+        yunit = "power~W"
+      ..
+      CURVE "heat" "Heat"
+        legend = "Heat (E-Network 48V/E-Motor P1)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./d334b27011_el_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./d334b27011_el_0.bin" "Heat"
+        yunit = "work~J"
+      ..
+      CURVE "heatflow" "Heat flow"
+        legend = "Heat flow (E-Network 48V/E-Motor P1)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./d334b27011_el_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./d334b27011_el_0.bin" "Heat flow"
+        yunit = "power~W"
+      ..
+    ..
+    FOLDER "ground" "Ground"
+      component_name = "Ground"
+      element_uid = "b9571c1096f641e885ee168670fd6bc8"
+      icon = "ai-cruise-ground"
+      type = element
+      uuid = "0b52dc1db86742a19e15a319a806e570"
+      CURVE "voltage" "Voltage"
+        legend = "Voltage (E-Network 48V/Ground)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./b9571c1096_el_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./b9571c1096_el_0.bin" "Voltage"
+        yunit = "voltage~V"
+      ..
+    ..
+  ..
+  FOLDER "faulttime" "Fault Time"
+    component_name = "C-Function"
+    element_uid = "49d806ce22ed47c0ba942724d57bdaa4"
+    icon = "ai-cruise-function-cs"
+    type = element
+    uuid = "76f59128604e4b1d9e3c9e3700d6e296"
+    FOLDER "in" "In"
+      type = channel_group
+      CURVE "in_port_1" "Maximum velocity"
+        legend = "In/Maximum velocity (Fault Time)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./49d806ce22_cs_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./49d806ce22_cs_0.bin" "Maximum velocity@In"
+        yunit = "velocity~m_s"
+      ..
+      CURVE "in_port_2" "Minimum velocity"
+        legend = "In/Minimum velocity (Fault Time)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./49d806ce22_cs_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./49d806ce22_cs_0.bin" "Minimum velocity@In"
+        yunit = "velocity~m_s"
+      ..
+      CURVE "in_port_0" "Vehicle - Velocity"
+        legend = "In/Vehicle - Velocity (Fault Time)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./49d806ce22_cs_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./49d806ce22_cs_0.bin" "Vehicle - Velocity@In"
+        yunit = "velocity~m_s"
+      ..
+    ..
+    FOLDER "out" "Out"
+      type = channel_group
+      CURVE "out_port_0" "Fault Time"
+        legend = "Out/Fault Time (Fault Time)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./49d806ce22_cs_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./49d806ce22_cs_0.bin" "Fault Time@Out"
+        yunit = "time~s"
+      ..
+    ..
+  ..
+  FOLDER "finaldrivef" "Final Drive F"
+    component_name = "Single ratio transmission"
+    element_uid = "584d9b9a9f074d459170f5787ae660c9"
+    icon = "ai-cruise-single-ratio-transmission-top"
+    type = element
+    uuid = "41f2a597c9624f0cb88075395231530f"
+    FOLDER "primary" "Primary"
+      type = channel_group
+      CURVE "dynamicenergy" "Dynamic energy"
+        legend = "Primary/Dynamic energy (Final Drive F)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./584d9b9a9f_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./584d9b9a9f_rm_0.bin" "Dynamic energy@Primary"
+        yunit = "work~J"
+      ..
+      CURVE "dynamicpower" "Dynamic power"
+        legend = "Primary/Dynamic power (Final Drive F)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./584d9b9a9f_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./584d9b9a9f_rm_0.bin" "Dynamic power@Primary"
+        yunit = "power~W"
+      ..
+      CURVE "dynamictorque" "Dynamic torque"
+        legend = "Primary/Dynamic torque (Final Drive F)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./584d9b9a9f_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./584d9b9a9f_rm_0.bin" "Dynamic torque@Primary"
+        yunit = "moment~Nm"
+      ..
+      CURVE "kineticenergy" "Kinetic energy"
+        legend = "Primary/Kinetic energy (Final Drive F)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./584d9b9a9f_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./584d9b9a9f_rm_0.bin" "Kinetic energy@Primary"
+        yunit = "work~J"
+      ..
+      CURVE "kineticpower" "Kinetic power"
+        legend = "Primary/Kinetic power (Final Drive F)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./584d9b9a9f_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./584d9b9a9f_rm_0.bin" "Kinetic power@Primary"
+        yunit = "power~W"
+      ..
+      CURVE "speed" "Speed"
+        legend = "Primary/Speed (Final Drive F)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./584d9b9a9f_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./584d9b9a9f_rm_0.bin" "Speed@Primary"
+        yunit = "ang_vel~rad_s"
+      ..
+    ..
+    FOLDER "secondary" "Secondary"
+      type = channel_group
+      CURVE "dynamicenergy" "Dynamic energy"
+        legend = "Secondary/Dynamic energy (Final Drive F)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./584d9b9a9f_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./584d9b9a9f_rm_0.bin" "Dynamic energy@Secondary"
+        yunit = "work~J"
+      ..
+      CURVE "dynamicpower" "Dynamic power"
+        legend = "Secondary/Dynamic power (Final Drive F)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./584d9b9a9f_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./584d9b9a9f_rm_0.bin" "Dynamic power@Secondary"
+        yunit = "power~W"
+      ..
+      CURVE "dynamictorque" "Dynamic torque"
+        legend = "Secondary/Dynamic torque (Final Drive F)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./584d9b9a9f_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./584d9b9a9f_rm_0.bin" "Dynamic torque@Secondary"
+        yunit = "moment~Nm"
+      ..
+      CURVE "kineticenergy" "Kinetic energy"
+        legend = "Secondary/Kinetic energy (Final Drive F)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./584d9b9a9f_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./584d9b9a9f_rm_0.bin" "Kinetic energy@Secondary"
+        yunit = "work~J"
+      ..
+      CURVE "kineticpower" "Kinetic power"
+        legend = "Secondary/Kinetic power (Final Drive F)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./584d9b9a9f_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./584d9b9a9f_rm_0.bin" "Kinetic power@Secondary"
+        yunit = "power~W"
+      ..
+      CURVE "speed" "Speed"
+        legend = "Secondary/Speed (Final Drive F)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./584d9b9a9f_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./584d9b9a9f_rm_0.bin" "Speed@Secondary"
+        yunit = "ang_vel~rad_s"
+      ..
+    ..
+    CURVE "heat" "Heat"
+      legend = "Heat (Final Drive F)"
+      type = channel_id
+      xlocation = CRUISE_BINARY "./584d9b9a9f_rm_0.bin" "Time"
+      xunit = "time~s"
+      ylocation = CRUISE_BINARY "./584d9b9a9f_rm_0.bin" "Heat"
+      yunit = "work~J"
+    ..
+    CURVE "heatflow" "Heat flow"
+      legend = "Heat flow (Final Drive F)"
+      type = channel_id
+      xlocation = CRUISE_BINARY "./584d9b9a9f_rm_0.bin" "Time"
+      xunit = "time~s"
+      ylocation = CRUISE_BINARY "./584d9b9a9f_rm_0.bin" "Heat flow"
+      yunit = "power~W"
+    ..
+    CURVE "torqueloss" "Torque loss"
+      legend = "Torque loss (Final Drive F)"
+      type = channel_id
+      xlocation = CRUISE_BINARY "./584d9b9a9f_rm_0.bin" "Time"
+      xunit = "time~s"
+      ylocation = CRUISE_BINARY "./584d9b9a9f_rm_0.bin" "Torque loss"
+      yunit = "moment~Nm"
+    ..
+  ..
+  FOLDER "gearbox" "Gearbox"
+    component_name = "Gearbox"
+    element_uid = "92a3d22de4124940a5f341a66c84848f"
+    icon = "ai-cruise-gearbox"
+    type = element
+    uuid = "e3c381fbbc6b4132a3a8c6c103c5c4a4"
+    FOLDER "primary" "Primary"
+      type = channel_group
+      CURVE "dynamicenergy" "Dynamic energy"
+        legend = "Primary/Dynamic energy (Gearbox)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./92a3d22de4_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./92a3d22de4_rm_0.bin" "Dynamic energy@Primary"
+        yunit = "work~J"
+      ..
+      CURVE "dynamicpower" "Dynamic power"
+        legend = "Primary/Dynamic power (Gearbox)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./92a3d22de4_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./92a3d22de4_rm_0.bin" "Dynamic power@Primary"
+        yunit = "power~W"
+      ..
+      CURVE "dynamictorque" "Dynamic torque"
+        legend = "Primary/Dynamic torque (Gearbox)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./92a3d22de4_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./92a3d22de4_rm_0.bin" "Dynamic torque@Primary"
+        yunit = "moment~Nm"
+      ..
+      CURVE "kineticenergy" "Kinetic energy"
+        legend = "Primary/Kinetic energy (Gearbox)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./92a3d22de4_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./92a3d22de4_rm_0.bin" "Kinetic energy@Primary"
+        yunit = "work~J"
+      ..
+      CURVE "kineticpower" "Kinetic power"
+        legend = "Primary/Kinetic power (Gearbox)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./92a3d22de4_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./92a3d22de4_rm_0.bin" "Kinetic power@Primary"
+        yunit = "power~W"
+      ..
+      CURVE "speed" "Speed"
+        legend = "Primary/Speed (Gearbox)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./92a3d22de4_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./92a3d22de4_rm_0.bin" "Speed@Primary"
+        yunit = "ang_vel~rad_s"
+      ..
+    ..
+    FOLDER "secondary" "Secondary"
+      type = channel_group
+      CURVE "dynamicenergy" "Dynamic energy"
+        legend = "Secondary/Dynamic energy (Gearbox)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./92a3d22de4_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./92a3d22de4_rm_0.bin" "Dynamic energy@Secondary"
+        yunit = "work~J"
+      ..
+      CURVE "dynamicpower" "Dynamic power"
+        legend = "Secondary/Dynamic power (Gearbox)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./92a3d22de4_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./92a3d22de4_rm_0.bin" "Dynamic power@Secondary"
+        yunit = "power~W"
+      ..
+      CURVE "dynamictorque" "Dynamic torque"
+        legend = "Secondary/Dynamic torque (Gearbox)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./92a3d22de4_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./92a3d22de4_rm_0.bin" "Dynamic torque@Secondary"
+        yunit = "moment~Nm"
+      ..
+      CURVE "kineticenergy" "Kinetic energy"
+        legend = "Secondary/Kinetic energy (Gearbox)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./92a3d22de4_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./92a3d22de4_rm_0.bin" "Kinetic energy@Secondary"
+        yunit = "work~J"
+      ..
+      CURVE "kineticpower" "Kinetic power"
+        legend = "Secondary/Kinetic power (Gearbox)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./92a3d22de4_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./92a3d22de4_rm_0.bin" "Kinetic power@Secondary"
+        yunit = "power~W"
+      ..
+      CURVE "speed" "Speed"
+        legend = "Secondary/Speed (Gearbox)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./92a3d22de4_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./92a3d22de4_rm_0.bin" "Speed@Secondary"
+        yunit = "ang_vel~rad_s"
+      ..
+    ..
+    CURVE "currentgear" "Current gear"
+      legend = "Current gear (Gearbox)"
+      type = channel_id
+      xlocation = CRUISE_BINARY "./92a3d22de4_rm_0.bin" "Time"
+      xunit = "time~s"
+      ylocation = CRUISE_BINARY "./92a3d22de4_rm_0.bin" "Current gear"
+      yunit = "no_unit~none"
+    ..
+    CURVE "heat" "Heat"
+      legend = "Heat (Gearbox)"
+      type = channel_id
+      xlocation = CRUISE_BINARY "./92a3d22de4_rm_0.bin" "Time"
+      xunit = "time~s"
+      ylocation = CRUISE_BINARY "./92a3d22de4_rm_0.bin" "Heat"
+      yunit = "work~J"
+    ..
+    CURVE "heatflow" "Heat flow"
+      legend = "Heat flow (Gearbox)"
+      type = channel_id
+      xlocation = CRUISE_BINARY "./92a3d22de4_rm_0.bin" "Time"
+      xunit = "time~s"
+      ylocation = CRUISE_BINARY "./92a3d22de4_rm_0.bin" "Heat flow"
+      yunit = "power~W"
+    ..
+    CURVE "torqueloss" "Torque loss"
+      legend = "Torque loss (Gearbox)"
+      type = channel_id
+      xlocation = CRUISE_BINARY "./92a3d22de4_rm_0.bin" "Time"
+      xunit = "time~s"
+      ylocation = CRUISE_BINARY "./92a3d22de4_rm_0.bin" "Torque loss"
+      yunit = "moment~Nm"
+    ..
+    CURVE "transmissionratio" "Transmission ratio"
+      legend = "Transmission ratio (Gearbox)"
+      type = channel_id
+      xlocation = CRUISE_BINARY "./92a3d22de4_rm_0.bin" "Time"
+      xunit = "time~s"
+      ylocation = CRUISE_BINARY "./92a3d22de4_rm_0.bin" "Transmission ratio"
+      yunit = "no_unit~none"
+    ..
+  ..
+  FOLDER "hcup1" "HCU P1"
+    type = subsystem
+    FOLDER "batteryanalysis" "Battery Analysis"
+      component_name = "C-Function"
+      element_uid = "89c0f7967fad46c1bcf4d9f171a4bd56"
+      icon = "ai-cruise-function-cs"
+      type = element
+      uuid = "76f59128604e4b1d9e3c9e3700d6e296"
+      FOLDER "in" "In"
+        type = channel_group
+        CURVE "in_port_4" "Discharge Power"
+          legend = "In/Discharge Power (HCU P1/Battery Analysis)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./89c0f7967f_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./89c0f7967f_cs_0.bin" "Discharge Power@In"
+          yunit = "power~W"
+        ..
+        CURVE "in_port_3" "Power Charge"
+          legend = "In/Power Charge (HCU P1/Battery Analysis)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./89c0f7967f_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./89c0f7967f_cs_0.bin" "Power Charge@In"
+          yunit = "power~W"
+        ..
+        CURVE "in_port_5" "Power E-Consumers"
+          legend = "In/Power E-Consumers (HCU P1/Battery Analysis)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./89c0f7967f_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./89c0f7967f_cs_0.bin" "Power E-Consumers@In"
+          yunit = "power~W"
+        ..
+        CURVE "in_port_0" "SOC actual"
+          legend = "In/SOC actual (HCU P1/Battery Analysis)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./89c0f7967f_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./89c0f7967f_cs_0.bin" "SOC actual@In"
+          yunit = "dimensionless~no"
+        ..
+        CURVE "in_port_1" "SOC max."
+          legend = "In/SOC max. (HCU P1/Battery Analysis)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./89c0f7967f_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./89c0f7967f_cs_0.bin" "SOC max.@In"
+          yunit = "dimensionless~no"
+        ..
+        CURVE "in_port_2" "SOC min."
+          legend = "In/SOC min. (HCU P1/Battery Analysis)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./89c0f7967f_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./89c0f7967f_cs_0.bin" "SOC min.@In"
+          yunit = "dimensionless~no"
+        ..
+      ..
+      FOLDER "out" "Out"
+        type = channel_group
+        CURVE "out_port_0" "Charge Flag"
+          legend = "Out/Charge Flag (HCU P1/Battery Analysis)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./89c0f7967f_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./89c0f7967f_cs_0.bin" "Charge Flag@Out"
+          yunit = "no_unit~none"
+        ..
+        CURVE "out_port_1" "Power Max. Generator"
+          legend = "Out/Power Max. Generator (HCU P1/Battery Analysis)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./89c0f7967f_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./89c0f7967f_cs_0.bin" "Power Max. Generator@Out"
+          yunit = "power~W"
+        ..
+        CURVE "out_port_2" "Power Max. Motor"
+          legend = "Out/Power Max. Motor (HCU P1/Battery Analysis)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./89c0f7967f_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./89c0f7967f_cs_0.bin" "Power Max. Motor@Out"
+          yunit = "power~W"
+        ..
+      ..
+    ..
+    FOLDER "boostp1" "Boost P1"
+      component_name = "C-Function"
+      element_uid = "2c5bb2f7cec44d93a1cd2a1193d0ad13"
+      icon = "ai-cruise-function-me"
+      type = element
+      uuid = "76f59128604e4b1d9e3c9e3700d6e296"
+      FOLDER "in" "In"
+        type = channel_group
+        CURVE "in_port_5" "Boost - EM Torque Ratio"
+          legend = "In/Boost - EM Torque Ratio (HCU P1/Boost P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./2c5bb2f7ce_me_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./2c5bb2f7ce_me_0.bin" "Boost - EM Torque Ratio@In"
+          yunit = "dimensionless~no"
+        ..
+        CURVE "in_port_0" "Driveline Power Demand"
+          legend = "In/Driveline Power Demand (HCU P1/Boost P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./2c5bb2f7ce_me_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./2c5bb2f7ce_me_0.bin" "Driveline Power Demand@In"
+          yunit = "power~W"
+        ..
+        CURVE "in_port_4" "E-Power Motor Max."
+          legend = "In/E-Power Motor Max. (HCU P1/Boost P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./2c5bb2f7ce_me_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./2c5bb2f7ce_me_0.bin" "E-Power Motor Max.@In"
+          yunit = "power~W"
+        ..
+        CURVE "in_port_3" "EM Efficiency"
+          legend = "In/EM Efficiency (HCU P1/Boost P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./2c5bb2f7ce_me_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./2c5bb2f7ce_me_0.bin" "EM Efficiency@In"
+          yunit = "dimensionless~no"
+        ..
+        CURVE "in_port_2" "EM Motor Max. Torque"
+          legend = "In/EM Motor Max. Torque (HCU P1/Boost P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./2c5bb2f7ce_me_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./2c5bb2f7ce_me_0.bin" "EM Motor Max. Torque@In"
+          yunit = "moment~Nm"
+        ..
+        CURVE "in_port_1" "EM Speed"
+          legend = "In/EM Speed (HCU P1/Boost P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./2c5bb2f7ce_me_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./2c5bb2f7ce_me_0.bin" "EM Speed@In"
+          yunit = "ang_vel~rad_s"
+        ..
+        CURVE "in_port_6" "Mode Switch"
+          legend = "In/Mode Switch (HCU P1/Boost P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./2c5bb2f7ce_me_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./2c5bb2f7ce_me_0.bin" "Mode Switch@In"
+          yunit = "no_unit~none"
+        ..
+      ..
+      FOLDER "out" "Out"
+        type = channel_group
+        CURVE "out_port_0" "EM Power Demand Boost"
+          legend = "Out/EM Power Demand Boost (HCU P1/Boost P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./2c5bb2f7ce_me_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./2c5bb2f7ce_me_0.bin" "EM Power Demand Boost@Out"
+          yunit = "power~W"
+        ..
+      ..
+    ..
+    FOLDER "brakep1" "Brake P1"
+      component_name = "C-Function"
+      element_uid = "f72cbb26ffbb4883ab4ac8fa48b50ab1"
+      icon = "ai-cruise-function-cs"
+      type = element
+      uuid = "76f59128604e4b1d9e3c9e3700d6e296"
+      FOLDER "in" "In"
+        type = channel_group
+        CURVE "in_port_7" "Brake Gain Front"
+          legend = "In/Brake Gain Front (HCU P1/Brake P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./f72cbb26ff_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./f72cbb26ff_cs_0.bin" "Brake Gain Front@In"
+          yunit = "damp_torque_press~Nm_Pa"
+        ..
+        CURVE "in_port_8" "Brake Gain Rear"
+          legend = "In/Brake Gain Rear (HCU P1/Brake P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./f72cbb26ff_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./f72cbb26ff_cs_0.bin" "Brake Gain Rear@In"
+          yunit = "damp_torque_press~Nm_Pa"
+        ..
+        CURVE "in_port_6" "Brake Press. Max. Recup."
+          legend = "In/Brake Press. Max. Recup. (HCU P1/Brake P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./f72cbb26ff_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./f72cbb26ff_cs_0.bin" "Brake Press. Max. Recup.@In"
+          yunit = "pressure~Pa"
+        ..
+        CURVE "in_port_5" "Brake Pressure Cockpit"
+          legend = "In/Brake Pressure Cockpit (HCU P1/Brake P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./f72cbb26ff_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./f72cbb26ff_cs_0.bin" "Brake Pressure Cockpit@In"
+          yunit = "pressure~Pa"
+        ..
+        CURVE "in_port_13" "Driveline Speed"
+          legend = "In/Driveline Speed (HCU P1/Brake P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./f72cbb26ff_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./f72cbb26ff_cs_0.bin" "Driveline Speed@In"
+          yunit = "ang_vel~rad_s"
+        ..
+        CURVE "in_port_4" "E-Power Generator Max."
+          legend = "In/E-Power Generator Max. (HCU P1/Brake P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./f72cbb26ff_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./f72cbb26ff_cs_0.bin" "E-Power Generator Max.@In"
+          yunit = "power~W"
+        ..
+        CURVE "in_port_3" "EM Efficiency"
+          legend = "In/EM Efficiency (HCU P1/Brake P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./f72cbb26ff_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./f72cbb26ff_cs_0.bin" "EM Efficiency@In"
+          yunit = "dimensionless~no"
+        ..
+        CURVE "in_port_2" "EM Generator Max. Torque"
+          legend = "In/EM Generator Max. Torque (HCU P1/Brake P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./f72cbb26ff_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./f72cbb26ff_cs_0.bin" "EM Generator Max. Torque@In"
+          yunit = "moment~Nm"
+        ..
+        CURVE "in_port_0" "EM Speed"
+          legend = "In/EM Speed (HCU P1/Brake P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./f72cbb26ff_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./f72cbb26ff_cs_0.bin" "EM Speed@In"
+          yunit = "ang_vel~rad_s"
+        ..
+        CURVE "in_port_1" "EM Torque"
+          legend = "In/EM Torque (HCU P1/Brake P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./f72cbb26ff_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./f72cbb26ff_cs_0.bin" "EM Torque@In"
+          yunit = "moment~Nm"
+        ..
+        CURVE "in_port_12" "Gearbox Clutch Release"
+          legend = "In/Gearbox Clutch Release (HCU P1/Brake P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./f72cbb26ff_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./f72cbb26ff_cs_0.bin" "Gearbox Clutch Release@In"
+          yunit = "dimensionless~no"
+        ..
+        CURVE "in_port_10" "ICE Speed"
+          legend = "In/ICE Speed (HCU P1/Brake P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./f72cbb26ff_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./f72cbb26ff_cs_0.bin" "ICE Speed@In"
+          yunit = "ang_vel~rad_s"
+        ..
+        CURVE "in_port_11" "ICE Torque"
+          legend = "In/ICE Torque (HCU P1/Brake P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./f72cbb26ff_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./f72cbb26ff_cs_0.bin" "ICE Torque@In"
+          yunit = "moment~Nm"
+        ..
+        CURVE "in_port_9" "Recuperation Factor"
+          legend = "In/Recuperation Factor (HCU P1/Brake P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./f72cbb26ff_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./f72cbb26ff_cs_0.bin" "Recuperation Factor@In"
+          yunit = "dimensionless~no"
+        ..
+      ..
+      FOLDER "out" "Out"
+        type = channel_group
+        CURVE "out_port_0" "Brake Power Demand"
+          legend = "Out/Brake Power Demand (HCU P1/Brake P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./f72cbb26ff_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./f72cbb26ff_cs_0.bin" "Brake Power Demand@Out"
+          yunit = "power~W"
+        ..
+        CURVE "out_port_2" "Brake Pressure Demand"
+          legend = "Out/Brake Pressure Demand (HCU P1/Brake P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./f72cbb26ff_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./f72cbb26ff_cs_0.bin" "Brake Pressure Demand@Out"
+          yunit = "pressure~Pa"
+        ..
+        CURVE "out_port_4" "EM Power Generator"
+          legend = "Out/EM Power Generator (HCU P1/Brake P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./f72cbb26ff_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./f72cbb26ff_cs_0.bin" "EM Power Generator@Out"
+          yunit = "power~W"
+        ..
+        CURVE "out_port_3" "EM Power Recuperation Demand"
+          legend = "Out/EM Power Recuperation Demand (HCU P1/Brake P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./f72cbb26ff_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./f72cbb26ff_cs_0.bin" "EM Power Recuperation Demand@Out"
+          yunit = "power~W"
+        ..
+        CURVE "out_port_5" "ICE Power Drag"
+          legend = "Out/ICE Power Drag (HCU P1/Brake P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./f72cbb26ff_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./f72cbb26ff_cs_0.bin" "ICE Power Drag@Out"
+          yunit = "power~W"
+        ..
+        CURVE "out_port_1" "Recuperation Power Demand"
+          legend = "Out/Recuperation Power Demand (HCU P1/Brake P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./f72cbb26ff_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./f72cbb26ff_cs_0.bin" "Recuperation Power Demand@Out"
+          yunit = "power~W"
+        ..
+      ..
+    ..
+    FOLDER "e-drivep1" "E-Drive P1"
+      component_name = "C-Function"
+      element_uid = "25c7be9212c243a2a386322a4bb885cb"
+      icon = "ai-cruise-function-me"
+      type = element
+      uuid = "76f59128604e4b1d9e3c9e3700d6e296"
+      FOLDER "in" "In"
+        type = channel_group
+        CURVE "in_port_0" "Driveline Power Demand"
+          legend = "In/Driveline Power Demand (HCU P1/E-Drive P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./25c7be9212_me_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./25c7be9212_me_0.bin" "Driveline Power Demand@In"
+          yunit = "power~W"
+        ..
+        CURVE "in_port_4" "E-Power Motor Max."
+          legend = "In/E-Power Motor Max. (HCU P1/E-Drive P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./25c7be9212_me_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./25c7be9212_me_0.bin" "E-Power Motor Max.@In"
+          yunit = "power~W"
+        ..
+        CURVE "in_port_3" "EM Efficiency"
+          legend = "In/EM Efficiency (HCU P1/E-Drive P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./25c7be9212_me_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./25c7be9212_me_0.bin" "EM Efficiency@In"
+          yunit = "dimensionless~no"
+        ..
+        CURVE "in_port_2" "EM Motor Max. Torque"
+          legend = "In/EM Motor Max. Torque (HCU P1/E-Drive P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./25c7be9212_me_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./25c7be9212_me_0.bin" "EM Motor Max. Torque@In"
+          yunit = "moment~Nm"
+        ..
+        CURVE "in_port_1" "EM Speed"
+          legend = "In/EM Speed (HCU P1/E-Drive P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./25c7be9212_me_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./25c7be9212_me_0.bin" "EM Speed@In"
+          yunit = "ang_vel~rad_s"
+        ..
+        CURVE "in_port_5" "Mode Switch"
+          legend = "In/Mode Switch (HCU P1/E-Drive P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./25c7be9212_me_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./25c7be9212_me_0.bin" "Mode Switch@In"
+          yunit = "no_unit~none"
+        ..
+      ..
+      FOLDER "out" "Out"
+        type = channel_group
+        CURVE "out_port_0" "EM P1 Power Demand"
+          legend = "Out/EM P1 Power Demand (HCU P1/E-Drive P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./25c7be9212_me_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./25c7be9212_me_0.bin" "EM P1 Power Demand@Out"
+          yunit = "power~W"
+        ..
+      ..
+    ..
+    FOLDER "hybridmodep1" "Hybrid Mode P1"
+      component_name = "C-Function"
+      element_uid = "8b38ffdca3844f10b773cdb31d69eb9e"
+      icon = "ai-cruise-function-me"
+      type = element
+      uuid = "76f59128604e4b1d9e3c9e3700d6e296"
+      FOLDER "in" "In"
+        type = channel_group
+        CURVE "in_port_4" "Boost Mode"
+          legend = "In/Boost Mode (HCU P1/Hybrid Mode P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./8b38ffdca3_me_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./8b38ffdca3_me_0.bin" "Boost Mode@In"
+          yunit = "no_unit~none"
+        ..
+        CURVE "in_port_5" "Charge Flag"
+          legend = "In/Charge Flag (HCU P1/Hybrid Mode P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./8b38ffdca3_me_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./8b38ffdca3_me_0.bin" "Charge Flag@In"
+          yunit = "no_unit~none"
+        ..
+        CURVE "in_port_1" "Driveline Power Demand"
+          legend = "In/Driveline Power Demand (HCU P1/Hybrid Mode P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./8b38ffdca3_me_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./8b38ffdca3_me_0.bin" "Driveline Power Demand@In"
+          yunit = "power~W"
+        ..
+        CURVE "in_port_3" "ICE Power Optimal"
+          legend = "In/ICE Power Optimal (HCU P1/Hybrid Mode P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./8b38ffdca3_me_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./8b38ffdca3_me_0.bin" "ICE Power Optimal@In"
+          yunit = "power~W"
+        ..
+        CURVE "in_port_2" "ICE Ready"
+          legend = "In/ICE Ready (HCU P1/Hybrid Mode P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./8b38ffdca3_me_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./8b38ffdca3_me_0.bin" "ICE Ready@In"
+          yunit = "no_unit~none"
+        ..
+        CURVE "in_port_0" "Load Signal"
+          legend = "In/Load Signal (HCU P1/Hybrid Mode P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./8b38ffdca3_me_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./8b38ffdca3_me_0.bin" "Load Signal@In"
+          yunit = "dimensionless~no"
+        ..
+      ..
+      FOLDER "out" "Out"
+        type = channel_group
+        CURVE "out_port_0" "ICE Power Optimal Difference"
+          legend = "Out/ICE Power Optimal Difference (HCU P1/Hybrid Mode P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./8b38ffdca3_me_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./8b38ffdca3_me_0.bin" "ICE Power Optimal Difference@Out"
+          yunit = "power~W"
+        ..
+        CURVE "out_port_4" "Switch Boost"
+          legend = "Out/Switch Boost (HCU P1/Hybrid Mode P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./8b38ffdca3_me_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./8b38ffdca3_me_0.bin" "Switch Boost@Out"
+          yunit = "no_unit~none"
+        ..
+        CURVE "out_port_1" "Switch EV"
+          legend = "Out/Switch EV (HCU P1/Hybrid Mode P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./8b38ffdca3_me_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./8b38ffdca3_me_0.bin" "Switch EV@Out"
+          yunit = "no_unit~none"
+        ..
+        CURVE "out_port_2" "Switch LPM"
+          legend = "Out/Switch LPM (HCU P1/Hybrid Mode P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./8b38ffdca3_me_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./8b38ffdca3_me_0.bin" "Switch LPM@Out"
+          yunit = "no_unit~none"
+        ..
+        CURVE "out_port_3" "Switch Torque Assist"
+          legend = "Out/Switch Torque Assist (HCU P1/Hybrid Mode P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./8b38ffdca3_me_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./8b38ffdca3_me_0.bin" "Switch Torque Assist@Out"
+          yunit = "no_unit~none"
+        ..
+      ..
+    ..
+    FOLDER "icestartstopp1" "ICE StartStop P1"
+      component_name = "C-Function"
+      element_uid = "407328caf49a491484c9dd1236ab67cf"
+      icon = "ai-cruise-function-cs"
+      type = element
+      uuid = "76f59128604e4b1d9e3c9e3700d6e296"
+      FOLDER "in" "In"
+        type = channel_group
+        CURVE "in_port_9" "Boost Mode"
+          legend = "In/Boost Mode (HCU P1/ICE StartStop P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./407328caf4_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./407328caf4_cs_0.bin" "Boost Mode@In"
+          yunit = "no_unit~none"
+        ..
+        CURVE "in_port_8" "Charge Flag"
+          legend = "In/Charge Flag (HCU P1/ICE StartStop P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./407328caf4_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./407328caf4_cs_0.bin" "Charge Flag@In"
+          yunit = "no_unit~none"
+        ..
+        CURVE "in_port_1" "Driveline Power Demand"
+          legend = "In/Driveline Power Demand (HCU P1/ICE StartStop P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./407328caf4_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./407328caf4_cs_0.bin" "Driveline Power Demand@In"
+          yunit = "power~W"
+        ..
+        CURVE "in_port_2" "Driveline Power Demand Filtered"
+          legend = "In/Driveline Power Demand Filtered (HCU P1/ICE StartStop P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./407328caf4_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./407328caf4_cs_0.bin" "Driveline Power Demand Filtered@In"
+          yunit = "power~W"
+        ..
+        CURVE "in_port_6" "ICE Idle Speed"
+          legend = "In/ICE Idle Speed (HCU P1/ICE StartStop P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./407328caf4_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./407328caf4_cs_0.bin" "ICE Idle Speed@In"
+          yunit = "ang_vel~rad_s"
+        ..
+        CURVE "in_port_4" "ICE Power Demand Switch Off"
+          legend = "In/ICE Power Demand Switch Off (HCU P1/ICE StartStop P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./407328caf4_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./407328caf4_cs_0.bin" "ICE Power Demand Switch Off@In"
+          yunit = "power~W"
+        ..
+        CURVE "in_port_3" "ICE Power Demand Switch On"
+          legend = "In/ICE Power Demand Switch On (HCU P1/ICE StartStop P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./407328caf4_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./407328caf4_cs_0.bin" "ICE Power Demand Switch On@In"
+          yunit = "power~W"
+        ..
+        CURVE "in_port_5" "ICE Speed"
+          legend = "In/ICE Speed (HCU P1/ICE StartStop P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./407328caf4_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./407328caf4_cs_0.bin" "ICE Speed@In"
+          yunit = "ang_vel~rad_s"
+        ..
+        CURVE "in_port_0" "ICE Switch In"
+          legend = "In/ICE Switch In (HCU P1/ICE StartStop P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./407328caf4_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./407328caf4_cs_0.bin" "ICE Switch In@In"
+          yunit = "no_unit~none"
+        ..
+        CURVE "in_port_7" "Starter Motor Max. Torque"
+          legend = "In/Starter Motor Max. Torque (HCU P1/ICE StartStop P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./407328caf4_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./407328caf4_cs_0.bin" "Starter Motor Max. Torque@In"
+          yunit = "moment~Nm"
+        ..
+        CURVE "in_port_10" "Vehicle Velocity"
+          legend = "In/Vehicle Velocity (HCU P1/ICE StartStop P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./407328caf4_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./407328caf4_cs_0.bin" "Vehicle Velocity@In"
+          yunit = "velocity~km_h"
+        ..
+        CURVE "in_port_11" "Velocity Desired"
+          legend = "In/Velocity Desired (HCU P1/ICE StartStop P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./407328caf4_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./407328caf4_cs_0.bin" "Velocity Desired@In"
+          yunit = "velocity~km_h"
+        ..
+        CURVE "in_port_12" "Velocity Threshold Stop-Start"
+          legend = "In/Velocity Threshold Stop-Start (HCU P1/ICE StartStop P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./407328caf4_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./407328caf4_cs_0.bin" "Velocity Threshold Stop-Start@In"
+          yunit = "velocity~km_h"
+        ..
+      ..
+      FOLDER "out" "Out"
+        type = channel_group
+        CURVE "out_port_2" "ICE Ready"
+          legend = "Out/ICE Ready (HCU P1/ICE StartStop P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./407328caf4_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./407328caf4_cs_0.bin" "ICE Ready@Out"
+          yunit = "no_unit~none"
+        ..
+        CURVE "out_port_0" "ICE Switch Out"
+          legend = "Out/ICE Switch Out (HCU P1/ICE StartStop P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./407328caf4_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./407328caf4_cs_0.bin" "ICE Switch Out@Out"
+          yunit = "no_unit~none"
+        ..
+        CURVE "out_port_1" "Starter Torque Dmd"
+          legend = "Out/Starter Torque Dmd (HCU P1/ICE StartStop P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./407328caf4_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./407328caf4_cs_0.bin" "Starter Torque Dmd@Out"
+          yunit = "moment~Nm"
+        ..
+      ..
+    ..
+    FOLDER "lpmp1" "LPM P1"
+      component_name = "C-Function"
+      element_uid = "73638ed50f704a809706b2fce437fef2"
+      icon = "ai-cruise-function-me"
+      type = element
+      uuid = "76f59128604e4b1d9e3c9e3700d6e296"
+      FOLDER "in" "In"
+        type = channel_group
+        CURVE "in_port_0" "Driveline Power Demand"
+          legend = "In/Driveline Power Demand (HCU P1/LPM P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./73638ed50f_me_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./73638ed50f_me_0.bin" "Driveline Power Demand@In"
+          yunit = "power~W"
+        ..
+        CURVE "in_port_4" "E-Power Generator Max."
+          legend = "In/E-Power Generator Max. (HCU P1/LPM P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./73638ed50f_me_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./73638ed50f_me_0.bin" "E-Power Generator Max.@In"
+          yunit = "power~W"
+        ..
+        CURVE "in_port_3" "EM Efficiency"
+          legend = "In/EM Efficiency (HCU P1/LPM P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./73638ed50f_me_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./73638ed50f_me_0.bin" "EM Efficiency@In"
+          yunit = "dimensionless~no"
+        ..
+        CURVE "in_port_2" "EM Generator Max. Torque"
+          legend = "In/EM Generator Max. Torque (HCU P1/LPM P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./73638ed50f_me_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./73638ed50f_me_0.bin" "EM Generator Max. Torque@In"
+          yunit = "moment~Nm"
+        ..
+        CURVE "in_port_1" "EM Speed"
+          legend = "In/EM Speed (HCU P1/LPM P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./73638ed50f_me_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./73638ed50f_me_0.bin" "EM Speed@In"
+          yunit = "ang_vel~rad_s"
+        ..
+        CURVE "in_port_7" "ICE Full Load Torque"
+          legend = "In/ICE Full Load Torque (HCU P1/LPM P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./73638ed50f_me_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./73638ed50f_me_0.bin" "ICE Full Load Torque@In"
+          yunit = "moment~Nm"
+        ..
+        CURVE "in_port_5" "ICE Idle Speed"
+          legend = "In/ICE Idle Speed (HCU P1/LPM P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./73638ed50f_me_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./73638ed50f_me_0.bin" "ICE Idle Speed@In"
+          yunit = "ang_vel~rad_s"
+        ..
+        CURVE "in_port_8" "ICE Power Optimal"
+          legend = "In/ICE Power Optimal (HCU P1/LPM P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./73638ed50f_me_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./73638ed50f_me_0.bin" "ICE Power Optimal@In"
+          yunit = "power~W"
+        ..
+        CURVE "in_port_6" "ICE Speed"
+          legend = "In/ICE Speed (HCU P1/LPM P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./73638ed50f_me_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./73638ed50f_me_0.bin" "ICE Speed@In"
+          yunit = "ang_vel~rad_s"
+        ..
+        CURVE "in_port_9" "Mode Switch"
+          legend = "In/Mode Switch (HCU P1/LPM P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./73638ed50f_me_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./73638ed50f_me_0.bin" "Mode Switch@In"
+          yunit = "no_unit~none"
+        ..
+      ..
+      FOLDER "out" "Out"
+        type = channel_group
+        CURVE "out_port_0" "EM Power Demand"
+          legend = "Out/EM Power Demand (HCU P1/LPM P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./73638ed50f_me_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./73638ed50f_me_0.bin" "EM Power Demand@Out"
+          yunit = "power~W"
+        ..
+        CURVE "out_port_1" "Factor"
+          legend = "Out/Factor (HCU P1/LPM P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./73638ed50f_me_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./73638ed50f_me_0.bin" "Factor@Out"
+          yunit = "dimensionless~no"
+        ..
+      ..
+    ..
+    FOLDER "outputp1" "Output P1"
+      component_name = "C-Function"
+      element_uid = "405727c2caf74a729c06ed672759e0a2"
+      icon = "ai-cruise-function-cs"
+      type = element
+      uuid = "76f59128604e4b1d9e3c9e3700d6e296"
+      FOLDER "in" "In"
+        type = channel_group
+        CURVE "in_port_0" "Driveline Power Demand In"
+          legend = "In/Driveline Power Demand In (HCU P1/Output P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./405727c2ca_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./405727c2ca_cs_0.bin" "Driveline Power Demand In@In"
+          yunit = "power~W"
+        ..
+        CURVE "in_port_12" "EM P1 Generator Max. Torque"
+          legend = "In/EM P1 Generator Max. Torque (HCU P1/Output P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./405727c2ca_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./405727c2ca_cs_0.bin" "EM P1 Generator Max. Torque@In"
+          yunit = "moment~Nm"
+        ..
+        CURVE "in_port_11" "EM P1 Motor Max. Torque"
+          legend = "In/EM P1 Motor Max. Torque (HCU P1/Output P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./405727c2ca_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./405727c2ca_cs_0.bin" "EM P1 Motor Max. Torque@In"
+          yunit = "moment~Nm"
+        ..
+        CURVE "in_port_15" "EM P1 Power E-Drive"
+          legend = "In/EM P1 Power E-Drive (HCU P1/Output P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./405727c2ca_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./405727c2ca_cs_0.bin" "EM P1 Power E-Drive@In"
+          yunit = "power~W"
+        ..
+        CURVE "in_port_14" "EM P1 Power LPM"
+          legend = "In/EM P1 Power LPM (HCU P1/Output P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./405727c2ca_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./405727c2ca_cs_0.bin" "EM P1 Power LPM@In"
+          yunit = "power~W"
+        ..
+        CURVE "in_port_13" "EM P1 Power Recuperation"
+          legend = "In/EM P1 Power Recuperation (HCU P1/Output P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./405727c2ca_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./405727c2ca_cs_0.bin" "EM P1 Power Recuperation@In"
+          yunit = "power~W"
+        ..
+        CURVE "in_port_10" "EM P1 Speed"
+          legend = "In/EM P1 Speed (HCU P1/Output P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./405727c2ca_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./405727c2ca_cs_0.bin" "EM P1 Speed@In"
+          yunit = "ang_vel~rad_s"
+        ..
+        CURVE "in_port_17" "EM P2 Power Boost"
+          legend = "In/EM P2 Power Boost (HCU P1/Output P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./405727c2ca_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./405727c2ca_cs_0.bin" "EM P2 Power Boost@In"
+          yunit = "power~W"
+        ..
+        CURVE "in_port_16" "EM P2 Power Torque Assist"
+          legend = "In/EM P2 Power Torque Assist (HCU P1/Output P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./405727c2ca_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./405727c2ca_cs_0.bin" "EM P2 Power Torque Assist@In"
+          yunit = "power~W"
+        ..
+        CURVE "in_port_8" "ICE Full Load Torque"
+          legend = "In/ICE Full Load Torque (HCU P1/Output P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./405727c2ca_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./405727c2ca_cs_0.bin" "ICE Full Load Torque@In"
+          yunit = "moment~Nm"
+        ..
+        CURVE "in_port_6" "ICE Ready"
+          legend = "In/ICE Ready (HCU P1/Output P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./405727c2ca_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./405727c2ca_cs_0.bin" "ICE Ready@In"
+          yunit = "no_unit~none"
+        ..
+        CURVE "in_port_7" "ICE Speed"
+          legend = "In/ICE Speed (HCU P1/Output P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./405727c2ca_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./405727c2ca_cs_0.bin" "ICE Speed@In"
+          yunit = "ang_vel~rad_s"
+        ..
+        CURVE "in_port_18" "LPM Speed Factor"
+          legend = "In/LPM Speed Factor (HCU P1/Output P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./405727c2ca_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./405727c2ca_cs_0.bin" "LPM Speed Factor@In"
+          yunit = "dimensionless~no"
+        ..
+        CURVE "in_port_1" "Shifting Status"
+          legend = "In/Shifting Status (HCU P1/Output P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./405727c2ca_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./405727c2ca_cs_0.bin" "Shifting Status@In"
+          yunit = "no_unit~none"
+        ..
+        CURVE "in_port_9" "Starter Torque"
+          legend = "In/Starter Torque (HCU P1/Output P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./405727c2ca_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./405727c2ca_cs_0.bin" "Starter Torque@In"
+          yunit = "moment~Nm"
+        ..
+        CURVE "in_port_5" "Switch Boost"
+          legend = "In/Switch Boost (HCU P1/Output P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./405727c2ca_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./405727c2ca_cs_0.bin" "Switch Boost@In"
+          yunit = "no_unit~none"
+        ..
+        CURVE "in_port_2" "Switch EV"
+          legend = "In/Switch EV (HCU P1/Output P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./405727c2ca_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./405727c2ca_cs_0.bin" "Switch EV@In"
+          yunit = "no_unit~none"
+        ..
+        CURVE "in_port_3" "Switch LPM"
+          legend = "In/Switch LPM (HCU P1/Output P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./405727c2ca_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./405727c2ca_cs_0.bin" "Switch LPM@In"
+          yunit = "no_unit~none"
+        ..
+        CURVE "in_port_4" "Switch Torque Assist"
+          legend = "In/Switch Torque Assist (HCU P1/Output P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./405727c2ca_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./405727c2ca_cs_0.bin" "Switch Torque Assist@In"
+          yunit = "no_unit~none"
+        ..
+      ..
+      FOLDER "out" "Out"
+        type = channel_group
+        CURVE "out_port_0" "Driveline Power Demand Out"
+          legend = "Out/Driveline Power Demand Out (HCU P1/Output P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./405727c2ca_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./405727c2ca_cs_0.bin" "Driveline Power Demand Out@Out"
+          yunit = "power~W"
+        ..
+        CURVE "out_port_1" "Driving Mode"
+          legend = "Out/Driving Mode (HCU P1/Output P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./405727c2ca_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./405727c2ca_cs_0.bin" "Driving Mode@Out"
+          yunit = "no_unit~none"
+        ..
+        CURVE "out_port_5" "EM P1 Power Demand"
+          legend = "Out/EM P1 Power Demand (HCU P1/Output P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./405727c2ca_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./405727c2ca_cs_0.bin" "EM P1 Power Demand@Out"
+          yunit = "power~W"
+        ..
+        CURVE "out_port_4" "EM P1 Torque Demand"
+          legend = "Out/EM P1 Torque Demand (HCU P1/Output P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./405727c2ca_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./405727c2ca_cs_0.bin" "EM P1 Torque Demand@Out"
+          yunit = "moment~Nm"
+        ..
+        CURVE "out_port_3" "ICE Power Demand"
+          legend = "Out/ICE Power Demand (HCU P1/Output P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./405727c2ca_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./405727c2ca_cs_0.bin" "ICE Power Demand@Out"
+          yunit = "power~W"
+        ..
+        CURVE "out_port_2" "ICE Torque Demand"
+          legend = "Out/ICE Torque Demand (HCU P1/Output P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./405727c2ca_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./405727c2ca_cs_0.bin" "ICE Torque Demand@Out"
+          yunit = "moment~Nm"
+        ..
+      ..
+    ..
+    FOLDER "parametersp1" "Parameters P1"
+      component_name = "Constants"
+      element_uid = "b68368383fdc4f3eb4706f13990b1d2c"
+      icon = "ai-mathoperations-constant"
+      type = element
+      uuid = "be0b0a6c037e4366ab57972344eb4fa6"
+      FOLDER "out" "Out"
+        type = channel_group
+        CURVE "out_port_9" "Acceleration Threshold Boost"
+          legend = "Out/Acceleration Threshold Boost (HCU P1/Parameters P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./b68368383f_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./b68368383f_cs_0.bin" "Acceleration Threshold Boost@Out"
+          yunit = "acceleration~m_s2"
+        ..
+        CURVE "out_port_1" "Brake Gain Front (2⋅A⋅ηB⋅μB⋅rB⋅cB)"
+          legend = "Out/Brake Gain Front (2⋅A⋅ηB⋅μB⋅rB⋅cB) (HCU P1/Parameters P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./b68368383f_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./b68368383f_cs_0.bin" "Brake Gain Front (2⋅A⋅ηB⋅μB⋅rB⋅cB)@Out"
+          yunit = "damp_torque_press~Nm_Pa"
+        ..
+        CURVE "out_port_2" "Brake Gain Rear  (2⋅A⋅ηB⋅μB⋅rB⋅cB)"
+          legend = "Out/Brake Gain Rear  (2⋅A⋅ηB⋅μB⋅rB⋅cB) (HCU P1/Parameters P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./b68368383f_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./b68368383f_cs_0.bin" "Brake Gain Rear  (2⋅A⋅ηB⋅μB⋅rB⋅cB)@Out"
+          yunit = "damp_torque_press~Nm_Pa"
+        ..
+        CURVE "out_port_3" "Brake Pressure Max. Recup"
+          legend = "Out/Brake Pressure Max. Recup (HCU P1/Parameters P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./b68368383f_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./b68368383f_cs_0.bin" "Brake Pressure Max. Recup@Out"
+          yunit = "pressure~bar"
+        ..
+        CURVE "out_port_8" "EM Ratio Boost"
+          legend = "Out/EM Ratio Boost (HCU P1/Parameters P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./b68368383f_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./b68368383f_cs_0.bin" "EM Ratio Boost@Out"
+          yunit = "dimensionless~no"
+        ..
+        CURVE "out_port_5" "Power Demand ICE Off"
+          legend = "Out/Power Demand ICE Off (HCU P1/Parameters P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./b68368383f_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./b68368383f_cs_0.bin" "Power Demand ICE Off@Out"
+          yunit = "power~kW"
+        ..
+        CURVE "out_port_4" "Power Demand ICE On"
+          legend = "Out/Power Demand ICE On (HCU P1/Parameters P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./b68368383f_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./b68368383f_cs_0.bin" "Power Demand ICE On@Out"
+          yunit = "power~kW"
+        ..
+        CURVE "out_port_6" "SOC max."
+          legend = "Out/SOC max. (HCU P1/Parameters P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./b68368383f_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./b68368383f_cs_0.bin" "SOC max.@Out"
+          yunit = "dimensionless~percent"
+        ..
+        CURVE "out_port_7" "SOC min."
+          legend = "Out/SOC min. (HCU P1/Parameters P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./b68368383f_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./b68368383f_cs_0.bin" "SOC min.@Out"
+          yunit = "dimensionless~percent"
+        ..
+        CURVE "out_port_0" "Traction Force Max."
+          legend = "Out/Traction Force Max. (HCU P1/Parameters P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./b68368383f_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./b68368383f_cs_0.bin" "Traction Force Max.@Out"
+          yunit = "force~N"
+        ..
+        CURVE "out_port_10" "Velocity Threshold Stop-Start"
+          legend = "Out/Velocity Threshold Stop-Start (HCU P1/Parameters P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./b68368383f_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./b68368383f_cs_0.bin" "Velocity Threshold Stop-Start@Out"
+          yunit = "velocity~km_h"
+        ..
+      ..
+    ..
+    FOLDER "recuperationfactor" "Recuperation Factor"
+      component_name = "Map"
+      element_uid = "cb6f0da309084327b62de510bc331545"
+      icon = "ai-cruise-map-cs"
+      type = element
+      uuid = "c190df9a7b2a4c6eb5620842f42198fc"
+      FOLDER "in" "In"
+        type = channel_group
+        CURVE "inputx" "Vehicle Velocity"
+          legend = "In/Vehicle Velocity (HCU P1/Recuperation Factor)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./cb6f0da309_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./cb6f0da309_cs_0.bin" "Vehicle Velocity@In"
+          yunit = "velocity~km_h"
+        ..
+      ..
+      FOLDER "out" "Out"
+        type = channel_group
+        CURVE "output" "Recuperation Factor"
+          legend = "Out/Recuperation Factor (HCU P1/Recuperation Factor)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./cb6f0da309_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./cb6f0da309_cs_0.bin" "Recuperation Factor@Out"
+          yunit = "dimensionless~no"
+        ..
+      ..
+    ..
+    FOLDER "torqueassistp1" "Torque Assist P1"
+      component_name = "C-Function"
+      element_uid = "d6481a327ec94d378ef7374234a4bd72"
+      icon = "ai-cruise-function-me"
+      type = element
+      uuid = "76f59128604e4b1d9e3c9e3700d6e296"
+      FOLDER "in" "In"
+        type = channel_group
+        CURVE "in_port_0" "Driveline Power Demand"
+          legend = "In/Driveline Power Demand (HCU P1/Torque Assist P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./d6481a327e_me_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./d6481a327e_me_0.bin" "Driveline Power Demand@In"
+          yunit = "power~W"
+        ..
+        CURVE "in_port_4" "E-Power Motor Max."
+          legend = "In/E-Power Motor Max. (HCU P1/Torque Assist P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./d6481a327e_me_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./d6481a327e_me_0.bin" "E-Power Motor Max.@In"
+          yunit = "power~W"
+        ..
+        CURVE "in_port_3" "EM Efficiency"
+          legend = "In/EM Efficiency (HCU P1/Torque Assist P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./d6481a327e_me_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./d6481a327e_me_0.bin" "EM Efficiency@In"
+          yunit = "dimensionless~no"
+        ..
+        CURVE "in_port_2" "EM Motor Max. Torque"
+          legend = "In/EM Motor Max. Torque (HCU P1/Torque Assist P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./d6481a327e_me_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./d6481a327e_me_0.bin" "EM Motor Max. Torque@In"
+          yunit = "moment~Nm"
+        ..
+        CURVE "in_port_1" "EM Speed"
+          legend = "In/EM Speed (HCU P1/Torque Assist P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./d6481a327e_me_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./d6481a327e_me_0.bin" "EM Speed@In"
+          yunit = "ang_vel~rad_s"
+        ..
+        CURVE "in_port_5" "ICE Power Optimal"
+          legend = "In/ICE Power Optimal (HCU P1/Torque Assist P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./d6481a327e_me_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./d6481a327e_me_0.bin" "ICE Power Optimal@In"
+          yunit = "power~W"
+        ..
+        CURVE "in_port_6" "Mode Switch"
+          legend = "In/Mode Switch (HCU P1/Torque Assist P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./d6481a327e_me_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./d6481a327e_me_0.bin" "Mode Switch@In"
+          yunit = "no_unit~none"
+        ..
+      ..
+      FOLDER "out" "Out"
+        type = channel_group
+        CURVE "out_port_0" "EM Power Demand"
+          legend = "Out/EM Power Demand (HCU P1/Torque Assist P1)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./d6481a327e_me_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./d6481a327e_me_0.bin" "EM Power Demand@Out"
+          yunit = "power~W"
+        ..
+      ..
+    ..
+    FOLDER "vehicleanalysis" "Vehicle Analysis"
+      component_name = "C-Function"
+      element_uid = "f885712860104aea9aef848c3b336235"
+      icon = "ai-cruise-function-cs"
+      type = element
+      uuid = "76f59128604e4b1d9e3c9e3700d6e296"
+      FOLDER "in" "In"
+        type = channel_group
+        CURVE "in_port_3" "Acceleration Threshold Boost"
+          legend = "In/Acceleration Threshold Boost (HCU P1/Vehicle Analysis)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./f885712860_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./f885712860_cs_0.bin" "Acceleration Threshold Boost@In"
+          yunit = "acceleration~m_s2"
+        ..
+        CURVE "in_port_2" "EM Recuperation Power"
+          legend = "In/EM Recuperation Power (HCU P1/Vehicle Analysis)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./f885712860_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./f885712860_cs_0.bin" "EM Recuperation Power@In"
+          yunit = "power~W"
+        ..
+        CURVE "in_port_0" "Load Signal"
+          legend = "In/Load Signal (HCU P1/Vehicle Analysis)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./f885712860_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./f885712860_cs_0.bin" "Load Signal@In"
+          yunit = "dimensionless~no"
+        ..
+        CURVE "in_port_6" "Shifting Status"
+          legend = "In/Shifting Status (HCU P1/Vehicle Analysis)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./f885712860_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./f885712860_cs_0.bin" "Shifting Status@In"
+          yunit = "no_unit~none"
+        ..
+        CURVE "in_port_1" "Traction Force Max."
+          legend = "In/Traction Force Max. (HCU P1/Vehicle Analysis)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./f885712860_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./f885712860_cs_0.bin" "Traction Force Max.@In"
+          yunit = "force~N"
+        ..
+        CURVE "in_port_4" "Velocity"
+          legend = "In/Velocity (HCU P1/Vehicle Analysis)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./f885712860_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./f885712860_cs_0.bin" "Velocity@In"
+          yunit = "velocity~m_s"
+        ..
+        CURVE "in_port_5" "Velocity Desired"
+          legend = "In/Velocity Desired (HCU P1/Vehicle Analysis)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./f885712860_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./f885712860_cs_0.bin" "Velocity Desired@In"
+          yunit = "velocity~m_s"
+        ..
+      ..
+      FOLDER "out" "Out"
+        type = channel_group
+        CURVE "out_port_5" "Acceleration Desired"
+          legend = "Out/Acceleration Desired (HCU P1/Vehicle Analysis)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./f885712860_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./f885712860_cs_0.bin" "Acceleration Desired@Out"
+          yunit = "acceleration~m_s2"
+        ..
+        CURVE "out_port_4" "Boost Mode"
+          legend = "Out/Boost Mode (HCU P1/Vehicle Analysis)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./f885712860_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./f885712860_cs_0.bin" "Boost Mode@Out"
+          yunit = "no_unit~none"
+        ..
+        CURVE "out_port_1" "Driveline Power Demand"
+          legend = "Out/Driveline Power Demand (HCU P1/Vehicle Analysis)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./f885712860_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./f885712860_cs_0.bin" "Driveline Power Demand@Out"
+          yunit = "power~W"
+        ..
+        CURVE "out_port_3" "Driver Traction Demand"
+          legend = "Out/Driver Traction Demand (HCU P1/Vehicle Analysis)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./f885712860_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./f885712860_cs_0.bin" "Driver Traction Demand@Out"
+          yunit = "force~N"
+        ..
+        CURVE "out_port_0" "Load Signal Filtered"
+          legend = "Out/Load Signal Filtered (HCU P1/Vehicle Analysis)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./f885712860_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./f885712860_cs_0.bin" "Load Signal Filtered@Out"
+          yunit = "dimensionless~no"
+        ..
+        CURVE "out_port_2" "Traction Power Demand Filtered"
+          legend = "Out/Traction Power Demand Filtered (HCU P1/Vehicle Analysis)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./f885712860_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./f885712860_cs_0.bin" "Traction Power Demand Filtered@Out"
+          yunit = "power~W"
+        ..
+      ..
+    ..
+  ..
+  FOLDER "htcup1amt" "HTCU P1 AMT "
+    type = subsystem
+    FOLDER "amtcontrol" "AMT Control"
+      component_name = "AMT control"
+      element_uid = "3baad3dccce049f0a8abc044f3bd3bcb"
+      icon = "ai-cruise-amt-control"
+      type = element
+      uuid = "be07a0daa4d64a4b9e5e46bba30cf3a4"
+      FOLDER "in" "In"
+        type = channel_group
+        CURVE "desiredtorqueinput" "Desired torque input"
+          legend = "In/Desired torque input (HTCU P1 AMT /AMT Control)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./3baad3dccc_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./3baad3dccc_cs_0.bin" "Desired torque input@In"
+          yunit = "moment~Nm"
+        ..
+      ..
+      FOLDER "out" "Out"
+        type = channel_group
+        CURVE "desiredclutchrelease" "Desired clutch release"
+          legend = "Out/Desired clutch release (HTCU P1 AMT /AMT Control)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./3baad3dccc_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./3baad3dccc_cs_0.bin" "Desired clutch release@Out"
+          yunit = "no_unit~none"
+        ..
+        CURVE "desiredgearoutput" "Desired gear output"
+          legend = "Out/Desired gear output (HTCU P1 AMT /AMT Control)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./3baad3dccc_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./3baad3dccc_cs_0.bin" "Desired gear output@Out"
+          yunit = "no_unit~none"
+        ..
+        CURVE "desiredtorqueoutput" "Desired torque output"
+          legend = "Out/Desired torque output (HTCU P1 AMT /AMT Control)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./3baad3dccc_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./3baad3dccc_cs_0.bin" "Desired torque output@Out"
+          yunit = "moment~Nm"
+        ..
+      ..
+    ..
+    FOLDER "gbcontrol" "GB Control"
+      component_name = "Gearbox control"
+      element_uid = "1209b11ef9d84911aa824ecb74c7860a"
+      icon = "ai-cruise-gearbox-control"
+      type = element
+      uuid = "4fcde5bb41b745e899def9de3d8b1156"
+      FOLDER "in" "In"
+        type = channel_group
+        CURVE "currentgear" "Current Gear"
+          legend = "In/Current Gear (HTCU P1 AMT /GB Control)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./1209b11ef9_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./1209b11ef9_cs_0.bin" "Current Gear@In"
+          yunit = "no_unit~none"
+        ..
+        CURVE "referencespeed" "Reference Speed"
+          legend = "In/Reference Speed (HTCU P1 AMT /GB Control)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./1209b11ef9_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./1209b11ef9_cs_0.bin" "Reference Speed@In"
+          yunit = "ang_vel~rad_s"
+        ..
+        CURVE "velocityvehicle" "Velocity Vehicle"
+          legend = "In/Velocity Vehicle (HTCU P1 AMT /GB Control)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./1209b11ef9_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./1209b11ef9_cs_0.bin" "Velocity Vehicle@In"
+          yunit = "velocity~m_s"
+        ..
+      ..
+      FOLDER "out" "Out"
+        type = channel_group
+        CURVE "gearboxcontroldesiredgear" "Gearbox Control Desired Gear"
+          legend = "Out/Gearbox Control Desired Gear (HTCU P1 AMT /GB Control)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./1209b11ef9_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./1209b11ef9_cs_0.bin" "Gearbox Control Desired Gear@Out"
+          yunit = "no_unit~none"
+        ..
+      ..
+    ..
+    FOLDER "gbprogram" "GB Program"
+      component_name = "Gearbox program"
+      element_uid = "b9e39ad2e1a4433faebe739810d739eb"
+      icon = "ai-cruise-gearbox-program"
+      type = element
+      uuid = "9237337fa5a7403b8fd97014ec9f6ec9"
+      FOLDER "in" "In"
+        type = channel_group
+        CURVE "currentgear" "Current Gear"
+          legend = "In/Current Gear (HTCU P1 AMT /GB Program)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./b9e39ad2e1_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./b9e39ad2e1_cs_0.bin" "Current Gear@In"
+          yunit = "no_unit~none"
+        ..
+        CURVE "loadsignal" "Load Signal"
+          legend = "In/Load Signal (HTCU P1 AMT /GB Program)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./b9e39ad2e1_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./b9e39ad2e1_cs_0.bin" "Load Signal@In"
+          yunit = "dimensionless~none"
+        ..
+        CURVE "speed" "Speed"
+          legend = "In/Speed (HTCU P1 AMT /GB Program)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./b9e39ad2e1_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./b9e39ad2e1_cs_0.bin" "Speed@In"
+          yunit = "ang_vel~rad_s"
+        ..
+        CURVE "velocityvehicle" "Velocity Vehicle"
+          legend = "In/Velocity Vehicle (HTCU P1 AMT /GB Program)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./b9e39ad2e1_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./b9e39ad2e1_cs_0.bin" "Velocity Vehicle@In"
+          yunit = "velocity~m_s"
+        ..
+      ..
+      FOLDER "out" "Out"
+        type = channel_group
+        CURVE "desiredgear" "Desired Gear"
+          legend = "Out/Desired Gear (HTCU P1 AMT /GB Program)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./b9e39ad2e1_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./b9e39ad2e1_cs_0.bin" "Desired Gear@Out"
+          yunit = "no_unit~none"
+        ..
+      ..
+    ..
+    FOLDER "shifting" "Shifting"
+      component_name = "C-Function"
+      element_uid = "2aff410205614531a5cd0a9b987c6260"
+      icon = "ai-cruise-function-cs"
+      type = element
+      uuid = "76f59128604e4b1d9e3c9e3700d6e296"
+      FOLDER "in" "In"
+        type = channel_group
+        CURVE "in_port_0" "Current gear"
+          legend = "In/Current gear (HTCU P1 AMT /Shifting)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./2aff410205_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./2aff410205_cs_0.bin" "Current gear@In"
+          yunit = "no_unit~none"
+        ..
+        CURVE "in_port_1" "Desired gear"
+          legend = "In/Desired gear (HTCU P1 AMT /Shifting)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./2aff410205_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./2aff410205_cs_0.bin" "Desired gear@In"
+          yunit = "no_unit~none"
+        ..
+      ..
+      FOLDER "out" "Out"
+        type = channel_group
+        CURVE "out_port_1" "Flag"
+          legend = "Out/Flag (HTCU P1 AMT /Shifting)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./2aff410205_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./2aff410205_cs_0.bin" "Flag@Out"
+          yunit = "no_unit~none"
+        ..
+        CURVE "out_port_0" "Shifting Status Modified"
+          legend = "Out/Shifting Status Modified (HTCU P1 AMT /Shifting)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./2aff410205_cs_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./2aff410205_cs_0.bin" "Shifting Status Modified@Out"
+          yunit = "no_unit~none"
+        ..
+      ..
+    ..
+    FOLDER "torqueoutput" "Torque Output"
+      component_name = "C-Function"
+      element_uid = "64da1c32174841abb5d90636bbbd2fbd"
+      icon = "ai-cruise-function-me"
+      type = element
+      uuid = "76f59128604e4b1d9e3c9e3700d6e296"
+      FOLDER "in" "In"
+        type = channel_group
+        CURVE "in_port_1" "EM In"
+          legend = "In/EM In (HTCU P1 AMT /Torque Output)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./64da1c3217_me_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./64da1c3217_me_0.bin" "EM In@In"
+          yunit = "moment~Nm"
+        ..
+        CURVE "in_port_0" "ICE In"
+          legend = "In/ICE In (HTCU P1 AMT /Torque Output)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./64da1c3217_me_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./64da1c3217_me_0.bin" "ICE In@In"
+          yunit = "moment~Nm"
+        ..
+        CURVE "in_port_4" "Shifting Flag"
+          legend = "In/Shifting Flag (HTCU P1 AMT /Torque Output)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./64da1c3217_me_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./64da1c3217_me_0.bin" "Shifting Flag@In"
+          yunit = "no_unit~none"
+        ..
+        CURVE "in_port_2" "Total"
+          legend = "In/Total (HTCU P1 AMT /Torque Output)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./64da1c3217_me_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./64da1c3217_me_0.bin" "Total@In"
+          yunit = "moment~Nm"
+        ..
+        CURVE "in_port_3" "Total Mod."
+          legend = "In/Total Mod. (HTCU P1 AMT /Torque Output)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./64da1c3217_me_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./64da1c3217_me_0.bin" "Total Mod.@In"
+          yunit = "moment~Nm"
+        ..
+      ..
+      FOLDER "out" "Out"
+        type = channel_group
+        CURVE "out_port_1" "EM Out"
+          legend = "Out/EM Out (HTCU P1 AMT /Torque Output)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./64da1c3217_me_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./64da1c3217_me_0.bin" "EM Out@Out"
+          yunit = "moment~Nm"
+        ..
+        CURVE "out_port_2" "Factor"
+          legend = "Out/Factor (HTCU P1 AMT /Torque Output)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./64da1c3217_me_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./64da1c3217_me_0.bin" "Factor@Out"
+          yunit = "dimensionless~no"
+        ..
+        CURVE "out_port_0" "ICE Out"
+          legend = "Out/ICE Out (HTCU P1 AMT /Torque Output)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./64da1c3217_me_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./64da1c3217_me_0.bin" "ICE Out@Out"
+          yunit = "moment~Nm"
+        ..
+      ..
+    ..
+    FOLDER "totaltorque" "Total Torque"
+      component_name = "C-Function"
+      element_uid = "b0c8050b03fe42ef99e5c3caed9f9a30"
+      icon = "ai-cruise-function-me"
+      type = element
+      uuid = "76f59128604e4b1d9e3c9e3700d6e296"
+      FOLDER "in" "In"
+        type = channel_group
+        CURVE "in_port_2" "EM Ratio"
+          legend = "In/EM Ratio (HTCU P1 AMT /Total Torque)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./b0c8050b03_me_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./b0c8050b03_me_0.bin" "EM Ratio@In"
+          yunit = "dimensionless~no"
+        ..
+        CURVE "in_port_1" "EM Torque In"
+          legend = "In/EM Torque In (HTCU P1 AMT /Total Torque)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./b0c8050b03_me_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./b0c8050b03_me_0.bin" "EM Torque In@In"
+          yunit = "moment~Nm"
+        ..
+        CURVE "in_port_0" "ICE Torque In"
+          legend = "In/ICE Torque In (HTCU P1 AMT /Total Torque)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./b0c8050b03_me_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./b0c8050b03_me_0.bin" "ICE Torque In@In"
+          yunit = "moment~Nm"
+        ..
+      ..
+      FOLDER "out" "Out"
+        type = channel_group
+        CURVE "out_port_0" "Total Torque"
+          legend = "Out/Total Torque (HTCU P1 AMT /Total Torque)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./b0c8050b03_me_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./b0c8050b03_me_0.bin" "Total Torque@Out"
+          yunit = "moment~Nm"
+        ..
+      ..
+    ..
+  ..
+  FOLDER "ice" "ICE"
+    component_name = "Map based engine"
+    element_uid = "22c0bf5255364069b17ee6b976bf8000"
+    icon = "ai-cruise-map-engine"
+    type = element
+    uuid = "f2d42fc0930c4e8d96dcca38e86a054b"
+    FOLDER "mechanical" "Mechanical"
+      type = channel_group
+      CURVE "dynamicenergy" "Dynamic energy"
+        legend = "Mechanical/Dynamic energy (ICE)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./22c0bf5255_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./22c0bf5255_rm_0.bin" "Dynamic energy@Mechanical"
+        yunit = "work~J"
+      ..
+      CURVE "dynamicpower" "Dynamic power"
+        legend = "Mechanical/Dynamic power (ICE)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./22c0bf5255_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./22c0bf5255_rm_0.bin" "Dynamic power@Mechanical"
+        yunit = "power~W"
+      ..
+      CURVE "dynamictorque" "Dynamic torque"
+        legend = "Mechanical/Dynamic torque (ICE)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./22c0bf5255_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./22c0bf5255_rm_0.bin" "Dynamic torque@Mechanical"
+        yunit = "moment~Nm"
+      ..
+      CURVE "kineticenergy" "Kinetic energy"
+        legend = "Mechanical/Kinetic energy (ICE)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./22c0bf5255_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./22c0bf5255_rm_0.bin" "Kinetic energy@Mechanical"
+        yunit = "work~J"
+      ..
+      CURVE "kineticpower" "Kinetic power"
+        legend = "Mechanical/Kinetic power (ICE)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./22c0bf5255_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./22c0bf5255_rm_0.bin" "Kinetic power@Mechanical"
+        yunit = "power~W"
+      ..
+      CURVE "speed" "Speed"
+        legend = "Mechanical/Speed (ICE)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./22c0bf5255_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./22c0bf5255_rm_0.bin" "Speed@Mechanical"
+        yunit = "ang_vel~rad_s"
+      ..
+    ..
+    FOLDER "thermalmodel" "Thermal Model"
+      type = channel_group
+      CURVE "walltemperature" "Wall temperature"
+        legend = "Thermal Model/Wall temperature (ICE)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./22c0bf5255_th_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./22c0bf5255_th_0.bin" "Wall temperature@Thermal Model"
+        yunit = "temperature~K"
+      ..
+    ..
+    CURVE "cumulatedfuelconsumption_volume_" "Cumulated fuel consumption (volume)"
+      legend = "Cumulated fuel consumption (volume) (ICE)"
+      type = channel_id
+      xlocation = CRUISE_BINARY "./22c0bf5255_rm_0.bin" "Time"
+      xunit = "time~s"
+      ylocation = CRUISE_BINARY "./22c0bf5255_rm_0.bin" "Cumulated fuel consumption (volume)"
+      yunit = "volume~l"
+    ..
+    CURVE "exhaustheat" "Exhaust heat"
+      legend = "Exhaust heat (ICE)"
+      type = channel_id
+      xlocation = CRUISE_BINARY "./22c0bf5255_rm_0.bin" "Time"
+      xunit = "time~s"
+      ylocation = CRUISE_BINARY "./22c0bf5255_rm_0.bin" "Exhaust heat"
+      yunit = "work~J"
+    ..
+    CURVE "exhaustheatflow" "Exhaust heat flow"
+      legend = "Exhaust heat flow (ICE)"
+      type = channel_id
+      xlocation = CRUISE_BINARY "./22c0bf5255_rm_0.bin" "Time"
+      xunit = "time~s"
+      ylocation = CRUISE_BINARY "./22c0bf5255_rm_0.bin" "Exhaust heat flow"
+      yunit = "power~W"
+    ..
+    CURVE "externalenergy" "External energy"
+      legend = "External energy (ICE)"
+      type = channel_id
+      xlocation = CRUISE_BINARY "./22c0bf5255_rm_0.bin" "Time"
+      xunit = "time~s"
+      ylocation = CRUISE_BINARY "./22c0bf5255_rm_0.bin" "External energy"
+      yunit = "work~J"
+    ..
+    CURVE "externalpower" "External power"
+      legend = "External power (ICE)"
+      type = channel_id
+      xlocation = CRUISE_BINARY "./22c0bf5255_rm_0.bin" "Time"
+      xunit = "time~s"
+      ylocation = CRUISE_BINARY "./22c0bf5255_rm_0.bin" "External power"
+      yunit = "power~W"
+    ..
+    CURVE "fuelpower" "Fuel power"
+      legend = "Fuel power (ICE)"
+      type = channel_id
+      xlocation = CRUISE_BINARY "./22c0bf5255_rm_0.bin" "Time"
+      xunit = "time~s"
+      ylocation = CRUISE_BINARY "./22c0bf5255_rm_0.bin" "Fuel power"
+      yunit = "power~W"
+    ..
+    CURVE "heat" "Heat"
+      legend = "Heat (ICE)"
+      type = channel_id
+      xlocation = CRUISE_BINARY "./22c0bf5255_rm_0.bin" "Time"
+      xunit = "time~s"
+      ylocation = CRUISE_BINARY "./22c0bf5255_rm_0.bin" "Heat"
+      yunit = "work~J"
+    ..
+    CURVE "heatflow" "Heat flow"
+      legend = "Heat flow (ICE)"
+      type = channel_id
+      xlocation = CRUISE_BINARY "./22c0bf5255_rm_0.bin" "Time"
+      xunit = "time~s"
+      ylocation = CRUISE_BINARY "./22c0bf5255_rm_0.bin" "Heat flow"
+      yunit = "power~W"
+    ..
+    CURVE "instantaneousfuelvolumeflow" "Instantaneous fuel volume flow"
+      legend = "Instantaneous fuel volume flow (ICE)"
+      type = channel_id
+      xlocation = CRUISE_BINARY "./22c0bf5255_rm_0.bin" "Time"
+      xunit = "time~s"
+      ylocation = CRUISE_BINARY "./22c0bf5255_rm_0.bin" "Instantaneous fuel volume flow"
+      yunit = "volflow~l_h"
+    ..
+    CURVE "startermotorcumulatedmechanicalenergy" "Starter motor cumulated mechanical energy"
+      legend = "Starter motor cumulated mechanical energy (ICE)"
+      type = channel_id
+      xlocation = CRUISE_BINARY "./22c0bf5255_rm_0.bin" "Time"
+      xunit = "time~s"
+      ylocation = CRUISE_BINARY "./22c0bf5255_rm_0.bin" "Starter motor cumulated mechanical energy"
+      yunit = "work~J"
+    ..
+    CURVE "startermotormechanicalpower" "Starter motor mechanical power"
+      legend = "Starter motor mechanical power (ICE)"
+      type = channel_id
+      xlocation = CRUISE_BINARY "./22c0bf5255_rm_0.bin" "Time"
+      xunit = "time~s"
+      ylocation = CRUISE_BINARY "./22c0bf5255_rm_0.bin" "Starter motor mechanical power"
+      yunit = "power~W"
+    ..
+    CURVE "totalfuelenergy" "Total fuel energy"
+      legend = "Total fuel energy (ICE)"
+      type = channel_id
+      xlocation = CRUISE_BINARY "./22c0bf5255_rm_0.bin" "Time"
+      xunit = "time~s"
+      ylocation = CRUISE_BINARY "./22c0bf5255_rm_0.bin" "Total fuel energy"
+      yunit = "work~J"
+    ..
+  ..
+  FOLDER "iceopt.power" "ICE Opt. Power"
+    component_name = "C-Function"
+    element_uid = "eb3a3884d9e748079c16be54b6180888"
+    icon = "ai-cruise-function-cs"
+    type = element
+    uuid = "76f59128604e4b1d9e3c9e3700d6e296"
+    FOLDER "in" "In"
+      type = channel_group
+      CURVE "in_port_0" "ICE - Full load torque"
+        legend = "In/ICE - Full load torque (ICE Opt. Power)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./eb3a3884d9_cs_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./eb3a3884d9_cs_0.bin" "ICE - Full load torque@In"
+        yunit = "moment~Nm"
+      ..
+      CURVE "in_port_1" "ICE - Speed"
+        legend = "In/ICE - Speed (ICE Opt. Power)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./eb3a3884d9_cs_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./eb3a3884d9_cs_0.bin" "ICE - Speed@In"
+        yunit = "ang_vel~rad_s"
+      ..
+    ..
+    FOLDER "out" "Out"
+      type = channel_group
+      CURVE "out_port_0" "ICE Optimum Operating Line"
+        legend = "Out/ICE Optimum Operating Line (ICE Opt. Power)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./eb3a3884d9_cs_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./eb3a3884d9_cs_0.bin" "ICE Optimum Operating Line@Out"
+        yunit = "power~W"
+      ..
+    ..
+  ..
+  FOLDER "neutralsoc" "Neutral SoC"
+    component_name = "Parameter controller"
+    element_uid = "d37d7762124e43d790b1de0f4f167bc0"
+    icon = "ai-cruise-optimization-component"
+    type = element
+    uuid = "0ca7e3dded384e53bc89d062f306433c"
+    CURVE "objective" "Objective"
+      legend = "Objective (Neutral SoC)"
+      type = channel_id
+      xlocation = CRUISE_BINARY "./d37d776212_cs_0.bin" "Time"
+      xunit = "time~s"
+      ylocation = CRUISE_BINARY "./d37d776212_cs_0.bin" "Objective"
+      yunit = "dimensionless~no"
+    ..
+    CURVE "parameter" "Parameter"
+      legend = "Parameter (Neutral SoC)"
+      type = channel_id
+      xlocation = CRUISE_BINARY "./d37d776212_cs_0.bin" "Time"
+      xunit = "time~s"
+      ylocation = CRUISE_BINARY "./d37d776212_cs_0.bin" "Parameter"
+      yunit = "dimensionless~no"
+    ..
+  ..
+  FOLDER "nodefl" "Node FL"
+    component_name = "Mechanical node"
+    element_uid = "468aeeedc2b6454ea1f511e33b1d2ea5"
+    icon = "ai-cruise-mechanical-node"
+    type = element
+    uuid = "1c4dc7bb8fb848e1bb6a2ce1c955c2a1"
+    CURVE "speed" "Speed"
+      legend = "Speed (Node FL)"
+      type = channel_id
+      xlocation = CRUISE_BINARY "./468aeeedc2_rm_0.bin" "Time"
+      xunit = "time~s"
+      ylocation = CRUISE_BINARY "./468aeeedc2_rm_0.bin" "Speed"
+      yunit = "ang_vel~1_min"
+    ..
+  ..
+  FOLDER "nodefr" "Node FR"
+    component_name = "Mechanical node"
+    element_uid = "a842cd8e2f6b471dbdcb961024497f35"
+    icon = "ai-cruise-mechanical-node"
+    type = element
+    uuid = "1c4dc7bb8fb848e1bb6a2ce1c955c2a1"
+    CURVE "speed" "Speed"
+      legend = "Speed (Node FR)"
+      type = channel_id
+      xlocation = CRUISE_BINARY "./a842cd8e2f_rm_0.bin" "Time"
+      xunit = "time~s"
+      ylocation = CRUISE_BINARY "./a842cd8e2f_rm_0.bin" "Speed"
+      yunit = "ang_vel~1_min"
+    ..
+  ..
+  FOLDER "nodeice" "Node ICE"
+    component_name = "Mechanical node"
+    element_uid = "9db86525c39d47bdbe13ea065c2dcd94"
+    icon = "ai-cruise-mechanical-node"
+    type = element
+    uuid = "1c4dc7bb8fb848e1bb6a2ce1c955c2a1"
+    CURVE "speed" "Speed"
+      legend = "Speed (Node ICE)"
+      type = channel_id
+      xlocation = CRUISE_BINARY "./9db86525c3_rm_0.bin" "Time"
+      xunit = "time~s"
+      ylocation = CRUISE_BINARY "./9db86525c3_rm_0.bin" "Speed"
+      yunit = "ang_vel~1_min"
+    ..
+  ..
+  FOLDER "solver" "Solver"
+    type = subsystem
+    FOLDER "csmaster" "CS Master"
+      component_name = "Settings"
+      element_uid = "e111a3670d5e4dfba5ef984573f0c22e"
+      icon = "ai-standard-settings"
+      type = element
+      uuid = "1a9f36675b8243b28f6bff0fd1f0c5b7"
+      CURVE "realtimefactor" "RealTime Factor"
+        legend = "RealTime Factor (Solver/CS Master)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./csmaster.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./csmaster.bin" "RealTime Factor"
+        yunit = "dimensionless~none"
+      ..
+    ..
+    FOLDER "solver0_solversettings_global_" "Solver 0(solver settings: Global)"
+      component_name = "Solver"
+      element_uid = "element_uid1"
+      icon = "ai-standard-settings"
+      type = element
+    ..
+  ..
+  FOLDER "vehicle" "Vehicle"
+    component_name = "Vehicle"
+    element_uid = "7da77804a9164e0bba44a109ba762fac"
+    icon = "ai-cruise-vehicle"
+    type = element
+    uuid = "fe103a3be58c406bb30e1b6273d4b22c"
+    CURVE "distance" "Distance"
+      legend = "Distance (Vehicle)"
+      type = channel_id
+      xlocation = CRUISE_BINARY "./7da77804a9_rm_0.bin" "Time"
+      xunit = "time~s"
+      ylocation = CRUISE_BINARY "./7da77804a9_rm_0.bin" "Distance"
+      yunit = "length~m"
+    ..
+    CURVE "energystored" "Energy stored"
+      legend = "Energy stored (Vehicle)"
+      type = channel_id
+      xlocation = CRUISE_BINARY "./7da77804a9_rm_0.bin" "Time"
+      xunit = "time~s"
+      ylocation = CRUISE_BINARY "./7da77804a9_rm_0.bin" "Energy stored"
+      yunit = "work~J"
+    ..
+    CURVE "heat" "Heat"
+      legend = "Heat (Vehicle)"
+      type = channel_id
+      xlocation = CRUISE_BINARY "./7da77804a9_rm_0.bin" "Time"
+      xunit = "time~s"
+      ylocation = CRUISE_BINARY "./7da77804a9_rm_0.bin" "Heat"
+      yunit = "work~J"
+    ..
+    CURVE "heatflow" "Heat flow"
+      legend = "Heat flow (Vehicle)"
+      type = channel_id
+      xlocation = CRUISE_BINARY "./7da77804a9_rm_0.bin" "Time"
+      xunit = "time~s"
+      ylocation = CRUISE_BINARY "./7da77804a9_rm_0.bin" "Heat flow"
+      yunit = "power~W"
+    ..
+    CURVE "powerstored" "Power stored"
+      legend = "Power stored (Vehicle)"
+      type = channel_id
+      xlocation = CRUISE_BINARY "./7da77804a9_rm_0.bin" "Time"
+      xunit = "time~s"
+      ylocation = CRUISE_BINARY "./7da77804a9_rm_0.bin" "Power stored"
+      yunit = "power~W"
+    ..
+    CURVE "tractionforce_efd_" "Traction force (EFD)"
+      legend = "Traction force (EFD) (Vehicle)"
+      type = channel_id
+      xlocation = CRUISE_BINARY "./7da77804a9_rm_0.bin" "Time"
+      xunit = "time~s"
+      ylocation = CRUISE_BINARY "./7da77804a9_rm_0.bin" "Traction force (EFD)"
+      yunit = "force~N"
+    ..
+    CURVE "velocity" "Velocity"
+      legend = "Velocity (Vehicle)"
+      type = channel_id
+      xlocation = CRUISE_BINARY "./7da77804a9_rm_0.bin" "Time"
+      xunit = "time~s"
+      ylocation = CRUISE_BINARY "./7da77804a9_rm_0.bin" "Velocity"
+      yunit = "velocity~m_s"
+    ..
+  ..
+  FOLDER "vehiclemonitor" "Vehicle Monitor"
+    component_name = "Monitor"
+    element_uid = "06b94e08a37e4edaae23033c0ef7dcc9"
+    icon = "ai-cruise-monitor"
+    type = element
+    uuid = "bd21d0bdf0b2416ab4d94c706483154f"
+    FOLDER "in" "In"
+      type = channel_group
+      CURVE "in_port_0" "Acceleration"
+        legend = "In/Acceleration (Vehicle Monitor)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./06b94e08a3_cs_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./06b94e08a3_cs_0.bin" "Acceleration@In"
+        yunit = "acceleration~m_s2"
+      ..
+      CURVE "in_port_1" "Battery SOC"
+        legend = "In/Battery SOC (Vehicle Monitor)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./06b94e08a3_cs_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./06b94e08a3_cs_0.bin" "Battery SOC@In"
+        yunit = "dimensionless~percent"
+      ..
+      CURVE "in_port_21" "Battery SoC Initial"
+        legend = "In/Battery SoC Initial (Vehicle Monitor)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./06b94e08a3_cs_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./06b94e08a3_cs_0.bin" "Battery SoC Initial@In"
+        yunit = "dimensionless~percent"
+      ..
+      CURVE "in_port_2" "Brake Pressure Cockpit"
+        legend = "In/Brake Pressure Cockpit (Vehicle Monitor)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./06b94e08a3_cs_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./06b94e08a3_cs_0.bin" "Brake Pressure Cockpit@In"
+        yunit = "pressure~bar"
+      ..
+      CURVE "in_port_3" "Brake Pressure HCU"
+        legend = "In/Brake Pressure HCU (Vehicle Monitor)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./06b94e08a3_cs_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./06b94e08a3_cs_0.bin" "Brake Pressure HCU@In"
+        yunit = "pressure~bar"
+      ..
+      CURVE "in_port_4" "Clutch Release"
+        legend = "In/Clutch Release (Vehicle Monitor)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./06b94e08a3_cs_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./06b94e08a3_cs_0.bin" "Clutch Release@In"
+        yunit = "dimensionless~no"
+      ..
+      CURVE "in_port_5" "Current Gear"
+        legend = "In/Current Gear (Vehicle Monitor)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./06b94e08a3_cs_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./06b94e08a3_cs_0.bin" "Current Gear@In"
+        yunit = "no_unit~none"
+      ..
+      CURVE "in_port_6" "Desired Velocity"
+        legend = "In/Desired Velocity (Vehicle Monitor)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./06b94e08a3_cs_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./06b94e08a3_cs_0.bin" "Desired Velocity@In"
+        yunit = "velocity~km_h"
+      ..
+      CURVE "in_port_7" "Distance"
+        legend = "In/Distance (Vehicle Monitor)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./06b94e08a3_cs_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./06b94e08a3_cs_0.bin" "Distance@In"
+        yunit = "length~m"
+      ..
+      CURVE "in_port_8" "Drive Mode"
+        legend = "In/Drive Mode (Vehicle Monitor)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./06b94e08a3_cs_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./06b94e08a3_cs_0.bin" "Drive Mode@In"
+        yunit = "no_unit~none"
+      ..
+      CURVE "in_port_9" "EM E-Power"
+        legend = "In/EM E-Power (Vehicle Monitor)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./06b94e08a3_cs_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./06b94e08a3_cs_0.bin" "EM E-Power@In"
+        yunit = "power~kW"
+      ..
+      CURVE "in_port_10" "EM Mechanical load"
+        legend = "In/EM Mechanical load (Vehicle Monitor)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./06b94e08a3_cs_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./06b94e08a3_cs_0.bin" "EM Mechanical load@In"
+        yunit = "dimensionless~percent"
+      ..
+      CURVE "in_port_11" "EM Speed"
+        legend = "In/EM Speed (Vehicle Monitor)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./06b94e08a3_cs_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./06b94e08a3_cs_0.bin" "EM Speed@In"
+        yunit = "ang_vel~rpm"
+      ..
+      CURVE "in_port_12" "EM Torque"
+        legend = "In/EM Torque (Vehicle Monitor)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./06b94e08a3_cs_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./06b94e08a3_cs_0.bin" "EM Torque@In"
+        yunit = "moment~Nm"
+      ..
+      CURVE "in_port_13" "Fault Time"
+        legend = "In/Fault Time (Vehicle Monitor)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./06b94e08a3_cs_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./06b94e08a3_cs_0.bin" "Fault Time@In"
+        yunit = "time~s"
+      ..
+      CURVE "in_port_14" "ICE CO2 emission"
+        legend = "In/ICE CO2 emission (Vehicle Monitor)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./06b94e08a3_cs_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./06b94e08a3_cs_0.bin" "ICE CO2 emission@In"
+        yunit = "massflow~kg_h"
+      ..
+      CURVE "in_port_15" "ICE Crankshaft Torque"
+        legend = "In/ICE Crankshaft Torque (Vehicle Monitor)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./06b94e08a3_cs_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./06b94e08a3_cs_0.bin" "ICE Crankshaft Torque@In"
+        yunit = "moment~Nm"
+      ..
+      CURVE "in_port_16" "ICE Load Signal"
+        legend = "In/ICE Load Signal (Vehicle Monitor)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./06b94e08a3_cs_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./06b94e08a3_cs_0.bin" "ICE Load Signal@In"
+        yunit = "dimensionless~percent"
+      ..
+      CURVE "in_port_17" "ICE Power"
+        legend = "In/ICE Power (Vehicle Monitor)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./06b94e08a3_cs_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./06b94e08a3_cs_0.bin" "ICE Power@In"
+        yunit = "power~kW"
+      ..
+      CURVE "in_port_18" "ICE Speed"
+        legend = "In/ICE Speed (Vehicle Monitor)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./06b94e08a3_cs_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./06b94e08a3_cs_0.bin" "ICE Speed@In"
+        yunit = "ang_vel~rpm"
+      ..
+      CURVE "in_port_19" "ICE Switch"
+        legend = "In/ICE Switch (Vehicle Monitor)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./06b94e08a3_cs_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./06b94e08a3_cs_0.bin" "ICE Switch@In"
+        yunit = "no_unit~none"
+      ..
+      CURVE "in_port_20" "Velocity"
+        legend = "In/Velocity (Vehicle Monitor)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./06b94e08a3_cs_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./06b94e08a3_cs_0.bin" "Velocity@In"
+        yunit = "velocity~km_h"
+      ..
+    ..
+  ..
+  FOLDER "vehicletask" "Vehicle Task"
+    type = subsystem
+    FOLDER "driver" "Driver"
+      component_name = "Driver"
+      element_uid = "208ff87068df447a8719e574f4ffc85e"
+      icon = "ai-cruise-driver"
+      type = element
+      uuid = "1180df9a7b2a4c9eb5620842f42198fc"
+      FOLDER "out" "Out"
+        type = channel_group
+        CURVE "acceleratorpedaltravel" "Accelerator Pedal Travel"
+          legend = "Out/Accelerator Pedal Travel (Vehicle Task/Driver)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./208ff87068_me_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./208ff87068_me_0.bin" "Accelerator Pedal Travel@Out"
+          yunit = "dimensionless~none"
+        ..
+        CURVE "brakepedaltravel" "Brake Pedal Travel"
+          legend = "Out/Brake Pedal Travel (Vehicle Task/Driver)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./208ff87068_me_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./208ff87068_me_0.bin" "Brake Pedal Travel@Out"
+          yunit = "dimensionless~none"
+        ..
+        CURVE "clutchpedaltravel" "Clutch Pedal Travel"
+          legend = "Out/Clutch Pedal Travel (Vehicle Task/Driver)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./208ff87068_me_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./208ff87068_me_0.bin" "Clutch Pedal Travel@Out"
+          yunit = "dimensionless~none"
+        ..
+        CURVE "desiredgear" "Desired Gear"
+          legend = "Out/Desired Gear (Vehicle Task/Driver)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./208ff87068_me_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./208ff87068_me_0.bin" "Desired Gear@Out"
+          yunit = "no_unit~none"
+        ..
+      ..
+    ..
+    FOLDER "environment" "Environment"
+      component_name = "Environment"
+      element_uid = "efe924e07f6b4fbb8408d59a14cfa8c0"
+      icon = "ai-driving-environment"
+      type = element
+      uuid = "1180df9a7b2a4c6eb5620842f42198fc"
+      FOLDER "out" "Out"
+        type = channel_group
+        CURVE "airdensity" "Air Density"
+          legend = "Out/Air Density (Vehicle Task/Environment)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./efe924e07f_me_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./efe924e07f_me_0.bin" "Air Density@Out"
+          yunit = "density~kg_m3"
+        ..
+        CURVE "airhumidity" "Air Humidity"
+          legend = "Out/Air Humidity (Vehicle Task/Environment)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./efe924e07f_me_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./efe924e07f_me_0.bin" "Air Humidity@Out"
+          yunit = "density~kg_m3"
+        ..
+        CURVE "ambientpressure" "Ambient Pressure"
+          legend = "Out/Ambient Pressure (Vehicle Task/Environment)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./efe924e07f_me_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./efe924e07f_me_0.bin" "Ambient Pressure@Out"
+          yunit = "pressure~Pa"
+        ..
+        CURVE "ambienttemperature" "Ambient Temperature"
+          legend = "Out/Ambient Temperature (Vehicle Task/Environment)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./efe924e07f_me_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./efe924e07f_me_0.bin" "Ambient Temperature@Out"
+          yunit = "temperature~K"
+        ..
+      ..
+    ..
+    FOLDER "profile" "Profile"
+      component_name = "Profile time"
+      element_uid = "7b5ae10250ca4e6bbc3377c4c8956904"
+      icon = "ai-cruise-profile-time"
+      type = element
+      uuid = "c180df9a7b2a4c6eb5620842f42198fc"
+      FOLDER "out" "Out"
+        type = channel_group
+        CURVE "desiredgear" "Desired Gear"
+          legend = "Out/Desired Gear (Vehicle Task/Profile)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./7b5ae10250_me_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./7b5ae10250_me_0.bin" "Desired Gear@Out"
+          yunit = "no_unit~none"
+        ..
+        CURVE "desiredvelocity" "Desired Velocity"
+          legend = "Out/Desired Velocity (Vehicle Task/Profile)"
+          type = channel_id
+          xlocation = CRUISE_BINARY "./7b5ae10250_me_0.bin" "Time"
+          xunit = "time~s"
+          ylocation = CRUISE_BINARY "./7b5ae10250_me_0.bin" "Desired Velocity@Out"
+          yunit = "velocity~m_s"
+        ..
+      ..
+    ..
+  ..
+  FOLDER "wheelfl" "Wheel FL"
+    component_name = "Wheel"
+    element_uid = "02ded9b2485a4cf49eba803dcdcdd5da"
+    icon = "ai-cruise-wheel-above"
+    type = element
+    uuid = "e47b991104114efbbb5cfd891041e1d8"
+    FOLDER "mechanical" "Mechanical"
+      type = channel_group
+      CURVE "dynamicenergy" "Dynamic energy"
+        legend = "Mechanical/Dynamic energy (Wheel FL)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./02ded9b248_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./02ded9b248_rm_0.bin" "Dynamic energy@Mechanical"
+        yunit = "work~J"
+      ..
+      CURVE "dynamicpower" "Dynamic power"
+        legend = "Mechanical/Dynamic power (Wheel FL)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./02ded9b248_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./02ded9b248_rm_0.bin" "Dynamic power@Mechanical"
+        yunit = "power~W"
+      ..
+      CURVE "dynamictorque" "Dynamic torque"
+        legend = "Mechanical/Dynamic torque (Wheel FL)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./02ded9b248_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./02ded9b248_rm_0.bin" "Dynamic torque@Mechanical"
+        yunit = "moment~Nm"
+      ..
+      CURVE "kineticpower" "Kinetic power"
+        legend = "Mechanical/Kinetic power (Wheel FL)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./02ded9b248_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./02ded9b248_rm_0.bin" "Kinetic power@Mechanical"
+        yunit = "power~W"
+      ..
+      CURVE "speed" "Speed"
+        legend = "Mechanical/Speed (Wheel FL)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./02ded9b248_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./02ded9b248_rm_0.bin" "Speed@Mechanical"
+        yunit = "ang_vel~1_min"
+      ..
+    ..
+    CURVE "heat" "Heat"
+      legend = "Heat (Wheel FL)"
+      type = channel_id
+      xlocation = CRUISE_BINARY "./02ded9b248_rm_0.bin" "Time"
+      xunit = "time~s"
+      ylocation = CRUISE_BINARY "./02ded9b248_rm_0.bin" "Heat"
+      yunit = "work~J"
+    ..
+    CURVE "heatflow" "Heat flow"
+      legend = "Heat flow (Wheel FL)"
+      type = channel_id
+      xlocation = CRUISE_BINARY "./02ded9b248_rm_0.bin" "Time"
+      xunit = "time~s"
+      ylocation = CRUISE_BINARY "./02ded9b248_rm_0.bin" "Heat flow"
+      yunit = "power~W"
+    ..
+    CURVE "kineticenergyexchanged" "Kinetic energy exchanged"
+      legend = "Kinetic energy exchanged (Wheel FL)"
+      type = channel_id
+      xlocation = CRUISE_BINARY "./02ded9b248_rm_0.bin" "Time"
+      xunit = "time~s"
+      ylocation = CRUISE_BINARY "./02ded9b248_rm_0.bin" "Kinetic energy exchanged@"
+      yunit = "work~J"
+    ..
+  ..
+  FOLDER "wheelfr" "Wheel FR"
+    component_name = "Wheel"
+    element_uid = "093bf917f1cd44b2954b239d66c9a968"
+    icon = "ai-cruise-wheel-above"
+    type = element
+    uuid = "e47b991104114efbbb5cfd891041e1d8"
+    FOLDER "mechanical" "Mechanical"
+      type = channel_group
+      CURVE "dynamicenergy" "Dynamic energy"
+        legend = "Mechanical/Dynamic energy (Wheel FR)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./093bf917f1_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./093bf917f1_rm_0.bin" "Dynamic energy@Mechanical"
+        yunit = "work~J"
+      ..
+      CURVE "dynamicpower" "Dynamic power"
+        legend = "Mechanical/Dynamic power (Wheel FR)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./093bf917f1_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./093bf917f1_rm_0.bin" "Dynamic power@Mechanical"
+        yunit = "power~W"
+      ..
+      CURVE "dynamictorque" "Dynamic torque"
+        legend = "Mechanical/Dynamic torque (Wheel FR)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./093bf917f1_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./093bf917f1_rm_0.bin" "Dynamic torque@Mechanical"
+        yunit = "moment~Nm"
+      ..
+      CURVE "kineticpower" "Kinetic power"
+        legend = "Mechanical/Kinetic power (Wheel FR)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./093bf917f1_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./093bf917f1_rm_0.bin" "Kinetic power@Mechanical"
+        yunit = "power~W"
+      ..
+      CURVE "speed" "Speed"
+        legend = "Mechanical/Speed (Wheel FR)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./093bf917f1_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./093bf917f1_rm_0.bin" "Speed@Mechanical"
+        yunit = "ang_vel~1_min"
+      ..
+    ..
+    CURVE "heat" "Heat"
+      legend = "Heat (Wheel FR)"
+      type = channel_id
+      xlocation = CRUISE_BINARY "./093bf917f1_rm_0.bin" "Time"
+      xunit = "time~s"
+      ylocation = CRUISE_BINARY "./093bf917f1_rm_0.bin" "Heat"
+      yunit = "work~J"
+    ..
+    CURVE "heatflow" "Heat flow"
+      legend = "Heat flow (Wheel FR)"
+      type = channel_id
+      xlocation = CRUISE_BINARY "./093bf917f1_rm_0.bin" "Time"
+      xunit = "time~s"
+      ylocation = CRUISE_BINARY "./093bf917f1_rm_0.bin" "Heat flow"
+      yunit = "power~W"
+    ..
+    CURVE "kineticenergyexchanged" "Kinetic energy exchanged"
+      legend = "Kinetic energy exchanged (Wheel FR)"
+      type = channel_id
+      xlocation = CRUISE_BINARY "./093bf917f1_rm_0.bin" "Time"
+      xunit = "time~s"
+      ylocation = CRUISE_BINARY "./093bf917f1_rm_0.bin" "Kinetic energy exchanged@"
+      yunit = "work~J"
+    ..
+  ..
+  FOLDER "wheelrl" "Wheel RL"
+    component_name = "Wheel"
+    element_uid = "bc70ca33eb914d0186a15ff4af7a3efa"
+    icon = "ai-cruise-wheel-above"
+    type = element
+    uuid = "e47b991104114efbbb5cfd891041e1d8"
+    FOLDER "mechanical" "Mechanical"
+      type = channel_group
+      CURVE "dynamicenergy" "Dynamic energy"
+        legend = "Mechanical/Dynamic energy (Wheel RL)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./bc70ca33eb_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./bc70ca33eb_rm_0.bin" "Dynamic energy@Mechanical"
+        yunit = "work~J"
+      ..
+      CURVE "dynamicpower" "Dynamic power"
+        legend = "Mechanical/Dynamic power (Wheel RL)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./bc70ca33eb_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./bc70ca33eb_rm_0.bin" "Dynamic power@Mechanical"
+        yunit = "power~W"
+      ..
+      CURVE "dynamictorque" "Dynamic torque"
+        legend = "Mechanical/Dynamic torque (Wheel RL)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./bc70ca33eb_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./bc70ca33eb_rm_0.bin" "Dynamic torque@Mechanical"
+        yunit = "moment~Nm"
+      ..
+      CURVE "kineticpower" "Kinetic power"
+        legend = "Mechanical/Kinetic power (Wheel RL)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./bc70ca33eb_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./bc70ca33eb_rm_0.bin" "Kinetic power@Mechanical"
+        yunit = "power~W"
+      ..
+      CURVE "speed" "Speed"
+        legend = "Mechanical/Speed (Wheel RL)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./bc70ca33eb_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./bc70ca33eb_rm_0.bin" "Speed@Mechanical"
+        yunit = "ang_vel~1_min"
+      ..
+    ..
+    CURVE "heat" "Heat"
+      legend = "Heat (Wheel RL)"
+      type = channel_id
+      xlocation = CRUISE_BINARY "./bc70ca33eb_rm_0.bin" "Time"
+      xunit = "time~s"
+      ylocation = CRUISE_BINARY "./bc70ca33eb_rm_0.bin" "Heat"
+      yunit = "work~J"
+    ..
+    CURVE "heatflow" "Heat flow"
+      legend = "Heat flow (Wheel RL)"
+      type = channel_id
+      xlocation = CRUISE_BINARY "./bc70ca33eb_rm_0.bin" "Time"
+      xunit = "time~s"
+      ylocation = CRUISE_BINARY "./bc70ca33eb_rm_0.bin" "Heat flow"
+      yunit = "power~W"
+    ..
+    CURVE "kineticenergyexchanged" "Kinetic energy exchanged"
+      legend = "Kinetic energy exchanged (Wheel RL)"
+      type = channel_id
+      xlocation = CRUISE_BINARY "./bc70ca33eb_rm_0.bin" "Time"
+      xunit = "time~s"
+      ylocation = CRUISE_BINARY "./bc70ca33eb_rm_0.bin" "Kinetic energy exchanged@"
+      yunit = "work~J"
+    ..
+  ..
+  FOLDER "wheelrr" "Wheel RR"
+    component_name = "Wheel"
+    element_uid = "a382e0c85b394f56b3cebb692eee2039"
+    icon = "ai-cruise-wheel-above"
+    type = element
+    uuid = "e47b991104114efbbb5cfd891041e1d8"
+    FOLDER "mechanical" "Mechanical"
+      type = channel_group
+      CURVE "dynamicenergy" "Dynamic energy"
+        legend = "Mechanical/Dynamic energy (Wheel RR)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./a382e0c85b_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./a382e0c85b_rm_0.bin" "Dynamic energy@Mechanical"
+        yunit = "work~J"
+      ..
+      CURVE "dynamicpower" "Dynamic power"
+        legend = "Mechanical/Dynamic power (Wheel RR)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./a382e0c85b_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./a382e0c85b_rm_0.bin" "Dynamic power@Mechanical"
+        yunit = "power~W"
+      ..
+      CURVE "dynamictorque" "Dynamic torque"
+        legend = "Mechanical/Dynamic torque (Wheel RR)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./a382e0c85b_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./a382e0c85b_rm_0.bin" "Dynamic torque@Mechanical"
+        yunit = "moment~Nm"
+      ..
+      CURVE "kineticpower" "Kinetic power"
+        legend = "Mechanical/Kinetic power (Wheel RR)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./a382e0c85b_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./a382e0c85b_rm_0.bin" "Kinetic power@Mechanical"
+        yunit = "power~W"
+      ..
+      CURVE "speed" "Speed"
+        legend = "Mechanical/Speed (Wheel RR)"
+        type = channel_id
+        xlocation = CRUISE_BINARY "./a382e0c85b_rm_0.bin" "Time"
+        xunit = "time~s"
+        ylocation = CRUISE_BINARY "./a382e0c85b_rm_0.bin" "Speed@Mechanical"
+        yunit = "ang_vel~1_min"
+      ..
+    ..
+    CURVE "heat" "Heat"
+      legend = "Heat (Wheel RR)"
+      type = channel_id
+      xlocation = CRUISE_BINARY "./a382e0c85b_rm_0.bin" "Time"
+      xunit = "time~s"
+      ylocation = CRUISE_BINARY "./a382e0c85b_rm_0.bin" "Heat"
+      yunit = "work~J"
+    ..
+    CURVE "heatflow" "Heat flow"
+      legend = "Heat flow (Wheel RR)"
+      type = channel_id
+      xlocation = CRUISE_BINARY "./a382e0c85b_rm_0.bin" "Time"
+      xunit = "time~s"
+      ylocation = CRUISE_BINARY "./a382e0c85b_rm_0.bin" "Heat flow"
+      yunit = "power~W"
+    ..
+    CURVE "kineticenergyexchanged" "Kinetic energy exchanged"
+      legend = "Kinetic energy exchanged (Wheel RR)"
+      type = channel_id
+      xlocation = CRUISE_BINARY "./a382e0c85b_rm_0.bin" "Time"
+      xunit = "time~s"
+      ylocation = CRUISE_BINARY "./a382e0c85b_rm_0.bin" "Kinetic energy exchanged@"
+      yunit = "work~J"
+    ..
+  ..
+..

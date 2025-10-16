@@ -6358,11 +6358,18 @@ FOLDER "CRUISE M Simulation Results" "CRUISE M Simulation Results"
     FOLDER "input" "Input"
       component_name = "Wheel"
       type = subsystem
-      CURVE "rollingresistancefactorvelocitydependent" "Rolling Resistance Factor Velocity Dependent"
+      CURVE "asymptoteofslipcharateristic" "Asymptote of Slip Charateristic"
         type = channel_id
-        xlocation = GIDAS "./wheelfl_rollingresistancefactorvelocitydependent_0.gid" "Velocity"
-        xunit = "velocity~m_s"
-        ylocation = GIDAS "./wheelfl_rollingresistancefactorvelocitydependent_0.gid" "Rolling Resistance Factor"
+        xlocation = GIDAS "./wheelfl_asymptoteofslipcharateristic_0.gid" "Friction Coefficient of Road"
+        xunit = "no_unit~none"
+        ylocation = GIDAS "./wheelfl_asymptoteofslipcharateristic_0.gid" "Specific Traction at Infinite Slip"
+        yunit = "dimensionless~no"
+      ..
+      CURVE "maximumintheslipcharacteristic" "Maximum in the Slip Characteristic"
+        type = channel_id
+        xlocation = GIDAS "./wheelfl_maximumintheslipcharacteristic_0.gid" "Friction Coefficient of Road"
+        xunit = "no_unit~none"
+        ylocation = GIDAS "./wheelfl_maximumintheslipcharacteristic_0.gid" "Slip at Maximum Traction"
         yunit = "dimensionless~no"
       ..
     ..
@@ -6587,11 +6594,18 @@ FOLDER "CRUISE M Simulation Results" "CRUISE M Simulation Results"
     FOLDER "input" "Input"
       component_name = "Wheel"
       type = subsystem
-      CURVE "rollingresistancefactorvelocitydependent" "Rolling Resistance Factor Velocity Dependent"
+      CURVE "asymptoteofslipcharateristic" "Asymptote of Slip Charateristic"
         type = channel_id
-        xlocation = GIDAS "./wheelfr_rollingresistancefactorvelocitydependent_0.gid" "Velocity"
-        xunit = "velocity~m_s"
-        ylocation = GIDAS "./wheelfr_rollingresistancefactorvelocitydependent_0.gid" "Rolling Resistance Factor"
+        xlocation = GIDAS "./wheelfr_asymptoteofslipcharateristic_0.gid" "Friction Coefficient of Road"
+        xunit = "no_unit~none"
+        ylocation = GIDAS "./wheelfr_asymptoteofslipcharateristic_0.gid" "Specific Traction at Infinite Slip"
+        yunit = "dimensionless~no"
+      ..
+      CURVE "maximumintheslipcharacteristic" "Maximum in the Slip Characteristic"
+        type = channel_id
+        xlocation = GIDAS "./wheelfr_maximumintheslipcharacteristic_0.gid" "Friction Coefficient of Road"
+        xunit = "no_unit~none"
+        ylocation = GIDAS "./wheelfr_maximumintheslipcharacteristic_0.gid" "Slip at Maximum Traction"
         yunit = "dimensionless~no"
       ..
     ..
@@ -6816,11 +6830,18 @@ FOLDER "CRUISE M Simulation Results" "CRUISE M Simulation Results"
     FOLDER "input" "Input"
       component_name = "Wheel"
       type = subsystem
-      CURVE "rollingresistancefactorvelocitydependent" "Rolling Resistance Factor Velocity Dependent"
+      CURVE "asymptoteofslipcharateristic" "Asymptote of Slip Charateristic"
         type = channel_id
-        xlocation = GIDAS "./wheelrl_rollingresistancefactorvelocitydependent_0.gid" "Velocity"
-        xunit = "velocity~m_s"
-        ylocation = GIDAS "./wheelrl_rollingresistancefactorvelocitydependent_0.gid" "Rolling Resistance Factor"
+        xlocation = GIDAS "./wheelrl_asymptoteofslipcharateristic_0.gid" "Friction Coefficient of Road"
+        xunit = "no_unit~none"
+        ylocation = GIDAS "./wheelrl_asymptoteofslipcharateristic_0.gid" "Specific Traction at Infinite Slip"
+        yunit = "dimensionless~no"
+      ..
+      CURVE "maximumintheslipcharacteristic" "Maximum in the Slip Characteristic"
+        type = channel_id
+        xlocation = GIDAS "./wheelrl_maximumintheslipcharacteristic_0.gid" "Friction Coefficient of Road"
+        xunit = "no_unit~none"
+        ylocation = GIDAS "./wheelrl_maximumintheslipcharacteristic_0.gid" "Slip at Maximum Traction"
         yunit = "dimensionless~no"
       ..
     ..
@@ -7045,11 +7066,18 @@ FOLDER "CRUISE M Simulation Results" "CRUISE M Simulation Results"
     FOLDER "input" "Input"
       component_name = "Wheel"
       type = subsystem
-      CURVE "rollingresistancefactorvelocitydependent" "Rolling Resistance Factor Velocity Dependent"
+      CURVE "asymptoteofslipcharateristic" "Asymptote of Slip Charateristic"
         type = channel_id
-        xlocation = GIDAS "./wheelrr_rollingresistancefactorvelocitydependent_0.gid" "Velocity"
-        xunit = "velocity~m_s"
-        ylocation = GIDAS "./wheelrr_rollingresistancefactorvelocitydependent_0.gid" "Rolling Resistance Factor"
+        xlocation = GIDAS "./wheelrr_asymptoteofslipcharateristic_0.gid" "Friction Coefficient of Road"
+        xunit = "no_unit~none"
+        ylocation = GIDAS "./wheelrr_asymptoteofslipcharateristic_0.gid" "Specific Traction at Infinite Slip"
+        yunit = "dimensionless~no"
+      ..
+      CURVE "maximumintheslipcharacteristic" "Maximum in the Slip Characteristic"
+        type = channel_id
+        xlocation = GIDAS "./wheelrr_maximumintheslipcharacteristic_0.gid" "Friction Coefficient of Road"
+        xunit = "no_unit~none"
+        ylocation = GIDAS "./wheelrr_maximumintheslipcharacteristic_0.gid" "Slip at Maximum Traction"
         yunit = "dimensionless~no"
       ..
     ..

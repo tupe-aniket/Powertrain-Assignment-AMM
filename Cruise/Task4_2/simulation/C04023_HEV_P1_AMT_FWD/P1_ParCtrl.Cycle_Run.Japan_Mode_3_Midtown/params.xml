@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<export-import version="2" xmlns="http://avl.com/xml/stfw/param-export-import">
+  <params>
+    <param name="Profile">
+      <element value="CRUISE_M: Element Pool»Parameter Values»Profiles»NEDC"/>
+    </param>
+    <param name="Vehicle_Task">
+      <element value="CRUISE_M: Element Pool»Parameter Values»Vehicle_Task»Cycle Run"/>
+    </param>
+    <param name="Initial_charge">
+      <amount unit="dimensionless~percent" fixed_unit="True">75.0</amount>
+    </param>
+  </params>
+  <desc>
+    <params-desc>
+      <param-desc name="Profile" kind="Element">
+        <label></label>
+        <description></description>
+        <tags>
+          <tag>Root</tag>
+        </tags>
+        <choices>
+          <choice desc="CRUISE_M: Element Pool»Parameter Values»Profiles»NEDC">
+            <element value="CRUISE_M: Element Pool»Parameter Values»Profiles»NEDC"/>
+          </choice>
+          <choice desc="CRUISE_M: Element Pool»Parameter Values»Profiles»WLTC 3b">
+            <element value="CRUISE_M: Element Pool»Parameter Values»Profiles»WLTC 3b"/>
+          </choice>
+          <choice desc="CRUISE_M: Element Pool»Parameter Values»Profiles»J M3 Midtown">
+            <element value="CRUISE_M: Element Pool»Parameter Values»Profiles»J M3 Midtown"/>
+          </choice>
+        </choices>
+      </param-desc>
+      <param-desc name="Vehicle_Task" kind="Element">
+        <label></label>
+        <description></description>
+        <tags>
+          <tag>Root</tag>
+        </tags>
+        <choices>
+          <choice desc="CRUISE_M: Element Pool»Parameter Values»Vehicle_Task»Cycle Run">
+            <element value="CRUISE_M: Element Pool»Parameter Values»Vehicle_Task»Cycle Run"/>
+          </choice>
+          <choice desc="CRUISE_M: Element Pool»Parameter Values»Vehicle_Task»FLA Old">
+            <element value="CRUISE_M: Element Pool»Parameter Values»Vehicle_Task»FLA Old"/>
+          </choice>
+          <choice desc="CRUISE_M: Element Pool»Parameter Values»Vehicle_Task»FLA">
+            <element value="CRUISE_M: Element Pool»Parameter Values»Vehicle_Task»FLA"/>
+          </choice>
+        </choices>
+      </param-desc>
+      <param-desc name="Initial_charge" kind="amount" unitgroup="dimensionless">
+        <label></label>
+        <description></description>
+        <tags>
+          <tag>Root</tag>
+        </tags>
+        <min-value>
+          <amount unit="dimensionless~no">0.0</amount>
+        </min-value>
+        <max-value>
+          <amount unit="dimensionless~no">1.0</amount>
+        </max-value>
+      </param-desc>
+    </params-desc>
+    <case-sets-desc>
+      <case-set-desc name="Cycle Run">
+        <parameter-groups-desc>
+          <parameter-group-desc name="Parameter group 1">
+            <case-param-desc name="Vehicle_Task"/>
+            <case-param-desc name="Profile"/>
+            <case-param-desc name="P1_ParCtrl"/>
+          </parameter-group-desc>
+        </parameter-groups-desc>
+        <cases-desc>
+          <case-desc name="Japan Mode 3 Midtown"/>
+        </cases-desc>
+        <case-scenarios-desc>
+          <case-scenario-desc name="P1_ParCtrl">
+            <choices>
+              <scenario-instance name="Free SoC"/>
+              <scenario-instance name="Neutral SoC"/>
+            </choices>
+          </case-scenario-desc>
+        </case-scenarios-desc>
+      </case-set-desc>
+    </case-sets-desc>
+    <scenarios-desc>
+      <scenario-desc name="P1_ParCtrl">
+        <member-desc name="layer_visible_2" kind="bool"/>
+        <member-desc name="layer_active_2" kind="bool"/>
+        <member-desc name="layer_active_1" kind="bool"/>
+        <member-desc name="layer_visible_1" kind="bool"/>
+      </scenario-desc>
+    </scenarios-desc>
+    <unit-groups-desc>
+      <unit-group-desc name="dimensionless">
+        <choices>
+          <choice desc="[-]">
+            <unit>dimensionless~no</unit>
+          </choice>
+          <choice desc="%">
+            <unit>dimensionless~percent</unit>
+          </choice>
+          <choice desc="permille">
+            <unit>dimensionless~permille</unit>
+          </choice>
+          <choice desc="ppm">
+            <unit>dimensionless~ppm</unit>
+          </choice>
+          <choice desc="-">
+            <unit>dimensionless~none</unit>
+          </choice>
+        </choices>
+      </unit-group-desc>
+    </unit-groups-desc>
+  </desc>
+  <case-sets activeset="Cycle Run" activecase="Japan Mode 3 Midtown">
+    <case-set name="Cycle Run" label_template="">
+      <case name="Japan Mode 3 Midtown" label="">
+        <param name="Profile">
+          <element value="CRUISE_M: Element Pool»Parameter Values»Profiles»J M3 Midtown"/>
+        </param>
+        <param name="Vehicle_Task">
+          <element value="CRUISE_M: Element Pool»Parameter Values»Vehicle_Task»Cycle Run"/>
+        </param>
+        <scenario name="P1_ParCtrl">Neutral SoC</scenario>
+      </case>
+      <params/>
+    </case-set>
+  </case-sets>
+  <scenarios>
+    <scenario name="P1_ParCtrl" active="Neutral SoC">
+      <scenario-instance name="Free SoC">
+        <member name="layer_visible_2">
+          <bool>True</bool>
+        </member>
+        <member name="layer_active_2">
+          <bool>True</bool>
+        </member>
+        <member name="layer_active_1">
+          <bool>False</bool>
+        </member>
+        <member name="layer_visible_1">
+          <bool>False</bool>
+        </member>
+      </scenario-instance>
+      <scenario-instance name="Neutral SoC">
+        <member name="layer_visible_2">
+          <bool>False</bool>
+        </member>
+        <member name="layer_active_2">
+          <bool>False</bool>
+        </member>
+        <member name="layer_active_1">
+          <bool>True</bool>
+        </member>
+        <member name="layer_visible_1">
+          <bool>True</bool>
+        </member>
+      </scenario-instance>
+    </scenario>
+  </scenarios>
+</export-import>

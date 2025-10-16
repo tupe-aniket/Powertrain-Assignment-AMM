@@ -1,0 +1,387 @@
+{
+  "jobs": [
+    {
+      "base_dir": "c:/pt/powertrain-assignment-amm/cruise/task4_2",
+      "command": [
+        "$AVLAST_HOME/bin/cruise_batch",
+        "Task:Simulation",
+        "simulation",
+        "input/model.asix",
+        ""
+      ],
+      "cores": 1,
+      "env": {
+        "ASTFLEX_LICENSEPOLICY": "dedicated",
+        "JMS_DB_URL": "mysql://ast:n0epsfob5yhukvacrx7mqzji1lg9dt8632w4@localhost:33340/jms",
+        "JMS_ENV__JOBID": "8",
+        "JMS_RPC_URL": "https://M8sdUn6gcLSvydOG1pxNrIEVoXuSRvBK@localhost:64093/",
+        "OMP_NUM_THREADS": "1",
+        "SUBMISSION_ORIGIN": "multi",
+        "USE_TEMP_DIR": "/simulation/temp/c04023_hev_p1_amt_fwd/simulation_s~port_model_3"
+      },
+      "files_in": [
+        "simulation/C04023_HEV_P1_AMT_FWD/P1_ParCtrl.Cycle_Run.NEDC/parameters.xml",
+        "simulation/C04023_HEV_P1_AMT_FWD/P1_ParCtrl.Cycle_Run.NEDC/params.xml",
+        "simulation/C04023_HEV_P1_AMT_FWD/P1_ParCtrl.Cycle_Run.NEDC/input/model.asix",
+        "simulation/C04023_HEV_P1_AMT_FWD/P1_ParCtrl.Cycle_Run.NEDC/input/model.hash",
+        "simulation/C04023_HEV_P1_AMT_FWD/P1_ParCtrl.Cycle_Run.NEDC/input/structure.ppf",
+        "simulation/C04023_HEV_P1_AMT_FWD/P1_ParCtrl.Cycle_Run.NEDC/results/results.ppd"
+      ],
+      "files_out": [
+        {
+          "action": "skip",
+          "type": "default"
+        },
+        {
+          "action": "skip",
+          "rx": "input/.*",
+          "type": "rx"
+        },
+        {
+          "action": "pick",
+          "rx": ".*\\.(out|f04|f06|nas|job|log|fla)",
+          "type": "rx"
+        },
+        {
+          "action": "pick",
+          "rx": "jobstate[^/]*",
+          "type": "rx"
+        },
+        {
+          "action": "pick",
+          "rx": "state",
+          "type": "rx"
+        },
+        {
+          "action": "pick",
+          "rx": "[^/.]+/.*",
+          "type": "rx"
+        },
+        {
+          "action": "pick",
+          "rx": "fs-t.meta",
+          "type": "rx"
+        }
+      ],
+      "id": "9LLifWrlT3qgMkZWAMmY3A",
+      "labels": {
+        "case": "NEDC",
+        "caseset": "Cycle Run",
+        "job": "Task:Simulation",
+        "model": "P1 ParCtrl",
+        "product": "AVL CRUISE\u2122 M",
+        "product_version": "2025.1",
+        "project": "P1 ParCtrl"
+      },
+      "name": "Task:Simulation",
+      "nid": null,
+      "predecessors": [],
+      "queue": {},
+      "run": {
+        "id": "O_YRIp41QvSKL8X45Prt1w",
+        "name": "C04023_HEV_P1_AMT_FWD 2025-10-16 13:43:00"
+      },
+      "streams_out": [
+        {
+          "action": "skip",
+          "type": "default"
+        },
+        {
+          "action": "pick",
+          "rx": "log/.*",
+          "type": "rx"
+        },
+        {
+          "action": "pick",
+          "rx": "logs/.*",
+          "type": "rx"
+        },
+        {
+          "action": "pick",
+          "rx": "log/cruise\\.log",
+          "type": "rx"
+        },
+        {
+          "action": "pick",
+          "rx": "simulation\\.out",
+          "type": "rx"
+        }
+      ],
+      "use_python": false,
+      "wd": "simulation/C04023_HEV_P1_AMT_FWD/P1_ParCtrl.Cycle_Run.NEDC",
+      "wipe": false
+    },
+    {
+      "base_dir": "c:/pt/powertrain-assignment-amm/cruise/task4_2",
+      "command": [
+        "$AVLAST_HOME/bin/cruise_batch",
+        "Task:Simulation",
+        "simulation",
+        "input/model.asix",
+        ""
+      ],
+      "cores": 1,
+      "env": {
+        "ASTFLEX_LICENSEPOLICY": "dedicated",
+        "JMS_DB_URL": "mysql://ast:n0epsfob5yhukvacrx7mqzji1lg9dt8632w4@localhost:33340/jms",
+        "JMS_ENV__JOBID": "9",
+        "JMS_RPC_URL": "https://M8sdUn6gcLSvydOG1pxNrIEVoXuSRvBK@localhost:64093/",
+        "OMP_NUM_THREADS": "1",
+        "SUBMISSION_ORIGIN": "multi",
+        "USE_TEMP_DIR": "/simulation/temp/c04023_hev_p1_amt_fwd/simulation_s~port_model_3"
+      },
+      "files_in": [
+        "simulation/C04023_HEV_P1_AMT_FWD/P1_ParCtrl.Performance.FLA/parameters.xml",
+        "simulation/C04023_HEV_P1_AMT_FWD/P1_ParCtrl.Performance.FLA/params.xml",
+        "simulation/C04023_HEV_P1_AMT_FWD/P1_ParCtrl.Performance.FLA/input/model.asix",
+        "simulation/C04023_HEV_P1_AMT_FWD/P1_ParCtrl.Performance.FLA/input/model.hash",
+        "simulation/C04023_HEV_P1_AMT_FWD/P1_ParCtrl.Performance.FLA/input/structure.ppf",
+        "simulation/C04023_HEV_P1_AMT_FWD/P1_ParCtrl.Performance.FLA/results/results.ppd"
+      ],
+      "files_out": [
+        {
+          "action": "skip",
+          "type": "default"
+        },
+        {
+          "action": "skip",
+          "rx": "input/.*",
+          "type": "rx"
+        },
+        {
+          "action": "pick",
+          "rx": ".*\\.(out|f04|f06|nas|job|log|fla)",
+          "type": "rx"
+        },
+        {
+          "action": "pick",
+          "rx": "jobstate[^/]*",
+          "type": "rx"
+        },
+        {
+          "action": "pick",
+          "rx": "state",
+          "type": "rx"
+        },
+        {
+          "action": "pick",
+          "rx": "[^/.]+/.*",
+          "type": "rx"
+        },
+        {
+          "action": "pick",
+          "rx": "fs-t.meta",
+          "type": "rx"
+        }
+      ],
+      "id": "5NUCAOSeQNiJ7bEjSBN3HA",
+      "labels": {
+        "case": "FLA",
+        "caseset": "Performance",
+        "job": "Task:Simulation",
+        "model": "P1 ParCtrl",
+        "product": "AVL CRUISE\u2122 M",
+        "product_version": "2025.1",
+        "project": "P1 ParCtrl"
+      },
+      "name": "Task:Simulation",
+      "nid": null,
+      "predecessors": [],
+      "queue": {},
+      "run": {
+        "id": "O_YRIp41QvSKL8X45Prt1w",
+        "name": "C04023_HEV_P1_AMT_FWD 2025-10-16 13:43:00"
+      },
+      "streams_out": [
+        {
+          "action": "skip",
+          "type": "default"
+        },
+        {
+          "action": "pick",
+          "rx": "log/.*",
+          "type": "rx"
+        },
+        {
+          "action": "pick",
+          "rx": "logs/.*",
+          "type": "rx"
+        },
+        {
+          "action": "pick",
+          "rx": "log/cruise\\.log",
+          "type": "rx"
+        },
+        {
+          "action": "pick",
+          "rx": "simulation\\.out",
+          "type": "rx"
+        }
+      ],
+      "use_python": false,
+      "wd": "simulation/C04023_HEV_P1_AMT_FWD/P1_ParCtrl.Performance.FLA",
+      "wipe": false
+    }
+  ],
+  "meta": {
+    "date": {
+      "_isoformat": "2025-10-16T12:43:02.391843"
+    },
+    "host": "37PCL027",
+    "tool": "jmx",
+    "user": "aniket.tupe.155",
+    "version": "1.7.0"
+  },
+  "pi": {
+    "jmsdb": "mysql://ast:n0epsfob5yhukvacrx7mqzji1lg9dt8632w4@localhost:33340/jms"
+  },
+  "settings": {
+    "background_preparation": false,
+    "cores_per_job": 1,
+    "env": {},
+    "hooks": [],
+    "immediate_jobs": false,
+    "kpis": {
+      "append_kpis": false,
+      "eval_kpis": false
+    },
+    "licensing": {
+      "cputime_limit": null,
+      "lifetime_limit": null,
+      "policy": "dedicated",
+      "queuing_interval": null,
+      "queuing_timeout": null
+    },
+    "mpi": {
+      "cores_per_host": null,
+      "gpu_cores_per_host": null,
+      "hosts": [],
+      "mode": "mpi"
+    },
+    "parallel_jobs": null,
+    "resources": {
+      "active": "hosts",
+      "cloud": {
+        "concurrency": null,
+        "custom_job_template": null,
+        "custom_project_file": null,
+        "custom_run_script": null,
+        "endpoint": "https://apis.avl.com/sim/api/v1/",
+        "os": null,
+        "results": "all",
+        "token": ""
+      },
+      "custom_queue": {
+        "avlast_home": "",
+        "copy_from": true,
+        "copy_to": true,
+        "delay": "",
+        "email": "",
+        "extra_options": "#PBS -l select=1:ncpus=1:mpiprocs=1",
+        "iodirectory": "",
+        "job_name": "jmsjob",
+        "map_dirs": true,
+        "master_host": "",
+        "mode": "queue",
+        "periodic_copy": true,
+        "product": "pbs",
+        "queue": "",
+        "remove_files": false,
+        "user": "",
+        "walltime": ""
+      },
+      "grids": [],
+      "hosts": [
+        {
+          "base_dir": "",
+          "comment": "",
+          "connection": {
+            "jmx_args": "",
+            "ssh_args": "-o BatchMode=yes",
+            "ssh_binary": "",
+            "ssh_identity": "",
+            "ssh_jmx": "",
+            "ssh_user_host": ""
+          },
+          "cores": 20,
+          "hostinfo": null,
+          "name": "localhost",
+          "platforms": [],
+          "ts": null
+        },
+        {
+          "base_dir": "",
+          "comment": "",
+          "connection": {
+            "jmx_args": "",
+            "ssh_args": "-o BatchMode=yes",
+            "ssh_binary": "",
+            "ssh_identity": "",
+            "ssh_jmx": "",
+            "ssh_user_host": ""
+          },
+          "cores": 28,
+          "hostinfo": {
+            "cpus": {
+              "logical": 28,
+              "physical": 28
+            },
+            "env": {
+              "AVLAST_HOME": "C:\\Program Files (x86)\\AVL\\R2025.1",
+              "VERSION": "R2025.1"
+            },
+            "jmx": {
+              "cmdline": [
+                "jmx",
+                "--client=CRUISE M"
+              ],
+              "version": "1.7.0"
+            },
+            "mem": {
+              "total": 0
+            },
+            "platforms": [
+              "x86_64-unknown-winnt_vs22",
+              "ia32-unknown-winnt_vs22"
+            ],
+            "products": [
+              {
+                "name": "CRUISE M",
+                "version": "v2025.1"
+              },
+              {
+                "name": "Model.CONNECT",
+                "version": "v2025.1"
+              }
+            ],
+            "uname": {
+              "machine": "AMD64",
+              "node": "37PCL027",
+              "processor": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+              "release": "10",
+              "system": "Windows",
+              "version": "10.0.26100"
+            }
+          },
+          "name": "localhost",
+          "platforms": [
+            "ia32-unknown-winnt_vs22",
+            "x86_64-unknown-winnt_vs22"
+          ],
+          "ts": 1760611107.474232
+        }
+      ],
+      "manual": {
+        "type": "nodb"
+      },
+      "selected_grids": [],
+      "selected_hosts": [
+        {
+          "name": "localhost"
+        }
+      ]
+    },
+    "sequential_cases": false,
+    "snapshots": true
+  }
+}

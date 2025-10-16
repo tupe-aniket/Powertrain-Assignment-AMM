@@ -3094,7 +3094,7 @@ ENDSECTION
 SECTION MESSAGES     1
 MESSAGE
 RUNINFO      1 CONTROL      1 BOOST       0.00 DEGCRA
- System date and time : 15.10.2025 11:59:19
+ System date and time : 16.10.2025 11:44:48
 ENDOFMESSAGE
 MESSAGE
 RUNINFO      2 CONTROL      2 BOOST       0.00 DEGCRA
@@ -18174,12 +18174,12 @@ SECTION SUMMARY     1
 
 LICENSE
 -------
- sys_1DCFD_solver 2022.0@ License will expire in 217 days
+ sys_1DCFD_solver 2022.0@ License will expire in 216 days
 
 PROJECT
 -------
  Preprocessor Version :  2022.1
- Calculation date     : 15.10.2025
+ Calculation date     : 16.10.2025
  File     : Nissan_vr38DETT_PFi_biturbo.bst
  Case Set : "Case Set 1"
  Case     : "Case 7000"
@@ -18607,10 +18607,10 @@ Effective Torque          :    249.66 Nm                    Effective Specific T
 Effective Power           :    183.01 kW,       248.82 PS   Effective Specific Power  :    183.17 kW/l,     249.05 PS/l
 
 Required time for reading the inputfile and initialisation:       0.07 min
-Required time for the calculation: .........................      0.07 min
+Required time for the calculation: .........................      0.08 min
 Required time for writing the outputfile: ..................      0.00 min
-Required total time: .......................................      0.14 min
-Required total CPU-time: ...................................      4.14 sec
+Required total time: .......................................      0.15 min
+Required total CPU-time: ...................................      4.02 sec
 ENDSECTION
 #
 #
@@ -18629,11 +18629,11 @@ SECTION XML_SUMMARY
     <svalue name="PROJECT">"4-Cylinder"</svalue>
     <svalue name="RUN">"WOT"</svalue>
     <svalue name="DATE">"7.3.2000"</svalue>
-    <dvalue name="INPUT_CPU_TIME" unit="s">4.20700000</dvalue>
-    <dvalue name="CALCULATION_CPU_TIME" unit="s">4.41200000</dvalue>
+    <dvalue name="INPUT_CPU_TIME" unit="s">4.20400000</dvalue>
+    <dvalue name="CALCULATION_CPU_TIME" unit="s">4.62000000</dvalue>
     <dvalue name="OUTPUT_CPU_TIME" unit="s">0.02200000</dvalue>
-    <dvalue name="TOTAL_CPU_TIME" unit="s">8.64100000</dvalue>
-    <dvalue name="REQUIRED_CPU_TIME" unit="s">4.14062500</dvalue>
+    <dvalue name="TOTAL_CPU_TIME" unit="s">8.84600000</dvalue>
+    <dvalue name="REQUIRED_CPU_TIME" unit="s">4.01562500</dvalue>
     <dvalue name="INDICATED_TORQUE" unit="Nm">263.96824458</dvalue>
     <dvalue name="INDICATED_SPECIFIC_TORQUE" unit="Nm/l">264.20524776</dvalue>
     <dvalue name="INDICATED_POWER" unit="kW">193.49882953</dvalue>
