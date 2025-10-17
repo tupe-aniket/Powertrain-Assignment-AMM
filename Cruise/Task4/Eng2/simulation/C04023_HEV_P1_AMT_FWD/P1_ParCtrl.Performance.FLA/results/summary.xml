@@ -106,7 +106,7 @@
     </section>
     <section name="Solid Wall Circuits" title="Solid Wall Circuits" component="Generic Solid Wall Circuits" element_uid="all_solid_wall_circuits_uid">
       <svalue name="Components in all solidwall circuits" title="Components in all solidwall circuits">ICE(Map based engine), Clutch(Clutch), E-Network 48V/E-Consumer(Power consumer), E-Network 48V/Battery(Equivalent circuit model)</svalue>
-      <dvalue name="Energy exchanged constant" title="Energy exchanged constant" unit="work~J">2.9165e+06</dvalue>
+      <dvalue name="Energy exchanged constant" title="Energy exchanged constant" unit="work~J">4.6480e+06</dvalue>
       <dvalue name="Energy exchanged variable" title="Energy exchanged variable" unit="work~J">0.0000e+00</dvalue>
       <ivalue name="Number of components" title="Number of components">4</ivalue>
       <ivalue name="Number of constant temperature solid walls" title="Number of constant temperature solid walls">4</ivalue>
@@ -120,16 +120,16 @@
       <svalue name="Components in circuit" title="Components in circuit">Vehicle(Vehicle), Brake FL(Brake), Node FL(Mechanical node), Brake FR(Brake), Node FR(Mechanical node), Clutch(Clutch), Gearbox(Gearbox), Node ICE(Mechanical node), Differential F(Differential), Final Drive F(Single ratio transmission), E-Network 48V/E-Motor P1(Electric motor with inverter), ICE(Map based engine), Wheel FL(Wheel), Wheel FR(Wheel), Brake RL(Brake), Wheel RL(Wheel), Brake RR(Brake), Wheel RR(Wheel)</svalue>
       <ivalue name="Number of components" title="Number of components">18</ivalue>
       <ivalue name="Number of unreduced DOFs" title="Number of unreduced DOFs">27</ivalue>
-      <dvalue name="Relative energy stored" title="Relative energy stored" unit="work~J">1.9141e+06</dvalue>
+      <dvalue name="Relative energy stored" title="Relative energy stored" unit="work~J">1.7088e+06</dvalue>
       <svalue name="component_type" title="Component Typename">Rotational mechanical circuit</svalue>
       <svalue name="result_group" title="Result Group">Circuits</svalue>
       <svalue name="result_name" title="Result Name">Vehicle circuit (Mechanical Circuit 1, Mechanical Circuit 2, Mechanical Circuit 3, Mechanical Circuit 4)</svalue>
     </section>
   </section>
   <section name="Clutch" title="Clutch" component="Clutch" uuid="92a1168c4bad4745869981b630c0d8da" element_uid="12abec8853c241be8d715a58762f9a0f">
-    <dvalue name="Energy loss" title="Energy loss" unit="work~J">-1.5166e+05</dvalue>
-    <dvalue name="Energy port in" title="Energy port in" unit="work~J">1.2356e+07</dvalue>
-    <dvalue name="Energy port out" title="Energy port out" unit="work~J">-1.2204e+07</dvalue>
+    <dvalue name="Energy loss" title="Energy loss" unit="work~J">-1.4655e+05</dvalue>
+    <dvalue name="Energy port in" title="Energy port in" unit="work~J">9.7397e+06</dvalue>
+    <dvalue name="Energy port out" title="Energy port out" unit="work~J">-9.5929e+06</dvalue>
     <svalue name="component_type" title="Component Typename">Clutch</svalue>
     <svalue name="result_name" title="Result Name">Clutch</svalue>
     <section name="Input" title="Input">
@@ -175,9 +175,9 @@
   </section>
   <section name="Differential F" title="Differential F" component="Differential" uuid="892899d751724016bf2edea064d72d3e" element_uid="b53b7048574c4c81ab1845b95648bc81">
     <dvalue name="Energy loss" title="Energy loss" unit="work~J">0.0000e+00</dvalue>
-    <dvalue name="Energy port in" title="Energy port in" unit="work~J">1.1589e+07</dvalue>
-    <dvalue name="Energy port out 1" title="Energy port out 1" unit="work~J">-5.7940e+06</dvalue>
-    <dvalue name="Energy port out 2" title="Energy port out 2" unit="work~J">-5.7940e+06</dvalue>
+    <dvalue name="Energy port in" title="Energy port in" unit="work~J">9.1119e+06</dvalue>
+    <dvalue name="Energy port out 1" title="Energy port out 1" unit="work~J">-4.5552e+06</dvalue>
+    <dvalue name="Energy port out 2" title="Energy port out 2" unit="work~J">-4.5552e+06</dvalue>
     <svalue name="component_type" title="Component Typename">Differential</svalue>
     <svalue name="result_name" title="Result Name">Differential F</svalue>
     <section name="Input" title="Input">
@@ -198,12 +198,12 @@
       <svalue name="result_name" title="Result Name">48V Bus</svalue>
     </section>
     <section name="Battery" title="Battery" component="Equivalent circuit model" uuid="b8b1757f367a422f824051c3bf2636f3" element_uid="03efd55fc8204705bff48eaaa536569e">
-      <dvalue name="Charge" title="Charge" unit="charge~As">1.648e+05</dvalue>
+      <dvalue name="Charge" title="Charge" unit="charge~As">1.619e+05</dvalue>
       <dvalue name="Energy (charging and loss)" title="Energy (charging and loss)" unit="work~J">0.0000e+00</dvalue>
-      <dvalue name="Energy (discharging and loss)" title="Energy (discharging and loss)" unit="work~J">-1.1019e+06</dvalue>
-      <dvalue name="Energy consumption" title="Energy consumption" unit="work~J">1.1019e+06</dvalue>
-      <dvalue name="Energy loss" title="Energy loss" unit="work~J">-3.3655e+04</dvalue>
-      <dvalue name="State of charge" title="State of charge" unit="dimensionless~no">5.7210709e-01</dvalue>
+      <dvalue name="Energy (discharging and loss)" title="Energy (discharging and loss)" unit="work~J">-1.2437e+06</dvalue>
+      <dvalue name="Energy consumption" title="Energy consumption" unit="work~J">1.2437e+06</dvalue>
+      <dvalue name="Energy loss" title="Energy loss" unit="work~J">-3.5819e+04</dvalue>
+      <dvalue name="State of charge" title="State of charge" unit="dimensionless~no">5.6200079e-01</dvalue>
       <svalue name="component_type" title="Component Typename">Equivalent circuit model</svalue>
       <svalue name="result_group" title="Result Group">E-Network 48V</svalue>
       <svalue name="result_name" title="Result Name">Battery</svalue>
@@ -247,7 +247,7 @@
       </section>
     </section>
     <section name="E-Consumer" title="E-Consumer" component="Power consumer" uuid="1c680950fcfc4a76b6d6a8b8d2e1c1e7" element_uid="a6e372684a594840b5d3451ce8bef29d">
-      <dvalue name="Energy loss" title="Energy loss" unit="work~J">-2.9691e+04</dvalue>
+      <dvalue name="Energy loss" title="Energy loss" unit="work~J">-3.5070e+04</dvalue>
       <svalue name="component_type" title="Component Typename">Power consumer</svalue>
       <svalue name="result_group" title="Result Group">E-Network 48V</svalue>
       <svalue name="result_name" title="Result Name">E-Consumer</svalue>
@@ -267,8 +267,8 @@
       </section>
     </section>
     <section name="E-Motor P1" title="E-Motor P1" component="Electric motor with inverter" uuid="dd96d4a663a64dec8180b6099da28d3b" element_uid="d334b27011874c64a19b9883a7fd2867">
-      <dvalue name="Energy exchanged" title="Energy exchanged" unit="work~J">1.0385e+06</dvalue>
-      <dvalue name="Energy loss" title="Energy loss" unit="work~J">-2.4871e+05</dvalue>
+      <dvalue name="Energy exchanged" title="Energy exchanged" unit="work~J">1.1728e+06</dvalue>
+      <dvalue name="Energy loss" title="Energy loss" unit="work~J">-2.2793e+05</dvalue>
       <svalue name="component_type" title="Component Typename">Electric motor with inverter</svalue>
       <svalue name="result_group" title="Result Group">E-Network 48V</svalue>
       <svalue name="result_name" title="Result Name">E-Motor P1</svalue>
@@ -306,8 +306,8 @@
   </section>
   <section name="Final Drive F" title="Final Drive F" component="Single ratio transmission" uuid="41f2a597c9624f0cb88075395231530f" element_uid="584d9b9a9f074d459170f5787ae660c9">
     <dvalue name="Energy loss" title="Energy loss" unit="work~J">0.0000e+00</dvalue>
-    <dvalue name="Energy port in" title="Energy port in" unit="work~J">1.1592e+07</dvalue>
-    <dvalue name="Energy port out" title="Energy port out" unit="work~J">-1.1589e+07</dvalue>
+    <dvalue name="Energy port in" title="Energy port in" unit="work~J">9.1129e+06</dvalue>
+    <dvalue name="Energy port out" title="Energy port out" unit="work~J">-9.1119e+06</dvalue>
     <svalue name="component_type" title="Component Typename">Single ratio transmission</svalue>
     <svalue name="result_name" title="Result Name">Final Drive F</svalue>
     <section name="Input" title="Input">
@@ -316,15 +316,15 @@
         <dvalue name="Moment of inertia out" title="Moment of inertia out" unit="mom_inert~kgm2">1.80000e-02</dvalue>
       </section>
       <section name="Transmission Ratio" title="Transmission Ratio">
-        <dvalue name="Ratio" title="Ratio" unit="dimensionless~no">3.3000000e+00</dvalue>
+        <dvalue name="Ratio" title="Ratio" unit="dimensionless~no">1.5000000e+00</dvalue>
       </section>
     </section>
   </section>
   <section name="Gearbox" title="Gearbox" component="Gearbox" uuid="e3c381fbbc6b4132a3a8c6c103c5c4a4" element_uid="92a3d22de4124940a5f341a66c84848f">
-    <dvalue name="Energy loss" title="Energy loss" unit="work~J">-6.1019e+05</dvalue>
-    <dvalue name="Energy port in" title="Energy port in" unit="work~J">1.2204e+07</dvalue>
-    <dvalue name="Energy port out" title="Energy port out" unit="work~J">-1.1592e+07</dvalue>
-    <dvalue name="Number of forward gears" title="Number of forward gears">7.0000000e+00</dvalue>
+    <dvalue name="Energy loss" title="Energy loss" unit="work~J">-4.7964e+05</dvalue>
+    <dvalue name="Energy port in" title="Energy port in" unit="work~J">9.5929e+06</dvalue>
+    <dvalue name="Energy port out" title="Energy port out" unit="work~J">-9.1129e+06</dvalue>
+    <dvalue name="Number of forward gears" title="Number of forward gears">6.0000000e+00</dvalue>
     <dvalue name="Number of reverse gears" title="Number of reverse gears">0.0000000e+00</dvalue>
     <svalue name="component_type" title="Component Typename">Gearbox</svalue>
     <svalue name="result_name" title="Result Name">Gearbox</svalue>
@@ -416,9 +416,9 @@
       <svalue name="result_name" title="Result Name">Parameters P1</svalue>
     </section>
     <section name="Recuperation Factor" title="Recuperation Factor" component="Map" uuid="c190df9a7b2a4c6eb5620842f42198fc" element_uid="cb6f0da309084327b62de510bc331545">
-      <ivalue name="Number of extrapolations for table 'Characteristic'" title="Number of extrapolations for table 'Characteristic'">9865</ivalue>
-      <dvalue name="Total time in extrapolation mode" title="Total time in extrapolation mode" unit="time~s">9.8620e+01</dvalue>
-      <dvalue name="Total time in extrapolation mode - relative" title="Total time in extrapolation mode - relative" unit="dimensionless~none">9.9646357e-01</dvalue>
+      <ivalue name="Number of extrapolations for table 'Characteristic'" title="Number of extrapolations for table 'Characteristic'">11542</ivalue>
+      <dvalue name="Total time in extrapolation mode" title="Total time in extrapolation mode" unit="time~s">1.1539e+02</dvalue>
+      <dvalue name="Total time in extrapolation mode - relative" title="Total time in extrapolation mode - relative" unit="dimensionless~none">9.8708298e-01</dvalue>
       <svalue name="component_type" title="Component Typename">Map</svalue>
       <svalue name="result_group" title="Result Group">HCU P1</svalue>
       <svalue name="result_name" title="Result Name">Recuperation Factor</svalue>
@@ -516,11 +516,11 @@
     </section>
   </section>
   <section name="ICE" title="ICE" component="Map based engine" uuid="f2d42fc0930c4e8d96dcca38e86a054b" element_uid="22c0bf5255364069b17ee6b976bf8000">
-    <dvalue name="Cumulated mass CO2 emission" title="Cumulated mass CO2 emission" unit="mass~kg">1.2543415e+00</dvalue>
-    <dvalue name="Cumulated volume fuel consumption" title="Cumulated volume fuel consumption" unit="volume~m3">5.2213556e-04</dvalue>
-    <dvalue name="Energy exchanged" title="Energy exchanged" unit="work~J">1.1586e+07</dvalue>
-    <dvalue name="Overall BSFC" title="Overall BSFC" unit="spec_mass_flow~g_kWh">1.2134221e+02</dvalue>
-    <dvalue name="Overall efficiency" title="Overall efficiency" unit="dimensionless~no">6.8202663e+01</dvalue>
+    <dvalue name="Cumulated mass CO2 emission" title="Cumulated mass CO2 emission" unit="mass~kg">1.3044198e+00</dvalue>
+    <dvalue name="Cumulated volume fuel consumption" title="Cumulated volume fuel consumption" unit="volume~m3">5.4298130e-04</dvalue>
+    <dvalue name="Energy exchanged" title="Energy exchanged" unit="work~J">8.8071e+06</dvalue>
+    <dvalue name="Overall BSFC" title="Overall BSFC" unit="spec_mass_flow~g_kWh">1.6600575e+02</dvalue>
+    <dvalue name="Overall efficiency" title="Overall efficiency" unit="dimensionless~no">4.9852863e+01</dvalue>
     <svalue name="component_type" title="Component Typename">Map based engine</svalue>
     <svalue name="result_name" title="Result Name">ICE</svalue>
     <section name="Input" title="Input">
@@ -577,19 +577,19 @@
     </section>
   </section>
   <section name="Model Results" title="Model Results">
-    <dvalue name="spec_CO2_emission" title="CO2 (g_km)" unit="g_km">2.1459489e+02</dvalue>
-    <dvalue name="spec_energy_cons_consum_kWh_100kmE-Consumer" title="E-Consumer - Efficiency (kWh_100km)" unit="kWh_100km">1.4109964e-01</dvalue>
-    <dvalue name="spec_energy_cons_consum_kWh_kmE-Consumer" title="E-Consumer - Efficiency (kWh_km)" unit="kWh_km">1.4109964e-03</dvalue>
-    <dvalue name="spec_energy_cons_consum_kWh_miE-Consumer" title="E-Consumer - Efficiency (kWh_mile)" unit="kWh_mile">1.4109964e-03</dvalue>
-    <dvalue name="spec_energy_cons_em_kWh_100km" title="Electric motor efficiency (kWh_100km)" unit="kWh_100km">4.9353554e+00</dvalue>
-    <dvalue name="spec_energy_cons_em_kWh_km" title="Electric motor efficiency (kWh_km)" unit="kWh_km">4.9353554e-02</dvalue>
-    <dvalue name="spec_energy_cons_em_kWh_mi" title="Electric motor efficiency (kWh_mile)" unit="kWh_mile">7.9426845e-02</dvalue>
-    <dvalue name="spec_energy_cons_kWh_100km" title="Efficiency (kWh_100km)" unit="kWh_100km">5.2363917e+00</dvalue>
-    <dvalue name="spec_energy_cons_kWh_km" title="Efficiency (kWh_km)" unit="kWh_km">5.2363917e-02</dvalue>
-    <dvalue name="spec_energy_cons_kWh_mi" title="Efficiency (kWh_mile)" unit="kWh_mile">8.4271556e-02</dvalue>
-    <dvalue name="spec_fuel_cons_km_l" title="Fuel economy (km_l)" unit="km_l">1.1194718e+01</dvalue>
-    <dvalue name="spec_fuel_cons_l_100km" title="Fuel economy (l_100km)" unit="l_100km">8.9327846e+00</dvalue>
-    <dvalue name="spec_fuel_cons_miles_USgal" title="Fuel economy (US_mpg)" unit="mile_USgal">2.6331596e+01</dvalue>
+    <dvalue name="spec_CO2_emission" title="CO2 (g_km)" unit="g_km">2.2633824e+02</dvalue>
+    <dvalue name="spec_energy_cons_consum_kWh_100kmE-Consumer" title="E-Consumer - Efficiency (kWh_100km)" unit="kWh_100km">1.6903391e-01</dvalue>
+    <dvalue name="spec_energy_cons_consum_kWh_kmE-Consumer" title="E-Consumer - Efficiency (kWh_km)" unit="kWh_km">1.6903391e-03</dvalue>
+    <dvalue name="spec_energy_cons_consum_kWh_miE-Consumer" title="E-Consumer - Efficiency (kWh_mile)" unit="kWh_mile">1.6903391e-03</dvalue>
+    <dvalue name="spec_energy_cons_em_kWh_100km" title="Electric motor efficiency (kWh_100km)" unit="kWh_100km">5.6526760e+00</dvalue>
+    <dvalue name="spec_energy_cons_em_kWh_km" title="Electric motor efficiency (kWh_km)" unit="kWh_km">5.6526760e-02</dvalue>
+    <dvalue name="spec_energy_cons_em_kWh_mi" title="Electric motor efficiency (kWh_mile)" unit="kWh_mile">9.0971002e-02</dvalue>
+    <dvalue name="spec_energy_cons_kWh_100km" title="Efficiency (kWh_100km)" unit="kWh_100km">5.9943562e+00</dvalue>
+    <dvalue name="spec_energy_cons_kWh_km" title="Efficiency (kWh_km)" unit="kWh_km">5.9943562e-02</dvalue>
+    <dvalue name="spec_energy_cons_kWh_mi" title="Efficiency (kWh_mile)" unit="kWh_mile">9.6469812e-02</dvalue>
+    <dvalue name="spec_fuel_cons_km_l" title="Fuel economy (km_l)" unit="km_l">1.0613890e+01</dvalue>
+    <dvalue name="spec_fuel_cons_l_100km" title="Fuel economy (l_100km)" unit="l_100km">9.4216167e+00</dvalue>
+    <dvalue name="spec_fuel_cons_miles_USgal" title="Fuel economy (US_mpg)" unit="mile_USgal">2.4965405e+01</dvalue>
   </section>
   <section name="Node FL" title="Node FL" component="Mechanical node" uuid="1c4dc7bb8fb848e1bb6a2ce1c955c2a1" element_uid="468aeeedc2b6454ea1f511e33b1d2ea5">
     <svalue name="component_type" title="Component Typename">Mechanical node</svalue>
@@ -620,16 +620,16 @@
   </section>
   <section name="Solver" title="Solver">
     <section name="CS Master" title="CS Master" component="Settings" uuid="1a9f36675b8243b28f6bff0fd1f0c5b7" element_uid="e111a3670d5e4dfba5ef984573f0c22e">
-      <dvalue name="Elapsed Time" title="Elapsed Time" unit="time~s">1.2810e+00</dvalue>
-      <dvalue name="End Time" title="End Time" unit="time~s">9.8970e+01</dvalue>
-      <dvalue name="Simulated time difference" title="Simulated time difference" unit="time~s">9.8970e+01</dvalue>
+      <dvalue name="Elapsed Time" title="Elapsed Time" unit="time~s">1.4720e+00</dvalue>
+      <dvalue name="End Time" title="End Time" unit="time~s">1.1690e+02</dvalue>
+      <dvalue name="Simulated time difference" title="Simulated time difference" unit="time~s">1.1690e+02</dvalue>
       <svalue name="component_type" title="Component Typename">Settings</svalue>
       <svalue name="result_group" title="Result Group">Solver</svalue>
       <svalue name="result_name" title="Result Name">CS Master</svalue>
     </section>
     <section name="Solver 0(solver settings: Global)" title="Solver 0(solver settings: Global)" component="Solver" element_uid="element_uid1">
       <svalue name="Circuits in solver" title="Circuits in solver">Vehicle circuit (Mechanical Circuit 1, Mechanical Circuit 2, Mechanical Circuit 3, Mechanical Circuit 4), Electric circuit 1, Thermal circuit: ICE, Thermal circuit: Clutch, Thermal circuit: E-Network 48V/E-Consumer, Thermal circuit: E-Network 48V/Battery, HTCU P1 AMT /Total Torque, HCU P1/E-Drive P1, HCU P1/LPM P1, Cockpit, Vehicle Task/FLA/Driver, HCU P1/Torque Assist P1, HCU P1/Hybrid Mode P1, Vehicle Task/FLA/Environment, HCU P1/Boost P1, HTCU P1 AMT /Torque Output, Vehicle Task/FLA KPI, Time integration (internal)</svalue>
-      <ivalue name="Cumulative number of internal steps" title="Cumulative number of internal steps">9914</ivalue>
+      <ivalue name="Cumulative number of internal steps" title="Cumulative number of internal steps">11705</ivalue>
       <svalue name="Equation system 1" title="Equation system 1">Vehicle circuit (Mechanical Circuit 1, Mechanical Circuit 2, Mechanical Circuit 3, Mechanical Circuit 4)</svalue>
       <svalue name="Equation system 10" title="Equation system 10">Cockpit</svalue>
       <svalue name="Equation system 11" title="Equation system 11">Vehicle Task/FLA/Driver</svalue>
@@ -650,30 +650,30 @@
       <svalue name="Equation system 9" title="Equation system 9">HCU P1/LPM P1</svalue>
       <ivalue name="Number circuits in solver" title="Number circuits in solver">18</ivalue>
       <ivalue name="Number of calls to linear solver setup function" title="Number of calls to linear solver setup function">0</ivalue>
-      <ivalue name="Number of calls to r.h.s. function" title="Number of calls to r.h.s. function">19863</ivalue>
-      <ivalue name="Number of calls to root function" title="Number of calls to root function">10131</ivalue>
+      <ivalue name="Number of calls to r.h.s. function" title="Number of calls to r.h.s. function">23441</ivalue>
+      <ivalue name="Number of calls to root function" title="Number of calls to root function">11884</ivalue>
       <ivalue name="Number of equations (max)" title="Number of equations (max)">15</ivalue>
       <ivalue name="Number of equations (min)" title="Number of equations (min)">13</ivalue>
       <ivalue name="Number of local error test failures that have occurred" title="Number of local error test failures that have occurred">0</ivalue>
       <ivalue name="Number of nonlinear convergence failures" title="Number of nonlinear convergence failures">0</ivalue>
       <ivalue name="Number of nonlinear solver iteration" title="Number of nonlinear solver iteration">0</ivalue>
-      <ivalue name="Number of solver re-init" title="Number of solver re-init">54</ivalue>
+      <ivalue name="Number of solver re-init" title="Number of solver re-init">46</ivalue>
       <ivalue name="Number of solver setup" title="Number of solver setup">14</ivalue>
       <ivalue name="Number of time events" title="Number of time events">0</ivalue>
-      <ivalue name="Number of zero crossings found" title="Number of zero crossings found">17</ivalue>
+      <ivalue name="Number of zero crossings found" title="Number of zero crossings found">15</ivalue>
       <svalue name="component_type" title="Component Typename">Solver</svalue>
       <svalue name="result_group" title="Result Group">Solver</svalue>
       <svalue name="result_name" title="Result Name">Solver 0(solver settings: Global)</svalue>
       <section name="Nonlinear" title="Nonlinear">
-        <ivalue name="Number of Jacobian Evaluations" title="Number of Jacobian Evaluations">13703</ivalue>
-        <ivalue name="Sum Number Function Evaluations" title="Sum Number Function Evaluations">53921</ivalue>
-        <ivalue name="Sum Number Solver Iteration" title="Sum Number Solver Iteration">13958</ivalue>
+        <ivalue name="Number of Jacobian Evaluations" title="Number of Jacobian Evaluations">16631</ivalue>
+        <ivalue name="Sum Number Function Evaluations" title="Sum Number Function Evaluations">64174</ivalue>
+        <ivalue name="Sum Number Solver Iteration" title="Sum Number Solver Iteration">17093</ivalue>
       </section>
     </section>
   </section>
   <section name="Vehicle" title="Vehicle" component="Vehicle" uuid="fe103a3be58c406bb30e1b6273d4b22c" element_uid="7da77804a9164e0bba44a109ba762fac">
-    <dvalue name="Distance" title="Distance" unit="length~m">5.8451601e+03</dvalue>
-    <dvalue name="Position" title="Position" unit="length~m">5.8451601e+03</dvalue>
+    <dvalue name="Distance" title="Distance" unit="length~m">5.7631436e+03</dvalue>
+    <dvalue name="Position" title="Position" unit="length~m">5.7631436e+03</dvalue>
     <dvalue name="Weight" title="Weight" unit="mass~kg">8.0000000e+02</dvalue>
     <svalue name="component_type" title="Component Typename">Vehicle</svalue>
     <svalue name="result_name" title="Result Name">Vehicle</svalue>
@@ -717,7 +717,7 @@
       <section name="Driver" title="Driver" component="Driver" uuid="1180df9a7b2a4c9eb5620842f42198fc" element_uid="6aa17d78a7de43748749bd27dbad8a2b">
         <dvalue name="Average launch time" title="Average launch time" unit="time~s">0.0000e+00</dvalue>
         <dvalue name="Total clutch actuation time" title="Total clutch actuation time" unit="time~s">0.0000e+00</dvalue>
-        <dvalue name="Velocity integral square error" title="Velocity integral square error" unit="no_unit~none">3.6346190e+05</dvalue>
+        <dvalue name="Velocity integral square error" title="Velocity integral square error" unit="no_unit~none">3.1910331e+05</dvalue>
         <svalue name="component_type" title="Component Typename">Driver</svalue>
         <svalue name="result_group" title="Result Group">Vehicle Task/FLA</svalue>
         <svalue name="result_name" title="Result Name">Driver</svalue>
@@ -752,10 +752,10 @@
       </section>
     </section>
     <section name="FLA KPI" title="FLA KPI" component="Key performance indicators" uuid="cbf45b4871884c04a889ae592bf0697b" element_uid="85c47aeb3a1246f492bd0ebb9934b247">
-      <dvalue name="0_100kmh OUT" title="0_100kmh OUT" unit="time~s">5.8100e+00</dvalue>
-      <dvalue name="0_130kmh OUT" title="0_130kmh OUT" unit="time~s">8.2500e+00</dvalue>
-      <dvalue name="0_60kmh OUT" title="0_60kmh OUT" unit="time~s">2.8900e+00</dvalue>
-      <dvalue name="Peak OUT" title="Peak OUT" unit="velocity~km_h">2.4168e+02</dvalue>
+      <dvalue name="0_100kmh OUT" title="0_100kmh OUT" unit="time~s">1.7900e+01</dvalue>
+      <dvalue name="0_130kmh OUT" title="0_130kmh OUT" unit="time~s">2.3900e+01</dvalue>
+      <dvalue name="0_60kmh OUT" title="0_60kmh OUT" unit="time~s">1.0120e+01</dvalue>
+      <dvalue name="Peak OUT" title="Peak OUT" unit="velocity~km_h">2.2714e+02</dvalue>
       <svalue name="component_type" title="Component Typename">Key performance indicators</svalue>
       <svalue name="result_group" title="Result Group">Vehicle Task</svalue>
       <svalue name="result_name" title="Result Name">FLA KPI</svalue>
@@ -768,8 +768,8 @@
     </section>
   </section>
   <section name="Wheel FL" title="Wheel FL" component="Wheel" uuid="e47b991104114efbbb5cfd891041e1d8" element_uid="02ded9b2485a4cf49eba803dcdcdd5da">
-    <dvalue name="Energy port in (rotational)" title="Energy port in (rotational)" unit="work~J">5.7936e+06</dvalue>
-    <dvalue name="Energy port out (longitudinal)" title="Energy port out (longitudinal)" unit="work~J">-5.6678e+06</dvalue>
+    <dvalue name="Energy port in (rotational)" title="Energy port in (rotational)" unit="work~J">4.5548e+06</dvalue>
+    <dvalue name="Energy port out (longitudinal)" title="Energy port out (longitudinal)" unit="work~J">-4.5287e+06</dvalue>
     <svalue name="component_type" title="Component Typename">Wheel</svalue>
     <svalue name="result_name" title="Result Name">Wheel FL</svalue>
     <section name="Input" title="Input">
@@ -778,25 +778,22 @@
       </section>
       <section name="Rolling Radius" title="Rolling Radius">
         <section name="Dynamic Rolling Radius (constant)" title="Dynamic Rolling Radius (constant)">
-          <dvalue name="Dynamic rolling radius" title="Dynamic rolling radius" unit="length~m">3.1200000e-01</dvalue>
+          <dvalue name="Dynamic rolling radius" title="Dynamic rolling radius" unit="length~m">2.9000000e-01</dvalue>
         </section>
       </section>
       <section name="Settings" title="Settings">
-        <svalue name="Rolling resistance adjustment inflation pressure dependent" title="Rolling resistance adjustment inflation pressure dependent">unchecked</svalue>
-        <svalue name="Rolling resistance adjustment temperature dependent" title="Rolling resistance adjustment temperature dependent">unchecked</svalue>
-        <svalue name="Rolling resistance adjustment wheel load dependent" title="Rolling resistance adjustment wheel load dependent">unchecked</svalue>
-        <svalue name="Rolling resistance factor velocity dependent (Driving resistance: physical)" title="Rolling resistance factor velocity dependent (Driving resistance: physical)">checked</svalue>
+        <svalue name="Rolling resistance factor velocity dependent (Driving resistance: physical)" title="Rolling resistance factor velocity dependent (Driving resistance: physical)">unchecked</svalue>
       </section>
       <section name="Wheel Properties" title="Wheel Properties">
         <dvalue name="Friction coefficient of tire" title="Friction coefficient of tire" unit="no_unit~none">9.5000000e-01</dvalue>
-        <dvalue name="Reference wheel load" title="Reference wheel load" unit="force~N">3.40000e+03</dvalue>
+        <dvalue name="Reference wheel load" title="Reference wheel load" unit="force~N">1.96000e+03</dvalue>
         <dvalue name="Wheel load correction coefficient" title="Wheel load correction coefficient" unit="no_unit~none">0.0000000e+00</dvalue>
       </section>
     </section>
   </section>
   <section name="Wheel FR" title="Wheel FR" component="Wheel" uuid="e47b991104114efbbb5cfd891041e1d8" element_uid="093bf917f1cd44b2954b239d66c9a968">
-    <dvalue name="Energy port in (rotational)" title="Energy port in (rotational)" unit="work~J">5.7936e+06</dvalue>
-    <dvalue name="Energy port out (longitudinal)" title="Energy port out (longitudinal)" unit="work~J">-5.6678e+06</dvalue>
+    <dvalue name="Energy port in (rotational)" title="Energy port in (rotational)" unit="work~J">4.5548e+06</dvalue>
+    <dvalue name="Energy port out (longitudinal)" title="Energy port out (longitudinal)" unit="work~J">-4.5287e+06</dvalue>
     <svalue name="component_type" title="Component Typename">Wheel</svalue>
     <svalue name="result_name" title="Result Name">Wheel FR</svalue>
     <section name="Input" title="Input">
@@ -805,25 +802,22 @@
       </section>
       <section name="Rolling Radius" title="Rolling Radius">
         <section name="Dynamic Rolling Radius (constant)" title="Dynamic Rolling Radius (constant)">
-          <dvalue name="Dynamic rolling radius" title="Dynamic rolling radius" unit="length~m">3.1200000e-01</dvalue>
+          <dvalue name="Dynamic rolling radius" title="Dynamic rolling radius" unit="length~m">2.9000000e-01</dvalue>
         </section>
       </section>
       <section name="Settings" title="Settings">
-        <svalue name="Rolling resistance adjustment inflation pressure dependent" title="Rolling resistance adjustment inflation pressure dependent">unchecked</svalue>
-        <svalue name="Rolling resistance adjustment temperature dependent" title="Rolling resistance adjustment temperature dependent">unchecked</svalue>
-        <svalue name="Rolling resistance adjustment wheel load dependent" title="Rolling resistance adjustment wheel load dependent">unchecked</svalue>
-        <svalue name="Rolling resistance factor velocity dependent (Driving resistance: physical)" title="Rolling resistance factor velocity dependent (Driving resistance: physical)">checked</svalue>
+        <svalue name="Rolling resistance factor velocity dependent (Driving resistance: physical)" title="Rolling resistance factor velocity dependent (Driving resistance: physical)">unchecked</svalue>
       </section>
       <section name="Wheel Properties" title="Wheel Properties">
-        <dvalue name="Friction coefficient of tire" title="Friction coefficient of tire" unit="no_unit~none">9.5000000e-01</dvalue>
-        <dvalue name="Reference wheel load" title="Reference wheel load" unit="force~N">3.40000e+03</dvalue>
+        <dvalue name="Friction coefficient of tire" title="Friction coefficient of tire" unit="no_unit~none">1.0500000e+00</dvalue>
+        <dvalue name="Reference wheel load" title="Reference wheel load" unit="force~N">1.96000e+03</dvalue>
         <dvalue name="Wheel load correction coefficient" title="Wheel load correction coefficient" unit="no_unit~none">0.0000000e+00</dvalue>
       </section>
     </section>
   </section>
   <section name="Wheel RL" title="Wheel RL" component="Wheel" uuid="e47b991104114efbbb5cfd891041e1d8" element_uid="bc70ca33eb914d0186a15ff4af7a3efa">
-    <dvalue name="Energy port in (rotational)" title="Energy port in (rotational)" unit="work~J">-3.4403e+02</dvalue>
-    <dvalue name="Energy port out (longitudinal)" title="Energy port out (longitudinal)" unit="work~J">1.2614e+05</dvalue>
+    <dvalue name="Energy port in (rotational)" title="Energy port in (rotational)" unit="work~J">-3.2518e+02</dvalue>
+    <dvalue name="Energy port out (longitudinal)" title="Energy port out (longitudinal)" unit="work~J">2.4171e+04</dvalue>
     <svalue name="component_type" title="Component Typename">Wheel</svalue>
     <svalue name="result_name" title="Result Name">Wheel RL</svalue>
     <section name="Input" title="Input">
@@ -832,25 +826,22 @@
       </section>
       <section name="Rolling Radius" title="Rolling Radius">
         <section name="Dynamic Rolling Radius (constant)" title="Dynamic Rolling Radius (constant)">
-          <dvalue name="Dynamic rolling radius" title="Dynamic rolling radius" unit="length~m">3.1200000e-01</dvalue>
+          <dvalue name="Dynamic rolling radius" title="Dynamic rolling radius" unit="length~m">3.0300000e-01</dvalue>
         </section>
       </section>
       <section name="Settings" title="Settings">
-        <svalue name="Rolling resistance adjustment inflation pressure dependent" title="Rolling resistance adjustment inflation pressure dependent">unchecked</svalue>
-        <svalue name="Rolling resistance adjustment temperature dependent" title="Rolling resistance adjustment temperature dependent">unchecked</svalue>
-        <svalue name="Rolling resistance adjustment wheel load dependent" title="Rolling resistance adjustment wheel load dependent">unchecked</svalue>
-        <svalue name="Rolling resistance factor velocity dependent (Driving resistance: physical)" title="Rolling resistance factor velocity dependent (Driving resistance: physical)">checked</svalue>
+        <svalue name="Rolling resistance factor velocity dependent (Driving resistance: physical)" title="Rolling resistance factor velocity dependent (Driving resistance: physical)">unchecked</svalue>
       </section>
       <section name="Wheel Properties" title="Wheel Properties">
-        <dvalue name="Friction coefficient of tire" title="Friction coefficient of tire" unit="no_unit~none">9.5000000e-01</dvalue>
-        <dvalue name="Reference wheel load" title="Reference wheel load" unit="force~N">3.40000e+03</dvalue>
+        <dvalue name="Friction coefficient of tire" title="Friction coefficient of tire" unit="no_unit~none">1.0500000e+00</dvalue>
+        <dvalue name="Reference wheel load" title="Reference wheel load" unit="force~N">1.96000e+03</dvalue>
         <dvalue name="Wheel load correction coefficient" title="Wheel load correction coefficient" unit="no_unit~none">0.0000000e+00</dvalue>
       </section>
     </section>
   </section>
   <section name="Wheel RR" title="Wheel RR" component="Wheel" uuid="e47b991104114efbbb5cfd891041e1d8" element_uid="a382e0c85b394f56b3cebb692eee2039">
-    <dvalue name="Energy port in (rotational)" title="Energy port in (rotational)" unit="work~J">-3.4403e+02</dvalue>
-    <dvalue name="Energy port out (longitudinal)" title="Energy port out (longitudinal)" unit="work~J">1.2614e+05</dvalue>
+    <dvalue name="Energy port in (rotational)" title="Energy port in (rotational)" unit="work~J">-3.2518e+02</dvalue>
+    <dvalue name="Energy port out (longitudinal)" title="Energy port out (longitudinal)" unit="work~J">2.4171e+04</dvalue>
     <svalue name="component_type" title="Component Typename">Wheel</svalue>
     <svalue name="result_name" title="Result Name">Wheel RR</svalue>
     <section name="Input" title="Input">
@@ -859,18 +850,15 @@
       </section>
       <section name="Rolling Radius" title="Rolling Radius">
         <section name="Dynamic Rolling Radius (constant)" title="Dynamic Rolling Radius (constant)">
-          <dvalue name="Dynamic rolling radius" title="Dynamic rolling radius" unit="length~m">3.1200000e-01</dvalue>
+          <dvalue name="Dynamic rolling radius" title="Dynamic rolling radius" unit="length~m">3.0300000e-01</dvalue>
         </section>
       </section>
       <section name="Settings" title="Settings">
-        <svalue name="Rolling resistance adjustment inflation pressure dependent" title="Rolling resistance adjustment inflation pressure dependent">unchecked</svalue>
-        <svalue name="Rolling resistance adjustment temperature dependent" title="Rolling resistance adjustment temperature dependent">unchecked</svalue>
-        <svalue name="Rolling resistance adjustment wheel load dependent" title="Rolling resistance adjustment wheel load dependent">unchecked</svalue>
-        <svalue name="Rolling resistance factor velocity dependent (Driving resistance: physical)" title="Rolling resistance factor velocity dependent (Driving resistance: physical)">checked</svalue>
+        <svalue name="Rolling resistance factor velocity dependent (Driving resistance: physical)" title="Rolling resistance factor velocity dependent (Driving resistance: physical)">unchecked</svalue>
       </section>
       <section name="Wheel Properties" title="Wheel Properties">
-        <dvalue name="Friction coefficient of tire" title="Friction coefficient of tire" unit="no_unit~none">9.5000000e-01</dvalue>
-        <dvalue name="Reference wheel load" title="Reference wheel load" unit="force~N">3.40000e+03</dvalue>
+        <dvalue name="Friction coefficient of tire" title="Friction coefficient of tire" unit="no_unit~none">1.0500000e+00</dvalue>
+        <dvalue name="Reference wheel load" title="Reference wheel load" unit="force~N">1.96000e+03</dvalue>
         <dvalue name="Wheel load correction coefficient" title="Wheel load correction coefficient" unit="no_unit~none">0.0000000e+00</dvalue>
       </section>
     </section>

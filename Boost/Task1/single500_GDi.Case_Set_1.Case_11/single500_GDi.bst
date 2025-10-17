@@ -619,7 +619,7 @@ ENDSECTION
 SECTION MESSAGES     1
 MESSAGE
 RUNINFO      1 CONTROL      1 BOOST       0.00 DEGCRA
- System date and time : 13.10.2025 14:21:58
+ System date and time : 17.10.2025 01:32:06
 ENDOFMESSAGE
 MESSAGE
 RUNINFO      2 CONTROL      2 BOOST       0.00 DEGCRA
@@ -4461,12 +4461,12 @@ SECTION SUMMARY     1
 
 LICENSE
 -------
- sys_1DCFD_solver 2022.0@ License will expire in 219 days
+ sys_1DCFD_solver 2022.0@ License will expire in 215 days
 
 PROJECT
 -------
  Preprocessor Version :  2022.1
- Calculation date     : 13.10.2025
+ Calculation date     : 17.10.2025
  File     : single500_GDi.bst
  Case Set : "Case Set 1"
  Case     : "Case 11"
@@ -4774,10 +4774,10 @@ Effective Torque          :     46.26 Nm                    Effective Specific T
 Effective Power           :      9.69 kW,        13.17 PS   Effective Specific Power  :     19.39 kW/l,      26.37 PS/l
 
 Required time for reading the inputfile and initialisation:       0.07 min
-Required time for the calculation: .........................      0.13 min
+Required time for the calculation: .........................      0.04 min
 Required time for writing the outputfile: ..................      0.00 min
-Required total time: .......................................      0.21 min
-Required total CPU-time: ...................................      4.64 sec
+Required total time: .......................................      0.11 min
+Required total CPU-time: ...................................      2.28 sec
 ENDSECTION
 #
 #
@@ -4796,11 +4796,11 @@ SECTION XML_SUMMARY
     <svalue name="PROJECT">"4-Cylinder"</svalue>
     <svalue name="RUN">"WOT"</svalue>
     <svalue name="DATE">"7.3.2000"</svalue>
-    <dvalue name="INPUT_CPU_TIME" unit="s">4.46500000</dvalue>
-    <dvalue name="CALCULATION_CPU_TIME" unit="s">8.03100000</dvalue>
-    <dvalue name="OUTPUT_CPU_TIME" unit="s">0.01900000</dvalue>
-    <dvalue name="TOTAL_CPU_TIME" unit="s">12.51500000</dvalue>
-    <dvalue name="REQUIRED_CPU_TIME" unit="s">4.64062500</dvalue>
+    <dvalue name="INPUT_CPU_TIME" unit="s">4.17000000</dvalue>
+    <dvalue name="CALCULATION_CPU_TIME" unit="s">2.32100000</dvalue>
+    <dvalue name="OUTPUT_CPU_TIME" unit="s">0.00700000</dvalue>
+    <dvalue name="TOTAL_CPU_TIME" unit="s">6.49800000</dvalue>
+    <dvalue name="REQUIRED_CPU_TIME" unit="s">2.28125000</dvalue>
     <dvalue name="INDICATED_TORQUE" unit="Nm">49.89343419</dvalue>
     <dvalue name="INDICATED_SPECIFIC_TORQUE" unit="Nm/l">99.87531511</dvalue>
     <dvalue name="INDICATED_POWER" unit="kW">10.44965642</dvalue>

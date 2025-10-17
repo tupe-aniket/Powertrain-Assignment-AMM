@@ -1,0 +1,69 @@
+CRUISE M R2025.1.0 [x64]
+Copyright (C) 2025 AVL List GmbH
+https://www.avl.com
+Built on Apr 29 2025 20:22:33
+Git revision 3a88ba574aebc5ba138dff0d869c577c71bb98d9
+
+Kernel input file: c:/pt/powertrain-assignment-amm/cruise/task4/eng2/simulation/ENG_2_C04023~V_P1_AMT_FWD/P1_ParCtrl.Performance.FLA/input/model.asix
+[message][simulation] Time used for 'Component reading': 0.01 seconds.
+[message][simulation] Time used for 'Equation system buildup': 0.00 seconds.
+[message][simulation] Simulation start time: Fri, 17.10.2025 09:22:14
+[message][simulation] Online monitoring active.
+[warning][Co-Simulation master - Solver 0(solver settings: Global)(Co-Simulation master)] The current component contains 1 loop(s).
+The details (port-name, component-name additional information):
+Loop contains:
+    (OUT_INPUT_SPEED, 'Clutch' channel name 'Input Speed')
+    (OUT_OUTPUT_SPEED, 'Clutch' channel name 'Output Speed')
+    (ACTUAL_IDLE_SPEED, 'ICE' channel name 'Target Idle Speed')
+    (OUT_DESIRED_TORQUE, 'HTCU P1 AMT /AMT Control' channel name 'Desired torque')
+    (OUT_DESIRED_GEAR, 'HTCU P1 AMT /AMT Control' channel name 'Desired gear')
+    (OUT_DESIRED_CLUTCH_RELEASE, 'HTCU P1 AMT /AMT Control' channel name 'Clutch Release')
+    (OUT_PORT_1, 'HCU P1/Vehicle Analysis' channel name 'Driveline Power Demand')
+    (OUT_PORT_0, 'HCU P1/Boost P1' channel name 'EM Power Demand Boost')
+    (OUT_TORQUE, 'ICE' channel name 'Crankshaft Torque')
+    (OUT_ACTUAL_CLUTCH_RELEASE, 'Clutch' channel name 'Clutch Release')
+    (OUT_PORT_3, 'HCU P1/Brake P1' channel name 'EM Power Recuperation Demand')
+    (OUT_PORT_0, 'HCU P1/E-Drive P1' channel name 'EM P1 Power Demand')
+    (OUT_PORT_2, 'HCU P1/ICE StartStop P1' channel name 'ICE Ready')
+    (OUT_PORT_0, 'ICE Opt. Power' channel name 'ICE Optimum Operating Line')
+    (OUT_PORT_4, 'HCU P1/Vehicle Analysis' channel name 'Boost Mode')
+    (OUT_PORT_1, 'HCU P1/Hybrid Mode P1' channel name 'Switch EV')
+    (OUT_PORT_2, 'HCU P1/Hybrid Mode P1' channel name 'Switch LPM')
+    (OUT_PORT_3, 'HCU P1/Hybrid Mode P1' channel name 'Switch Torque Assist')
+    (OUT_PORT_4, 'HCU P1/Hybrid Mode P1' channel name 'Switch Boost')
+    (ENGINE_ON, 'ICE' channel name 'Engine On')
+    (OUT_PORT_2, 'HCU P1/Vehicle Analysis' channel name 'Traction Power Demand Filtered')
+    (OUT_PORT_0, 'HCU P1/ICE StartStop P1' channel name 'ICE Switch Out')
+    (OUT_PORT_1, 'HCU P1/ICE StartStop P1' channel name 'Starter Torque Dmd')
+    (OUT_PORT_0, 'HCU P1/LPM P1' channel name 'EM Power Demand')
+    (OUT_PORT_1, 'HCU P1/LPM P1' channel name 'Factor')
+    (OUT_PORT_0, 'HTCU P1 AMT /Shifting' channel name 'Shifting Status Modified')
+    (OUT_FULL_LOAD, 'ICE' channel name 'Full Load Torque')
+    (OUT_PORT_0, 'HCU P1/Torque Assist P1' channel name 'EM Power Demand')
+    (OUT_PORT_2, 'HCU P1/Output P1' channel name 'ICE Torque Demand')
+    (OUT_PORT_4, 'HCU P1/Output P1' channel name 'EM P1 Torque Demand')
+    (OUT_PORT_1, 'HTCU P1 AMT /Shifting' channel name 'Flag')
+Suggested solution: Add a Signal Decoupling component in the loop(s). Result may vary w.r.t. location of Signal decoupling. No general rule can be given here.
+[message][simulation] Time used for 'License checkout': 4.22 seconds.
+[warning][Wheel FL(Wheel)] Wheel resistance force is zero since the setting Rolling resistance factor velocity dependent (Driving resistance: physical) is not activated.
+[warning][Wheel FR(Wheel)] Wheel resistance force is zero since the setting Rolling resistance factor velocity dependent (Driving resistance: physical) is not activated.
+[warning][Wheel RL(Wheel)] Wheel resistance force is zero since the setting Rolling resistance factor velocity dependent (Driving resistance: physical) is not activated.
+[warning][Wheel RR(Wheel)] Wheel resistance force is zero since the setting Rolling resistance factor velocity dependent (Driving resistance: physical) is not activated.
+[message][simulation] Time used for 'Initialization': 0.37 seconds.
+[message][simulation] Simulation started.
+[message][Vehicle Task/FLA/Full Load Acceleration(Full load acceleration)] The exit condition 'constant acceleration' is satisfied.
+[message][simulation] Simulation ended.
+[message][simulation] Time used for 'Simulation': 1.60 seconds.
+[message][simulation] Real-time factor: 0.012814
+[message][simulation] Writing results (directory: c:/pt/powertrain-assignment-amm/cruise/task4/eng2/simulation/ENG_2_C04023~V_P1_AMT_FWD/P1_ParCtrl.Performance.FLA/results).
+[message][simulation] Writing curve results.
+[message][simulation] Curve result writing successful.
+[message][simulation] Writing series results.
+[message][simulation] Series result writing successful.
+[message][simulation] Generating text report (level: 1, filename: c:/pt/powertrain-assignment-amm/cruise/task4/eng2/simulation/ENG_2_C04023~V_P1_AMT_FWD/P1_ParCtrl.Performance.FLA/results/summary.xml).
+[warning][HCU P1/Recuperation Factor(Map)] 12344 extrapolation(s) for table 'Characteristic'.
+[message][simulation] Text report generation successful.
+[message][simulation] Result writing successful.
+[message][simulation] Time used for 'Result writing': 0.09 seconds.
+[message][simulation] Average real-time factor: 0.0136524
+[warning][simulation] 6 warning(s) occurred during simulation
